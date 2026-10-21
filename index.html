@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Aftensmad</title>
+<meta name="description" content="Planlæg ugens aftensmad sammen, med fælles opskriftskartotek.">
+<meta name="theme-color" content="#22412F">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Aftensmad">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/icons/favicon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="topband">
+  <div class="topinner">
+    <div class="brand">
+      <img src="/icons/icon-192.png" alt="" width="40" height="40">
+      <div><span>Planlæg ugens</span><b>aftensmad</b></div>
+    </div>
+    <button class="ghost onband" id="logoutBtn" hidden>Log ud</button>
+  </div>
+</div>
+
+<main class="wrap" id="appView" hidden>
+  <section class="plan" aria-labelledby="planTitle">
+    <div class="planhead">
+      <div>
+        <h2 id="planTitle">Ugens aftensmad</h2>
+        <div class="rules">
+          <span class="chip">Samme ret højst én gang</span>
+          <span class="chip">Valgt ret låser dagen</span>
+          <label class="toggle"><input type="checkbox" id="ruleProtein" checked> Ikke samme protein to dage i træk</label>
+        </div>
+      </div>
+      <div class="weeknav">
+        <button class="icon" id="prevWeek" aria-label="Forrige uge">‹</button>
+        <div class="wk" id="weekLabel"></div>
+        <button class="icon" id="nextWeek" aria-label="Næste uge">›</button>
+      </div>
+    </div>
+    <div class="days" id="days"></div>
+    <div class="status" id="status" role="status"></div>
+    <div class="planfoot">
+      <button class="primary" id="rollWeek">Træk ny uge</button>
+      <button id="copyPlan">Kopiér plan</button>
+      <button id="unlockAll">Lås alle op</button>
+      <button class="ghost" id="thisWeek">Gå til denne uge</button>
+    </div>
+  </section>
+
+  <section class="file" aria-labelledby="fileTitle">
+    <div>
+      <span class="eyebrow">Kartotek</span>
+      <h2 id="fileTitle">Opskrifter</h2>
+      <p class="lede" id="fileLede">Henter kartoteket …</p>
+    </div>
+    <div class="filebar">
+      <input type="search" id="search" placeholder="Søg i opskrifter eller ingredienser" aria-label="Søg i opskrifter">
+      <select id="fileProtein" aria-label="Filtrer på protein"></select>
+      <button class="primary" id="addRecipe">Tilføj opskrift</button>
+    </div>
+    <div id="fileList"></div>
+  </section>
+
+  <section aria-labelledby="ideaTitle" class="ideasec">
+    <div>
+      <span class="eyebrow">Næste skridt</span>
+      <h2 id="ideaTitle">Forslag til nye funktioner</h2>
+      <p class="lede">Ikke bygget endnu. Sig til, hvis noget af det skal med.</p>
+    </div>
+    <div class="ideas">
+      <div class="idea"><span class="tag">Forslag</span><h3>Samlet indkøbsliste</h3><p>Ugens ingredienser samlet og sorteret efter butiksafdeling, med afkrydsning og kopiering til telefonen. Springes-over-dage tælles ikke med.</p></div>
+      <div class="idea"><span class="tag">Forslag</span><h3>Filter for hurtige retter</h3><p>Markér travle dage, så trækningen kun vælger retter under fx 30 minutter den dag.</p></div>
+      <div class="idea"><span class="tag">Forslag</span><h3>Antal personer</h3><p>Sæt antal kuverter pr. dag, så ingredienserne i opskriften og indkøbslisten skaleres med.</p></div>
+      <div class="idea"><span class="tag">Forslag</span><h3>Favoritter</h3><p>Stjernemarkér retter, så de trækkes oftere, og se hvornår en ret sidst var på planen.</p></div>
+    </div>
+  </section>
+</main>
+
+<main class="wrap login" id="loginView" hidden>
+  <form class="loginbox" id="loginForm" novalidate>
+    <img src="/icons/icon-192.png" alt="" width="72" height="72">
+    <h1>Log ind</h1>
+    <p class="hint">Brug den mail og adgangskode, du har fået. Du forbliver logget ind på denne telefon.</p>
+    <label class="f">Mail<input type="email" id="loginEmail" autocomplete="username" inputmode="email" required></label>
+    <label class="f">Adgangskode<input type="password" id="loginPass" autocomplete="current-password" required></label>
+    <div class="status" id="loginStatus" role="status"></div>
+    <button class="primary" type="submit" id="loginBtn">Log ind</button>
+  </form>
+</main>
+
+<main class="wrap" id="bootView">
+  <p class="status" id="bootStatus">Starter …</p>
+</main>
+
+<div class="overlay" id="overlay" hidden>
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle"></div>
+</div>
+
+<script src="/vendor/supabase.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>

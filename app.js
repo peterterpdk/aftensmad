@@ -117,7 +117,7 @@ async function loadSettings(){
   const {data}=await sb.from("settings").select("data").eq("id","main").maybeSingle();
   if(data&&data.data&&typeof data.data.ruleProtein==="boolean"){ruleProtein=data.data.ruleProtein}
   const f=await sb.from("settings").select("id").like("id","fav:%").limit(5000);
-  if(!f.error&&Array.isArray(f.data)){favs=new Set(f.data.map(x=>String(x.id).slice(4)));renderFile()}
+  if(!f.error&&Array.isArray(f.data)){favs=new Set(f.data.map(x=>String(x.id).slice(4)));renderFile();renderDays()}
 }
 async function loadHistory(){
   const {data,error}=await sb.from("weeks").select("id,days").limit(2000);
@@ -129,10 +129,10 @@ async function loadHistory(){
 async function toggleFav(id){
   const on=!favs.has(id);
   if(on) favs.add(id); else favs.delete(id);
-  renderFile(); renderFavBtn(id);
+  renderFile(); renderDays(); renderFavBtn(id);
   const q=on?sb.from("settings").upsert({id:"fav:"+id,data:{}},{onConflict:"id"}):sb.from("settings").delete().eq("id","fav:"+id);
   const {error}=await q;
-  if(error){ if(on) favs.delete(id); else favs.add(id); renderFile(); renderFavBtn(id); setStatus("Favoritten blev ikke gemt. Prøv igen.",true); }
+  if(error){ if(on) favs.delete(id); else favs.add(id); renderFile(); renderDays(); renderFavBtn(id); setStatus("Favoritten blev ikke gemt. Prøv igen.",true); }
 }
 function subscribe(){
   if(channel) sb.removeChannel(channel);
@@ -148,7 +148,7 @@ function subscribe(){
     })
     .on("postgres_changes",{event:"*",schema:"public",table:"settings"},p=>{
       const fid=String((p.new&&p.new.id)||(p.old&&p.old.id)||"");
-      if(fid.startsWith("fav:")){ if(p.eventType==="DELETE") favs.delete(fid.slice(4)); else favs.add(fid.slice(4)); renderFile(); return; }
+      if(fid.startsWith("fav:")){ if(p.eventType==="DELETE") favs.delete(fid.slice(4)); else favs.add(fid.slice(4)); renderFile(); renderDays(); return; }
       if(p.new&&p.new.id==="main"&&p.new.data&&typeof p.new.data.ruleProtein==="boolean"){ruleProtein=p.new.data.ruleProtein}
     })
     .subscribe();
@@ -168,7 +168,7 @@ function recipeOptions(day){
   for(const [p,l] of PROTEINS){
     const g=ids.filter(id=>recipes[id].protein===p).sort((a,b)=>recipes[a].name.localeCompare(recipes[b].name,"da"));
     if(!g.length) continue;
-    h+=`<optgroup label="${l}">`+g.map(id=>`<option value="${esc(id)}"${id===day.recipe?" selected":""}>${esc(recipes[id].name)}</option>`).join("")+`</optgroup>`;
+    h+=`<optgroup label="${l}">`+g.map(id=>`<option value="${esc(id)}"${id===day.recipe?" selected":""}>${favs.has(id)?"★ ":""}${esc(recipes[id].name)}</option>`).join("")+`</optgroup>`;
   }
   return h;
 }

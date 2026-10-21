@@ -30,7 +30,5 @@ Farver følger logoet (mørkegrøn #22412F, creme #F6F0DA, guld #F3C14E). Alle f
 - Lille, fokuseret ændring. Bevar alle eksisterende funktioner.
 - Tjek syntaks: `node --check app.js shopping.js api/*.js`.
 - Test i browser (Playwright/Chromium) med en mock af `window.supabase` og `/api/*`, ved 390 px og i mørk tilstand, før ændringen lægges op.
-- Udgivelse sker automatisk, når `main` på GitHub ændres.
-  - Er brugeren repo-ejeren (peterterpdk): commit og push til `main`.
-  - Er brugeren en anden: opret en branch og en pull request til `main` med en kort dansk beskrivelse. Vercels gratis plan udgiver ikke andres commits fra et privat repo, så ejeren skal flette pull requesten.
-- Læg aldrig nøgler, adgangskoder eller tokens i koden.
+- Udgivelse sker automatisk, når `main` på GitHub ændres. Commit og push direkte til `main`, når ændringen er testet. Repoet er offentligt, så Vercels gratis plan udgiver også commits fra andre end ejeren.
+- Repoet er offentligt: læg aldrig nøgler, adgangskoder, tokens, mailadresser eller andre personoplysninger i koden eller i commit-beskeder. Brugere og data ligger kun i Supabase.

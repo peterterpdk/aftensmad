@@ -323,7 +323,15 @@ $("#loginForm").addEventListener("submit",async e=>{
   btn.disabled=true; st.className="status"; st.textContent="Logger ind …";
   const {error}=await sb.auth.signInWithPassword({email,password});
   btn.disabled=false;
-  if(error){st.className="status err";st.textContent=/invalid/i.test(error.message)?"Forkert mail eller adgangskode.":"Login mislykkedes. Tjek forbindelsen og prøv igen.";return}
+  if(error){
+    const m=String(error.message||"");
+    st.className="status err";
+    st.textContent=/invalid login credentials/i.test(m)?"Forkert mail eller adgangskode."
+      :/email not confirmed/i.test(m)?"Brugeren er ikke bekræftet. Sæt flueben i Auto Confirm User, når brugeren oprettes i Supabase."
+      :/api key|apikey|jwt|unauthori[sz]ed|no api key/i.test(m)?"Appens nøgle til Supabase virker ikke ("+m+"). Tjek SUPABASE_ANON_KEY i Vercel."
+      :"Login mislykkedes: "+(m||"ukendt fejl")+".";
+    return;
+  }
   st.textContent=""; startApp();
 });
 $("#logoutBtn").onclick=async()=>{ await sb.auth.signOut(); location.reload(); };

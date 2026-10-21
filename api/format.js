@@ -118,9 +118,13 @@ function normalize(j, source) {
 }
 
 async function callClaude(body) {
+  const headers = { "x-api-key": String(process.env.ANTHROPIC_API_KEY || "").trim(), "anthropic-version": "2023-06-01", "content-type": "application/json" };
+  // Kun nødvendig for nøgler, der ikke er oprettet i et workspace.
+  const ws = String(process.env.ANTHROPIC_WORKSPACE_ID || "").trim();
+  if (ws) headers["anthropic-workspace-id"] = ws;
   const r = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
-    headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
+    headers,
     body: JSON.stringify(body),
   });
   const json = await r.json().catch(() => ({}));
@@ -181,6 +185,7 @@ module.exports = async (req, res) => {
       }
       if (r.ok) { j = r.json; break; }
       lastErr = (r.json && r.json.error && r.json.error.message) || `status ${r.status}`;
+      if (/workspace|api key|authentication|credit balance/i.test(lastErr)) break; // en anden model hjælper ikke
     }
     if (!j) return send(res, 502, { error: `Claude kunne ikke formatere opskriften (${lastErr}).` });
 

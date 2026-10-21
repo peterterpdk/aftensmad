@@ -21,7 +21,7 @@ Familiens ugeplan for aftensmad som web-app til iPhonens hjemmeskærm.
 | `SUPABASE_ANON_KEY` | Supabase: Project Settings > API Keys > Publishable key (sb_publishable_...) eller Legacy anon public |
 | `ANTHROPIC_API_KEY` | console.anthropic.com > API Keys |
 
-Valgfri: `CLAUDE_MODEL` (standard `claude-haiku-5-5`).
+Valgfri: `CLAUDE_MODEL` (standard `claude-haiku-5-5`), `CLAUDE_FALLBACK_MODEL` (standard `claude-sonnet-5-5`) og `ANTHROPIC_WORKSPACE_ID`, som kun skal bruges, hvis API-nøglen ikke er oprettet i et workspace.
 
 ## Brugere
 

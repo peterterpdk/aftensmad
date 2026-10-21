@@ -5,6 +5,7 @@ Familiens ugeplan for aftensmad som web-app til iPhonens hjemmeskærm.
 ## Indhold
 
 - `index.html`, `app.js`, `styles.css`: selve appen.
+- `shopping.js`: samler ugens ingredienser til indkøbslisten og sorterer dem efter afdeling.
 - `manifest.webmanifest` og `icons/`: navn og ikon på hjemmeskærmen.
 - `api/format.js`: henter en opskrift fra et link eller en indsat tekst og formaterer den med Claude.
 - `api/config.js`: giver appen adressen til databasen.

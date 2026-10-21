@@ -17,6 +17,7 @@ let sb=null, channel=null, started=false;
 let recipes={}, recipesLoaded=false;
 let week=blankWeek(), weekOffset=0, weekLoadToken=0;
 let ruleProtein=true;
+let shop={struck:{},extra:{}}; // indkøbsliste for den viste uge (fælles)
 
 /* ---------- dates ---------- */
 function mondayOf(off){const d=new Date();d.setHours(12,0,0,0);const wd=(d.getDay()+6)%7;d.setDate(d.getDate()-wd+off*7);return d}
@@ -54,10 +55,10 @@ function setStatus(msg,err){const s=$("#status");s.textContent=msg||"";s.classNa
 function writeErr(){setStatus("Ændringen blev ikke gemt. Tjek forbindelsen og prøv igen.",true)}
 
 /* ---------- data: weeks ---------- */
-function applyWeek(days){const w=blankWeek();for(const k in w)w[k]={...w[k],...((days||{})[k]||{})};week=w;renderDays()}
+function applyWeek(days){const w=blankWeek();for(const k in w)w[k]={...w[k],...((days||{})[k]||{})};week=w;shop={struck:{...((days||{}).shop_struck||{})},extra:{...((days||{}).shop_extra||{})}};renderDays();if($("#shopBody"))renderShop()}
 async function loadWeek(){
   const key=weekKey(weekOffset), token=++weekLoadToken;
-  week=blankWeek(); renderWeekLabel(); renderDays();
+  week=blankWeek(); shop={struck:{},extra:{}}; renderWeekLabel(); renderDays();
   const {data,error}=await sb.from("weeks").select("days").eq("id",key).maybeSingle();
   if(token!==weekLoadToken) return;
   if(error){setStatus("Planen kunne ikke hentes. Træk ned for at prøve igen.",true);return}
@@ -71,8 +72,12 @@ async function loadWeek(){
   if(token===weekLoadToken&&again.data) applyWeek(again.data.days);
 }
 async function saveDays(patch){
-  for(const k in patch) week[k]={...week[k],...patch[k]};
-  renderDays();
+  for(const k in patch){
+    if(k==="shop_struck") shop.struck={...shop.struck,...patch[k]};
+    else if(k==="shop_extra") shop.extra={...shop.extra,...patch[k]};
+    else week[k]={...week[k],...patch[k]};
+  }
+  renderDays(); if($("#shopBody")) renderShop();
   const key=weekKey(weekOffset);
   const {data,error}=await sb.rpc("patch_week",{p_id:key,p_patch:patch});
   if(error){writeErr();return}
@@ -159,7 +164,6 @@ function renderDays(){
       </div>
     </article>`}).join("");
   $("#rollWeek").disabled=!recipesLoaded;
-  $("#unlockAll").disabled=!Object.values(week).some(d=>d.locked);
 }
 $("#days").addEventListener("click",e=>{
   const b=e.target.closest("button[data-a]"); if(!b) return;
@@ -181,7 +185,6 @@ $("#days").addEventListener("change",e=>{
   saveDays({[k]:patch});
 });
 $("#rollWeek").onclick=()=>{ const n=rollUnlocked(week); const p={}; for(const k in n) if(n[k].recipe!==week[k].recipe) p[k]={recipe:n[k].recipe}; if(Object.keys(p).length) saveDays(p); setStatus("Ulåste dage er trukket på ny."); };
-$("#unlockAll").onclick=()=>{ const p={}; for(const k in week) if(week[k].locked) p[k]={locked:false}; saveDays(p); setStatus("Alle dage er låst op."); };
 $("#prevWeek").onclick=()=>{weekOffset--;openDay=null;loadWeek()};
 $("#nextWeek").onclick=()=>{weekOffset++;openDay=null;loadWeek()};
 $("#thisWeek").onclick=()=>{weekOffset=0;openDay=null;loadWeek()};
@@ -193,6 +196,64 @@ $("#copyPlan").onclick=async()=>{
   try{await navigator.clipboard.writeText(txt);setStatus("Planen er kopieret.")}
   catch{openText("Kopiér plan",txt)}
 };
+
+/* ---------- indkøbsliste ---------- */
+function shopData(){
+  const days=[0,1,2,3,4,5,6].map(i=>{const d=week["d"+i];return {label:DAYS3[i],recipe:(!d.skip&&d.recipe)?recipes[d.recipe]:null}});
+  const built=window.Shopping.build(days);
+  const isStruck=(key,basic)=>key in shop.struck?!!shop.struck[key]:!!basic;
+  const extras=Object.entries(shop.extra).filter(([,t])=>t).map(([id,text])=>({key:"x:"+id,id,text}));
+  return {built,extras,isStruck,dayCount:days.filter(d=>d.recipe).length};
+}
+function shopLines(){
+  const {built,extras,isStruck}=shopData(); const out=[];
+  for(const s of built.sections) for(const it of s.items) if(!isStruck(it.key,it.basic)) out.push(it.text);
+  for(const x of extras) if(!isStruck(x.key,false)) out.push(x.text);
+  return out;
+}
+function renderShop(){
+  const body=$("#shopBody"); if(!body) return;
+  const {built,extras,isStruck,dayCount}=shopData();
+  const all=[...built.sections.flatMap(s=>s.items.map(it=>isStruck(it.key,it.basic))),...extras.map(x=>isStruck(x.key,false))];
+  const struckN=all.filter(Boolean).length, activeN=all.length-struckN;
+  $("#shopCount").textContent=all.length?`${activeN} at købe · ${struckN} streget ud`:"";
+  if(!dayCount&&!extras.length){ body.innerHTML=`<div class="emptystate">Der er ingen retter i ugen endnu. Træk eller vælg retter, så kommer ingredienserne her.</div>`; return; }
+  const row=(key,text,from,struck,removable)=>`<li class="srow"><button class="sitem${struck?" struck":""}" data-key="${esc(key)}" aria-pressed="${struck}"><span class="box" aria-hidden="true"></span><span class="st">${esc(text)}</span>${from?`<small>${esc(from)}</small>`:""}</button>${removable?`<button class="icon ghost xdel" data-del="${esc(removable)}" aria-label="Fjern ${esc(text)}">✕</button>`:""}</li>`;
+  body.innerHTML=built.sections.map(s=>`<section class="ssec"><h3>${esc(s.name)}</h3><ul>${s.items.map(it=>row(it.key,it.text,it.from.join(", "),isStruck(it.key,it.basic),null)).join("")}</ul></section>`).join("")
+    +(extras.length?`<section class="ssec"><h3>Egne varer</h3><ul>${extras.map(x=>row(x.key,x.text,"",isStruck(x.key,false),x.id)).join("")}</ul></section>`:"");
+}
+function openShop(){
+  const m=mondayOf(weekOffset);
+  openSheet(`<div class="sheethead"><div><span class="eyebrow">Uge ${isoWeek(m).w}</span><h2 id="sheetTitle">Indkøbsliste</h2><div class="meta" id="shopCount" style="margin-top:4px"></div></div>${closeBtn}</div>
+    <p class="hint">Tryk på en vare for at strege den ud, fx hvis I har den hjemme. Gennemstregninger deles med familien. Basisvarer er streget ud fra start.</p>
+    <div id="shopBody" class="shopbody"></div>
+    <form class="linkrow" id="extraForm" novalidate><input type="text" id="extraInput" placeholder="Tilføj egen vare, fx mælk" aria-label="Tilføj egen vare" autocomplete="off"><button id="extraAdd">Tilføj</button></form>
+    <div class="status" id="shopStatus" role="status"></div>
+    <div id="copyFallback"></div>
+    <div class="sheetfoot"><button class="ghost" data-close>Luk</button><button class="primary" id="shopCopy">Kopiér indkøbsliste</button></div>`);
+  renderShop();
+  $("#shopBody").addEventListener("click",e=>{
+    const del=e.target.closest("[data-del]");
+    if(del){ const id=del.dataset.del; saveDays({shop_extra:{[id]:null},shop_struck:{["x:"+id]:false}}); return; }
+    const b=e.target.closest(".sitem"); if(!b) return;
+    const key=b.dataset.key, struck=b.getAttribute("aria-pressed")==="true";
+    saveDays({shop_struck:{[key]:!struck}});
+  });
+  $("#extraForm").addEventListener("submit",e=>{
+    e.preventDefault();
+    const t=$("#extraInput").value.trim(); if(!t) return;
+    const id=Date.now().toString(36)+Math.random().toString(36).slice(2,5);
+    $("#extraInput").value=""; saveDays({shop_extra:{[id]:t.slice(0,120)}});
+  });
+  $("#shopCopy").onclick=async()=>{
+    const lines=shopLines(), st=$("#shopStatus");
+    if(!lines.length){ st.className="status err"; st.textContent="Der er ingen aktive varer at kopiere."; return; }
+    const txt=lines.join("\n");
+    try{ await navigator.clipboard.writeText(txt); st.className="status"; st.textContent=`${lines.length} varer er kopieret. Indsæt dem i en besked eller en note.`; $("#copyFallback").innerHTML=""; }
+    catch{ st.className="status"; st.textContent="Markér teksten herunder og kopiér den."; $("#copyFallback").innerHTML=`<textarea rows="8" readonly>${esc(txt)}</textarea>`; const t=$("#copyFallback textarea"); t.focus(); t.select(); }
+  };
+}
+$("#shopBtn").onclick=()=>openShop();
 
 /* ---------- render: file ---------- */
 $("#fileProtein").innerHTML=`<option value="alle">Alle proteiner</option>`+PROTEINS.map(([v,l])=>`<option value="${v}">${l}</option>`).join("");

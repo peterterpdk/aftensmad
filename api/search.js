@@ -1,5 +1,6 @@
 // Finder 3 opskriftsforslag på nettet ud fra fri tekst, fx "pasta kødsovs".
-// Bruger Claudes websøgning. Kun links, der faktisk kom fra søgningen, sendes videre.
+// Bruger Claudes websøgning med ét opslag pr. søgning, så hver søgning koster så lidt som muligt.
+// Kun links, der faktisk kom fra søgningen, sendes videre.
 
 const MODEL = process.env.CLAUDE_MODEL || "claude-haiku-5-5";
 const FALLBACK_MODEL = process.env.CLAUDE_FALLBACK_MODEL || "claude-sonnet-5-5";
@@ -28,7 +29,7 @@ async function callClaude(body) {
 }
 
 const SYSTEM = `Du finder opskrifter til et dansk opskriftskartotek for aftensmad.
-Søg på nettet og vælg 3 forskellige, konkrete opskrifter på den ret, brugeren beder om. Foretræk danske opskriftssider (fx valdemarsro.dk, arla.dk, madensverden.dk, dk-kogebogen.dk, gourministeriet.dk, mummum.dk, louiseslaekkerier.dk, coop.dk) og helst 3 forskellige sider.
+Lav præcis én websøgning på dansk med ordet "opskrift" og rettens navn, og vælg ud fra den 3 forskellige, konkrete opskrifter på den ret, brugeren beder om. Foretræk danske opskriftssider (fx valdemarsro.dk, arla.dk, madensverden.dk, dk-kogebogen.dk, gourministeriet.dk, mummum.dk, louiseslaekkerier.dk, coop.dk) og helst 3 forskellige sider.
 Vælg sider med én opskrift, ikke oversigter, kategorier eller artikler med mange opskrifter.
 Brug kun links, der stod i dine søgeresultater. Opfind aldrig et link.
 Dit endelige svar skal KUN være et JSON-array uden forklaring:
@@ -57,7 +58,7 @@ module.exports = async (req, res) => {
   if (query.length < 2) return send(res, 400, { error: "Skriv hvad du har lyst til, fx pasta kødsovs." });
 
   const tool = {
-    type: "web_search_20250305", name: "web_search", max_uses: 3,
+    type: "web_search_20250305", name: "web_search", max_uses: 1,
     user_location: { type: "approximate", country: "DK", timezone: "Europe/Copenhagen" },
   };
   let j = null, lastErr = "";

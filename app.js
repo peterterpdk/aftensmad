@@ -346,6 +346,24 @@ async function callFormat(payload){
   if(!r.ok||!j.recipe) throw new Error(j.error||"Opskriften kunne ikke hentes. Prøv igen.");
   return j.recipe;
 }
+const MAX_PHOTOS=3;
+// Gør billedet mindre i telefonen, før det sendes: hurtigere upload og samme pris hos Claude.
+async function shrinkPhoto(file){
+  if(!/^image\//.test(file.type||"image/")) throw new Error("Vælg et billede.");
+  const url=URL.createObjectURL(file);
+  try{
+    const img=await new Promise((ok,fail)=>{const i=new Image();i.onload=()=>ok(i);i.onerror=()=>fail(new Error("Billedet kunne ikke åbnes. Prøv et andet billede."));i.src=url;});
+    // Højst ca. 1 MB pr. billede, så op til 3 billeder kan sendes i ét kald.
+    for(const [max,q] of [[2000,0.8],[2000,0.6],[1600,0.6],[1200,0.6]]){
+      const k=Math.min(1,max/Math.max(img.naturalWidth,img.naturalHeight));
+      const c=document.createElement("canvas"); c.width=Math.round(img.naturalWidth*k); c.height=Math.round(img.naturalHeight*k);
+      c.getContext("2d").drawImage(img,0,0,c.width,c.height);
+      const d=c.toDataURL("image/jpeg",q).split(",")[1];
+      if(d.length<=1300000) return d;
+    }
+    throw new Error("Billedet er for stort. Prøv et andet billede.");
+  }finally{ URL.revokeObjectURL(url); }
+}
 function openPaste(){
   openSheet(`<div class="sheethead"><h2 id="sheetTitle">Tilføj opskrift</h2>${closeBtn}</div>
     <form class="f" id="searchForm" novalidate><label for="searchQ">Søg efter en ret</label>
@@ -357,6 +375,11 @@ function openPaste(){
       <div class="linkrow"><input type="url" id="pasteUrl" placeholder="https://" autocomplete="off"><button id="linkBtn">Hent opskrift</button></div></label>
     <p class="hint">Claude henter opskriften og udfylder den, så du kan rette den eller blot godkende den.</p>
     <div class="status" id="linkStatus" role="status"></div>
+    <div class="or">eller tag et billede</div>
+    <div class="f">Billede af en opskrift fra en bog, et blad eller en seddel
+      <div class="linkrow"><button id="photoBtn" type="button">Tag eller vælg billede</button><input type="file" id="photoIn" accept="image/*" multiple hidden></div></div>
+    <p class="hint">Du kan vælge op til ${MAX_PHOTOS} billeder, hvis opskriften fylder flere sider.</p>
+    <div class="status" id="photoStatus" role="status"></div>
     <div class="or">eller indsæt selve teksten</div>
     <label class="f">Opskriftstekst<textarea id="pasteTxt" rows="7" placeholder="Indsæt opskriften i et hvilket som helst format"></textarea></label>
     <div class="status" id="pasteStatus" role="status"></div>
@@ -398,6 +421,19 @@ function openPaste(){
     try{ const rec=await callFormat({url}); openEdit(null,rec,"link"); }
     catch(e){ btn.disabled=false; btn.textContent="Hent opskrift"; st.className="status err"; st.textContent=e.message; }
   };
+  $("#photoBtn").onclick=()=>$("#photoIn").click();
+  $("#photoIn").onchange=async e=>{
+    const files=Array.from(e.target.files||[]).slice(0,MAX_PHOTOS), st=$("#photoStatus"), btn=$("#photoBtn");
+    e.target.value="";
+    if(!files.length) return;
+    btn.disabled=true; btn.textContent="Læser …"; st.className="status";
+    st.textContent=`Claude læser ${files.length===1?"billedet":files.length+" billeder"}. Det tager typisk 5 til 20 sekunder.`;
+    try{
+      const images=[]; for(const f of files) images.push(await shrinkPhoto(f));
+      const rec=await callFormat({images}); openEdit(null,rec,"image");
+    }catch(err){ st.className="status err"; st.textContent=err.message; }
+    finally{ btn.disabled=false; btn.textContent="Tag eller vælg billede"; }
+  };
   $("#fmtBtn").onclick=async()=>{
     const txt=$("#pasteTxt").value.trim(), st=$("#pasteStatus"), btn=$("#fmtBtn");
     if(!txt){st.className="status err";st.textContent="Indsæt en opskrift først.";return}
@@ -408,9 +444,9 @@ function openPaste(){
 }
 function slugify(name){return (name.toLowerCase().replace(/æ/g,"ae").replace(/ø/g,"oe").replace(/å/g,"aa").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,50)||"opskrift")+"-"+Math.random().toString(36).slice(2,6)}
 function openEdit(id,r,via){
-  const title=id?"Ret opskrift":via==="link"?"Gennemse og godkend":via==="text"?"Tjek og gem opskriften":"Ny opskrift";
+  const title=id?"Ret opskrift":via==="link"?"Gennemse og godkend":via==="text"||via==="image"?"Tjek og gem opskriften":"Ny opskrift";
   openSheet(`<div class="sheethead"><h2 id="sheetTitle">${title}</h2>${closeBtn}</div>
-    ${via?`<p class="hint">Claude har ${via==="link"?"hentet":"formateret"} opskriften. Ret det, der ikke passer, eller godkend den som den er.</p>`:""}
+    ${via?`<p class="hint">Claude har ${via==="link"?"hentet":via==="image"?"læst":"formateret"} opskriften${via==="image"?" fra billedet":""}. Ret det, der ikke passer, eller godkend den som den er.</p>`:""}
     <form id="editForm" class="formgrid" novalidate>
       <label class="f wide">Navn<input type="text" id="eName" required value="${esc(r.name)}"></label>
       <label class="f">Protein<select id="eProtein">${PROTEINS.map(([v,l])=>`<option value="${v}"${v===r.protein?" selected":""}>${l}</option>`).join("")}</select></label>

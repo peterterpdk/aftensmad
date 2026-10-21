@@ -9,8 +9,8 @@ Ejer: peterterpdk. Alle tekster i appen og alle svar til brugeren er på dansk. 
 - `vendor/supabase.js`: Supabase-klienten (UMD, version 2.117.2). Hent ikke fra CDN.
 - Vercel-funktioner i `api/` (CommonJS, Node 18+, global `fetch`):
   - `config.js`: giver frontend `SUPABASE_URL` (kun origin) og `SUPABASE_ANON_KEY`.
-  - `format.js`: link eller tekst til opskrift via Claude. Henter siden selv; ved fx 403 falder den tilbage til Claudes `web_fetch`-værktøj og derefter til `CLAUDE_FALLBACK_MODEL`.
-  - `search.js`: fri tekst til 3 opskriftsforslag via Claudes `web_search`. Viser kun links, der kom fra selve søgningen.
+  - `format.js`: link, tekst eller op til 3 billeder (`images`, base64 JPEG, højst ca. 1 MB hver) til opskrift via Claude. Henter siden selv; ved fx 403 falder den tilbage til Claudes `web_fetch`-værktøj og derefter til `CLAUDE_FALLBACK_MODEL`. Billeder gøres mindre i telefonen først, og kan Haiku ikke læse dem, prøver `CLAUDE_FALLBACK_MODEL`.
+  - `search.js`: fri tekst til 3 opskriftsforslag via Claudes `web_search` med højst 2 opslag pr. søgning. Viser kun links, der kom fra selve søgningen.
   - `keepalive.js`: daglig cron (se `vercel.json`), så Supabase-gratisprojektet ikke går i dvale.
   - API-funktionerne kræver et gyldigt Supabase-login (`Authorization: Bearer <access_token>`).
 - Supabase (Postgres, RLS: alle loggede ind brugere må læse og skrive alt):

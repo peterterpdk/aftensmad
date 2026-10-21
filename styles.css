@@ -67,17 +67,25 @@ label.f > :is(input,select,textarea){color:var(--fg);font-weight:400}
 .chip{font-size:12px;border-radius:999px;padding:3px 10px;background:var(--accent-soft);color:var(--accent);font-weight:600}
 .toggle{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);font-weight:500}
 
-.days{display:flex;flex-direction:column;gap:8px}
-.day{border:1px solid var(--line);border-radius:12px;background:var(--sunk);padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+.days{display:flex;flex-direction:column;gap:6px}
+.day{border:1px solid var(--line);border-radius:12px;background:var(--sunk);display:flex;flex-direction:column}
 .day.locked{border-color:var(--lock);background:var(--lock-soft)}
 .day.today{box-shadow:inset 4px 0 0 var(--gold)}
-.dtop{display:grid;grid-template-columns:5.5rem minmax(0,1fr) auto;gap:12px;align-items:center}
-.dname b{display:block;font-weight:700}
-.dname span{font-size:13px;color:var(--muted)}
-.pick{font-size:19px;font-weight:700;line-height:1.2;overflow-wrap:anywhere}
-.pick.empty{color:var(--muted);font-weight:500;font-size:15px}
-.meta{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;font-size:13px;color:var(--muted);margin-top:2px}
+.dsum{display:grid;grid-template-columns:3.4rem minmax(0,1fr) auto;gap:10px;align-items:center;width:100%;text-align:left;background:transparent;border:0;border-radius:12px;padding:8px 12px;min-height:52px;white-space:normal;font-weight:400}
+.dsum:hover:not(:disabled){border-color:transparent;background:color-mix(in srgb,var(--accent) 5%,transparent)}
+.dn b{display:block;font-weight:700;font-size:15px;line-height:1.15}
+.dn span{display:block;font-size:12px;color:var(--muted);line-height:1.2}
+.dmain{min-width:0;display:flex;flex-direction:column;gap:1px}
+.nm{font-weight:700;font-size:16px;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nm.empty{color:var(--muted);font-weight:500;font-size:15px}
+.meta{display:flex;flex-wrap:nowrap;align-items:center;gap:8px;font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden}
 .meta .p{display:inline-flex;align-items:center;gap:5px}
+.dend{display:flex;align-items:center;gap:8px;color:var(--muted)}
+.lockbadge{font-size:11px;font-weight:700;color:var(--lock);text-transform:uppercase;letter-spacing:.05em}
+.day.open .nm{white-space:normal}
+.chev{transition:transform .18s}
+.day.open .chev{transform:rotate(180deg)}
+.ddetail{display:flex;flex-direction:column;gap:10px;padding:10px 12px 12px;border-top:1px solid var(--line)}
 .dtog{display:flex;gap:6px}
 .lockbtn[aria-pressed=true]{border-color:var(--lock);color:var(--lock);font-weight:700;background:var(--surface)}
 .dctrl{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,2fr) auto auto;gap:8px;align-items:center}
@@ -94,11 +102,6 @@ label.f > :is(input,select,textarea){color:var(--fg);font-weight:400}
 .status.err{color:var(--warn);font-weight:600}
 
 @media (max-width:760px){
-  .dtop{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"name tog" "main main"}
-  .dname{grid-area:name;display:flex;gap:8px;align-items:baseline}
-  .dname b{display:inline}
-  .dmain{grid-area:main}
-  .dtog{grid-area:tog}
   .dctrl{grid-template-columns:1fr 1fr}
   .dctrl .rsel{grid-column:1 / -1}
   .plan{padding:14px}
@@ -151,4 +154,5 @@ a{color:var(--accent)}
 .linkrow{display:flex;gap:8px;flex-wrap:wrap}
 .linkrow input{flex:1 1 220px}
 @media (max-width:640px){ .cols{grid-template-columns:1fr} .formgrid{grid-template-columns:1fr 1fr} .formgrid .half{grid-column:1 / -1} }
-@media (prefers-reduced-motion:no-preference){ .pick{transition:opacity .18s} .day.flash .pick{opacity:.2} }
+@media (prefers-reduced-motion:no-preference){ .nm{transition:opacity .18s} .day.flash .nm{opacity:.2} }
+@media (prefers-reduced-motion:reduce){ .chev{transition:none} }

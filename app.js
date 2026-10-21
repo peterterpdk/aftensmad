@@ -126,31 +126,36 @@ function recipeOptions(day){
   }
   return h;
 }
+let openDay=null; // hvilken dag der er foldet ud (kun på denne telefon)
+const DAYS3=["Man","Tir","Ons","Tor","Fre","Lør","Søn"];
 function renderDays(){
   const m=mondayOf(weekOffset), today=new Date().toDateString();
   $("#days").innerHTML=[0,1,2,3,4,5,6].map(i=>{
     const d=week["d"+i], dt=new Date(m); dt.setDate(dt.getDate()+i);
-    const r=d.recipe?recipes[d.recipe]:null;
-    let main;
-    if(d.skip) main=`<div class="pick empty">Ingen aftensmad planlagt</div>`;
-    else if(r) main=`<div class="pick">${esc(r.name)}</div><div class="meta"><span class="p"><i class="dot ${r.protein}"></i>${PL[r.protein]||""}</span><span>${(r.sides||[]).map(s=>SL[s]||s).join(", ")}</span>${r.minutes?`<span class="num">${r.minutes} min</span>`:""}</div>`;
-    else if(d.recipe&&!recipesLoaded) main=`<div class="pick empty">Henter …</div>`;
-    else main=`<div class="pick empty">${recipesLoaded&&!pool(d).length?"Ingen opskrifter matcher valget":"Ikke valgt endnu"}</div>`;
-    return `<article class="day${d.locked?" locked":""}${d.skip?" skipped":""}${dt.toDateString()===today?" today":""}" data-i="${i}">
-      <div class="dtop">
-        <div class="dname"><b>${DAYN[i]}</b><span class="num">${dm(dt)}</span></div>
-        <div class="dmain">${main}</div>
+    const r=d.recipe?recipes[d.recipe]:null, open=openDay===i;
+    let name, meta="";
+    if(d.skip) name=`<span class="nm empty">Ingen aftensmad</span>`;
+    else if(r){ name=`<span class="nm">${esc(r.name)}</span>`; meta=`<span class="meta"><span class="p"><i class="dot ${r.protein}"></i>${PL[r.protein]||""}</span><span>${(r.sides||[]).map(s=>SL[s]||s).join(", ")}</span>${r.minutes?`<span class="num">${r.minutes} min</span>`:""}</span>`; }
+    else if(d.recipe&&!recipesLoaded) name=`<span class="nm empty">Henter …</span>`;
+    else name=`<span class="nm empty">${recipesLoaded&&!pool(d).length?"Ingen opskrifter matcher":"Ikke valgt endnu"}</span>`;
+    return `<article class="day${d.locked?" locked":""}${d.skip?" skipped":""}${open?" open":""}${dt.toDateString()===today?" today":""}" data-i="${i}">
+      <button class="dsum" data-a="toggle" aria-expanded="${open}" aria-controls="dd${i}">
+        <span class="dn"><b>${DAYS3[i]}</b><span class="num">${dm(dt)}</span></span>
+        <span class="dmain">${name}${meta}</span>
+        <span class="dend">${d.locked?`<span class="lockbadge">Låst</span>`:""}<svg class="chev" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </button>
+      <div class="ddetail" id="dd${i}" ${open?"":"hidden"}>
         <div class="dtog">
           ${d.skip?"":`<button class="lockbtn" data-a="lock" aria-pressed="${d.locked}">${d.locked?"Låst":"Lås"}</button>`}
           <button class="ghost" data-a="skip">${d.skip?"Planlæg dag":"Spring over"}</button>
         </div>
-      </div>
-      <div class="dctrl">
-        <label class="sel p"><span aria-hidden="true">Protein</span><select data-a="protein" aria-label="Protein ${DAYN[i]}" ${d.locked?"disabled":""}>${optList(PROTEINS,d.protein)}</select></label>
-        <label class="sel s"><span aria-hidden="true">Tilbehør</span><select data-a="side" aria-label="Tilbehør ${DAYN[i]}" ${d.locked?"disabled":""}>${optList(SIDES,d.side)}</select></label>
-        <select class="rsel" data-a="recipe" aria-label="Opskrift ${DAYN[i]}" ${d.locked?"disabled":""}>${recipeOptions(d)}</select>
-        <button data-a="draw" ${d.locked||!pool(d).length?"disabled":""}>Træk</button>
-        <button data-a="show" ${r?"":"disabled"}>Vis opskrift</button>
+        <div class="dctrl">
+          <label class="sel p"><span aria-hidden="true">Protein</span><select data-a="protein" aria-label="Protein ${DAYN[i]}" ${d.locked?"disabled":""}>${optList(PROTEINS,d.protein)}</select></label>
+          <label class="sel s"><span aria-hidden="true">Tilbehør</span><select data-a="side" aria-label="Tilbehør ${DAYN[i]}" ${d.locked?"disabled":""}>${optList(SIDES,d.side)}</select></label>
+          <select class="rsel" data-a="recipe" aria-label="Opskrift ${DAYN[i]}" ${d.locked?"disabled":""}>${recipeOptions(d)}</select>
+          <button data-a="draw" ${d.locked||!pool(d).length?"disabled":""}>Træk</button>
+          <button data-a="show" ${r?"":"disabled"}>Vis opskrift</button>
+        </div>
       </div>
     </article>`}).join("");
   $("#rollWeek").disabled=!recipesLoaded;
@@ -159,10 +164,12 @@ function renderDays(){
 $("#days").addEventListener("click",e=>{
   const b=e.target.closest("button[data-a]"); if(!b) return;
   const i=+b.closest(".day").dataset.i, k="d"+i, d=week[k], a=b.dataset.a;
+  if(a==="toggle"){ openDay=openDay===i?null:i; renderDays(); const el=document.querySelector(`.day[data-i="${i}"]`); if(openDay===i&&el&&el.getBoundingClientRect().bottom>innerHeight) el.scrollIntoView({block:"nearest",behavior:"smooth"}); return; }
   if(a==="show"){ if(d.recipe) openView(d.recipe); return; }
   if(a==="lock") saveDays({[k]:{locked:!d.locked}});
   if(a==="skip") saveDays({[k]:d.skip?{skip:false,recipe:drawFor(i,{...week,[k]:{...d,skip:false}})}:{skip:true,locked:false}});
   if(a==="draw"){ const el=b.closest(".day"); el.classList.add("flash"); setTimeout(()=>el.classList.remove("flash"),180); saveDays({[k]:{recipe:drawFor(i,week)}}); }
+  if(a==="skip"&&!d.skip&&openDay===i) openDay=null;
   setStatus("");
 });
 $("#days").addEventListener("change",e=>{
@@ -175,9 +182,9 @@ $("#days").addEventListener("change",e=>{
 });
 $("#rollWeek").onclick=()=>{ const n=rollUnlocked(week); const p={}; for(const k in n) if(n[k].recipe!==week[k].recipe) p[k]={recipe:n[k].recipe}; if(Object.keys(p).length) saveDays(p); setStatus("Ulåste dage er trukket på ny."); };
 $("#unlockAll").onclick=()=>{ const p={}; for(const k in week) if(week[k].locked) p[k]={locked:false}; saveDays(p); setStatus("Alle dage er låst op."); };
-$("#prevWeek").onclick=()=>{weekOffset--;loadWeek()};
-$("#nextWeek").onclick=()=>{weekOffset++;loadWeek()};
-$("#thisWeek").onclick=()=>{weekOffset=0;loadWeek()};
+$("#prevWeek").onclick=()=>{weekOffset--;openDay=null;loadWeek()};
+$("#nextWeek").onclick=()=>{weekOffset++;openDay=null;loadWeek()};
+$("#thisWeek").onclick=()=>{weekOffset=0;openDay=null;loadWeek()};
 $("#ruleProtein").onchange=async e=>{ruleProtein=e.target.checked; const {error}=await sb.from("settings").upsert({id:"main",data:{ruleProtein}}); if(error) writeErr();};
 $("#copyPlan").onclick=async()=>{
   const m=mondayOf(weekOffset);

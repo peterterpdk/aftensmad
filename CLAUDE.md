@@ -15,8 +15,8 @@ Ejer: peterterpdk. Alle tekster i appen og alle svar til brugeren er på dansk. 
   - API-funktionerne kræver et gyldigt Supabase-login (`Authorization: Bearer <access_token>`).
 - Supabase (Postgres, RLS: alle loggede ind brugere må læse og skrive alt):
   - `recipes`: id, name, protein (kylling|okse|gris|fisk|vegetar), sides (jsonb array), minutes, servings, ingredients (jsonb), steps (jsonb), source, builtin.
-  - `weeks`: id (fx `2026-W44`), days (jsonb). `days.d0`..`d6` = {recipe, protein, side, locked, skip}. `days.shop_struck` = {varenøgle: bool}, `days.shop_extra` = {id: tekst|null}.
-  - `settings`: id `main`, data {ruleProtein}.
+  - `weeks`: id (fx `2026-W44`), days (jsonb). `days.d0`..`d6` = {recipe, protein, side, locked, skip}. `days.shop_struck` = {varenøgle: bool}, `days.shop_extra` = {id: tekst|null}, `days.shop_days` = {d0..d6: false for dage, der ikke er med på indkøbslisten}.
+  - `settings`: id `main`, data {ruleProtein}. Reglen "ikke samme protein to dage i træk" bruges stadig ved trækning, men har ingen knap i appen.
   - Skriv til uger med RPC `patch_week(p_id, p_patch)`, som fletter pr. nøgle, så flere telefoner ikke overskriver hinanden.
   - Skema: `supabase/1-opsaetning.sql`. Nye kolonner eller tabeller kræver et nyt SQL-script, som ejeren kører i Supabase.
 - Miljøvariabler i Vercel: `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `ANTHROPIC_API_KEY`, valgfri `ANTHROPIC_WORKSPACE_ID`, `CLAUDE_MODEL`, `CLAUDE_FALLBACK_MODEL`.

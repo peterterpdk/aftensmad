@@ -17,7 +17,7 @@ let sb=null, channel=null, started=false;
 let recipes={}, recipesLoaded=false;
 let week=blankWeek(), weekOffset=0, weekLoadToken=0;
 let ruleProtein=true;
-let shop={struck:{},extra:{}}; // indkøbsliste for den viste uge (fælles)
+let shop={struck:{},extra:{},days:{}}; // indkøbsliste for den viste uge (fælles)
 
 /* ---------- dates ---------- */
 function mondayOf(off){const d=new Date();d.setHours(12,0,0,0);const wd=(d.getDay()+6)%7;d.setDate(d.getDate()-wd+off*7);return d}
@@ -55,10 +55,10 @@ function setStatus(msg,err){const s=$("#status");s.textContent=msg||"";s.classNa
 function writeErr(){setStatus("Ændringen blev ikke gemt. Tjek forbindelsen og prøv igen.",true)}
 
 /* ---------- data: weeks ---------- */
-function applyWeek(days){const w=blankWeek();for(const k in w)w[k]={...w[k],...((days||{})[k]||{})};week=w;shop={struck:{...((days||{}).shop_struck||{})},extra:{...((days||{}).shop_extra||{})}};renderDays();if($("#shopBody"))renderShop()}
+function applyWeek(days){const w=blankWeek();for(const k in w)w[k]={...w[k],...((days||{})[k]||{})};week=w;shop={struck:{...((days||{}).shop_struck||{})},extra:{...((days||{}).shop_extra||{})},days:{...((days||{}).shop_days||{})}};renderDays();if($("#shopBody"))renderShop()}
 async function loadWeek(){
   const key=weekKey(weekOffset), token=++weekLoadToken;
-  week=blankWeek(); shop={struck:{},extra:{}}; renderWeekLabel(); renderDays();
+  week=blankWeek(); shop={struck:{},extra:{},days:{}}; renderWeekLabel(); renderDays();
   const {data,error}=await sb.from("weeks").select("days").eq("id",key).maybeSingle();
   if(token!==weekLoadToken) return;
   if(error){setStatus("Planen kunne ikke hentes. Træk ned for at prøve igen.",true);return}
@@ -75,6 +75,7 @@ async function saveDays(patch){
   for(const k in patch){
     if(k==="shop_struck") shop.struck={...shop.struck,...patch[k]};
     else if(k==="shop_extra") shop.extra={...shop.extra,...patch[k]};
+    else if(k==="shop_days") shop.days={...shop.days,...patch[k]};
     else week[k]={...week[k],...patch[k]};
   }
   renderDays(); if($("#shopBody")) renderShop();
@@ -94,7 +95,7 @@ async function loadRecipes(){
 }
 async function loadSettings(){
   const {data}=await sb.from("settings").select("data").eq("id","main").maybeSingle();
-  if(data&&data.data&&typeof data.data.ruleProtein==="boolean"){ruleProtein=data.data.ruleProtein;$("#ruleProtein").checked=ruleProtein}
+  if(data&&data.data&&typeof data.data.ruleProtein==="boolean"){ruleProtein=data.data.ruleProtein}
 }
 function subscribe(){
   if(channel) sb.removeChannel(channel);
@@ -108,7 +109,7 @@ function subscribe(){
       if(p.new&&p.new.id===weekKey(weekOffset)&&p.new.days) applyWeek(p.new.days);
     })
     .on("postgres_changes",{event:"*",schema:"public",table:"settings"},p=>{
-      if(p.new&&p.new.id==="main"&&p.new.data&&typeof p.new.data.ruleProtein==="boolean"){ruleProtein=p.new.data.ruleProtein;$("#ruleProtein").checked=ruleProtein}
+      if(p.new&&p.new.id==="main"&&p.new.data&&typeof p.new.data.ruleProtein==="boolean"){ruleProtein=p.new.data.ruleProtein}
     })
     .subscribe();
 }
@@ -188,7 +189,6 @@ $("#rollWeek").onclick=()=>{ const n=rollUnlocked(week); const p={}; for(const k
 $("#prevWeek").onclick=()=>{weekOffset--;openDay=null;loadWeek()};
 $("#nextWeek").onclick=()=>{weekOffset++;openDay=null;loadWeek()};
 $("#thisWeek").onclick=()=>{weekOffset=0;openDay=null;loadWeek()};
-$("#ruleProtein").onchange=async e=>{ruleProtein=e.target.checked; const {error}=await sb.from("settings").upsert({id:"main",data:{ruleProtein}}); if(error) writeErr();};
 $("#copyPlan").onclick=async()=>{
   const m=mondayOf(weekOffset);
   const lines=[`Aftensmad uge ${isoWeek(m).w}`].concat([0,1,2,3,4,5,6].map(i=>{const d=week["d"+i],dt=new Date(m);dt.setDate(dt.getDate()+i);return `${DAYN[i]} ${dm(dt)}: ${d.skip?"Ingen aftensmad":(recipes[d.recipe]?.name||"Ikke valgt")}`}));
@@ -199,7 +199,8 @@ $("#copyPlan").onclick=async()=>{
 
 /* ---------- indkøbsliste ---------- */
 function shopData(){
-  const days=[0,1,2,3,4,5,6].map(i=>{const d=week["d"+i];return {label:DAYS3[i],recipe:(!d.skip&&d.recipe)?recipes[d.recipe]:null}});
+  const inShop=i=>shop.days["d"+i]!==false;
+  const days=[0,1,2,3,4,5,6].map(i=>{const d=week["d"+i];return {label:DAYS3[i],recipe:(inShop(i)&&!d.skip&&d.recipe)?recipes[d.recipe]:null}});
   const built=window.Shopping.build(days);
   const isStruck=(key,basic)=>key in shop.struck?!!shop.struck[key]:!!basic;
   const extras=Object.entries(shop.extra).filter(([,t])=>t).map(([id,text])=>({key:"x:"+id,id,text}));
@@ -214,10 +215,16 @@ function shopLines(){
 function renderShop(){
   const body=$("#shopBody"); if(!body) return;
   const {built,extras,isStruck,dayCount}=shopData();
+  const md=mondayOf(weekOffset);
+  $("#shopDays").innerHTML=[0,1,2,3,4,5,6].map(i=>{
+    const d=week["d"+i], on=shop.days["d"+i]!==false, dt=new Date(md); dt.setDate(dt.getDate()+i);
+    const none=d.skip||!d.recipe;
+    return `<button class="sday${on?" on":""}" data-sday="${i}" aria-pressed="${on}" title="${esc(DAYN[i]+" "+dm(dt)+(d.skip?" (sprunget over)":""))}"${none?' data-none="1"':""}><span class="cb" aria-hidden="true"></span><span>${DAYS3[i]}</span></button>`;
+  }).join("");
   const all=[...built.sections.flatMap(s=>s.items.map(it=>isStruck(it.key,it.basic))),...extras.map(x=>isStruck(x.key,false))];
   const struckN=all.filter(Boolean).length, activeN=all.length-struckN;
   $("#shopCount").textContent=all.length?`${activeN} at købe · ${struckN} streget ud`:"";
-  if(!dayCount&&!extras.length){ body.innerHTML=`<div class="emptystate">Der er ingen retter i ugen endnu. Træk eller vælg retter, så kommer ingredienserne her.</div>`; return; }
+  if(!dayCount&&!extras.length){ body.innerHTML=`<div class="emptystate">${Object.values(shop.days).some(v=>v===false)?"Ingen af de valgte dage har en ret. Sæt flueben ved flere dage ovenfor.":"Der er ingen retter i ugen endnu. Træk eller vælg retter, så kommer ingredienserne her."}</div>`; return; }
   const row=(key,text,from,struck,removable)=>`<li class="srow"><button class="sitem${struck?" struck":""}" data-key="${esc(key)}" aria-pressed="${struck}"><span class="box" aria-hidden="true"></span><span class="st">${esc(text)}</span>${from?`<small>${esc(from)}</small>`:""}</button>${removable?`<button class="icon ghost xdel" data-del="${esc(removable)}" aria-label="Fjern ${esc(text)}">✕</button>`:""}</li>`;
   body.innerHTML=built.sections.map(s=>`<section class="ssec"><h3>${esc(s.name)}</h3><ul>${s.items.map(it=>row(it.key,it.text,it.from.join(", "),isStruck(it.key,it.basic),null)).join("")}</ul></section>`).join("")
     +(extras.length?`<section class="ssec"><h3>Egne varer</h3><ul>${extras.map(x=>row(x.key,x.text,"",isStruck(x.key,false),x.id)).join("")}</ul></section>`:"");
@@ -225,13 +232,19 @@ function renderShop(){
 function openShop(){
   const m=mondayOf(weekOffset);
   openSheet(`<div class="sheethead"><div><span class="eyebrow">Uge ${isoWeek(m).w}</span><h2 id="sheetTitle">Indkøbsliste</h2><div class="meta" id="shopCount" style="margin-top:4px"></div></div>${closeBtn}</div>
-    <p class="hint">Tryk på en vare for at strege den ud, fx hvis I har den hjemme. Gennemstregninger deles med familien. Basisvarer er streget ud fra start.</p>
+    <div class="sdaywrap"><span class="eyebrow">Køb ind til</span><div class="sdays" id="shopDays" role="group" aria-label="Dage på indkøbslisten"></div></div>
+    <p class="hint">Fjern fluebenet ved de dage, du ikke handler ind til nu. Tryk på en vare for at strege den ud, fx hvis I har den hjemme. Alt deles med familien. Basisvarer er streget ud fra start.</p>
     <div id="shopBody" class="shopbody"></div>
     <form class="linkrow" id="extraForm" novalidate><input type="text" id="extraInput" placeholder="Tilføj egen vare, fx mælk" aria-label="Tilføj egen vare" autocomplete="off"><button id="extraAdd">Tilføj</button></form>
     <div class="status" id="shopStatus" role="status"></div>
     <div id="copyFallback"></div>
     <div class="sheetfoot"><button class="ghost" data-close>Luk</button><button class="primary" id="shopCopy">Kopiér indkøbsliste</button></div>`);
   renderShop();
+  $("#shopDays").addEventListener("click",e=>{
+    const b=e.target.closest("[data-sday]"); if(!b) return;
+    const k="d"+b.dataset.sday, on=shop.days[k]!==false;
+    saveDays({shop_days:{[k]:!on}});
+  });
   $("#shopBody").addEventListener("click",e=>{
     const del=e.target.closest("[data-del]");
     if(del){ const id=del.dataset.del; saveDays({shop_extra:{[id]:null},shop_struck:{["x:"+id]:false}}); return; }

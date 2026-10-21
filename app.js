@@ -335,14 +335,48 @@ async function callFormat(payload){
 }
 function openPaste(){
   openSheet(`<div class="sheethead"><h2 id="sheetTitle">Tilføj opskrift</h2>${closeBtn}</div>
+    <form class="f" id="searchForm" novalidate><label for="searchQ">Søg efter en ret</label>
+      <div class="linkrow"><input type="search" id="searchQ" placeholder="Fx pasta kødsovs" autocomplete="off" enterkeyhint="search"><button class="primary" id="searchBtn">Find forslag</button></div></form>
+    <div class="status" id="searchStatus" role="status"></div>
+    <ul class="sres" id="searchRes"></ul>
+    <div class="or">eller indsæt et link</div>
     <label class="f">Link til en opskrift på nettet
-      <div class="linkrow"><input type="url" id="pasteUrl" placeholder="https://" autocomplete="off"><button class="primary" id="linkBtn">Hent opskrift</button></div></label>
+      <div class="linkrow"><input type="url" id="pasteUrl" placeholder="https://" autocomplete="off"><button id="linkBtn">Hent opskrift</button></div></label>
     <p class="hint">Claude henter opskriften og udfylder den, så du kan rette den eller blot godkende den.</p>
     <div class="status" id="linkStatus" role="status"></div>
     <div class="or">eller indsæt selve teksten</div>
     <label class="f">Opskriftstekst<textarea id="pasteTxt" rows="7" placeholder="Indsæt opskriften i et hvilket som helst format"></textarea></label>
     <div class="status" id="pasteStatus" role="status"></div>
     <div class="sheetfoot"><button class="ghost" id="manualBtn">Udfyld selv</button><button id="fmtBtn">Formatér tekst</button></div>`);
+  $("#searchForm").addEventListener("submit",async e=>{
+    e.preventDefault();
+    const q=$("#searchQ").value.trim(), st=$("#searchStatus"), btn=$("#searchBtn"), list=$("#searchRes");
+    if(q.length<2){st.className="status err";st.textContent="Skriv hvad du har lyst til, fx pasta kødsovs.";return}
+    btn.disabled=true; btn.textContent="Søger …"; list.innerHTML=""; st.className="status"; st.textContent="Claude søger efter opskrifter. Det tager typisk 10 til 30 sekunder.";
+    try{
+      const {data:{session}}=await sb.auth.getSession();
+      if(!session) throw new Error("Log ind igen for at søge.");
+      const r=await fetch("/api/search",{method:"POST",headers:{"content-type":"application/json",Authorization:"Bearer "+session.access_token},body:JSON.stringify({query:q})});
+      const j=await r.json().catch(()=>({}));
+      if(!r.ok||!Array.isArray(j.results)) throw new Error(j.error||"Søgningen mislykkedes. Prøv igen.");
+      if(!j.results.length) throw new Error("Ingen forslag fundet. Prøv med andre ord.");
+      const known=new Set(Object.values(recipes).map(x=>(x.source||"").replace(/\/$/,"")));
+      st.textContent=`${j.results.length} forslag til "${q}". Tryk Tilføj for at hente opskriften ind.`;
+      list.innerHTML=j.results.map((x,i)=>`<li class="sr">
+        <div class="srt"><b>${esc(x.title||x.site)}</b><small>${esc(x.site)}${x.note?" · "+esc(x.note):""}</small></div>
+        <div class="sra"><a class="srlink" href="${esc(x.url)}" target="_blank" rel="noopener">Se ↗</a>
+        ${known.has(String(x.url).replace(/\/$/,""))?`<span class="hint">Findes allerede</span>`:`<button class="primary" data-add="${i}">Tilføj</button>`}</div></li>`).join("");
+      list.onclick=async ev=>{
+        const b=ev.target.closest("[data-add]"); if(!b) return;
+        const x=j.results[+b.dataset.add];
+        list.querySelectorAll("[data-add]").forEach(k=>k.disabled=true); b.textContent="Henter …";
+        st.className="status"; st.textContent="Claude henter opskriften. Det tager typisk 5 til 30 sekunder.";
+        try{ const rec=await callFormat({url:x.url}); openEdit(null,rec,"link"); }
+        catch(err){ list.querySelectorAll("[data-add]").forEach(k=>k.disabled=false); b.textContent="Tilføj"; st.className="status err"; st.textContent=err.message; }
+      };
+    }catch(err){ st.className="status err"; st.textContent=err.message; }
+    finally{ btn.disabled=false; btn.textContent="Find forslag"; }
+  });
   $("#manualBtn").onclick=()=>openEdit(null,{name:"",protein:"kylling",sides:[],minutes:30,servings:4,ingredients:[],steps:[],source:$("#pasteUrl").value.trim()});
   $("#linkBtn").onclick=async()=>{
     const url=$("#pasteUrl").value.trim(), st=$("#linkStatus"), btn=$("#linkBtn");

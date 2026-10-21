@@ -173,6 +173,16 @@ a{color:var(--accent)}
 .sitem.struck .st{text-decoration:line-through;color:var(--muted);font-weight:400}
 .sitem small{font-size:11px;color:var(--muted);white-space:nowrap}
 .xdel{min-width:36px;min-height:36px;padding:4px 8px;color:var(--muted)}
+.sres{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.sres:empty{display:none}
+.sr{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 12px;border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--sunk)}
+.srt{flex:1 1 200px;min-width:0;display:flex;flex-direction:column}
+.srt b{font-weight:700;overflow-wrap:anywhere}
+.srt small{font-size:12px;color:var(--muted)}
+.sra{display:flex;align-items:center;gap:8px}
+.srlink{font-size:14px;font-weight:600;text-decoration:none;padding:6px 4px}
+form.f{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:600;color:var(--muted);margin:0}
+form.f input{color:var(--fg);font-weight:400}
 .or{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:13px}
 .or::before,.or::after{content:"";flex:1;border-top:1px solid var(--line)}
 .linkrow{display:flex;gap:8px;flex-wrap:wrap}

@@ -8,6 +8,7 @@ Familiens ugeplan for aftensmad som web-app til iPhonens hjemmeskærm.
 - `shopping.js`: samler ugens ingredienser til indkøbslisten og sorterer dem efter afdeling.
 - `manifest.webmanifest` og `icons/`: navn og ikon på hjemmeskærmen.
 - `api/format.js`: henter en opskrift fra et link eller en indsat tekst og formaterer den med Claude.
+- `api/search.js`: finder 3 opskriftsforslag på nettet ud fra fri tekst (Claude med websøgning, ca. 7 øre pr. søgning).
 - `api/config.js`: giver appen adressen til databasen.
 - `api/keepalive.js`: kaldes dagligt, så gratis-databasen ikke går i dvale.
 - `supabase/1-opsaetning.sql`: tabeller, adgangsregler og live-opdatering.

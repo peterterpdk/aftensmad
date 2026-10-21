@@ -1,6 +1,7 @@
 /* Planlæg ugens aftensmad: web-app på Supabase.
    Alle funktioner fra den tidligere side: ugeplan med trækning, filtre, lås, spring over,
-   regler, kopiér plan, kartotek med søgning, vis/ret/slet, tilføj via link, tekst eller selv. */
+   regler, kopiér plan, kartotek med søgning, vis/ret/slet, tilføj via link, tekst, billede eller selv.
+   Travle dage (kun hurtige retter), antal personer pr. dag og favoritter. */
 "use strict";
 
 const PROTEINS=[["kylling","Kylling"],["okse","Okse"],["gris","Gris"],["fisk","Fisk"],["vegetar","Vegetarisk"]];
@@ -9,7 +10,8 @@ const PL=Object.fromEntries(PROTEINS), SL=Object.fromEntries(SIDES);
 const DAYN=["Mandag","Tirsdag","Onsdag","Torsdag","Fredag","Lørdag","Søndag"];
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const blankDay=()=>({recipe:null,protein:"alle",side:"alle",locked:false,skip:false});
+const blankDay=()=>({recipe:null,protein:"alle",side:"alle",locked:false,skip:false,quick:false,people:null});
+const QUICK_MAX=30; // travle dage: kun retter på højst så mange minutter
 const blankWeek=()=>{const d={};for(let i=0;i<7;i++)d["d"+i]=blankDay();return d};
 const clone=o=>JSON.parse(JSON.stringify(o));
 
@@ -18,6 +20,8 @@ let recipes={}, recipesLoaded=false;
 let week=blankWeek(), weekOffset=0, weekLoadToken=0;
 let ruleProtein=true;
 let shop={struck:{},extra:{},days:{}}; // indkøbsliste for den viste uge (fælles)
+let favs=new Set();   // favoritter, gemt som rækker "fav:<id>" i settings
+let history={};       // ugenøgle -> days, til "sidst på planen"
 
 /* ---------- dates ---------- */
 function mondayOf(off){const d=new Date();d.setHours(12,0,0,0);const wd=(d.getDay()+6)%7;d.setDate(d.getDate()-wd+off*7);return d}
@@ -25,9 +29,25 @@ function isoWeek(d){const t=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.get
 function weekKey(off){const {y,w}=isoWeek(mondayOf(off));return `${y}-W${String(w).padStart(2,"0")}`}
 const dm=d=>d.toLocaleDateString("da-DK",{day:"numeric",month:"short"});
 function host(u){try{return new URL(u).hostname.replace(/^www\./,"")}catch{return u}}
+function mondayOfKey(key){const m=/^(\d{4})-W(\d{2})$/.exec(key||"");if(!m)return null;const j=new Date(+m[1],0,4,12);j.setDate(j.getDate()-((j.getDay()+6)%7)+(+m[2]-1)*7);return j}
+const dlong=d=>d.toLocaleDateString("da-DK",{weekday:"long",day:"numeric",month:"short"});
+// Hvornår var retten sidst på planen, og hvornår er den planlagt næste gang?
+function usage(id){
+  const end=new Date();end.setHours(23,59,59,999);let last=null,next=null;
+  for(const [key,days] of Object.entries(history)){
+    const mon=mondayOfKey(key); if(!mon||!days) continue;
+    for(let i=0;i<7;i++){const d=days["d"+i]; if(!d||d.skip||d.recipe!==id) continue;
+      const dt=new Date(mon); dt.setDate(dt.getDate()+i);
+      if(dt<=end){ if(!last||dt>last) last=dt; } else if(!next||dt<next) next=dt; }
+  }
+  return {last,next};
+}
 
 /* ---------- drawing ---------- */
-function matches(r,day){return r && (day.protein==="alle"||r.protein===day.protein) && (day.side==="alle"||(r.sides||[]).includes(day.side))}
+const isQuick=r=>r&&r.minutes>0&&r.minutes<=QUICK_MAX;
+function matches(r,day){return r && (day.protein==="alle"||r.protein===day.protein) && (day.side==="alle"||(r.sides||[]).includes(day.side)) && (!day.quick||isQuick(r))}
+// Favoritter trækkes tre gange så ofte som andre retter.
+function pick(ids){const w=ids.map(id=>favs.has(id)?3:1);let x=Math.random()*w.reduce((a,b)=>a+b,0);for(let i=0;i<ids.length;i++){x-=w[i];if(x<0)return ids[i]}return ids[ids.length-1]}
 function pool(day){return Object.keys(recipes).filter(id=>matches(recipes[id],day))}
 function drawFor(i,days){
   const day=days["d"+i];
@@ -41,7 +61,7 @@ function drawFor(i,days){
     c
   ];
   const t=tiers.find(x=>x.length);
-  return t?t[Math.floor(Math.random()*t.length)]:null;
+  return t?pick(t):null;
 }
 function rollUnlocked(days){
   const next=clone(days);
@@ -55,7 +75,7 @@ function setStatus(msg,err){const s=$("#status");s.textContent=msg||"";s.classNa
 function writeErr(){setStatus("Ændringen blev ikke gemt. Tjek forbindelsen og prøv igen.",true)}
 
 /* ---------- data: weeks ---------- */
-function applyWeek(days){const w=blankWeek();for(const k in w)w[k]={...w[k],...((days||{})[k]||{})};week=w;shop={struck:{...((days||{}).shop_struck||{})},extra:{...((days||{}).shop_extra||{})},days:{...((days||{}).shop_days||{})}};renderDays();if($("#shopBody"))renderShop()}
+function applyWeek(days){history[weekKey(weekOffset)]=days||{};const w=blankWeek();for(const k in w)w[k]={...w[k],...((days||{})[k]||{})};week=w;shop={struck:{...((days||{}).shop_struck||{})},extra:{...((days||{}).shop_extra||{})},days:{...((days||{}).shop_days||{})}};renderDays();if($("#shopBody"))renderShop()}
 async function loadWeek(){
   const key=weekKey(weekOffset), token=++weekLoadToken;
   week=blankWeek(); shop={struck:{},extra:{},days:{}}; renderWeekLabel(); renderDays();
@@ -96,6 +116,23 @@ async function loadRecipes(){
 async function loadSettings(){
   const {data}=await sb.from("settings").select("data").eq("id","main").maybeSingle();
   if(data&&data.data&&typeof data.data.ruleProtein==="boolean"){ruleProtein=data.data.ruleProtein}
+  const f=await sb.from("settings").select("id").like("id","fav:%").limit(5000);
+  if(!f.error&&Array.isArray(f.data)){favs=new Set(f.data.map(x=>String(x.id).slice(4)));renderFile()}
+}
+async function loadHistory(){
+  const {data,error}=await sb.from("weeks").select("id,days").limit(2000);
+  if(error||!Array.isArray(data)) return;
+  const cur=weekKey(weekOffset), keep=history[cur];
+  history={}; for(const w of data) history[w.id]=w.days||{};
+  if(keep) history[cur]=keep;
+}
+async function toggleFav(id){
+  const on=!favs.has(id);
+  if(on) favs.add(id); else favs.delete(id);
+  renderFile(); renderFavBtn(id);
+  const q=on?sb.from("settings").upsert({id:"fav:"+id,data:{}},{onConflict:"id"}):sb.from("settings").delete().eq("id","fav:"+id);
+  const {error}=await q;
+  if(error){ if(on) favs.delete(id); else favs.add(id); renderFile(); renderFavBtn(id); setStatus("Favoritten blev ikke gemt. Prøv igen.",true); }
 }
 function subscribe(){
   if(channel) sb.removeChannel(channel);
@@ -106,14 +143,17 @@ function subscribe(){
       renderFile(); renderDays();
     })
     .on("postgres_changes",{event:"*",schema:"public",table:"weeks"},p=>{
+      if(p.new&&p.new.id&&p.new.days) history[p.new.id]=p.new.days;
       if(p.new&&p.new.id===weekKey(weekOffset)&&p.new.days) applyWeek(p.new.days);
     })
     .on("postgres_changes",{event:"*",schema:"public",table:"settings"},p=>{
+      const fid=String((p.new&&p.new.id)||(p.old&&p.old.id)||"");
+      if(fid.startsWith("fav:")){ if(p.eventType==="DELETE") favs.delete(fid.slice(4)); else favs.add(fid.slice(4)); renderFile(); return; }
       if(p.new&&p.new.id==="main"&&p.new.data&&typeof p.new.data.ruleProtein==="boolean"){ruleProtein=p.new.data.ruleProtein}
     })
     .subscribe();
 }
-async function refreshAll(){await Promise.all([loadRecipes(),loadSettings()]);await loadWeek()}
+async function refreshAll(){await Promise.all([loadRecipes(),loadSettings(),loadHistory()]);await loadWeek()}
 
 /* ---------- render: planner ---------- */
 function renderWeekLabel(){
@@ -141,20 +181,24 @@ function renderDays(){
     const r=d.recipe?recipes[d.recipe]:null, open=openDay===i;
     let name, meta="";
     if(d.skip) name=`<span class="nm empty">Ingen aftensmad</span>`;
-    else if(r){ name=`<span class="nm">${esc(r.name)}</span>`; meta=`<span class="meta"><span class="p"><i class="dot ${r.protein}"></i>${PL[r.protein]||""}</span><span>${(r.sides||[]).map(s=>SL[s]||s).join(", ")}</span>${r.minutes?`<span class="num">${r.minutes} min</span>`:""}</span>`; }
+    else if(r){ name=`<span class="nm">${favs.has(d.recipe)?`<span class="star" aria-label="Favorit">★</span> `:""}${esc(r.name)}</span>`; meta=`<span class="meta"><span class="p"><i class="dot ${r.protein}"></i>${PL[r.protein]||""}</span><span>${(r.sides||[]).map(s=>SL[s]||s).join(", ")}</span>${r.minutes?`<span class="num">${r.minutes} min</span>`:""}${d.people?`<span class="num">${d.people} pers.</span>`:""}</span>`; }
     else if(d.recipe&&!recipesLoaded) name=`<span class="nm empty">Henter …</span>`;
-    else name=`<span class="nm empty">${recipesLoaded&&!pool(d).length?"Ingen opskrifter matcher":"Ikke valgt endnu"}</span>`;
+    else name=`<span class="nm empty">${recipesLoaded&&!pool(d).length?(d.quick?`Ingen retter på højst ${QUICK_MAX} min matcher`:"Ingen opskrifter matcher"):"Ikke valgt endnu"}</span>`;
+    const people=d.people||(r&&r.servings)||4;
     return `<article class="day${d.locked?" locked":""}${d.skip?" skipped":""}${open?" open":""}${dt.toDateString()===today?" today":""}" data-i="${i}">
       <button class="dsum" data-a="toggle" aria-expanded="${open}" aria-controls="dd${i}">
         <span class="dn"><b>${DAYS3[i]}</b><span class="num">${dm(dt)}</span></span>
         <span class="dmain">${name}${meta}</span>
-        <span class="dend">${d.locked?`<span class="lockbadge">Låst</span>`:""}<svg class="chev" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="dend">${d.quick&&!d.skip?`<span class="quickbadge">Travl</span>`:""}${d.locked?`<span class="lockbadge">Låst</span>`:""}<svg class="chev" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </button>
       <div class="ddetail" id="dd${i}" ${open?"":"hidden"}>
         <div class="dtog">
           ${d.skip?"":`<button class="lockbtn" data-a="lock" aria-pressed="${d.locked}">${d.locked?"Låst":"Lås"}</button>`}
           <button class="ghost" data-a="skip">${d.skip?"Planlæg dag":"Spring over"}</button>
+          ${d.skip?"":`<button class="quickbtn" data-a="quick" aria-pressed="${!!d.quick}" ${d.locked?"disabled":""} title="Kun retter på højst ${QUICK_MAX} minutter">Travl dag</button>`}
+          ${d.skip||!r?"":`<span class="ppl" role="group" aria-label="Antal personer ${DAYN[i]}"><button data-a="pminus" aria-label="Færre personer" ${people<=1?"disabled":""}>−</button><span class="num">${people} pers.</span><button data-a="pplus" aria-label="Flere personer" ${people>=20?"disabled":""}>+</button></span>`}
         </div>
+        ${d.quick&&!d.skip?`<p class="hint">Travl dag: kun retter på højst ${QUICK_MAX} minutter.</p>`:""}
         <div class="dctrl">
           <label class="sel p"><span aria-hidden="true">Protein</span><select data-a="protein" aria-label="Protein ${DAYN[i]}" ${d.locked?"disabled":""}>${optList(PROTEINS,d.protein)}</select></label>
           <label class="sel s"><span aria-hidden="true">Tilbehør</span><select data-a="side" aria-label="Tilbehør ${DAYN[i]}" ${d.locked?"disabled":""}>${optList(SIDES,d.side)}</select></label>
@@ -170,7 +214,9 @@ $("#days").addEventListener("click",e=>{
   const b=e.target.closest("button[data-a]"); if(!b) return;
   const i=+b.closest(".day").dataset.i, k="d"+i, d=week[k], a=b.dataset.a;
   if(a==="toggle"){ openDay=openDay===i?null:i; renderDays(); const el=document.querySelector(`.day[data-i="${i}"]`); if(openDay===i&&el&&el.getBoundingClientRect().bottom>innerHeight) el.scrollIntoView({block:"nearest",behavior:"smooth"}); return; }
-  if(a==="show"){ if(d.recipe) openView(d.recipe); return; }
+  if(a==="show"){ if(d.recipe) openView(d.recipe,{people:d.people}); return; }
+  if(a==="quick"){ const nd={...d,quick:!d.quick}, patch={quick:nd.quick}; if(!d.recipe||!matches(recipes[d.recipe],nd)) patch.recipe=drawFor(i,{...week,[k]:nd}); saveDays({[k]:patch}); setStatus(""); return; }
+  if(a==="pminus"||a==="pplus"){ const r=recipes[d.recipe]; const n=(d.people||(r&&r.servings)||4)+(a==="pplus"?1:-1); saveDays({[k]:{people:Math.min(20,Math.max(1,n))}}); return; }
   if(a==="lock") saveDays({[k]:{locked:!d.locked}});
   if(a==="skip") saveDays({[k]:d.skip?{skip:false,recipe:drawFor(i,{...week,[k]:{...d,skip:false}})}:{skip:true,locked:false}});
   if(a==="draw"){ const el=b.closest(".day"); el.classList.add("flash"); setTimeout(()=>el.classList.remove("flash"),180); saveDays({[k]:{recipe:drawFor(i,week)}}); }
@@ -200,7 +246,7 @@ $("#copyPlan").onclick=async()=>{
 /* ---------- indkøbsliste ---------- */
 function shopData(){
   const inShop=i=>shop.days["d"+i]!==false;
-  const days=[0,1,2,3,4,5,6].map(i=>{const d=week["d"+i];return {label:DAYS3[i],recipe:(inShop(i)&&!d.skip&&d.recipe)?recipes[d.recipe]:null}});
+  const days=[0,1,2,3,4,5,6].map(i=>{const d=week["d"+i];const r=(inShop(i)&&!d.skip&&d.recipe)?recipes[d.recipe]:null;return {label:DAYS3[i],recipe:r,factor:r&&d.people&&r.servings?d.people/r.servings:1}});
   const built=window.Shopping.build(days);
   const isStruck=(key,basic)=>key in shop.struck?!!shop.struck[key]:!!basic;
   const extras=Object.entries(shop.extra).filter(([,t])=>t).map(([id,text])=>({key:"x:"+id,id,text}));
@@ -269,19 +315,19 @@ function openShop(){
 $("#shopBtn").onclick=()=>openShop();
 
 /* ---------- render: file ---------- */
-$("#fileProtein").innerHTML=`<option value="alle">Alle proteiner</option>`+PROTEINS.map(([v,l])=>`<option value="${v}">${l}</option>`).join("");
+$("#fileProtein").innerHTML=`<option value="alle">Alle proteiner</option><option value="fav">Favoritter</option>`+PROTEINS.map(([v,l])=>`<option value="${v}">${l}</option>`).join("");
 function renderFile(){
   const q=$("#search").value.trim().toLowerCase(), pf=$("#fileProtein").value;
-  const ids=Object.keys(recipes).filter(id=>{const r=recipes[id];return (pf==="alle"||r.protein===pf)&&(!q||r.name.toLowerCase().includes(q)||(r.ingredients||[]).some(x=>String(x).toLowerCase().includes(q)))});
+  const ids=Object.keys(recipes).filter(id=>{const r=recipes[id];return (pf==="alle"||(pf==="fav"?favs.has(id):r.protein===pf))&&(!q||r.name.toLowerCase().includes(q)||(r.ingredients||[]).some(x=>String(x).toLowerCase().includes(q)))});
   $("#fileLede").textContent=recipesLoaded?`${Object.keys(recipes).length} opskrifter. De retter danskerne oftest laver til aftensmad, plus jeres egne. Tryk på en ret for at se eller rette den.`:"Henter kartoteket …";
   if(!recipesLoaded){$("#fileList").innerHTML="";return}
   if(!Object.keys(recipes).length){$("#fileList").innerHTML=`<div class="emptystate">Kartoteket er tomt. Tryk på <b>Tilføj opskrift</b> og indsæt den første.</div>`;return}
-  if(!ids.length){$("#fileList").innerHTML=`<div class="emptystate">Ingen opskrifter matcher søgningen.</div>`;return}
+  if(!ids.length){$("#fileList").innerHTML=`<div class="emptystate">${pf==="fav"&&!favs.size?"Ingen favoritter endnu. Åbn en ret og tryk på stjernen.":"Ingen opskrifter matcher søgningen."}</div>`;return}
   $("#fileList").innerHTML=`<div style="display:flex;flex-direction:column;gap:18px">`+PROTEINS.map(([p,l])=>{
     const g=ids.filter(id=>recipes[id].protein===p).sort((a,b)=>recipes[a].name.localeCompare(recipes[b].name,"da"));
     if(!g.length) return "";
     return `<div class="group"><h3><i class="dot ${p}"></i>${l} <span class="num" style="font-weight:500">${g.length}</span></h3><div class="rlist">`+
-      g.map(id=>{const r=recipes[id];return `<button class="ritem" data-id="${esc(id)}"><span>${esc(r.name)}</span><small>${(r.sides||[]).map(s=>SL[s]||s).join(", ")}${r.minutes?" · "+r.minutes+" min":""}${r.source?' · <span class="lk">link</span>':""}</small></button>`}).join("")+`</div></div>`;
+      g.map(id=>{const r=recipes[id];return `<button class="ritem" data-id="${esc(id)}"><span>${favs.has(id)?`<span class="star" aria-label="Favorit">★</span> `:""}${esc(r.name)}</span><small>${(r.sides||[]).map(s=>SL[s]||s).join(", ")}${r.minutes?" · "+r.minutes+" min":""}${r.source?' · <span class="lk">link</span>':""}</small></button>`}).join("")+`</div></div>`;
   }).join("")+`</div>`;
 }
 $("#search").oninput=renderFile; $("#fileProtein").onchange=renderFile;
@@ -313,18 +359,26 @@ async function releaseWake(){ const w=wakeLock; wakeLock=null; if(w){ try{ await
 function kitchenOpen(){ return !$("#overlay").hidden && !!$("#kitchenToggle"); }
 document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible"&&kitchenOn&&kitchenOpen()) acquireWake(); });
 
-function openView(id){
+function renderFavBtn(id){const b=$("#favBtn");if(!b||b.dataset.id!==id)return;const on=favs.has(id);b.setAttribute("aria-pressed",String(on));b.innerHTML=`<span aria-hidden="true">${on?"★":"☆"}</span> ${on?"Favorit":"Gør til favorit"}`}
+function openView(id,ctx){
   const r=recipes[id]; if(!r) return;
+  const people=ctx&&ctx.people&&r.servings&&ctx.people!==r.servings?ctx.people:null, f=people?people/r.servings:1;
+  const {last,next}=usage(id);
+  const used=[last?`Sidst på planen ${dlong(last)}`:"Har ikke været på planen endnu",next?`planlagt igen ${dlong(next)}`:""].filter(Boolean).join(", ").replace(/\.?$/,".");
   openSheet(`<div class="sheethead"><div><span class="eyebrow" style="display:inline-flex;gap:6px;align-items:center"><i class="dot ${r.protein}"></i>${PL[r.protein]||""}</span><h2 id="sheetTitle">${esc(r.name)}</h2>
-    <div class="meta" style="margin-top:6px"><span>${(r.sides||[]).map(s=>SL[s]||s).join(", ")}</span>${r.minutes?`<span class="num">${r.minutes} min</span>`:""}${r.servings?`<span class="num">${r.servings} personer</span>`:""}</div>
+    <div class="meta" style="margin-top:6px"><span>${(r.sides||[]).map(s=>SL[s]||s).join(", ")}</span>${r.minutes?`<span class="num">${r.minutes} min</span>`:""}${r.servings?`<span class="num">${people||r.servings} personer</span>`:""}</div>
+    <p class="hint" style="margin-top:6px">${used}</p>
     ${r.source&&/^https?:\/\//i.test(r.source)?`<a class="srclink" href="${esc(r.source)}" target="_blank" rel="noopener">${r.builtin?"Se en tilsvarende opskrift":"Se den originale opskrift"} på ${esc(host(r.source))} ↗</a>`:""}</div>${closeBtn}</div>
+    <div><button class="favbtn" id="favBtn" data-id="${esc(id)}" aria-pressed="false"></button></div>
+    ${people?`<p class="hint">Mængderne er regnet om fra ${r.servings} til ${people} personer.</p>`:""}
     ${canWake?`<label class="kitchen" for="kitchenToggle"><input type="checkbox" id="kitchenToggle" role="switch" ${kitchenOn?"checked":""}><span class="sw" aria-hidden="true"></span><span class="kt"><b>Jeg er i køkkenet</b><small id="kitchenHint">Skærmen slukker ikke, mens opskriften er åben</small></span></label>`:""}
     <div class="cols">
-      <div><h3>Ingredienser</h3><ul>${(r.ingredients||[]).map(x=>`<li>${esc(x)}</li>`).join("")||"<li>Ingen ingredienser angivet</li>"}</ul></div>
+      <div><h3>Ingredienser</h3><ul>${(r.ingredients||[]).map(x=>`<li>${esc(window.Shopping.scaleLine(x,f))}</li>`).join("")||"<li>Ingen ingredienser angivet</li>"}</ul></div>
       <div><h3>Fremgangsmåde</h3><ol>${(r.steps||[]).map(x=>`<li>${esc(x)}</li>`).join("")||"<li>Ingen fremgangsmåde angivet</li>"}</ol></div>
     </div>
     <div class="sheetfoot"><button id="editBtn">Ret opskrift</button><button class="primary" data-close>Luk</button></div>`);
   $("#editBtn").onclick=()=>openEdit(id,r);
+  renderFavBtn(id); $("#favBtn").onclick=()=>toggleFav(id);
   const kt=$("#kitchenToggle");
   if(kt){
     if(kitchenOn) acquireWake();

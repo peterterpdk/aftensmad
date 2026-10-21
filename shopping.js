@@ -15,6 +15,7 @@
     bakke: ["bakke", 1], bakker: ["bakke", 1], "håndfuld": ["håndfuld", 1], stilk: ["stilk", 1], stilke: ["stilk", 1],
   };
   const PLURAL = { "dåse": "dåser", pose: "poser", skive: "skiver", pakke: "pakker", kugle: "kugler", bakke: "bakker", stilk: "stilke" };
+  const MEASURE = new Set(["g", "gram", "kg", "l", "liter", "dl", "cl", "ml", "spsk", "tsk", "knsp"]);
   const FRAC = { "½": 0.5, "¼": 0.25, "¾": 0.75, "⅓": 1 / 3, "⅔": 2 / 3 };
 
   const QTY = /^(\d+\s*\/\s*\d+|\d+(?:[.,]\d+)?\s*[½¼¾⅓⅔]?|[½¼¾⅓⅔])(?:\s*-\s*(\d+(?:[.,]\d+)?|\d+\s*\/\s*\d+))?\s*/;
@@ -86,6 +87,15 @@
     return { qty: qty == null ? null : qty * factor, unit, name };
   }
 
+  // Pæne mængder efter omregning: 333 g bliver 335 g, 2,4 dl bliver 2½ dl.
+  function nice(x, unit) {
+    if (unit === "kg" || unit === "l" || unit === "liter") return Math.round(x * 10) / 10;
+    // Stykvarer (æg, løg, fed, dåser) rundes til halve.
+    if (!MEASURE.has(unit)) return Math.max(0.5, Math.round(x * 2) / 2);
+    if (x >= 100) return Math.round(x / 5) * 5;
+    if (x >= 10) return Math.round(x);
+    return Math.round(x * 4) / 4 || Math.round(x * 100) / 100;
+  }
   function fmtNum(x) {
     const r = Math.round(x * 100) / 100;
     const fr = { 0.5: "½", 0.25: "¼", 0.75: "¾" };
@@ -95,17 +105,36 @@
   }
   function fmtQty(qty, unit) {
     if (qty == null) return "";
-    if (unit === "g" && qty >= 1000) return fmtNum(qty / 1000) + " kg";
-    if (unit === "dl" && qty >= 10) return fmtNum(qty / 10) + " l";
-    if (unit === "dl" && qty < 0.5) return fmtNum(qty * 100) + " ml";
-    if (!unit) return fmtNum(qty);
-    return fmtNum(qty) + " " + (qty > 1 && PLURAL[unit] ? PLURAL[unit] : unit);
+    if (unit === "g" && qty >= 1000) return fmtNum(nice(qty / 1000, "kg")) + " kg";
+    if (unit === "dl" && qty >= 10) return fmtNum(nice(qty / 10, "l")) + " l";
+    if (unit === "dl" && qty < 0.5) return fmtNum(nice(qty * 100, "ml")) + " ml";
+    const v = nice(qty, unit);
+    if (!unit) return fmtNum(v);
+    return fmtNum(v) + " " + (v > 1 && PLURAL[unit] ? PLURAL[unit] : unit);
   }
 
-  // days: [{label, recipe}] -> { sections: [{name, items:[{key, text, name, from:[labels], basic}]}] }
+  // Regner mængderne i én ingredienslinje om med faktoren f, fx fra 4 til 6 personer.
+  function scaleOne(s, f) {
+    const pre = (s.match(/^\s*(?:evt\.?\s+)?/i) || [""])[0];
+    const rest = s.slice(pre.length), q = rest.match(QTY);
+    if (!q || !q[0].trim()) return s;
+    const after = rest.slice(q[0].length), u = after.match(UNIT_RE), unit = u ? u[1].toLowerCase() : "";
+    const a = fmtNum(nice(num(q[1]) * f, unit)), b = q[2] != null ? "-" + fmtNum(nice(num(q[2]) * f, unit)) : "";
+    return pre + a + b + " " + after;
+  }
+  function scaleLine(line, f) {
+    const s = String(line || "");
+    if (!f || Math.abs(f - 1) < 1e-9) return s;
+    const m = s.match(/^([^:\d]{2,40}:\s*)(.+)$/);
+    if (m && /\d/.test(m[2])) return m[1] + m[2].split(/,\s*(?=\d|[½¼¾])/).map((x) => scaleOne(x.trim(), f)).join(", ");
+    return scaleOne(s, f);
+  }
+
+  // days: [{label, recipe, factor}] -> { sections: [{name, items:[{key, text, name, from:[labels], basic}]}] }
   function build(days) {
     const map = new Map();
     for (const d of days) {
+      const f = d.factor > 0 ? d.factor : 1;
       for (const raw of (d.recipe && d.recipe.ingredients) || []) {
         for (const part of splitLine(raw)) {
           const p = parse(part);
@@ -114,7 +143,7 @@
           const key = base + "|" + (p.qty == null ? "-" : p.unit || "stk");
           let it = map.get(key);
           if (!it) { const basic = isBasic(p.name); it = { key, name: p.name, unit: p.unit, qty: p.qty == null ? null : 0, noQty: p.qty == null, from: [], basic, section: basic ? "Basisvarer" : sectionOf(p.name, p.unit) }; map.set(key, it); }
-          if (p.qty != null && it.qty != null) it.qty += p.qty;
+          if (p.qty != null && it.qty != null) it.qty += p.qty * f;
           if (!it.from.includes(d.label)) it.from.push(d.label);
         }
       }
@@ -133,6 +162,6 @@
     return { sections, count: items.length };
   }
 
-  root.Shopping = { build, parse, isBasic, sectionOf, SECTIONS };
+  root.Shopping = { build, parse, isBasic, sectionOf, scaleLine, SECTIONS };
   if (typeof module !== "undefined") module.exports = root.Shopping;
 })(typeof window !== "undefined" ? window : globalThis);

@@ -79,11 +79,20 @@ label.f > :is(input,select,textarea){color:var(--fg);font-weight:400}
 .meta .p{display:inline-flex;align-items:center;gap:5px}
 .dend{display:flex;align-items:center;gap:8px;color:var(--muted)}
 .lockbadge{font-size:11px;font-weight:700;color:var(--lock);text-transform:uppercase;letter-spacing:.05em}
+.quickbadge{font-size:11px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
+.quickbtn[aria-pressed=true]{border-color:var(--accent);color:var(--accent);font-weight:700;background:var(--surface)}
+.ppl{display:inline-flex;align-items:center;gap:6px;margin-left:auto}
+.ppl button{min-width:38px;padding:6px 0;font-weight:700}
+.ppl .num{min-width:5.5ch;text-align:center;font-size:14px}
+.star{color:var(--gold)}
+.favbtn{display:inline-flex;align-items:center;gap:6px}
+.favbtn span{color:var(--gold);font-size:17px;line-height:1}
+.favbtn[aria-pressed=true]{border-color:var(--gold);font-weight:700}
 .day.open .nm{white-space:normal}
 .chev{transition:transform .18s}
 .day.open .chev{transform:rotate(180deg)}
 .ddetail{display:flex;flex-direction:column;gap:10px;padding:10px 12px 12px;border-top:1px solid var(--line)}
-.dtog{display:flex;gap:6px}
+.dtog{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .lockbtn[aria-pressed=true]{border-color:var(--lock);color:var(--lock);font-weight:700;background:var(--surface)}
 .dctrl{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,2fr) auto auto;gap:8px;align-items:center}
 .dctrl select{width:100%;font-size:14px;padding:7px 8px}

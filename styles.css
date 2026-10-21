@@ -23,7 +23,7 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-
 img{max-width:100%}
 [hidden]{display:none!important}
 
-.topband{background:var(--brand);color:var(--on-brand);padding-top:env(safe-area-inset-top,0px)}
+.topband{background:var(--brand);color:var(--on-brand);padding-top:calc(env(safe-area-inset-top,0px) * 0.67)}
 .topinner{max-width:980px;margin:0 auto;padding-block:14px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;align-items:center;justify-content:space-between;gap:12px}
 .brand{display:flex;align-items:center;gap:12px}
 .brand img{border-radius:10px;display:block}

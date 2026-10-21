@@ -4,6 +4,7 @@
 const PROTEINS = ["kylling", "okse", "gris", "fisk", "vegetar"];
 const SIDES = ["kartofler", "ris", "pasta", "nudler", "bulgur", "couscous", "salat", "brod"];
 const MODEL = process.env.CLAUDE_MODEL || "claude-haiku-5-5";
+const FALLBACK_MODEL = process.env.CLAUDE_FALLBACK_MODEL || "claude-sonnet-5-5";
 
 const SYSTEM = `Du formaterer opskrifter til et dansk opskriftskartotek for aftensmad.
 Svar KUN med ét JSON-objekt, uden forklaring og uden kodeblok:
@@ -116,6 +117,16 @@ function normalize(j, source) {
   };
 }
 
+async function callClaude(body) {
+  const r = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  const json = await r.json().catch(() => ({}));
+  return { ok: r.ok, status: r.status, json };
+}
+
 module.exports = async (req, res) => {
   if (req.method !== "POST") return send(res, 405, { error: "Brug POST." });
   if (!process.env.ANTHROPIC_API_KEY) return send(res, 500, { error: "ANTHROPIC_API_KEY mangler i Vercel." });
@@ -126,19 +137,26 @@ module.exports = async (req, res) => {
   if (typeof body === "string") { try { body = JSON.parse(body || "{}"); } catch { body = {}; } }
   body = body || {};
 
-  let source = "", userContent = "";
+  let source = "", userContent = "", tools = null;
   try {
     if (body.url) {
       const u = safeUrl(body.url);
       if (!u) return send(res, 400, { error: "Indsæt et helt link, der starter med https://" });
       source = u.href;
-      const html = await fetchPage(u);
-      const ld = findRecipeLd(html);
-      const { title, text } = pageText(html);
-      userContent = `Link: ${source}\nSidetitel: ${title}\n\n` +
-        (ld ? `Strukturerede opskriftsdata fra siden (JSON-LD):\n${JSON.stringify(ld).slice(0, 20000)}\n\nUddrag af sidens tekst:\n${text.slice(0, 6000)}`
-            : `Sidens tekst:\n${text.slice(0, 30000)}`);
-      if (!ld && text.length < 200) return send(res, 422, { error: "Siden indeholdt ingen opskrift, vi kunne læse. Prøv at indsætte teksten i stedet." });
+      let html = null;
+      try { html = await fetchPage(u); } catch { html = null; }
+      const ld = html ? findRecipeLd(html) : null;
+      const page = html ? pageText(html) : { title: "", text: "" };
+      if (ld || page.text.length >= 200) {
+        userContent = `Link: ${source}\nSidetitel: ${page.title}\n\n` +
+          (ld ? `Strukturerede opskriftsdata fra siden (JSON-LD):\n${JSON.stringify(ld).slice(0, 20000)}\n\nUddrag af sidens tekst:\n${page.text.slice(0, 6000)}`
+              : `Sidens tekst:\n${page.text.slice(0, 30000)}`);
+      } else {
+        // Siden afviste vores server (fx 403). Lad Claude hente den med sit eget værktøj.
+        const host = u.hostname.toLowerCase(), bare = host.replace(/^www\./, "");
+        tools = [{ type: "web_fetch_20250910", name: "web_fetch", max_uses: 2, allowed_domains: Array.from(new Set([bare, "www." + bare])), max_content_tokens: 40000 }];
+        userContent = `Hent opskriften på dette link med web_fetch, og formatér den:\n${source}\n\nDit endelige svar skal kun være JSON-objektet.`;
+      }
     } else if (body.text && String(body.text).trim()) {
       userContent = `Opskrift indsat af brugeren:\n"""\n${String(body.text).slice(0, 40000)}\n"""`;
       source = safeUrl(body.source) ? String(body.source).trim() : "";
@@ -146,22 +164,43 @@ module.exports = async (req, res) => {
       return send(res, 400, { error: "Indsæt et link eller en opskriftstekst." });
     }
   } catch (e) {
-    const msg = e && e.name === "AbortError" ? "Siden svarede ikke i tide." : (e && e.message) || "Siden kunne ikke hentes.";
-    return send(res, 502, { error: `${msg} Prøv at indsætte opskriftens tekst i stedet.` });
+    return send(res, 502, { error: "Siden kunne ikke hentes. Prøv at indsætte opskriftens tekst i stedet." });
   }
 
   try {
-    const r = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
-      body: JSON.stringify({ model: MODEL, max_tokens: 3000, system: SYSTEM, messages: [{ role: "user", content: userContent }] }),
-    });
-    const j = await r.json().catch(() => ({}));
-    if (!r.ok) {
-      const why = (j && j.error && j.error.message) || `status ${r.status}`;
-      return send(res, 502, { error: `Claude kunne ikke formatere opskriften (${why}).` });
+    let j = null, lastErr = "";
+    const models = tools ? [MODEL, FALLBACK_MODEL] : [MODEL];
+    for (const model of models) {
+      const messages = [{ role: "user", content: userContent }];
+      const reqBody = { model, max_tokens: 3000, system: SYSTEM, messages };
+      if (tools) reqBody.tools = tools;
+      let r = await callClaude(reqBody);
+      // Et langt værktøjsforløb kan blive sat på pause; fortsæt én gang.
+      if (r.ok && r.json.stop_reason === "pause_turn") {
+        r = await callClaude({ ...reqBody, messages: [...messages, { role: "assistant", content: r.json.content }] });
+      }
+      if (r.ok) { j = r.json; break; }
+      lastErr = (r.json && r.json.error && r.json.error.message) || `status ${r.status}`;
     }
-    const text = (j.content || []).filter((c) => c.type === "text").map((c) => c.text).join("");
+    if (!j) return send(res, 502, { error: `Claude kunne ikke formatere opskriften (${lastErr}).` });
+
+    const blocks = j.content || [];
+    if (tools) {
+      const results = blocks.filter((c) => c.type === "web_fetch_tool_result");
+      const okFetch = results.some((c) => c.content && c.content.type === "web_fetch_result");
+      if (!okFetch) {
+        const code = (results.find((c) => c.content && c.content.error_code) || {}).content?.error_code || "";
+        const why = code === "url_not_accessible" ? "Siden afviser også Claudes hentning."
+          : code === "url_not_allowed" ? "Siden må ikke hentes automatisk."
+          : code === "too_many_requests" ? "For mange hentninger lige nu. Vent lidt og prøv igen."
+          : "Siden kunne ikke hentes.";
+        return send(res, 502, { error: `${why} Prøv at indsætte opskriftens tekst i stedet.` });
+      }
+    }
+    // Brug kun teksten efter sidste værktøjsresultat, så forklaringer undervejs ikke forstyrrer.
+    let lastTool = -1;
+    blocks.forEach((c, i) => { if (c.type === "web_fetch_tool_result") lastTool = i; });
+    const text = blocks.slice(lastTool + 1).filter((c) => c.type === "text").map((c) => c.text).join("");
     const recipe = normalize(extractJson(text), source);
     if (!recipe.name) return send(res, 422, { error: "Der blev ikke fundet en opskrift. Prøv at indsætte teksten i stedet." });
     return send(res, 200, { recipe });

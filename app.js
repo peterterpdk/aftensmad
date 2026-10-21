@@ -254,7 +254,7 @@ function openPaste(){
   $("#linkBtn").onclick=async()=>{
     const url=$("#pasteUrl").value.trim(), st=$("#linkStatus"), btn=$("#linkBtn");
     if(!/^https?:\/\/\S+\.\S+/i.test(url)){st.className="status err";st.textContent="Indsæt et helt link, der starter med https://";return}
-    btn.disabled=true; btn.textContent="Henter …"; st.className="status"; st.textContent="Claude læser siden. Det tager typisk 5 til 20 sekunder.";
+    btn.disabled=true; btn.textContent="Henter …"; st.className="status"; st.textContent="Claude læser siden. Det tager typisk 5 til 30 sekunder.";
     try{ const rec=await callFormat({url}); openEdit(null,rec,"link"); }
     catch(e){ btn.disabled=false; btn.textContent="Hent opskrift"; st.className="status err"; st.textContent=e.message; }
   };

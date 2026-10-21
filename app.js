@@ -217,7 +217,7 @@ $("#addRecipe").onclick=()=>openPaste();
 /* ---------- sheet ---------- */
 let lastFocus=null;
 function openSheet(html){lastFocus=document.activeElement;$("#sheet").innerHTML=html;$("#overlay").hidden=false;document.body.style.overflow="hidden";$("#overlay").scrollTop=0}
-function closeSheet(){$("#overlay").hidden=true;document.body.style.overflow="";lastFocus&&lastFocus.focus&&lastFocus.focus()}
+function closeSheet(){releaseWake();$("#overlay").hidden=true;document.body.style.overflow="";lastFocus&&lastFocus.focus&&lastFocus.focus()}
 $("#overlay").addEventListener("click",e=>{if(e.target.id==="overlay")closeSheet()});
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("#overlay").hidden)closeSheet()});
 const closeBtn=`<button class="icon ghost" data-close aria-label="Luk">✕</button>`;
@@ -227,17 +227,42 @@ function openText(title,txt){
   openSheet(`<div class="sheethead"><h2 id="sheetTitle">${esc(title)}</h2>${closeBtn}</div><p class="hint">Markér teksten og kopiér den.</p><textarea rows="9" readonly>${esc(txt)}</textarea>`);
   const t=$("#sheet textarea"); t.focus(); t.select();
 }
+/* ---------- "Jeg er i køkkenet": hold skærmen tændt ---------- */
+const canWake="wakeLock" in navigator;
+let kitchenOn=false, wakeLock=null;
+async function acquireWake(){
+  if(!canWake||wakeLock) return !!wakeLock;
+  try{ wakeLock=await navigator.wakeLock.request("screen"); wakeLock.addEventListener("release",()=>{wakeLock=null}); return true; }
+  catch{ wakeLock=null; return false; }
+}
+async function releaseWake(){ const w=wakeLock; wakeLock=null; if(w){ try{ await w.release(); }catch{} } }
+function kitchenOpen(){ return !$("#overlay").hidden && !!$("#kitchenToggle"); }
+document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible"&&kitchenOn&&kitchenOpen()) acquireWake(); });
+
 function openView(id){
   const r=recipes[id]; if(!r) return;
   openSheet(`<div class="sheethead"><div><span class="eyebrow" style="display:inline-flex;gap:6px;align-items:center"><i class="dot ${r.protein}"></i>${PL[r.protein]||""}</span><h2 id="sheetTitle">${esc(r.name)}</h2>
     <div class="meta" style="margin-top:6px"><span>${(r.sides||[]).map(s=>SL[s]||s).join(", ")}</span>${r.minutes?`<span class="num">${r.minutes} min</span>`:""}${r.servings?`<span class="num">${r.servings} personer</span>`:""}</div>
     ${r.source&&/^https?:\/\//i.test(r.source)?`<a class="srclink" href="${esc(r.source)}" target="_blank" rel="noopener">${r.builtin?"Se en tilsvarende opskrift":"Se den originale opskrift"} på ${esc(host(r.source))} ↗</a>`:""}</div>${closeBtn}</div>
+    ${canWake?`<label class="kitchen" for="kitchenToggle"><input type="checkbox" id="kitchenToggle" role="switch" ${kitchenOn?"checked":""}><span class="sw" aria-hidden="true"></span><span class="kt"><b>Jeg er i køkkenet</b><small id="kitchenHint">Skærmen slukker ikke, mens opskriften er åben</small></span></label>`:""}
     <div class="cols">
       <div><h3>Ingredienser</h3><ul>${(r.ingredients||[]).map(x=>`<li>${esc(x)}</li>`).join("")||"<li>Ingen ingredienser angivet</li>"}</ul></div>
       <div><h3>Fremgangsmåde</h3><ol>${(r.steps||[]).map(x=>`<li>${esc(x)}</li>`).join("")||"<li>Ingen fremgangsmåde angivet</li>"}</ol></div>
     </div>
     <div class="sheetfoot"><button id="editBtn">Ret opskrift</button><button class="primary" data-close>Luk</button></div>`);
   $("#editBtn").onclick=()=>openEdit(id,r);
+  const kt=$("#kitchenToggle");
+  if(kt){
+    if(kitchenOn) acquireWake();
+    kt.onchange=async()=>{
+      kitchenOn=kt.checked;
+      if(kitchenOn){
+        const ok=await acquireWake();
+        if(!ok){ kitchenOn=false; kt.checked=false; $("#kitchenHint").textContent="Telefonen tillod det ikke. Det kræver iOS 18.4 eller nyere."; }
+        else $("#kitchenHint").textContent="Skærmen slukker ikke, mens opskriften er åben";
+      } else releaseWake();
+    };
+  }
 }
 async function callFormat(payload){
   const {data:{session}}=await sb.auth.getSession();

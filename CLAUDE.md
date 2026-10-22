@@ -11,6 +11,7 @@ Ejer: peterterpdk. Alle tekster i appen og alle svar til brugeren er på dansk. 
   - `config.js`: giver frontend `SUPABASE_URL` (kun origin) og `SUPABASE_ANON_KEY`.
   - `format.js`: link, tekst eller op til 3 billeder (`images`, base64 JPEG, højst ca. 1 MB hver) til opskrift via Claude. Henter siden selv; ved fx 403 falder den tilbage til Claudes `web_fetch`-værktøj og derefter til `CLAUDE_FALLBACK_MODEL`. Billeder gøres mindre i telefonen først, og kan Haiku ikke læse dem, prøver `CLAUDE_FALLBACK_MODEL`.
   - `search.js`: fri tekst til 3 opskriftsforslag via Claudes `web_search` med højst 2 opslag pr. søgning. Viser kun links, der kom fra selve søgningen.
+  - `invite.js`: inviterer et familiemedlem fra Profil. Opretter brugeren via Supabase Admin API med en midlertidig adgangskode (bekræftet med det samme) og sender den kun tilbage til den, der inviterer. Kræver `SUPABASE_SERVICE_ROLE_KEY` (nye `sb_secret_`-nøgler sendes kun som `apikey`).
   - `keepalive.js`: daglig cron (se `vercel.json`), så Supabase-gratisprojektet ikke går i dvale.
   - API-funktionerne kræver et gyldigt Supabase-login (`Authorization: Bearer <access_token>`).
 - Supabase (Postgres, RLS: alle loggede ind brugere må læse og skrive alt):
@@ -19,11 +20,11 @@ Ejer: peterterpdk. Alle tekster i appen og alle svar til brugeren er på dansk. 
   - `settings`: id `main`, data {ruleProtein}. Favoritter er rækker med id `fav:<opskrifts-id>` (findes = favorit) og trækkes tre gange så ofte. Reglen "ikke samme protein to dage i træk" bruges stadig ved trækning, men har ingen knap i appen.
   - Skriv til uger med RPC `patch_week(p_id, p_patch)`, som fletter pr. nøgle, så flere telefoner ikke overskriver hinanden.
   - Skema: `supabase/1-opsaetning.sql`. Nye kolonner eller tabeller kræver et nyt SQL-script, som ejeren kører i Supabase.
-- Miljøvariabler i Vercel: `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `ANTHROPIC_API_KEY`, valgfri `ANTHROPIC_WORKSPACE_ID`, `CLAUDE_MODEL`, `CLAUDE_FALLBACK_MODEL`.
+- Miljøvariabler i Vercel: `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `ANTHROPIC_API_KEY`, valgfri `ANTHROPIC_WORKSPACE_ID`, `CLAUDE_MODEL`, `CLAUDE_FALLBACK_MODEL`, `SUPABASE_SERVICE_ROLE_KEY` (hemmelig, kun til invitationer).
 
 ## Design
 
-Tre faner i det grønne topbånd: Ugen (ugeplan og indkøbsliste), Opskrifter (kartotek) og Profil (konto, skift adgangskode, log ud). Valgt fane huskes i `localStorage` (`aftensmad-tab`). Farver følger logoet (mørkegrøn #22412F, creme #F6F0DA, guld #F3C14E). Alle farver er tokens i `:root` med mørk tilstand. Mobil først: ingen vandret scroll ved 390 px. Topbåndet reserverer 1,7 gange statuslinjens højde, fordi iOS lægger en lys toning over toppen.
+Tre faner i det grønne topbånd: Ugen (ugeplan og indkøbsliste), Opskrifter (kartotek) og Profil (konto, inviter familiemedlem, skift adgangskode, log ud). Valgt fane huskes i `localStorage` (`aftensmad-tab`). Farver følger logoet (mørkegrøn #22412F, creme #F6F0DA, guld #F3C14E). Alle farver er tokens i `:root` med mørk tilstand. Mobil først: ingen vandret scroll ved 390 px. Topbåndet reserverer 1,7 gange statuslinjens højde, fordi iOS lægger en lys toning over toppen.
 
 ## Arbejdsgang
 

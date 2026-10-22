@@ -79,6 +79,18 @@
       <span class="eyebrow">Logget ind som</span>
       <b id="profileEmail">…</b>
     </div>
+    <form class="pcard" id="inviteForm" novalidate>
+      <h3>Inviter familiemedlem</h3>
+      <p class="hint">Appen opretter personen med en midlertidig adgangskode og laver en besked, du kan sende på SMS. Personen ser og ændrer den samme plan som dig.</p>
+      <label class="f">Mail<input type="email" id="inviteEmail" autocomplete="off" inputmode="email" placeholder="navn@eksempel.dk"></label>
+      <div class="status" id="inviteStatus" role="status"></div>
+      <div><button class="primary" id="inviteBtn">Opret og inviter</button></div>
+      <div id="inviteResult" hidden>
+        <p class="hint">Adgangskoden vises kun nu. Send beskeden, før du lukker siden.</p>
+        <textarea id="inviteMsg" rows="6" readonly></textarea>
+        <div class="invacts"><button type="button" class="primary" id="inviteShare" hidden>Del besked</button><button type="button" id="inviteCopy">Kopiér besked</button></div>
+      </div>
+    </form>
     <form class="pcard" id="pwForm" novalidate>
       <h3>Skift adgangskode</h3>
       <label class="f">Ny adgangskode<input type="password" id="pwNew" autocomplete="new-password" minlength="8"></label>

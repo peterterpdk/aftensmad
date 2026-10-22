@@ -584,6 +584,29 @@ $("#loginForm").addEventListener("submit",async e=>{
   st.textContent=""; startApp();
 });
 $("#logoutBtn").onclick=async()=>{ await sb.auth.signOut(); location.reload(); };
+$("#inviteForm").addEventListener("submit",async e=>{
+  e.preventDefault();
+  const email=$("#inviteEmail").value.trim(), st=$("#inviteStatus"), btn=$("#inviteBtn");
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){st.className="status err";st.textContent="Skriv en gyldig mailadresse.";return}
+  btn.disabled=true; st.className="status"; st.textContent="Opretter …"; $("#inviteResult").hidden=true;
+  try{
+    const {data:{session}}=await sb.auth.getSession();
+    if(!session) throw new Error("Log ind igen for at invitere.");
+    const r=await fetch("/api/invite",{method:"POST",headers:{"content-type":"application/json",Authorization:"Bearer "+session.access_token},body:JSON.stringify({email})});
+    const j=await r.json().catch(()=>({}));
+    if(!r.ok||!j.password) throw new Error(j.error||"Invitationen mislykkedes. Prøv igen.");
+    $("#inviteMsg").value=`Hej! Du er inviteret til vores fælles aftensmadsplan.\n\n1. Åbn ${location.origin} i Safari.\n2. Log ind med ${j.email} og adgangskoden ${j.password}\n3. Tryk Del og Føj til hjemmeskærm, så har du appen.\n4. Skift adgangskoden under Profil.`;
+    $("#inviteShare").hidden=!navigator.share; $("#inviteResult").hidden=false;
+    $("#inviteEmail").value=""; st.className="status"; st.textContent=`${j.email} er oprettet.`;
+  }catch(err){ st.className="status err"; st.textContent=err.message; }
+  finally{ btn.disabled=false; }
+});
+$("#inviteShare").onclick=async()=>{ try{ await navigator.share({text:$("#inviteMsg").value}); }catch{} };
+$("#inviteCopy").onclick=async()=>{
+  const t=$("#inviteMsg"), st=$("#inviteStatus");
+  try{ await navigator.clipboard.writeText(t.value); st.className="status"; st.textContent="Beskeden er kopieret. Indsæt den i en SMS."; }
+  catch{ t.focus(); t.select(); st.className="status"; st.textContent="Markér teksten og kopiér den."; }
+};
 $("#pwForm").addEventListener("submit",async e=>{
   e.preventDefault();
   const a=$("#pwNew").value, b=$("#pwAgain").value, st=$("#pwStatus"), btn=$("#pwBtn");

@@ -136,6 +136,8 @@ label.f > :is(input,select,textarea){color:var(--fg);font-weight:400}
 .profile{display:flex;flex-direction:column;gap:14px;max-width:560px}
 .pcard{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:12px;margin:0}
 .pcard b{font-size:17px;word-break:break-all}
+#inviteResult{display:flex;flex-direction:column;gap:8px}
+.invacts{display:flex;flex-wrap:wrap;gap:8px}
 
 /* login */
 .login{min-height:60vh;justify-content:center}

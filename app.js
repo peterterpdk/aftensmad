@@ -557,16 +557,26 @@ function obGo(step){
 $("#loginView").addEventListener("click",e=>{const b=e.target.closest("[data-ob]"); if(b) obGo(b.dataset.ob)});
 $("#obToSignup").onclick=()=>obGo("signup");
 $("#obToLogin").onclick=()=>obGo("login");
-const METHOD_NOTE={mail:"Du opretter dig med mail og en adgangskode på mindst 8 tegn.",apple:"Apple kan skjule din mail for os.",google:"Du bruger din Google-konto.",facebook:"Du bruger din Facebook-konto.",instagram:"Bemærk: Instagram tilbyder ikke længere login til almindelige personlige konti.",other:"Fx Microsoft. Fortæl os, hvad du savner."};
-document.querySelectorAll(".obm").forEach(b=>b.onclick=()=>{
-  ob.method=b.dataset.m;
-  document.querySelectorAll(".obm").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
-  $("#obMethodNote").textContent="Testversion: valget bliver kun markeret. "+METHOD_NOTE[ob.method];
+const METHOD_NOTE={mail:"Du opretter dig med mail og en adgangskode.",apple:"Apple kan skjule din mail for os.",google:"Du bruger din Google-konto.",facebook:"Du bruger din Facebook-konto.",instagram:"Bemærk: Instagram tilbyder ikke længere login til almindelige personlige konti.",other:"Fx Microsoft. Fortæl os, hvad du savner."};
+const OB_LABEL={mail:"Mail og adgangskode",apple:"Fortsæt med Apple",google:"Fortsæt med Google",facebook:"Fortsæt med Facebook",instagram:"Fortsæt med Instagram",other:"Andre muligheder"};
+function obPick(m){
+  ob.method=m;
+  document.querySelectorAll("#obSignup [data-m]").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.m===m)));
+  $("#obMethodNote").textContent="Testversion: valget bliver kun markeret. "+METHOD_NOTE[m];
   $("#obSignupStatus").textContent="";
-});
+  $("#obToPlan").textContent=m==="mail"?"Kom i gang":"Næste";
+}
+document.querySelectorAll("#obSignup .obm, #obSignup .oblink").forEach(b=>b.onclick=()=>obPick(b.dataset.m));
+["#obEmail","#obPass"].forEach(sel=>$(sel).addEventListener("input",()=>{ if(ob.method!=="mail") obPick("mail"); }));
+$("#obEye").onclick=()=>{const p=$("#obPass"),on=p.type==="password";p.type=on?"text":"password";$("#obEye").setAttribute("aria-pressed",String(on));$("#obEye").setAttribute("aria-label",on?"Skjul adgangskode":"Vis adgangskode")};
 $("#obToPlan").onclick=()=>{
-  if(!ob.method){const st=$("#obSignupStatus");st.className="status err";st.textContent="Vælg, hvordan du vil oprette dig.";return}
-  obGo("plan");
+  const st=$("#obSignupStatus"); st.className="status err";
+  if(!ob.method){st.textContent="Skriv mail og adgangskode, eller vælg en anden måde at oprette dig på.";return}
+  if(ob.method==="mail"){
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($("#obEmail").value.trim())){st.textContent="Skriv en gyldig mail.";return}
+    if($("#obPass").value.length<8){st.textContent="Adgangskoden skal være mindst 8 tegn.";return}
+  }
+  st.textContent=""; obGo("plan");
 };
 document.querySelectorAll(".tier").forEach(b=>b.onclick=()=>{
   ob.tier=b.dataset.tier;
@@ -576,7 +586,7 @@ document.querySelectorAll(".tier").forEach(b=>b.onclick=()=>{
 $("#obFinish").onclick=()=>{
   if(!ob.tier){const st=$("#obPlanStatus");st.className="status err";st.textContent="Vælg en udgave.";return}
   const lang=$("#obLang").selectedOptions[0].textContent, region=$("#obRegion").selectedOptions[0].textContent;
-  const m=document.querySelector(`.obm[data-m="${ob.method}"]`).textContent;
+  const m=OB_LABEL[ob.method];
   const t={gratis:"Gratis",fuld:"Fuld version til 49 kr. én gang",premium:"Premium version med AI til 15 kr. pr. måned"}[ob.tier];
   $("#obSummary").textContent=`Sprog: ${lang}. Region: ${region}. Oprettelse: ${m}. Udgave: ${t}.`;
   obGo("done");

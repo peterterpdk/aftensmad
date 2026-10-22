@@ -120,27 +120,28 @@
   </section>
 
   <!-- 2. Opret konto: sprog, region og metode -->
-  <section class="ob" id="obSignup" aria-labelledby="obSignupTitle" hidden>
+  <section class="ob obsign" id="obSignup" aria-labelledby="obSignupTitle" hidden>
     <div class="obhead"><button class="ghost obback" type="button" data-ob="welcome" aria-label="Tilbage">‹ Tilbage</button><span class="obstep">Trin 1 af 2</span></div>
     <h1 id="obSignupTitle">Opret konto</h1>
     <div class="obrow">
       <label class="f">Sprog<select id="obLang"><option value="da">Dansk</option><option value="nb">Norsk</option><option value="sv">Svensk</option><option value="en">English</option></select></label>
       <label class="f">Region<select id="obRegion"><option value="DK">Danmark</option><option value="NO">Norge</option><option value="SE">Sverige</option></select></label>
     </div>
-    <p class="hint">Regionen bestemmer de lokale favoritretter og butikkens afdelinger på indkøbslisten.</p>
-    <div class="f"><span id="obMethodLabel">Hvordan vil du oprette dig?</span>
-      <div class="obmethods" role="group" aria-labelledby="obMethodLabel">
-        <button type="button" class="obm" data-m="mail" aria-pressed="false">Mail og adgangskode</button>
-        <button type="button" class="obm" data-m="apple" aria-pressed="false">Fortsæt med Apple</button>
-        <button type="button" class="obm" data-m="google" aria-pressed="false">Fortsæt med Google</button>
-        <button type="button" class="obm" data-m="facebook" aria-pressed="false">Fortsæt med Facebook</button>
-        <button type="button" class="obm" data-m="instagram" aria-pressed="false">Fortsæt med Instagram</button>
-        <button type="button" class="obm" data-m="other" aria-pressed="false">Andre muligheder</button>
-      </div>
+    <div class="obmail" data-m="mail" aria-pressed="false" id="obMailBox">
+      <input type="email" id="obEmail" placeholder="Mail" autocomplete="email" inputmode="email" aria-label="Mail">
+      <div class="obpw"><input type="password" id="obPass" placeholder="Adgangskode, mindst 8 tegn" autocomplete="new-password" aria-label="Adgangskode"><button type="button" class="obeye" id="obEye" aria-label="Vis adgangskode" aria-pressed="false"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button></div>
     </div>
-    <p class="hint" id="obMethodNote">Testversion: valget bliver kun markeret.</p>
+    <button class="obgo" type="button" id="obToPlan">Kom i gang</button>
+    <div class="obor"><span>eller</span></div>
+    <div class="obmethods" role="group" aria-label="Opret dig med en anden konto">
+      <button type="button" class="obm obm-google" data-m="google" aria-pressed="false">Fortsæt med Google</button>
+      <button type="button" class="obm obm-apple" data-m="apple" aria-pressed="false">Fortsæt med Apple</button>
+      <button type="button" class="obm obm-facebook" data-m="facebook" aria-pressed="false">Fortsæt med Facebook</button>
+      <button type="button" class="obm obm-instagram" data-m="instagram" aria-pressed="false">Fortsæt med Instagram</button>
+      <button type="button" class="oblink" data-m="other" aria-pressed="false">Andre muligheder</button>
+    </div>
+    <p class="hint obnote" id="obMethodNote">Testversion: valget bliver kun markeret.</p>
     <div class="status" id="obSignupStatus" role="status"></div>
-    <button class="primary" type="button" id="obToPlan">Næste</button>
   </section>
 
   <!-- 3. Vælg udgave -->

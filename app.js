@@ -1,4 +1,4 @@
-/* Planlæg ugens aftensmad: web-app på Supabase.
+/* Planlæg ugens aftensmad: web-app på Supabase. Tre faner: Ugen, Opskrifter og Profil.
    Alle funktioner fra den tidligere side: ugeplan med trækning, filtre, lås, spring over,
    regler, kopiér plan, kartotek med søgning, vis/ret/slet, tilføj via link, tekst, billede eller selv.
    Travle dage (kun hurtige retter), antal personer pr. dag og favoritter. */
@@ -538,9 +538,28 @@ function openEdit(id,r,via){
 }
 
 /* ---------- login & boot ---------- */
-function show(view){ $("#bootView").hidden=view!=="boot"; $("#loginView").hidden=view!=="login"; $("#appView").hidden=view!=="app"; $("#logoutBtn").hidden=view!=="app"; }
+function show(view){ $("#bootView").hidden=view!=="boot"; $("#loginView").hidden=view!=="login"; $("#appView").hidden=view!=="app"; $("#tabs").hidden=view!=="app"; }
+
+/* ---------- faner: Ugen, Opskrifter, Profil ---------- */
+const TABS=["week","recipes","profile"];
+function setTab(t,focus){
+  if(!TABS.includes(t)) t="week";
+  for(const x of TABS){ const b=$("#tab-"+x), on=x===t; b.setAttribute("aria-selected",String(on)); b.tabIndex=on?0:-1; $("#panel-"+x).hidden=!on; }
+  try{localStorage.setItem("aftensmad-tab",t)}catch{}
+  if(focus) $("#tab-"+t).focus();
+  window.scrollTo(0,0);
+}
+$("#tabs").addEventListener("click",e=>{const b=e.target.closest("[data-tab]");if(b)setTab(b.dataset.tab)});
+$("#tabs").addEventListener("keydown",e=>{
+  if(!["ArrowLeft","ArrowRight","Home","End"].includes(e.key)) return;
+  const cur=TABS.findIndex(x=>$("#tab-"+x).getAttribute("aria-selected")==="true");
+  const n=e.key==="Home"?0:e.key==="End"?TABS.length-1:(cur+(e.key==="ArrowRight"?1:-1)+TABS.length)%TABS.length;
+  e.preventDefault(); setTab(TABS[n],true);
+});
+(()=>{let t="week";try{t=localStorage.getItem("aftensmad-tab")||"week"}catch{}setTab(t)})();
 async function startApp(){
   show("app");
+  sb.auth.getSession().then(({data})=>{const u=data&&data.session&&data.session.user;$("#profileEmail").textContent=(u&&u.email)||"Ukendt bruger"});
   if(started) return; started=true;
   renderWeekLabel(); renderDays(); renderFile();
   subscribe();
@@ -565,6 +584,17 @@ $("#loginForm").addEventListener("submit",async e=>{
   st.textContent=""; startApp();
 });
 $("#logoutBtn").onclick=async()=>{ await sb.auth.signOut(); location.reload(); };
+$("#pwForm").addEventListener("submit",async e=>{
+  e.preventDefault();
+  const a=$("#pwNew").value, b=$("#pwAgain").value, st=$("#pwStatus"), btn=$("#pwBtn");
+  if(a.length<8){st.className="status err";st.textContent="Adgangskoden skal være mindst 8 tegn.";return}
+  if(a!==b){st.className="status err";st.textContent="De to adgangskoder er ikke ens.";return}
+  btn.disabled=true; st.className="status"; st.textContent="Gemmer …";
+  const {error}=await sb.auth.updateUser({password:a});
+  btn.disabled=false;
+  if(error){st.className="status err";st.textContent=/different|same/i.test(error.message||"")?"Den nye adgangskode skal være en anden end den gamle.":"Adgangskoden blev ikke ændret. Prøv igen.";return}
+  $("#pwNew").value=""; $("#pwAgain").value=""; st.className="status"; st.textContent="Adgangskoden er ændret. Brug den næste gang, du logger ind.";
+});
 document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible"&&started){ subscribe(); refreshAll(); } });
 
 (async()=>{

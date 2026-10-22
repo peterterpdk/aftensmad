@@ -1,5 +1,5 @@
-/* Layout: green brand band on top (paints under the iPhone status bar), then one column:
-   week planner, recipe file, feature ideas. Colours follow the green-plate logo. */
+/* Layout: green brand band on top (paints under the iPhone status bar) with three tabs,
+   Ugen, Opskrifter and Profil, each showing one panel. Colours follow the green-plate logo. */
 :root{
   color-scheme:light;
   --bg:#F1F3EE; --surface:#FFFFFF; --sunk:#F7F8F4; --fg:#1C2A21; --muted:#5A675F; --line:#D8DED6;
@@ -30,6 +30,12 @@ img{max-width:100%}
 .brand span{display:block;font-size:13px;opacity:.85;line-height:1.1}
 .brand b{display:block;font-size:24px;font-weight:700;letter-spacing:-.01em;line-height:1.1}
 .onband{color:var(--on-brand);border-color:color-mix(in srgb,var(--on-brand) 35%,transparent)}
+/* faner i det grønne bånd */
+.tabs{max-width:980px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px));display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.tabs button{background:transparent;color:var(--on-brand);border:1px solid color-mix(in srgb,var(--on-brand) 30%,transparent);border-radius:999px;font-weight:600;min-height:40px;padding:6px 10px}
+.tabs button:hover:not(:disabled){border-color:var(--on-brand)}
+.tabs button[aria-selected=true]{background:var(--gold);border-color:var(--gold);color:#1C2A21}
+.tabs button:focus-visible{outline-color:var(--gold)}
 
 .wrap{max-width:980px;margin:0 auto;padding-block:24px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:36px}
 h1,h2,h3{font-weight:700;letter-spacing:-.01em;text-wrap:balance;margin:0}
@@ -126,12 +132,10 @@ label.f > :is(input,select,textarea){color:var(--fg);font-weight:400}
 .ritem small .lk{color:var(--accent)}
 .emptystate{border:1px dashed var(--line);border-radius:12px;padding:20px;color:var(--muted)}
 
-/* ideas */
-.ideasec{display:flex;flex-direction:column;gap:12px}
-.ideas{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
-.idea{border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--surface);display:flex;flex-direction:column;gap:4px}
-.idea p{margin:0;color:var(--muted);font-size:14px}
-.idea .tag{align-self:flex-start;font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--lock)}
+/* profil */
+.profile{display:flex;flex-direction:column;gap:14px;max-width:560px}
+.pcard{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:12px;margin:0}
+.pcard b{font-size:17px;word-break:break-all}
 
 /* login */
 .login{min-height:60vh;justify-content:center}

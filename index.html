@@ -25,12 +25,16 @@
       <img src="/icons/icon-192.png" alt="" width="40" height="40">
       <div><span>Planlæg ugens</span><b>aftensmad</b></div>
     </div>
-    <button class="ghost onband" id="logoutBtn" hidden>Log ud</button>
   </div>
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Sider" hidden>
+    <button role="tab" id="tab-week" aria-controls="panel-week" aria-selected="true" data-tab="week">Ugen</button>
+    <button role="tab" id="tab-recipes" aria-controls="panel-recipes" aria-selected="false" data-tab="recipes" tabindex="-1">Opskrifter</button>
+    <button role="tab" id="tab-profile" aria-controls="panel-profile" aria-selected="false" data-tab="profile" tabindex="-1">Profil</button>
+  </nav>
 </div>
 
 <main class="wrap" id="appView" hidden>
-  <section class="plan" aria-labelledby="planTitle">
+  <section class="plan" id="panel-week" role="tabpanel" aria-labelledby="tab-week">
     <div class="planhead">
       <div>
         <h2 id="planTitle">Ugens aftensmad</h2>
@@ -51,7 +55,7 @@
     </div>
   </section>
 
-  <section class="file" aria-labelledby="fileTitle">
+  <section class="file" id="panel-recipes" role="tabpanel" aria-labelledby="tab-recipes" hidden>
     <div>
       <span class="eyebrow">Kartotek</span>
       <h2 id="fileTitle">Opskrifter</h2>
@@ -65,16 +69,27 @@
     <div id="fileList"></div>
   </section>
 
-  <section aria-labelledby="ideaTitle" class="ideasec">
+  <section class="profile" id="panel-profile" role="tabpanel" aria-labelledby="tab-profile" hidden>
     <div>
-      <span class="eyebrow">Næste skridt</span>
-      <h2 id="ideaTitle">Forslag til nye funktioner</h2>
-      <p class="lede">Alle forslag er bygget. Sig til, hvis du har nye idéer.</p>
+      <span class="eyebrow">Profil</span>
+      <h2>Din konto</h2>
+      <p class="lede">Planen, opskrifterne og indkøbslisten er fælles for alle i familien. Ændringer vises med det samme på alles telefoner.</p>
     </div>
-    <div class="ideas">
-      <div class="idea"><span class="tag">Nyt</span><h3>Travle dage</h3><p>Tryk Travl dag på en dag, så trækningen kun vælger retter på højst 30 minutter.</p></div>
-      <div class="idea"><span class="tag">Nyt</span><h3>Antal personer</h3><p>Sæt antal personer pr. dag med minus og plus. Opskriften og indkøbslisten regnes om.</p></div>
-      <div class="idea"><span class="tag">Nyt</span><h3>Favoritter</h3><p>Tryk på stjernen i en opskrift. Favoritter trækkes oftere, og du kan se, hvornår retten sidst var på planen.</p></div>
+    <div class="pcard">
+      <span class="eyebrow">Logget ind som</span>
+      <b id="profileEmail">…</b>
+    </div>
+    <form class="pcard" id="pwForm" novalidate>
+      <h3>Skift adgangskode</h3>
+      <label class="f">Ny adgangskode<input type="password" id="pwNew" autocomplete="new-password" minlength="8"></label>
+      <label class="f">Gentag ny adgangskode<input type="password" id="pwAgain" autocomplete="new-password" minlength="8"></label>
+      <div class="status" id="pwStatus" role="status"></div>
+      <div><button class="primary" id="pwBtn">Gem ny adgangskode</button></div>
+    </form>
+    <div class="pcard">
+      <h3>Log ud</h3>
+      <p class="hint">Du skal logge ind igen med mail og adgangskode på denne telefon.</p>
+      <div><button class="danger" id="logoutBtn">Log ud</button></div>
     </div>
   </section>
 </main>

@@ -1,6 +1,6 @@
 /* Planlæg ugens aftensmad: web-app på Supabase. Tre faner: Ugen, Opskrifter og Profil.
    Alle funktioner fra den tidligere side: ugeplan med trækning, filtre, lås, spring over,
-   regler, kopiér plan, kartotek med søgning, vis/ret/slet, tilføj via link, tekst, billede eller selv.
+   regler, kopiér plan, kartotek med søgning, vis/ret/slet, tilføj med AI, via link, tekst, billede eller selv.
    Travle dage (kun hurtige retter), antal personer pr. dag og favoritter. */
 "use strict";
 
@@ -420,10 +420,10 @@ async function shrinkPhoto(file){
 }
 function openPaste(){
   openSheet(`<div class="sheethead"><h2 id="sheetTitle">Tilføj opskrift</h2>${closeBtn}</div>
-    <form class="f" id="searchForm" novalidate><label for="searchQ">Søg efter en ret</label>
-      <div class="linkrow"><input type="search" id="searchQ" placeholder="Fx pasta kødsovs" autocomplete="off" enterkeyhint="search"><button class="primary" id="searchBtn">Find forslag</button></div></form>
-    <div class="status" id="searchStatus" role="status"></div>
-    <ul class="sres" id="searchRes"></ul>
+    <form class="f" id="aiForm" novalidate><label for="aiDish">Lav en opskrift med AI</label>
+      <div class="linkrow"><input type="search" id="aiDish" placeholder="Fx pasta kødsovs" autocomplete="off" enterkeyhint="go" maxlength="120"><button class="primary" id="aiBtn">Lav opskrift</button></div></form>
+    <p class="hint">Skriv navnet på en ret. Claude skriver en opskrift til 4 personer, som du kan rette eller gemme.</p>
+    <div class="status" id="aiStatus" role="status"></div>
     <div class="or">eller indsæt et link</div>
     <label class="f">Link til en opskrift på nettet
       <div class="linkrow"><input type="url" id="pasteUrl" placeholder="https://" autocomplete="off"><button id="linkBtn">Hent opskrift</button></div></label>
@@ -438,34 +438,14 @@ function openPaste(){
     <label class="f">Opskriftstekst<textarea id="pasteTxt" rows="7" placeholder="Indsæt opskriften i et hvilket som helst format"></textarea></label>
     <div class="status" id="pasteStatus" role="status"></div>
     <div class="sheetfoot"><button class="ghost" id="manualBtn">Udfyld selv</button><button id="fmtBtn">Formatér tekst</button></div>`);
-  $("#searchForm").addEventListener("submit",async e=>{
+  $("#aiForm").addEventListener("submit",async e=>{
     e.preventDefault();
-    const q=$("#searchQ").value.trim(), st=$("#searchStatus"), btn=$("#searchBtn"), list=$("#searchRes");
-    if(q.length<2){st.className="status err";st.textContent="Skriv hvad du har lyst til, fx pasta kødsovs.";return}
-    btn.disabled=true; btn.textContent="Søger …"; list.innerHTML=""; st.className="status"; st.textContent="Claude søger efter opskrifter. Det tager typisk 10 til 30 sekunder.";
-    try{
-      const {data:{session}}=await sb.auth.getSession();
-      if(!session) throw new Error("Log ind igen for at søge.");
-      const r=await fetch("/api/search",{method:"POST",headers:{"content-type":"application/json",Authorization:"Bearer "+session.access_token},body:JSON.stringify({query:q})});
-      const j=await r.json().catch(()=>({}));
-      if(!r.ok||!Array.isArray(j.results)) throw new Error(j.error||"Søgningen mislykkedes. Prøv igen.");
-      if(!j.results.length) throw new Error("Ingen forslag fundet. Prøv med andre ord.");
-      const known=new Set(Object.values(recipes).map(x=>(x.source||"").replace(/\/$/,"")));
-      st.textContent=`${j.results.length} forslag til "${q}". Tryk Tilføj for at hente opskriften ind.`;
-      list.innerHTML=j.results.map((x,i)=>`<li class="sr">
-        <div class="srt"><b>${esc(x.title||x.site)}</b><small>${esc(x.site)}${x.note?" · "+esc(x.note):""}</small></div>
-        <div class="sra"><a class="srlink" href="${esc(x.url)}" target="_blank" rel="noopener">Se ↗</a>
-        ${known.has(String(x.url).replace(/\/$/,""))?`<span class="hint">Findes allerede</span>`:`<button class="primary" data-add="${i}">Tilføj</button>`}</div></li>`).join("");
-      list.onclick=async ev=>{
-        const b=ev.target.closest("[data-add]"); if(!b) return;
-        const x=j.results[+b.dataset.add];
-        list.querySelectorAll("[data-add]").forEach(k=>k.disabled=true); b.textContent="Henter …";
-        st.className="status"; st.textContent="Claude henter opskriften. Det tager typisk 5 til 30 sekunder.";
-        try{ const rec=await callFormat({url:x.url}); openEdit(null,rec,"link"); }
-        catch(err){ list.querySelectorAll("[data-add]").forEach(k=>k.disabled=false); b.textContent="Tilføj"; st.className="status err"; st.textContent=err.message; }
-      };
-    }catch(err){ st.className="status err"; st.textContent=err.message; }
-    finally{ btn.disabled=false; btn.textContent="Find forslag"; }
+    const dish=$("#aiDish").value.trim(), st=$("#aiStatus"), btn=$("#aiBtn");
+    if(dish.length<2){st.className="status err";st.textContent="Skriv navnet på en ret, fx pasta kødsovs.";return}
+    btn.disabled=true; btn.textContent="Skriver …"; st.className="status"; st.textContent="Claude skriver opskriften. Det tager typisk 5 til 15 sekunder.";
+    try{ const rec=await callFormat({dish}); openEdit(null,rec,"ai"); }
+    catch(err){ st.className="status err"; st.textContent=err.message; }
+    finally{ btn.disabled=false; btn.textContent="Lav opskrift"; }
   });
   $("#manualBtn").onclick=()=>openEdit(null,{name:"",protein:"kylling",sides:[],minutes:30,servings:4,ingredients:[],steps:[],source:$("#pasteUrl").value.trim()});
   $("#linkBtn").onclick=async()=>{
@@ -498,9 +478,9 @@ function openPaste(){
 }
 function slugify(name){return (name.toLowerCase().replace(/æ/g,"ae").replace(/ø/g,"oe").replace(/å/g,"aa").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,50)||"opskrift")+"-"+Math.random().toString(36).slice(2,6)}
 function openEdit(id,r,via){
-  const title=id?"Ret opskrift":via==="link"?"Gennemse og godkend":via==="text"||via==="image"?"Tjek og gem opskriften":"Ny opskrift";
+  const title=id?"Ret opskrift":via==="link"?"Gennemse og godkend":via==="text"||via==="image"||via==="ai"?"Tjek og gem opskriften":"Ny opskrift";
   openSheet(`<div class="sheethead"><h2 id="sheetTitle">${title}</h2>${closeBtn}</div>
-    ${via?`<p class="hint">Claude har ${via==="link"?"hentet":via==="image"?"læst":"formateret"} opskriften${via==="image"?" fra billedet":""}. Ret det, der ikke passer, eller godkend den som den er.</p>`:""}
+    ${via==="ai"?`<p class="hint">Claude har skrevet opskriften. Tjek mængder og tider, og ret det, der ikke passer, før du gemmer.</p>`:via?`<p class="hint">Claude har ${via==="link"?"hentet":via==="image"?"læst":"formateret"} opskriften${via==="image"?" fra billedet":""}. Ret det, der ikke passer, eller godkend den som den er.</p>`:""}
     <form id="editForm" class="formgrid" novalidate>
       <label class="f wide">Navn<input type="text" id="eName" required value="${esc(r.name)}"></label>
       <label class="f">Protein<select id="eProtein">${PROTEINS.map(([v,l])=>`<option value="${v}"${v===r.protein?" selected":""}>${l}</option>`).join("")}</select></label>

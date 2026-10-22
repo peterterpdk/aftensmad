@@ -183,8 +183,8 @@ label.f > :is(input,select,textarea){color:var(--fg);font-weight:400}
 .oblink{background:none;border:0;min-height:36px;color:var(--muted);text-decoration:underline;text-underline-offset:3px;font-weight:600;align-self:center}
 .oblink[aria-pressed=true]{color:var(--fg);text-decoration-color:var(--gold);text-decoration-thickness:2px}
 .obnote{text-align:center}
-.obpick{border:0;margin:0;padding:14px;width:100%;min-width:0;text-align:left;background:var(--sunk);border-radius:14px;display:flex;flex-direction:column;gap:10px}
-.obpick legend{float:left;width:100%;padding:0;font-weight:700;font-size:15px}
+.obpick{border:0;margin:0;padding:14px;box-sizing:border-box;width:100%;min-width:0;text-align:left;background:var(--sunk);border-radius:14px;display:flex;flex-direction:column;gap:10px}
+.obpicktitle{margin:0;font-weight:700;font-size:15px}
 .obpick .hint{margin:0}
 .obdishbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
 .obdishbar .ghost{min-height:40px}

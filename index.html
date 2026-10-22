@@ -112,14 +112,14 @@
     <img src="/icons/icon-192.png" alt="" width="96" height="96">
     <div><h1 id="obWelcomeTitle">Dinnerweek</h1><p class="obsub">What’s for dinner?</p></div>
     <p class="oblead" data-i18n="w.lead"></p>
-    <fieldset class="obpick">
-      <legend data-i18n="w.choose"></legend>
+    <div class="obpick" role="group" aria-labelledby="obPickTitle">
+      <p class="obpicktitle" id="obPickTitle" data-i18n="w.choose"></p>
       <div class="obrow">
         <label class="f"><span data-i18n="f.lang"></span><select id="obLang"><option value="en">English</option><option value="da">Dansk</option><option value="nb">Norsk</option><option value="sv">Svenska</option></select></label>
         <label class="f"><span data-i18n="f.region"></span><select id="obRegion" required><option value="" data-i18n="region.ph"></option><option value="DK" data-i18n="region.DK"></option><option value="NO" data-i18n="region.NO"></option><option value="SE" data-i18n="region.SE"></option></select></label>
       </div>
       <p class="hint" data-i18n="w.regionHint"></p>
-    </fieldset>
+    </div>
     <div class="obactions">
       <button class="primary" type="button" id="obToSignup" data-i18n="w.create"></button>
       <button type="button" id="obToLogin" data-i18n="w.login"></button>

@@ -381,7 +381,7 @@ function openView(id,ctx){
     ${canWake?`<label class="kitchen" for="kitchenToggle"><input type="checkbox" id="kitchenToggle" role="switch" ${kitchenOn?"checked":""}><span class="sw" aria-hidden="true"></span><span class="kt"><b>Jeg er i køkkenet</b><small id="kitchenHint">Skærmen slukker ikke, mens opskriften er åben</small></span></label>`:""}
     <div class="cols">
       <div><h3>Ingredienser</h3><ul>${(r.ingredients||[]).map(x=>`<li>${esc(window.Shopping.scaleLine(x,f))}</li>`).join("")||"<li>Ingen ingredienser angivet</li>"}</ul></div>
-      <div><h3>Fremgangsmåde</h3><ol>${(r.steps||[]).map(x=>`<li>${esc(x)}</li>`).join("")||"<li>Ingen fremgangsmåde angivet</li>"}</ol></div>
+      <div><h3>Fremgangsmåde</h3><ol>${(r.steps||[]).map(x=>`<li>${esc(unnum(x))}</li>`).join("")||"<li>Ingen fremgangsmåde angivet</li>"}</ol></div>
     </div>
     <div class="sheetfoot"><button id="editBtn">Ret opskrift</button><button class="primary" data-close>Luk</button></div>`);
   $("#editBtn").onclick=()=>openEdit(id,r);
@@ -485,6 +485,9 @@ function openPaste(){
     catch(e){ btn.disabled=false; btn.textContent="Formatér tekst"; st.className="status err"; st.textContent=e.message; }
   };
 }
+// Trin vises nummereret i redigering, men gemmes uden numre (visningen er en nummereret liste).
+const unnum=s=>String(s).replace(/^\s*(?:trin\s*)?\d{1,2}\s*[.):]\s*/i,"").trim();
+const numberSteps=list=>list.map(unnum).filter(Boolean).map((s,i)=>`${i+1}. ${s}`).join("\n");
 function slugify(name){return (name.toLowerCase().replace(/æ/g,"ae").replace(/ø/g,"oe").replace(/å/g,"aa").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,50)||"opskrift")+"-"+Math.random().toString(36).slice(2,6)}
 function openEdit(id,r,via){
   const title=id?"Ret opskrift":via==="link"?"Gennemse og godkend":via==="text"||via==="image"||via==="ai"||via==="instagram"?"Tjek og gem opskriften":"Ny opskrift";
@@ -502,7 +505,7 @@ function openEdit(id,r,via){
       <label class="f">Kilde<input type="url" id="eSrc" placeholder="https://" value="${esc(r.source||"")}"></label>
       <div class="f wide">Tilbehør<div class="sides">${SIDES.map(([v,l])=>`<label><input type="checkbox" name="eSide" value="${v}"${(r.sides||[]).includes(v)?" checked":""}> ${l}</label>`).join("")}</div></div>
       <label class="f half">Ingredienser, én pr. linje<textarea id="eIng" rows="10">${esc((r.ingredients||[]).join("\n"))}</textarea></label>
-      <label class="f half">Fremgangsmåde, ét trin pr. linje<textarea id="eSteps" rows="10">${esc((r.steps||[]).join("\n"))}</textarea></label>
+      <label class="f half">Fremgangsmåde, ét trin pr. linje<textarea id="eSteps" rows="10">${esc(numberSteps(r.steps||[]))}</textarea></label>
       ${r.note||via==="instagram"?`<label class="f wide">Note<textarea id="eNote" rows="2" placeholder="Fx hvad der er gættet. Slet noten, når opskriften er tjekket.">${esc(r.note||"")}</textarea></label>`:""}
     </form>
     <div class="status" id="editStatus" role="status"></div>
@@ -514,7 +517,7 @@ function openEdit(id,r,via){
     if(!name){st.className="status err";st.textContent="Giv opskriften et navn.";$("#eName").focus();return}
     if(!sides.length){st.className="status err";st.textContent="Vælg mindst ét tilbehør, så retten kan findes i filtrene.";return}
     const data={name,protein:$("#eProtein").value,sides,minutes:parseInt($("#eMin").value)||0,servings:parseInt($("#eServ").value)||4,
-      ingredients:$("#eIng").value.split("\n").map(s=>s.trim()).filter(Boolean),steps:$("#eSteps").value.split("\n").map(s=>s.trim()).filter(Boolean),
+      ingredients:$("#eIng").value.split("\n").map(s=>s.trim()).filter(Boolean),steps:$("#eSteps").value.split("\n").map(s=>unnum(s.trim())).filter(Boolean),
       source:$("#eSrc").value.trim(),builtin:id?!!(recipes[id]&&recipes[id].builtin):false,
       image:img,note:$("#eNote")?$("#eNote").value.trim():(r.note||"")};
     const rid=id||slugify(name);
@@ -530,6 +533,8 @@ function openEdit(id,r,via){
     if(error){$("#saveBtn").disabled=false;st.className="status err";st.textContent="Opskriften blev ikke gemt. Prøv igen.";return}
     recipes[rid]=data; renderFile(); renderDays(); openView(rid,warn?{warn}:null);
   };
+  // Nye eller slettede linjer nummereres på ny, når feltet forlades.
+  $("#eSteps").addEventListener("blur",e=>{const t=e.target;t.value=numberSteps(t.value.split("\n"))});
   const imgDel=$("#eImgDel");
   if(imgDel) imgDel.onclick=()=>{ img=""; const w=$("#eImgWrap"); if(w) w.remove(); };
   const del=$("#delBtn");

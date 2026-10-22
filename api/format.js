@@ -208,7 +208,7 @@ function normalize(j, source) {
     minutes: Math.max(0, parseInt(j.minutes, 10) || 0) || 30,
     servings: Math.max(1, parseInt(j.servings, 10) || 4),
     ingredients: list(j.ingredients),
-    steps: list(j.steps),
+    steps: list(j.steps).map((s) => s.replace(/^(?:trin\s*)?\d{1,2}\s*[.):]\s*/i, "").trim()).filter(Boolean), // appen nummererer selv
     source: source || "",
     note: String(j.note || "").trim().slice(0, 400),
   };

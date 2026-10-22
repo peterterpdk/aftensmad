@@ -19,6 +19,7 @@ let sb=null, channel=null, started=false;
 let recipes={}, recipesLoaded=false;
 let week=blankWeek(), weekOffset=0, weekLoadToken=0;
 let ruleProtein=true;
+let country="DK";     // land, som hentede opskrifter tilpasses til (settings main.data.country); kun DK indtil videre
 let shop={struck:{},extra:{},days:{}}; // indkøbsliste for den viste uge (fælles)
 let favs=new Set();   // favoritter, gemt som rækker "fav:<id>" i settings
 let history={};       // ugenøgle -> days, til "sidst på planen"
@@ -106,7 +107,7 @@ async function saveDays(patch){
 }
 
 /* ---------- data: recipes & settings ---------- */
-function rowToRecipe(r){return {name:r.name,protein:r.protein,sides:r.sides||[],minutes:r.minutes||0,servings:r.servings||4,ingredients:r.ingredients||[],steps:r.steps||[],source:r.source||"",builtin:!!r.builtin}}
+function rowToRecipe(r){return {name:r.name,protein:r.protein,sides:r.sides||[],minutes:r.minutes||0,servings:r.servings||4,ingredients:r.ingredients||[],steps:r.steps||[],source:r.source||"",builtin:!!r.builtin,image:r.image||"",note:r.note||""}}
 async function loadRecipes(){
   const {data,error}=await sb.from("recipes").select("*").limit(5000);
   if(error){recipesLoaded=true;renderFile();setStatus("Kartoteket kunne ikke hentes.",true);return}
@@ -116,6 +117,7 @@ async function loadRecipes(){
 async function loadSettings(){
   const {data}=await sb.from("settings").select("data").eq("id","main").maybeSingle();
   if(data&&data.data&&typeof data.data.ruleProtein==="boolean"){ruleProtein=data.data.ruleProtein}
+  if(data&&data.data&&typeof data.data.country==="string"&&data.data.country){country=data.data.country}
   const f=await sb.from("settings").select("id").like("id","fav:%").limit(5000);
   if(!f.error&&Array.isArray(f.data)){favs=new Set(f.data.map(x=>String(x.id).slice(4)));renderFile();renderDays()}
 }
@@ -150,6 +152,7 @@ function subscribe(){
       const fid=String((p.new&&p.new.id)||(p.old&&p.old.id)||"");
       if(fid.startsWith("fav:")){ if(p.eventType==="DELETE") favs.delete(fid.slice(4)); else favs.add(fid.slice(4)); renderFile(); renderDays(); return; }
       if(p.new&&p.new.id==="main"&&p.new.data&&typeof p.new.data.ruleProtein==="boolean"){ruleProtein=p.new.data.ruleProtein}
+      if(p.new&&p.new.id==="main"&&p.new.data&&typeof p.new.data.country==="string"&&p.new.data.country){country=p.new.data.country}
     })
     .subscribe();
 }
@@ -359,6 +362,7 @@ async function releaseWake(){ const w=wakeLock; wakeLock=null; if(w){ try{ await
 function kitchenOpen(){ return !$("#overlay").hidden && !!$("#kitchenToggle"); }
 document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible"&&kitchenOn&&kitchenOpen()) acquireWake(); });
 
+const safeImg=u=>/^https:\/\/[^\s"'<>]+$/i.test(u||"");
 function renderFavBtn(id){const b=$("#favBtn");if(!b||b.dataset.id!==id)return;const on=favs.has(id);b.setAttribute("aria-pressed",String(on));b.innerHTML=`<span aria-hidden="true">${on?"★":"☆"}</span> ${on?"Favorit":"Gør til favorit"}`}
 function openView(id,ctx){
   const r=recipes[id]; if(!r) return;
@@ -369,6 +373,9 @@ function openView(id,ctx){
     <div class="meta" style="margin-top:6px"><span>${(r.sides||[]).map(s=>SL[s]||s).join(", ")}</span>${r.minutes?`<span class="num">${r.minutes} min</span>`:""}${r.servings?`<span class="num">${people||r.servings} personer</span>`:""}</div>
     <p class="hint" style="margin-top:6px">${used}</p>
     ${r.source&&/^https?:\/\//i.test(r.source)?`<a class="srclink" href="${esc(r.source)}" target="_blank" rel="noopener">${r.builtin?"Se en tilsvarende opskrift":"Se den originale opskrift"} på ${esc(host(r.source))} ↗</a>`:""}</div>${closeBtn}</div>
+    ${ctx&&ctx.warn?`<p class="rnote warn">${esc(ctx.warn)}</p>`:""}
+    ${safeImg(r.image)?`<img class="rimg" src="${esc(r.image)}" alt="${esc(r.name)}" loading="lazy" onerror="this.remove()">`:""}
+    ${r.note?`<p class="rnote">${esc(r.note)}</p>`:""}
     <div><button class="favbtn" id="favBtn" data-id="${esc(id)}" aria-pressed="false"></button></div>
     ${people?`<p class="hint">Mængderne er regnet om fra ${r.servings} til ${people} personer.</p>`:""}
     ${canWake?`<label class="kitchen" for="kitchenToggle"><input type="checkbox" id="kitchenToggle" role="switch" ${kitchenOn?"checked":""}><span class="sw" aria-hidden="true"></span><span class="kt"><b>Jeg er i køkkenet</b><small id="kitchenHint">Skærmen slukker ikke, mens opskriften er åben</small></span></label>`:""}
@@ -395,7 +402,7 @@ function openView(id,ctx){
 async function callFormat(payload){
   const {data:{session}}=await sb.auth.getSession();
   if(!session) throw new Error("Log ind igen for at hente opskrifter.");
-  const r=await fetch("/api/format",{method:"POST",headers:{"content-type":"application/json",Authorization:"Bearer "+session.access_token},body:JSON.stringify(payload)});
+  const r=await fetch("/api/format",{method:"POST",headers:{"content-type":"application/json",Authorization:"Bearer "+session.access_token},body:JSON.stringify({...payload,country})});
   const j=await r.json().catch(()=>({}));
   if(!r.ok||!j.recipe) throw new Error(j.error||"Opskriften kunne ikke hentes. Prøv igen.");
   return j.recipe;
@@ -418,6 +425,7 @@ async function shrinkPhoto(file){
     throw new Error("Billedet er for stort. Prøv et andet billede.");
   }finally{ URL.revokeObjectURL(url); }
 }
+const isInstagram=u=>{try{return /(^|\.)(instagram\.com|instagr\.am)$/i.test(new URL(u).hostname)}catch{return false}};
 function openPaste(){
   openSheet(`<div class="sheethead"><h2 id="sheetTitle">Tilføj opskrift</h2>${closeBtn}</div>
     <form class="f" id="aiForm" novalidate><label for="aiDish">Lav en opskrift med AI</label>
@@ -425,9 +433,9 @@ function openPaste(){
     <p class="hint">Skriv navnet på en ret. Claude skriver en opskrift til 4 personer, som du kan rette eller gemme.</p>
     <div class="status" id="aiStatus" role="status"></div>
     <div class="or">eller indsæt et link</div>
-    <label class="f">Link til en opskrift på nettet
+    <label class="f">Link til en opskrift på nettet eller på Instagram
       <div class="linkrow"><input type="url" id="pasteUrl" placeholder="https://" autocomplete="off"><button id="linkBtn">Hent opskrift</button></div></label>
-    <p class="hint">Claude henter opskriften og udfylder den, så du kan rette den eller blot godkende den.</p>
+    <p class="hint">Claude henter opskriften, oversætter den og bruger danske ingredienser, så du kan rette den eller blot godkende den. Fra Instagram: tryk Del og Kopiér link på opslaget eller reelen, og indsæt det her.</p>
     <div class="status" id="linkStatus" role="status"></div>
     <div class="or">eller tag et billede</div>
     <div class="f">Billede af en opskrift fra en bog, et blad eller en seddel
@@ -451,8 +459,9 @@ function openPaste(){
   $("#linkBtn").onclick=async()=>{
     const url=$("#pasteUrl").value.trim(), st=$("#linkStatus"), btn=$("#linkBtn");
     if(!/^https?:\/\/\S+\.\S+/i.test(url)){st.className="status err";st.textContent="Indsæt et helt link, der starter med https://";return}
-    btn.disabled=true; btn.textContent="Henter …"; st.className="status"; st.textContent="Claude læser siden. Det tager typisk 5 til 30 sekunder.";
-    try{ const rec=await callFormat({url}); openEdit(null,rec,"link"); }
+    const insta=isInstagram(url);
+    btn.disabled=true; btn.textContent="Henter …"; st.className="status"; st.textContent=insta?"Claude læser opslaget fra Instagram. Mangler opskriften i teksten, leder Claude efter den eller udfylder den ud fra billedet. Det tager typisk 10 til 60 sekunder.":"Claude læser siden. Det tager typisk 5 til 30 sekunder.";
+    try{ const rec=await callFormat({url}); openEdit(null,rec,insta?"instagram":"link"); }
     catch(e){ btn.disabled=false; btn.textContent="Hent opskrift"; st.className="status err"; st.textContent=e.message; }
   };
   $("#photoBtn").onclick=()=>$("#photoIn").click();
@@ -478,9 +487,13 @@ function openPaste(){
 }
 function slugify(name){return (name.toLowerCase().replace(/æ/g,"ae").replace(/ø/g,"oe").replace(/å/g,"aa").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,50)||"opskrift")+"-"+Math.random().toString(36).slice(2,6)}
 function openEdit(id,r,via){
-  const title=id?"Ret opskrift":via==="link"?"Gennemse og godkend":via==="text"||via==="image"||via==="ai"?"Tjek og gem opskriften":"Ny opskrift";
+  const title=id?"Ret opskrift":via==="link"?"Gennemse og godkend":via==="text"||via==="image"||via==="ai"||via==="instagram"?"Tjek og gem opskriften":"Ny opskrift";
+  let img=safeImg(r.image)?r.image:"";
   openSheet(`<div class="sheethead"><h2 id="sheetTitle">${title}</h2>${closeBtn}</div>
-    ${via==="ai"?`<p class="hint">Claude har skrevet opskriften. Tjek mængder og tider, og ret det, der ikke passer, før du gemmer.</p>`:via?`<p class="hint">Claude har ${via==="link"?"hentet":via==="image"?"læst":"formateret"} opskriften${via==="image"?" fra billedet":""}. Ret det, der ikke passer, eller godkend den som den er.</p>`:""}
+    ${via==="ai"?`<p class="hint">Claude har skrevet opskriften. Tjek mængder og tider, og ret det, der ikke passer, før du gemmer.</p>`
+      :via==="instagram"?`<p class="hint">Claude har hentet opslaget fra Instagram og tilpasset det til danske ingredienser. ${r.note?"Se noten herunder, og ret det, der ikke passer.":"Ret det, der ikke passer, eller godkend den som den er."}</p>`
+      :via?`<p class="hint">Claude har ${via==="link"?"hentet":via==="image"?"læst":"formateret"} opskriften${via==="image"?" fra billedet":""}. Ret det, der ikke passer, eller godkend den som den er.</p>`:""}
+    ${img?`<div class="eimg" id="eImgWrap"><img class="rimg" src="${esc(img)}" alt="" onerror="this.parentNode.remove()"><button type="button" class="ghost" id="eImgDel">Fjern billede</button></div>`:""}
     <form id="editForm" class="formgrid" novalidate>
       <label class="f wide">Navn<input type="text" id="eName" required value="${esc(r.name)}"></label>
       <label class="f">Protein<select id="eProtein">${PROTEINS.map(([v,l])=>`<option value="${v}"${v===r.protein?" selected":""}>${l}</option>`).join("")}</select></label>
@@ -490,6 +503,7 @@ function openEdit(id,r,via){
       <div class="f wide">Tilbehør<div class="sides">${SIDES.map(([v,l])=>`<label><input type="checkbox" name="eSide" value="${v}"${(r.sides||[]).includes(v)?" checked":""}> ${l}</label>`).join("")}</div></div>
       <label class="f half">Ingredienser, én pr. linje<textarea id="eIng" rows="10">${esc((r.ingredients||[]).join("\n"))}</textarea></label>
       <label class="f half">Fremgangsmåde, ét trin pr. linje<textarea id="eSteps" rows="10">${esc((r.steps||[]).join("\n"))}</textarea></label>
+      ${r.note||via==="instagram"?`<label class="f wide">Note<textarea id="eNote" rows="2" placeholder="Fx hvad der er gættet. Slet noten, når opskriften er tjekket.">${esc(r.note||"")}</textarea></label>`:""}
     </form>
     <div class="status" id="editStatus" role="status"></div>
     <div class="sheetfoot">${id?`<button class="danger ghost" id="delBtn" style="margin-right:auto">Slet opskrift</button>`:""}<button class="ghost" data-close>Annullér</button><button class="primary" id="saveBtn">${via==="link"?"Godkend og gem":"Gem opskrift"}</button></div>`);
@@ -501,13 +515,23 @@ function openEdit(id,r,via){
     if(!sides.length){st.className="status err";st.textContent="Vælg mindst ét tilbehør, så retten kan findes i filtrene.";return}
     const data={name,protein:$("#eProtein").value,sides,minutes:parseInt($("#eMin").value)||0,servings:parseInt($("#eServ").value)||4,
       ingredients:$("#eIng").value.split("\n").map(s=>s.trim()).filter(Boolean),steps:$("#eSteps").value.split("\n").map(s=>s.trim()).filter(Boolean),
-      source:$("#eSrc").value.trim(),builtin:id?!!(recipes[id]&&recipes[id].builtin):false};
+      source:$("#eSrc").value.trim(),builtin:id?!!(recipes[id]&&recipes[id].builtin):false,
+      image:img,note:$("#eNote")?$("#eNote").value.trim():(r.note||"")};
     const rid=id||slugify(name);
     $("#saveBtn").disabled=true;
-    const {error}=await sb.from("recipes").upsert({id:rid,...data,updated_at:new Date().toISOString()});
+    let {error}=await sb.from("recipes").upsert({id:rid,...data,updated_at:new Date().toISOString()});
+    let warn="";
+    // Er supabase/4-billeder.sql ikke kørt endnu, findes kolonnerne image og note ikke. Gem så uden dem.
+    if(error&&/image|note/i.test(error.message||"")&&/column/i.test(error.message||"")){
+      const {image,note,...rest}=data;
+      ({error}=await sb.from("recipes").upsert({id:rid,...rest,updated_at:new Date().toISOString()}));
+      if(!error){ data.image=""; data.note=""; if(image||note) warn="Opskriften er gemt uden billede og note. Bed den, der styrer databasen, om at køre supabase/4-billeder.sql i Supabase."; }
+    }
     if(error){$("#saveBtn").disabled=false;st.className="status err";st.textContent="Opskriften blev ikke gemt. Prøv igen.";return}
-    recipes[rid]=data; renderFile(); renderDays(); openView(rid);
+    recipes[rid]=data; renderFile(); renderDays(); openView(rid,warn?{warn}:null);
   };
+  const imgDel=$("#eImgDel");
+  if(imgDel) imgDel.onclick=()=>{ img=""; const w=$("#eImgWrap"); if(w) w.remove(); };
   const del=$("#delBtn");
   if(del) del.onclick=async()=>{
     if(del.dataset.armed!=="1"){del.dataset.armed="1";del.textContent="Tryk igen for at slette";return}

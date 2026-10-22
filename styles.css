@@ -234,6 +234,11 @@ label.f > :is(input,select,textarea){color:var(--fg);font-weight:400}
 .sides label{display:inline-flex;gap:6px;align-items:center}
 .hint{font-size:13px;color:var(--muted);margin:0}
 a{color:var(--accent)}
+.rimg{display:block;width:100%;aspect-ratio:4/3;max-height:300px;object-fit:cover;border-radius:12px;border:1px solid var(--line);background:var(--sunk)}
+.rnote{margin:0;font-size:13px;color:var(--fg);background:var(--sunk);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:10px;padding:8px 12px}
+.rnote.warn{border-left-color:var(--warn)}
+.eimg{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.eimg .rimg{max-height:200px}
 .srclink{display:inline-flex;align-items:center;gap:4px;margin-top:10px;font-size:14px;font-weight:600;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:5px 12px;background:var(--accent-soft)}
 .kitchen{position:relative;display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--sunk);cursor:pointer;-webkit-tap-highlight-color:transparent}
 .kitchen input{position:absolute;opacity:0;width:1px;height:1px;margin:0}

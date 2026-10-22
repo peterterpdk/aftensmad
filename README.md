@@ -7,12 +7,13 @@ Familiens ugeplan for aftensmad som web-app til iPhonens hjemmeskærm.
 - `index.html`, `app.js`, `styles.css`: selve appen.
 - `shopping.js`: samler ugens ingredienser til indkøbslisten og sorterer dem efter afdeling.
 - `manifest.webmanifest` og `icons/`: navn og ikon på hjemmeskærmen.
-- `api/format.js`: henter en opskrift fra et link eller en indsat tekst og formaterer den med Claude.
-- `api/search.js`: finder 3 opskriftsforslag på nettet ud fra fri tekst (Claude med websøgning, ca. 7 øre pr. søgning).
+- `api/format.js`: henter en opskrift fra et link (også opslag og reels på Instagram), en indsat tekst eller et billede, og formaterer den med Claude på dansk med danske ingredienser.
 - `api/config.js`: giver appen adressen til databasen.
 - `api/keepalive.js`: kaldes dagligt, så gratis-databasen ikke går i dvale.
 - `supabase/1-opsaetning.sql`: tabeller, adgangsregler og live-opdatering.
 - `supabase/2-data.sql`: opskrifter og planer fra den tidligere side.
+- `supabase/3-lam.sql`: lam som proteintype.
+- `supabase/4-billeder.sql`: billede og note på opskrifter og bøtten `billeder` i Storage (bruges af opskrifter fra Instagram).
 - `vendor/`: Supabase-biblioteket (MIT-licens).
 
 ## Nøgler i Vercel (Settings > Environment Variables)

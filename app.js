@@ -433,9 +433,9 @@ function openPaste(){
     <p class="hint">Skriv navnet på en ret. Claude skriver en opskrift til 4 personer, som du kan rette eller gemme.</p>
     <div class="status" id="aiStatus" role="status"></div>
     <div class="or">eller indsæt et link</div>
-    <label class="f">Link til en opskrift på nettet eller på Instagram
+    <label class="f">Link til en opskrift på nettet, Instagram eller Facebook
       <div class="linkrow"><input type="url" id="pasteUrl" placeholder="https://" autocomplete="off"><button id="linkBtn">Hent opskrift</button></div></label>
-    <p class="hint">Claude henter opskriften, oversætter den og bruger danske ingredienser, så du kan rette den eller blot godkende den. Fra Instagram: tryk Del og Kopiér link på opslaget eller reelen, og indsæt det her.</p>
+    <p class="hint">Claude henter opskriften, oversætter den og bruger danske ingredienser, så du kan rette den eller blot godkende den. Fra Instagram eller Facebook: tryk Del og Kopiér link på opslaget eller reelen, og indsæt det her.</p>
     <div class="status" id="linkStatus" role="status"></div>
     <div class="or">eller tag et billede</div>
     <div class="f">Billede af en opskrift fra en bog, et blad eller en seddel

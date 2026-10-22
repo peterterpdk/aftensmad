@@ -1,6 +1,6 @@
 // Laver et link, en indsat tekst eller billeder af en opskrift om til en opskrift i kartotekets format.
 // Med {dish} skriver Claude selv en opskrift ud fra rettens navn, uden at søge på nettet (meget billigt).
-// Links til opslag og reels på Instagram læses via den offentlige indlejrings-side: tekst og forsidebillede.
+// Links til opslag og reels på Instagram og Facebook læses via de offentlige indlejrings-sider: tekst og forsidebillede.
 // Mangler opskriften i teksten, søger Claude efter skaberens egen opskrift og udfylder ellers selv (markeret i "note").
 // Opskriften tilpasses landet (sprog, ingredienser og enheder), se LOCALES.
 // Kræver at brugeren er logget ind, så API-nøglen ikke kan misbruges udefra.
@@ -157,6 +157,67 @@ function parseInstagramEmbed(html) {
   return { caption: caption.slice(0, 20000), author: author.slice(0, 60), image };
 }
 
+// Facebook-link? (opslag, reels, videoer, delingslinks og fb.watch)
+function isFacebook(u) {
+  const h = u.hostname.toLowerCase().replace(/^(www\.|m\.|web\.|mbasic\.)/, "");
+  return h === "facebook.com" || h === "fb.com" || h === "fb.watch";
+}
+
+function metaContent(html, prop) {
+  const tag = (html.match(new RegExp(`<meta[^>]+(?:property|name)=["']${prop}["'][^>]*>`, "i")) || [])[0];
+  const c = tag && tag.match(/\scontent=["']([^"']*)["']/i);
+  return c ? decode(c[1]).trim() : "";
+}
+
+// Læser tekst, afsender og billede fra en Facebook-side: delingsdata (og:) og opslagsteksten i indlejringen.
+// Facebooks login-side giver kun en standardtekst og et logo; den slags filtreres fra.
+function parseFacebook(html) {
+  const generic = /log (?:in|into) facebook|logge? (?:ind|inn) på facebook|logga in på facebook|see more on facebook|se mere på facebook|facebook helps you connect/i;
+  let caption = metaContent(html, "og:description");
+  const pm = html.match(/data-testid=["']post_message["'][^>]*>([\s\S]*?)<\/div>\s*<\/div>/i);
+  if (pm) { const t = htmlToText(pm[1]); if (t.length > caption.length) caption = t; }
+  if (generic.test(caption)) caption = "";
+  let author = metaContent(html, "og:title").split(/\s[|·-]\s/)[0].trim();
+  if (/^facebook$|log/i.test(author)) author = "";
+  let image = metaContent(html, "og:image");
+  if (!image) {
+    const imgs = [...html.matchAll(/<img[^>]+src=["'](https:\/\/[^"']*fbcdn\.net[^"']+)["']/gi)].map((m) => decode(m[1]));
+    image = imgs.find((x) => !/rsrc\.php|[ps]\d{2,3}x\d{2,3}|_s\d+x\d+/.test(x)) || "";
+  }
+  if (/rsrc\.php|static\.xx\.fbcdn/.test(image)) image = "";
+  return { caption: caption.slice(0, 20000), author: author.slice(0, 60), image };
+}
+
+// Prøver Facebooks officielle indlejrings-side og derefter selve linket. Bruger det svar med mest tekst.
+async function fetchFacebookPost(u) {
+  const video = u.hostname.toLowerCase().endsWith("fb.watch") || /\/(reel|reels|videos|watch)\b|\/share\/[rv]\//.test(u.pathname);
+  const plug = new URL(`https://www.facebook.com/plugins/${video ? "video" : "post"}.php`);
+  plug.searchParams.set("href", u.href); plug.searchParams.set("show_text", "true"); plug.searchParams.set("width", "500");
+  let best = null;
+  for (const target of [plug, u]) {
+    let p = null;
+    try { p = parseFacebook(await fetchPage(target)); } catch { p = null; }
+    if (p && (p.caption || p.image) && (!best || p.caption.length > best.caption.length)) best = p;
+    if (best && looksLikeRecipe(best.caption)) break;
+  }
+  return best;
+}
+
+// Teksten til Claude for et opslag fra Instagram eller Facebook.
+function socialPrompt(platform, source, post, img, loc) {
+  const full = looksLikeRecipe(post.caption);
+  const text = `Opslag på ${platform} fra ${post.author ? (platform === "Instagram" ? "@" : "") + post.author : "ukendt"}: ${source}\n\nTekst under opslaget:\n"""\n${post.caption || "(ingen tekst)"}\n"""\n\n` +
+    (img ? "Billedet er opslagets forsidebillede, ofte et stillbillede fra videoen.\n" : "") +
+    (full
+      ? `Opskriften står i teksten. Brug den, og tilpas den til ${loc.country}.`
+      : `Teksten indeholder ikke hele opskriften. Søg med web_search efter skaberens egen opskrift på netop denne ret, fx på skaberens hjemmeside. ` +
+        `Brug kun et fund, der tydeligt er samme ret fra samme skaber. Findes den ikke, så skriv selv en realistisk opskrift ud fra rettens navn, teksten` +
+        (img ? " og det, du kan se på billedet" : "") + `, og skriv i "note", hvad der kommer fra opslaget, og hvad du har gættet ` +
+        `(fx "Udfyldt af Claude: ingredienserne er set på billedet, mængder og fremgangsmåde er et bud."). Har du fundet skaberens opskrift, så skriv det i "note".`) +
+    `\nEr opslaget ikke en ret, man kan lave til aftensmad, så svar {"name": ""}. Dit endelige svar skal kun være JSON-objektet.`;
+  return { full, content: img ? [{ type: "image", source: { type: "base64", media_type: img.type, data: img.buf.toString("base64") } }, { type: "text", text }] : text };
+}
+
 // Står opskriften i teksten? Mindst 4 linjer med tal og en vis længde. Ellers må Claude søge.
 function looksLikeRecipe(text) {
   const lines = String(text || "").split("\n").filter((l) => /\d/.test(l));
@@ -240,7 +301,7 @@ module.exports = async (req, res) => {
   const loc = localeOf(body.country);
 
   let source = "", userContent = "", tools = null, toolKind = "", fromImage = false, fromDish = false;
-  let ig = null; // { code, img } for Instagram-opslag
+  let ig = null; // { name, img } for opslag fra Instagram og Facebook
   try {
     if (body.url) {
       const u = safeUrl(body.url);
@@ -251,22 +312,27 @@ module.exports = async (req, res) => {
         let post = null;
         try { post = parseInstagramEmbed(await fetchPage(new URL(`https://www.instagram.com/p/${code}/embed/captioned/`))); } catch { post = null; }
         if (!post || (!post.caption && !post.image)) {
-          return send(res, 502, { error: "Instagram ville ikke udlevere opslaget. Kopiér teksten under opslaget, og indsæt den under Indsæt selve teksten." });
+          return send(res, 502, { error: "Instagram ville ikke udlevere opslaget. Kopiér teksten under opslaget, indsæt den under Opskriftstekst, og tryk Formatér tekst." });
         }
         const img = post.image ? await fetchImage(post.image) : null;
-        ig = { code, img };
-        const full = looksLikeRecipe(post.caption);
-        const text = `Opslag på Instagram fra @${post.author || "ukendt"}: ${source}\n\nTekst under opslaget:\n"""\n${post.caption || "(ingen tekst)"}\n"""\n\n` +
-          (img ? "Billedet er opslagets forsidebillede, ofte et stillbillede fra videoen.\n" : "") +
-          (full
-            ? `Opskriften står i teksten. Brug den, og tilpas den til ${loc.country}.`
-            : `Teksten indeholder ikke hele opskriften. Søg med web_search efter skaberens egen opskrift på netop denne ret, fx på skaberens hjemmeside. ` +
-              `Brug kun et fund, der tydeligt er samme ret fra samme skaber. Findes den ikke, så skriv selv en realistisk opskrift ud fra rettens navn, teksten` +
-              (img ? " og det, du kan se på billedet" : "") + `, og skriv i "note", hvad der kommer fra opslaget, og hvad du har gættet ` +
-              `(fx "Udfyldt af Claude: ingredienserne er set på billedet, mængder og fremgangsmåde er et bud."). Har du fundet skaberens opskrift, så skriv det i "note".`) +
-          `\nEr opslaget ikke en ret, man kan lave til aftensmad, så svar {"name": ""}. Dit endelige svar skal kun være JSON-objektet.`;
-        userContent = img ? [{ type: "image", source: { type: "base64", media_type: img.type, data: img.buf.toString("base64") } }, { type: "text", text }] : text;
-        if (!full) {
+        ig = { name: `instagram/${code}`, img };
+        const sp = socialPrompt("Instagram", source, post, img, loc);
+        userContent = sp.content;
+        if (!sp.full) {
+          tools = [{ type: "web_search_20250305", name: "web_search", max_uses: 2, user_location: { type: "approximate", country: "DK", timezone: "Europe/Copenhagen" } }];
+          toolKind = "search";
+        }
+      } else if (isFacebook(u)) {
+        source = u.href;
+        const post = await fetchFacebookPost(u);
+        if (!post) {
+          return send(res, 502, { error: "Facebook ville ikke udlevere opslaget. Åbn det på Facebook, tryk og hold på teksten, og vælg Kopiér. Indsæt den under Opskriftstekst, og tryk Formatér tekst. Du kan også tage et skærmbillede og bruge Tag eller vælg billede." });
+        }
+        const img = post.image ? await fetchImage(post.image) : null;
+        ig = { name: "facebook/" + require("crypto").createHash("sha1").update(u.href).digest("hex").slice(0, 16), img };
+        const sp = socialPrompt("Facebook", source, post, img, loc);
+        userContent = sp.content;
+        if (!sp.full) {
           tools = [{ type: "web_search_20250305", name: "web_search", max_uses: 2, user_location: { type: "approximate", country: "DK", timezone: "Europe/Copenhagen" } }];
           toolKind = "search";
         }
@@ -375,7 +441,7 @@ module.exports = async (req, res) => {
     if (fromDish) recipe.note = "";
     if (ig && ig.img) {
       const ext = ig.img.type === "image/png" ? "png" : ig.img.type === "image/webp" ? "webp" : "jpg";
-      const image = await storeImage(req.headers.authorization, `instagram/${ig.code}.${ext}`, ig.img);
+      const image = await storeImage(req.headers.authorization, `${ig.name}.${ext}`, ig.img);
       if (image) recipe.image = image;
     }
     return send(res, 200, { recipe });

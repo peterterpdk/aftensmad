@@ -59,7 +59,7 @@ function renderDishes(){
   const fb=$("#obDishFallback"); fb.hidden=!st.region||!!DISHES[st.region]; if(!fb.hidden) fb.textContent=t("d.fallback",{r:t("region."+st.region)});
   const nm=$("#obDishNames"); nm.textContent=t("d.names"); nm.hidden=!t("d.names");
   $("#obDishList").innerHTML=PROT.map(p=>{const g=list.filter(d=>d[2]===p).sort((a,b)=>a[1].localeCompare(b[1],"da"));if(!g.length)return "";
-    return `<section class="ssec"><h3><i class="dot ${p}"></i> ${esc(t("p."+p))}</h3><ul>${g.map(d=>{const x=st.excluded.has(d[0]);return `<li class="srow"><button type="button" class="sitem${x?" struck":""}" data-dish="${esc(d[0])}" aria-pressed="${x}"><span class="box" aria-hidden="true"></span><span class="st">${esc(d[1])}</span></button></li>`}).join("")}</ul></section>`}).join("");
+    return `<section class="ssec"><h3><i class="dot ${p}"></i> ${esc(t("p."+p))}</h3><ul>${g.map(d=>{const x=st.excluded.has(d[0]);return `<li class="srow"><button type="button" class="sitem${x?" struck":""}" data-dish="${esc(d[0])}" aria-pressed="${!x}"><span class="box" aria-hidden="true"></span><span class="st">${esc(d[1])}</span></button></li>`}).join("")}</ul></section>`}).join("");
 }
 function go(step){
   cur=step;

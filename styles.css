@@ -189,6 +189,11 @@ label.f > :is(input,select,textarea){color:var(--fg);font-weight:400}
 .obdishbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
 .obdishbar .ghost{min-height:40px}
 .obdishes{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px 24px;align-items:start}
+/* Retter: flueben betyder "med". En udstreget ret har ingen flueben. */
+.obdishes .sitem .box{background:var(--accent);border-color:var(--accent)}
+.obdishes .sitem .box::after{content:"";position:absolute;left:5px;top:1px;width:5px;height:10px;border:solid var(--on-accent);border-width:0 2px 2px 0;transform:rotate(45deg)}
+.obdishes .sitem.struck .box{background:transparent;border-color:var(--line)}
+.obdishes .sitem.struck .box::after{content:none}
 .obdishes .ssec h3{display:flex;align-items:center;gap:8px;margin-top:8px}
 #obToTiers{position:sticky;align-self:center;width:min(100%,380px);bottom:calc(12px + env(safe-area-inset-bottom));min-height:50px;font-size:16px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
 #obFinish{min-height:48px;font-size:16px}

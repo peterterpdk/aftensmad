@@ -1,0 +1,1505 @@
+{
+  "format": "madplan.profile",
+  "version": 1,
+  "name": "Family Favourites (Norway)",
+  "summary": "Everyday dinners that Norwegian families cook week after week.",
+  "symbol": "fork.knife",
+  "settings": {
+    "noSameProteinInRow": true
+  },
+  "recipes": [
+    {
+      "id": "kjottkaker-i-brun-saus",
+      "name": "Kjøttkaker (Norwegian meat cakes) in brown gravy",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef mince",
+        "1 tsp salt",
+        "1 tbsp potato starch",
+        "½ tsp pepper",
+        "½ tsp nutmeg",
+        "2 dl milk",
+        "3 tbsp butter",
+        "3 tbsp plain flour",
+        "6 dl beef stock",
+        "1 kg potatoes",
+        "300 g frozen peas",
+        "lingonberry jam"
+      ],
+      "steps": [
+        "Mix the mince with the salt, potato starch and spices, then work in the milk a little at a time.",
+        "Shape 12–16 meat cakes with wet hands and brown them in a frying pan.",
+        "Boil the potatoes and peas.",
+        "Melt the butter in a pan, stir in the flour and cook until nut-brown. Whisk in the stock gradually.",
+        "Put the meat cakes into the gravy and leave to simmer gently for 15 minutes.",
+        "Serve with potatoes, peas and lingonberry jam."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/hjemmelagde-kjottkaker/"
+    },
+    {
+      "id": "karbonader-med-lok",
+      "name": "Karbonader (beef patties) with fried onions",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g lean beef mince (karbonadedeig)",
+        "3 onions",
+        "2 tbsp butter",
+        "1 tbsp plain flour",
+        "3 dl water",
+        "1 tsp salt",
+        "½ tsp pepper",
+        "800 g potatoes",
+        "4 carrots"
+      ],
+      "steps": [
+        "Boil the potatoes and carrots.",
+        "Slice the onions and fry them soft and golden in half the butter. Set aside.",
+        "Shape four patties, season with salt and pepper and fry for 3–4 minutes on each side.",
+        "Return the onions to the pan, sprinkle over the flour and add the water.",
+        "Simmer the patties in the gravy for 5 minutes and serve with potatoes and carrots."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/karbonader-med-lok/"
+    },
+    {
+      "id": "taco",
+      "name": "Taco (Norwegian Friday tacos)",
+      "protein": "okse",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g beef mince",
+        "1 packet taco seasoning",
+        "1 dl water",
+        "8 flour tortillas",
+        "1 iceberg lettuce",
+        "2 tomatoes",
+        "½ cucumber",
+        "1 tin sweetcorn (approx. 150 g)",
+        "150 g grated cheese",
+        "3 dl soured cream",
+        "1 jar mild taco sauce"
+      ],
+      "steps": [
+        "Brown the mince in a frying pan.",
+        "Stir in the taco seasoning and water and simmer for a few minutes.",
+        "Chop the lettuce, tomato and cucumber and put them out with the sweetcorn, cheese, soured cream and sauce.",
+        "Warm the tortillas in the oven or in a dry pan.",
+        "Let everyone fill their own tacos at the table."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/taco/"
+    },
+    {
+      "id": "spaghetti-bolognese",
+      "name": "Spaghetti bolognese",
+      "protein": "okse",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "400 g beef mince",
+        "1 onion",
+        "1 carrot",
+        "2 garlic cloves",
+        "1 tin chopped tomatoes (400 g)",
+        "2 tbsp tomato purée",
+        "1 dl water",
+        "1 tsp oregano",
+        "1 tsp salt",
+        "400 g spaghetti",
+        "grated parmesan"
+      ],
+      "steps": [
+        "Finely chop the onion, carrot and garlic and soften them in a little oil.",
+        "Add the mince and brown it.",
+        "Stir in the tomatoes, tomato purée, water, oregano and salt.",
+        "Simmer the sauce with the lid on for 20 minutes.",
+        "Cook the spaghetti and serve with the sauce and grated parmesan."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/gjester/pasta-bolognese/"
+    },
+    {
+      "id": "lasagne",
+      "name": "Lasagne",
+      "protein": "okse",
+      "sides": [
+        "salat"
+      ],
+      "minutes": 75,
+      "servings": 4,
+      "ingredients": [
+        "400 g beef mince",
+        "1 onion",
+        "1 carrot",
+        "2 tins chopped tomatoes (400 g each)",
+        "2 tbsp tomato purée",
+        "1 tsp oregano",
+        "50 g butter",
+        "4 tbsp plain flour",
+        "7 dl milk",
+        "250 g lasagne sheets",
+        "150 g grated cheese",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Make the meat sauce: brown the mince with chopped onion and grated carrot, add the tomatoes, purée and oregano and simmer for 15 minutes.",
+        "Make the white sauce: melt the butter, stir in the flour and whisk in the milk. Cook for 5 minutes and season with salt and pepper.",
+        "Layer meat sauce, sheets and white sauce in an ovenproof dish, finishing with white sauce.",
+        "Sprinkle over the grated cheese.",
+        "Bake at 200°C for about 40 minutes and serve with salad."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/lasagne/"
+    },
+    {
+      "id": "brun-lapskaus",
+      "name": "Brun lapskaus (Norwegian beef and potato stew)",
+      "protein": "okse",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 120,
+      "servings": 4,
+      "ingredients": [
+        "600 g boneless beef rib (høyrygg)",
+        "2 onions",
+        "3 tbsp butter",
+        "3 tbsp plain flour",
+        "1 l water",
+        "2 stock cubes",
+        "2 bay leaves",
+        "4 carrots",
+        "¼ swede",
+        "800 g potatoes",
+        "salt and pepper",
+        "flatbrød (Norwegian crispbread)"
+      ],
+      "steps": [
+        "Cut the meat into cubes and brown in butter in a large pot with the chopped onion.",
+        "Sprinkle over the flour and let it brown a little.",
+        "Add the water, stock cubes and bay leaves, cover and simmer for 1 hour.",
+        "Peel the carrots, swede and potatoes, cut into cubes and add to the pot.",
+        "Cook for about 30 minutes more until the potatoes start to break up.",
+        "Season with salt and pepper and serve with flatbrød."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/tradisjon/lapskaus/"
+    },
+    {
+      "id": "farikal",
+      "name": "Fårikål (lamb and cabbage stew)",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 150,
+      "servings": 4,
+      "ingredients": [
+        "1.5 kg lamb pieces for fårikål (on the bone)",
+        "1.5 kg white cabbage",
+        "2 tbsp whole black peppercorns",
+        "2 tsp salt",
+        "2 tbsp plain flour",
+        "3 dl water",
+        "1 kg potatoes"
+      ],
+      "steps": [
+        "Cut the cabbage into wedges.",
+        "Layer the meat and cabbage in a large pot, with salt, pepper and a little flour between the layers. Start with meat, fat side down.",
+        "Pour over the water and bring to the boil.",
+        "Simmer with the lid on for 2–2½ hours until the meat is tender.",
+        "Boil the potatoes and serve with the fårikål."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/tradisjon/farikal/"
+    },
+    {
+      "id": "chili-con-carne",
+      "name": "Chilli con carne",
+      "protein": "okse",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "400 g beef mince",
+        "1 onion",
+        "2 garlic cloves",
+        "1 red pepper",
+        "1 tin chopped tomatoes (400 g)",
+        "1 tin kidney beans (approx. 400 g)",
+        "2 tbsp tomato purée",
+        "1 tsp ground cumin",
+        "1 tsp paprika",
+        "1 tsp salt",
+        "3 dl rice",
+        "soured cream"
+      ],
+      "steps": [
+        "Cook the rice.",
+        "Soften the chopped onion, garlic and pepper in a little oil.",
+        "Add the mince and brown it.",
+        "Stir in the tomatoes, tomato purée, spices and drained beans.",
+        "Simmer for 15 minutes and serve with rice and a dollop of soured cream."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/chili-con-carne/"
+    },
+    {
+      "id": "hjemmelagde-hamburgere",
+      "name": "Homemade burgers",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef mince",
+        "1 tsp salt",
+        "½ tsp pepper",
+        "4 burger buns",
+        "4 cheese slices",
+        "1 tomato",
+        "lettuce leaves",
+        "1 red onion",
+        "burger sauce",
+        "800 g frozen chips"
+      ],
+      "steps": [
+        "Bake the chips in the oven according to the packet.",
+        "Divide the mince into four and shape flat burgers. Season with salt and pepper.",
+        "Fry the burgers for 3–4 minutes on each side, adding a cheese slice towards the end.",
+        "Warm the buns and slice the tomato and onion.",
+        "Build the burgers with sauce, lettuce, tomato and onion, and serve with chips."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/kos/cheeseburger-med-hamburgerdressing/"
+    },
+    {
+      "id": "langpannepizza-med-kjottdeig",
+      "name": "Langpannepizza (tray-bake pizza) with mince",
+      "protein": "okse",
+      "sides": [
+        "salat"
+      ],
+      "minutes": 75,
+      "servings": 4,
+      "ingredients": [
+        "8 dl plain flour",
+        "25 g fresh yeast",
+        "3 dl lukewarm water",
+        "2 tbsp oil",
+        "1 tsp salt",
+        "400 g beef mince",
+        "1 tsp oregano",
+        "2 dl pizza sauce",
+        "1 red pepper",
+        "300 g grated cheese"
+      ],
+      "steps": [
+        "Dissolve the yeast in the water, add the oil, salt and flour, and knead to a smooth dough. Leave to rise for 30 minutes.",
+        "Brown the mince and season with oregano and a little salt.",
+        "Roll out the dough on a baking tray lined with baking paper.",
+        "Spread over the pizza sauce and top with the mince, strips of pepper and cheese.",
+        "Bake at 225°C for 15–20 minutes and serve with salad."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/kos/langpannepizza/"
+    },
+    {
+      "id": "polsegryte",
+      "name": "Pølsegryte (sausage stew)",
+      "protein": "gris",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g kjøttpølse (Norwegian mild meat sausage)",
+        "1 onion",
+        "1 red pepper",
+        "1 tin chopped tomatoes (400 g)",
+        "1 tbsp tomato purée",
+        "2 dl cooking cream",
+        "1 tsp paprika",
+        "salt and pepper",
+        "3 dl rice"
+      ],
+      "steps": [
+        "Cook the rice.",
+        "Slice the sausage and cut the onion and pepper into pieces.",
+        "Soften the onion and pepper in a little oil and add the sausage.",
+        "Stir in the tomatoes, tomato purée, cream and paprika and simmer for 10 minutes.",
+        "Season with salt and pepper and serve with rice."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/polsegryte/"
+    },
+    {
+      "id": "makaronigrateng-med-polse",
+      "name": "Macaroni bake with sausage",
+      "protein": "gris",
+      "sides": [
+        "pasta",
+        "salat"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "300 g kjøttpølse (Norwegian mild meat sausage)",
+        "250 g macaroni",
+        "4 eggs",
+        "4 dl milk",
+        "150 g grated cheese",
+        "½ tsp salt",
+        "½ tsp pepper",
+        "3 carrots"
+      ],
+      "steps": [
+        "Cook the macaroni for slightly less than the packet time and drain.",
+        "Slice the sausage and mix with the macaroni in a greased ovenproof dish.",
+        "Whisk the eggs, milk, salt and pepper and pour over.",
+        "Sprinkle over the cheese and bake at 200°C for about 25 minutes.",
+        "Serve with grated carrots."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/makaronigrateng-med-polse/"
+    },
+    {
+      "id": "brennende-kjaerlighet",
+      "name": "Brennende kjærlighet (mash with bacon and onions)",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "1.2 kg potatoes",
+        "2 dl milk",
+        "50 g butter",
+        "1 tsp salt",
+        "200 g diced bacon",
+        "2 onions",
+        "pickled beetroot"
+      ],
+      "steps": [
+        "Peel the potatoes and boil until tender.",
+        "Fry the bacon until crisp, add the onions in wedges and fry until soft and golden.",
+        "Mash the potatoes with warm milk, butter and salt.",
+        "Spoon the mash onto plates and top with the bacon and onions.",
+        "Serve with pickled beetroot."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/tradisjon/brennende-kjarlighet/"
+    },
+    {
+      "id": "fleskepannekake",
+      "name": "Fleskepannekake (oven pancake with bacon)",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "200 g lightly salted pork belly or bacon",
+        "3 dl plain flour",
+        "6 dl milk",
+        "4 eggs",
+        "½ tsp salt",
+        "butter for frying",
+        "lingonberry jam"
+      ],
+      "steps": [
+        "Whisk the flour with half the milk to a smooth batter, then stir in the rest of the milk, the eggs and salt. Leave to rest for 15 minutes.",
+        "Cut the pork into cubes and fry until crisp in an ovenproof frying pan.",
+        "Pour the batter over the pork.",
+        "Bake in the oven at 200°C for 20–25 minutes until golden and set.",
+        "Cut into pieces and serve with lingonberry jam."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/tradisjon/fleskepannekake/"
+    },
+    {
+      "id": "ertesuppe-med-svineknoke",
+      "name": "Ertesuppe (yellow pea soup) with ham hock",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 150,
+      "servings": 4,
+      "ingredients": [
+        "500 g dried yellow peas",
+        "1 smoked ham hock (approx. 1 kg)",
+        "2 l water",
+        "1 onion",
+        "2 carrots",
+        "¼ swede",
+        "2 bay leaves",
+        "1 tsp thyme",
+        "salt and pepper",
+        "wholemeal bread"
+      ],
+      "steps": [
+        "Soak the peas in cold water overnight.",
+        "Boil the hock in the water with the bay leaves for about 1 hour, skimming as you go.",
+        "Drain the peas and add them to the pot. Cook for about 1 hour until tender.",
+        "Add the chopped onion, carrot and swede and cook for 20 minutes more.",
+        "Lift out the hock, cut the meat into pieces and return it to the soup.",
+        "Season with thyme, salt and pepper and serve with wholemeal bread."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/tradisjon/ertesuppe-med-svineknoke/"
+    },
+    {
+      "id": "svinekoteletter-med-surkal",
+      "name": "Pork chops with surkål (Norwegian sweet-sour cabbage) and potatoes",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "4 pork chops",
+        "800 g potatoes",
+        "500 g ready-made surkål (sweet-sour cabbage)",
+        "1 packet brown gravy mix",
+        "4 dl water",
+        "1 tbsp butter",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Boil the potatoes.",
+        "Heat the surkål in a saucepan.",
+        "Season the chops with salt and pepper and fry them in butter for 3–4 minutes on each side.",
+        "Whisk the gravy mix into the water and bring to the boil as directed.",
+        "Serve the chops with potatoes, surkål and gravy."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/svinekoteletter-med-surkal-og-poteter/"
+    },
+    {
+      "id": "pasta-carbonara",
+      "name": "Pasta carbonara",
+      "protein": "gris",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "400 g spaghetti",
+        "200 g diced bacon",
+        "3 eggs",
+        "1 dl grated parmesan",
+        "1 garlic clove",
+        "½ tsp pepper",
+        "salt"
+      ],
+      "steps": [
+        "Cook the spaghetti in well-salted water. Keep 1 dl of the cooking water.",
+        "Fry the bacon and crushed garlic until crisp in a large pan.",
+        "Whisk the eggs, parmesan and pepper in a bowl.",
+        "Add the hot pasta to the pan with the bacon and take the pan off the heat.",
+        "Stir in the egg mixture and a little cooking water until the sauce is creamy. Serve straight away."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/kos/pasta-carbonara/"
+    },
+    {
+      "id": "wok-med-svinekjott",
+      "name": "Pork stir-fry",
+      "protein": "gris",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "400 g pork strips",
+        "1 head of broccoli",
+        "1 red pepper",
+        "2 carrots",
+        "1 onion",
+        "3 tbsp soy sauce",
+        "1 tbsp honey",
+        "1 tsp grated ginger",
+        "2 tbsp oil",
+        "3 dl jasmine rice"
+      ],
+      "steps": [
+        "Cook the rice.",
+        "Cut the vegetables into pieces and strips.",
+        "Fry the pork quickly in oil over a high heat and set aside.",
+        "Stir-fry the vegetables for a few minutes so they stay crunchy.",
+        "Return the pork, stir in the soy sauce, honey and ginger and serve with rice."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/sunn/wok-med-svinekjott/"
+    },
+    {
+      "id": "kjottboller-i-tomatsaus",
+      "name": "Meatballs in tomato sauce",
+      "protein": "gris",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g pork mince",
+        "1 egg",
+        "½ dl dried breadcrumbs",
+        "1 tsp salt",
+        "1 onion",
+        "1 garlic clove",
+        "2 tins chopped tomatoes (400 g each)",
+        "1 tsp oregano",
+        "400 g spaghetti",
+        "grated cheese"
+      ],
+      "steps": [
+        "Mix the mince, egg, breadcrumbs and salt and roll into small balls.",
+        "Brown the meatballs in a little oil and set aside.",
+        "Soften the chopped onion and garlic, add the tomatoes and oregano and bring to the boil.",
+        "Put the meatballs into the sauce and simmer for 10–15 minutes.",
+        "Cook the spaghetti and serve with the meatballs and grated cheese."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/kjottboller-i-tomatsaus/"
+    },
+    {
+      "id": "medisterkaker-med-potetstappe",
+      "name": "Medisterkaker (pork patties) with mash and peas",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "600 g medisterdeig (seasoned pork mince)",
+        "1 kg potatoes",
+        "2 dl milk",
+        "30 g butter",
+        "300 g frozen peas",
+        "100 g diced bacon",
+        "1 packet brown gravy mix",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Boil the potatoes until tender.",
+        "Shape the pork mince into 8–12 patties and fry them through over a medium heat.",
+        "Fry the bacon until crisp and cook the peas.",
+        "Make the brown gravy as directed.",
+        "Mash the potatoes with warm milk, butter and salt, and serve with the patties, peas, bacon and gravy."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/medisterkaker-med-potetstappe-erter-og-bacon/"
+    },
+    {
+      "id": "polsepytt-i-panne",
+      "name": "Pytt i panne (sausage and potato hash)",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g kjøttpølse (Norwegian mild meat sausage)",
+        "800 g boiled potatoes",
+        "1 onion",
+        "1 red pepper",
+        "2 tbsp butter",
+        "4 eggs",
+        "salt and pepper",
+        "pickled beetroot"
+      ],
+      "steps": [
+        "Cut the potatoes, sausage, onion and pepper into small cubes.",
+        "Fry the potatoes in butter until coloured.",
+        "Add the onion, pepper and sausage and fry until everything is hot and golden.",
+        "Season with salt and pepper.",
+        "Fry the eggs and serve the hash with the eggs and pickled beetroot."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/rask-polsepytt-i-panne/"
+    },
+    {
+      "id": "kyllinggryte-med-kokosmelk",
+      "name": "Chicken and coconut milk curry",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g chicken breast strips",
+        "1 onion",
+        "1 garlic clove",
+        "2 tsp curry powder",
+        "½ tsp turmeric",
+        "4 dl coconut milk",
+        "1 dl water",
+        "1 chicken stock cube",
+        "2 carrots",
+        "150 g sugar snap peas",
+        "3 dl jasmine rice",
+        "salt"
+      ],
+      "steps": [
+        "Cook the rice.",
+        "Soften the chopped onion and garlic with the curry powder and turmeric in a little oil.",
+        "Add the chicken and fry until coloured.",
+        "Add the coconut milk, water, stock cube and sliced carrots and simmer for 10 minutes.",
+        "Add the sugar snap peas for the last few minutes, season with salt and serve with rice."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/kos/kyllinggryte-med-kokosmelk/"
+    },
+    {
+      "id": "kyllingwok-med-gronnsaker",
+      "name": "Chicken and vegetable stir-fry",
+      "protein": "kylling",
+      "sides": [
+        "nudler"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g chicken breast",
+        "250 g egg noodles",
+        "1 head of broccoli",
+        "1 red pepper",
+        "2 carrots",
+        "100 g sugar snap peas",
+        "1 garlic clove",
+        "3 tbsp soy sauce",
+        "2 tbsp sweet chilli sauce",
+        "2 tbsp oil"
+      ],
+      "steps": [
+        "Cook the noodles according to the packet.",
+        "Cut the chicken and vegetables into strips.",
+        "Fry the chicken in oil over a high heat until cooked through.",
+        "Add the garlic and vegetables and stir-fry for 3–4 minutes.",
+        "Toss in the noodles, soy sauce and sweet chilli sauce and serve straight away."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/kyllingwok-med-gronnsaker/"
+    },
+    {
+      "id": "kylling-alfredo",
+      "name": "Chicken Alfredo",
+      "protein": "kylling",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g chicken breast",
+        "400 g tagliatelle",
+        "1 tbsp butter",
+        "2 garlic cloves",
+        "3 dl cooking cream",
+        "1 dl grated parmesan",
+        "200 g broccoli",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the pasta, adding the broccoli florets for the last 3 minutes.",
+        "Cut the chicken into pieces, season and fry through in butter.",
+        "Add the garlic and cream and let the sauce reduce a little.",
+        "Stir in the parmesan and season with salt and pepper.",
+        "Toss the pasta and broccoli in the sauce and serve."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/kylling-alfredo/"
+    },
+    {
+      "id": "kyllingfilet-i-form",
+      "name": "Oven-baked chicken in curry cream sauce",
+      "protein": "kylling",
+      "sides": [
+        "ris",
+        "salat"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "4 chicken breasts",
+        "1 onion",
+        "1 red pepper",
+        "3 dl cooking cream",
+        "1 dl ketchup",
+        "2 tsp curry powder",
+        "1 tsp salt",
+        "3 dl rice",
+        "salad"
+      ],
+      "steps": [
+        "Place the chicken breasts in an ovenproof dish and sprinkle with salt.",
+        "Scatter the onion and pepper pieces around the chicken.",
+        "Mix the cream, ketchup and curry powder and pour over.",
+        "Bake at 200°C for 25–30 minutes until the chicken is cooked through.",
+        "Cook the rice and serve with salad."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/kyllingfilet-i-form/"
+    },
+    {
+      "id": "ovnsbakt-kylling-med-sotpotet",
+      "name": "Chicken traybake with sweet potato",
+      "protein": "kylling",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "600 g boneless chicken thighs",
+        "2 sweet potatoes",
+        "2 red onions",
+        "1 tin chickpeas (approx. 400 g)",
+        "3 garlic cloves",
+        "1 lemon",
+        "3 tbsp olive oil",
+        "1 tsp thyme",
+        "1 tsp salt",
+        "½ tsp pepper",
+        "parsley"
+      ],
+      "steps": [
+        "Cut the sweet potatoes and onions into pieces and spread them on a lined baking tray.",
+        "Add the chicken, drained chickpeas, garlic cloves and lemon wedges.",
+        "Drizzle with oil and season with thyme, salt and pepper.",
+        "Roast at 200°C for 30–35 minutes until the chicken is cooked through.",
+        "Scatter over parsley and serve."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/sunn/tray-bake-med-kylling/"
+    },
+    {
+      "id": "hjemmelagde-kyllingnuggets",
+      "name": "Homemade chicken nuggets",
+      "protein": "kylling",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g chicken breast",
+        "1 dl plain flour",
+        "2 eggs",
+        "2 dl dried breadcrumbs",
+        "1 tsp salt",
+        "1 tsp paprika",
+        "oil for frying",
+        "800 g potatoes",
+        "1 cucumber",
+        "3 carrots"
+      ],
+      "steps": [
+        "Cut the potatoes into wedges, toss in a little oil and salt and roast at 220°C for about 30 minutes.",
+        "Cut the chicken into bite-sized pieces.",
+        "Coat the pieces in flour, then beaten egg and finally breadcrumbs mixed with the salt and paprika.",
+        "Fry the nuggets in oil until golden and cooked through.",
+        "Serve with potato wedges and cucumber and carrot sticks."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/kyllingnuggets-med-gronn-potetsalat/"
+    },
+    {
+      "id": "butter-chicken",
+      "name": "Butter chicken",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "650 g chicken breast",
+        "1 red onion",
+        "2 garlic cloves",
+        "1 tbsp grated ginger",
+        "2 tsp garam masala",
+        "1 tsp turmeric",
+        "1 tsp ground cumin",
+        "2 tbsp butter",
+        "1 tin chopped tomatoes (400 g)",
+        "2 dl cooking cream",
+        "1 tsp honey",
+        "3 dl basmati rice",
+        "salt"
+      ],
+      "steps": [
+        "Cook the rice.",
+        "Cut the chicken into pieces and fry in butter until coloured.",
+        "Add the chopped onion, garlic, ginger and spices and fry for a couple of minutes.",
+        "Add the tomatoes, cream and honey and simmer for 10–15 minutes.",
+        "Season with salt and serve with rice."
+      ],
+      "source": "https://www.tine.no/oppskrifter/middag-og-hovedretter/kylling-og-fjarkre/butter-chicken-p%C3%A5-20-minutter"
+    },
+    {
+      "id": "kyllingsuppe-med-pasta",
+      "name": "Chicken soup with pasta and broccoli",
+      "protein": "kylling",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "300 g chicken breast",
+        "1.5 l water",
+        "2 chicken stock cubes",
+        "2 carrots",
+        "1 leek",
+        "150 g macaroni",
+        "200 g broccoli",
+        "salt and pepper",
+        "wholemeal bread"
+      ],
+      "steps": [
+        "Bring the water and stock cubes to the boil.",
+        "Add the sliced carrots and leek rings and cook for 5 minutes.",
+        "Add the macaroni and the chicken in small pieces and cook for 8 minutes.",
+        "Add the broccoli florets and cook for 3 minutes more.",
+        "Season with salt and pepper and serve with wholemeal bread."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/sunn/kyllingsuppe-med-pasta-og-brokkoli/"
+    },
+    {
+      "id": "kylling-i-pita",
+      "name": "Chicken pitta",
+      "protein": "kylling",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "500 g chicken breast",
+        "2 tsp tikka masala spice mix",
+        "1 tbsp oil",
+        "1 red pepper",
+        "1 yellow pepper",
+        "4 spring onions",
+        "2 dl natural yoghurt",
+        "8 wholemeal pitta breads",
+        "1 crisp lettuce"
+      ],
+      "steps": [
+        "Cut the chicken into strips and toss with the spice mix and oil.",
+        "Fry the chicken through in a hot pan.",
+        "Slice the peppers and spring onions and tear the lettuce.",
+        "Warm the pittas in the toaster or oven.",
+        "Fill the pittas with lettuce, vegetables, chicken and a dollop of yoghurt."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/kylling-i-pita/"
+    },
+    {
+      "id": "kylling-i-form-med-sopp",
+      "name": "Baked chicken legs with mushroom sauce",
+      "protein": "kylling",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "8 chicken thighs",
+        "250 g button mushrooms",
+        "1 onion",
+        "1 packet mushroom sauce mix",
+        "3 dl water",
+        "2 dl crème fraîche",
+        "salt and pepper",
+        "1 kg potatoes",
+        "chives"
+      ],
+      "steps": [
+        "Place the chicken in an ovenproof dish, season with salt and pepper and roast at 200°C for 20 minutes.",
+        "Fry the mushrooms and onion in a little butter.",
+        "Whisk the sauce mix into the water, bring to the boil and stir in the crème fraîche.",
+        "Spread the mushrooms and sauce over the chicken and bake for another 15–20 minutes.",
+        "Boil the potatoes and serve with chopped chives on top."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/kylling-i-form/"
+    },
+    {
+      "id": "kyllinggryte-med-gronnsaker",
+      "name": "Chicken and vegetable stew",
+      "protein": "kylling",
+      "sides": [
+        "kartofler",
+        "brod"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "450 g chicken breast",
+        "500 g waxy potatoes",
+        "3 carrots",
+        "2 celery sticks",
+        "1 onion",
+        "1 tin chopped tomatoes (400 g)",
+        "2 tbsp tomato purée",
+        "5 dl water",
+        "1 chicken stock cube",
+        "salt and pepper",
+        "wholemeal bread"
+      ],
+      "steps": [
+        "Cut the chicken, potatoes and vegetables into cubes.",
+        "Brown the chicken in a little oil in a pot.",
+        "Add the onion and celery and fry for a couple of minutes.",
+        "Add the potatoes, carrots, tomatoes, tomato purée, water and stock cube and simmer for 20 minutes.",
+        "Season with salt and pepper and serve with wholemeal bread."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/sunn/kyllinggryte-med-gronnsaker/"
+    },
+    {
+      "id": "fiskekaker-med-gressloksaus",
+      "name": "Fiskekaker (fish cakes) with chive sauce",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g coley (saithe) fillet",
+        "1 tsp salt",
+        "1 tbsp potato starch",
+        "1 egg",
+        "1.5 dl milk",
+        "½ onion",
+        "butter for frying",
+        "2 dl soured cream",
+        "1 bunch chives",
+        "800 g potatoes",
+        "3 carrots"
+      ],
+      "steps": [
+        "Boil the potatoes.",
+        "Blitz the fish, salt and potato starch in a food processor, then add the egg, milk and grated onion a little at a time until the mixture is smooth.",
+        "Shape cakes with a wet spoon and fry them golden in butter, about 3 minutes on each side.",
+        "Mix the soured cream with finely snipped chives and a little salt.",
+        "Serve the fish cakes with potatoes, chive sauce and grated carrots."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/seikaker-med-gressloksaus/"
+    },
+    {
+      "id": "fiskepinner-med-potetmos",
+      "name": "Fish fingers with mash and carrot slaw",
+      "protein": "fisk",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g cod fillet",
+        "1 dl plain flour",
+        "2 eggs",
+        "2 dl dried breadcrumbs",
+        "1 tsp salt",
+        "butter for frying",
+        "1 kg potatoes",
+        "2 dl milk",
+        "3 carrots",
+        "1 apple",
+        "remoulade"
+      ],
+      "steps": [
+        "Boil the potatoes and mash them with warm milk, a knob of butter and salt.",
+        "Cut the fish into finger-thick strips and sprinkle with salt.",
+        "Coat the strips in flour, egg and breadcrumbs.",
+        "Fry the fish fingers golden in butter, about 2 minutes on each side.",
+        "Grate the carrots and apple into a slaw and serve with the fish fingers, mash and remoulade."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/hjemmelagde-fiskepinner-med-rakost-og-potetmos/"
+    },
+    {
+      "id": "ovnsbakt-laks",
+      "name": "Oven-baked salmon with cauliflower and spinach",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "600 g salmon fillet",
+        "1 cauliflower",
+        "100 g baby spinach",
+        "2 tbsp olive oil",
+        "1 lemon",
+        "1 tsp salt",
+        "½ tsp pepper",
+        "800 g new potatoes",
+        "2 dl soured cream"
+      ],
+      "steps": [
+        "Boil the potatoes.",
+        "Break the cauliflower into small florets, toss in oil and salt and roast at 200°C for 10 minutes.",
+        "Add the salmon to the tray, season with salt and pepper and roast for another 12–15 minutes.",
+        "Fold the spinach into the hot cauliflower.",
+        "Serve the salmon with the vegetables, potatoes, lemon wedges and soured cream."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/ovnsbakt-laks-med-spinat-og-blomkal/"
+    },
+    {
+      "id": "fiskegrateng",
+      "name": "Fiskegrateng (Norwegian fish and macaroni bake)",
+      "protein": "fisk",
+      "sides": [
+        "pasta",
+        "salat"
+      ],
+      "minutes": 55,
+      "servings": 4,
+      "ingredients": [
+        "500 g cod or coley",
+        "150 g macaroni",
+        "50 g butter",
+        "6 tbsp plain flour",
+        "5 dl milk",
+        "3 eggs",
+        "1 tsp salt",
+        "½ tsp nutmeg",
+        "3 tbsp dried breadcrumbs",
+        "4 carrots"
+      ],
+      "steps": [
+        "Cook the macaroni and drain.",
+        "Melt the butter, stir in the flour and whisk in the milk. Cook the sauce for 5 minutes and let it cool slightly.",
+        "Stir in the egg yolks, salt and nutmeg, then fold in the stiffly whisked egg whites.",
+        "Put the fish pieces and macaroni in a greased dish and pour over the sauce. Sprinkle with breadcrumbs.",
+        "Bake at 180°C for about 40 minutes and serve with grated carrots."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/fiskegrateng/"
+    },
+    {
+      "id": "plukkfisk",
+      "name": "Plukkfisk (flaked salt cod in white sauce)",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "600 g lightly salted cod",
+        "800 g potatoes",
+        "40 g butter",
+        "3 tbsp plain flour",
+        "5 dl milk",
+        "½ tsp nutmeg",
+        "white pepper",
+        "100 g diced bacon",
+        "chives"
+      ],
+      "steps": [
+        "Boil the potatoes and cut them into cubes.",
+        "Poach the fish in lightly salted water for about 8 minutes, then flake it, removing skin and bones.",
+        "Make a white sauce with the butter, flour and milk and season with nutmeg and pepper.",
+        "Gently fold the fish and potatoes into the sauce and heat through.",
+        "Serve topped with crisp bacon and chopped chives."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/tradisjon/plukkfisk/"
+    },
+    {
+      "id": "kokt-torsk",
+      "name": "Poached cod with butter sauce and potatoes",
+      "protein": "fisk",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "800 g cod fillet",
+        "2 l water",
+        "2 tbsp salt",
+        "1 kg potatoes",
+        "100 g butter",
+        "1 dl cream",
+        "1 tbsp chopped parsley",
+        "½ lemon",
+        "1 cucumber",
+        "1 tbsp vinegar",
+        "1 tbsp sugar"
+      ],
+      "steps": [
+        "Boil the potatoes.",
+        "Make cucumber salad: slice the cucumber thinly and toss with the vinegar, sugar and a little water.",
+        "Bring the water and salt to the boil, add the fish in pieces and poach gently for 6–8 minutes.",
+        "Bring the cream to the boil, take the pan off the heat and whisk in the butter in pieces. Season with lemon and parsley.",
+        "Serve the cod with potatoes, butter sauce and cucumber salad."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/tradisjon/kokt-torsk/"
+    },
+    {
+      "id": "fiskesuppe",
+      "name": "Creamy fish soup",
+      "protein": "fisk",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "200 g salmon fillet",
+        "200 g cod fillet",
+        "1 onion",
+        "2 carrots",
+        "1 leek",
+        "2 tbsp butter",
+        "2 tbsp plain flour",
+        "8 dl fish stock",
+        "3 dl cooking cream",
+        "salt and pepper",
+        "chives",
+        "wholemeal bread"
+      ],
+      "steps": [
+        "Cut the onion, carrots and leek into small pieces and soften them in butter.",
+        "Sprinkle over the flour and gradually stir in the fish stock.",
+        "Add the cream and simmer the soup for 10 minutes.",
+        "Add the fish in cubes and let it poach for 4–5 minutes without boiling.",
+        "Season with salt and pepper, sprinkle with chives and serve with wholemeal bread."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/kremet-fiskesuppe/"
+    },
+    {
+      "id": "fisketaco",
+      "name": "Fish tacos",
+      "protein": "fisk",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g cod loin",
+        "2 tsp taco seasoning",
+        "1 tbsp oil",
+        "8 flour tortillas",
+        "¼ white cabbage",
+        "2 tomatoes",
+        "1 avocado",
+        "2 dl soured cream",
+        "1 lime",
+        "salt"
+      ],
+      "steps": [
+        "Cut the fish into pieces and toss with the taco seasoning and oil.",
+        "Fry the fish in a hot pan for 2–3 minutes on each side.",
+        "Shred the cabbage and mix with a little lime juice and salt. Dice the tomatoes and avocado.",
+        "Warm the tortillas.",
+        "Fill the tortillas with cabbage, fish, tomato, avocado and soured cream."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/fisketaco/"
+    },
+    {
+      "id": "seibiff-med-lok",
+      "name": "Seibiff (pan-fried coley) with onions",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "700 g coley (saithe) fillet",
+        "3 onions",
+        "2 tbsp plain flour",
+        "1 tsp salt",
+        "½ tsp pepper",
+        "50 g butter",
+        "3 dl water",
+        "800 g potatoes",
+        "4 carrots"
+      ],
+      "steps": [
+        "Boil the potatoes and carrots.",
+        "Slice the onions and fry them soft and golden in half the butter. Set aside.",
+        "Cut the fish into portions and coat in flour seasoned with salt and pepper.",
+        "Fry the fish in the rest of the butter for 2–3 minutes on each side.",
+        "Spread the onions over the fish, add the water and leave to simmer for 5 minutes. Serve with potatoes and carrots."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/tradisjon/seibiff-med-lok/"
+    },
+    {
+      "id": "pasta-med-varmrokt-laks",
+      "name": "Pasta with hot-smoked salmon",
+      "protein": "fisk",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "400 g tagliatelle",
+        "250 g hot-smoked salmon",
+        "3 dl cooking cream",
+        "200 g frozen peas",
+        "50 g baby spinach",
+        "3 spring onions",
+        "1 garlic clove",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the pasta.",
+        "Soften the chopped spring onions and garlic in a little oil.",
+        "Add the cream and peas and simmer for a couple of minutes.",
+        "Fold in the spinach and flaked salmon and heat gently.",
+        "Toss with the pasta, season with salt and pepper and serve."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/pasta-med-varmrokt-laks/"
+    },
+    {
+      "id": "lettsaltet-torsk-med-bacon",
+      "name": "Lightly salted cod with bacon",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "800 g lightly salted cod",
+        "150 g diced bacon",
+        "1 kg potatoes",
+        "4 carrots",
+        "50 g butter",
+        "pepper",
+        "chopped parsley"
+      ],
+      "steps": [
+        "Boil the potatoes and carrots.",
+        "Put the cod into boiling water, take the pan off the heat and leave the fish to poach for 8–10 minutes.",
+        "Fry the bacon until crisp and melt the butter.",
+        "Place the fish on a dish and scatter over the bacon, parsley and pepper.",
+        "Serve with potatoes, carrots and melted butter."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/tradisjon/lettsaltet-torsk-med-bacon/"
+    },
+    {
+      "id": "pannekaker-med-blabaersyltetoy",
+      "name": "Pannekaker (Norwegian pancakes) with blueberry jam",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "3 dl plain flour",
+        "6 dl milk",
+        "4 eggs",
+        "½ tsp salt",
+        "1 tbsp sugar",
+        "butter for frying",
+        "blueberry jam",
+        "sugar to serve"
+      ],
+      "steps": [
+        "Whisk the flour with half the milk to a smooth batter.",
+        "Stir in the rest of the milk, the eggs, salt and sugar and leave the batter to rest for 15 minutes.",
+        "Melt a little butter in a frying pan and pour in a thin layer of batter.",
+        "Fry the pancakes golden on both sides.",
+        "Serve with blueberry jam and sugar."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/pannekaker/"
+    },
+    {
+      "id": "pasta-med-kremet-sopp",
+      "name": "Creamy mushroom pasta",
+      "protein": "vegetar",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g tagliatelle",
+        "300 g button mushrooms",
+        "½ onion",
+        "1 garlic clove",
+        "2 tbsp butter",
+        "3 dl cooking cream",
+        "100 g baby spinach",
+        "4 tbsp grated parmesan",
+        "1 tbsp soy sauce",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the pasta.",
+        "Slice the mushrooms and fry them in butter until coloured.",
+        "Add the chopped onion and garlic and fry for a couple of minutes more.",
+        "Add the cream and soy sauce and let the sauce reduce a little. Fold in the spinach.",
+        "Toss with the pasta, season and serve with grated parmesan."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/kos/pasta-med-kremet-sopp/"
+    },
+    {
+      "id": "mac-n-cheese-med-blomkal",
+      "name": "Mac 'n' cheese with cauliflower",
+      "protein": "vegetar",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "300 g macaroni",
+        "½ cauliflower",
+        "50 g butter",
+        "4 tbsp plain flour",
+        "6 dl milk",
+        "200 g grated cheese",
+        "200 g frozen peas",
+        "1 garlic clove",
+        "3 tbsp dried breadcrumbs",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Boil the macaroni and small cauliflower florets together for 6–7 minutes, adding the peas for the last minute, then drain.",
+        "Melt the butter with the crushed garlic, stir in the flour and whisk in the milk.",
+        "Stir in most of the cheese and season with salt and pepper.",
+        "Fold the macaroni and vegetables into the cheese sauce and tip into an ovenproof dish.",
+        "Sprinkle over the rest of the cheese and the breadcrumbs and bake at 200°C for about 20 minutes."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/mac-n-cheese-med-blomkal/"
+    },
+    {
+      "id": "tomatsuppe-med-egg",
+      "name": "Tomato soup with egg and macaroni",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "1 onion",
+        "2 garlic cloves",
+        "2 tins chopped tomatoes (400 g each)",
+        "2 tbsp tomato purée",
+        "7 dl vegetable stock",
+        "1 dl cooking cream",
+        "1 tsp sugar",
+        "100 g macaroni",
+        "4 eggs",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Soften the chopped onion and garlic in a little oil.",
+        "Add the tomatoes, tomato purée and stock and simmer for 10 minutes.",
+        "Blend the soup smooth with a stick blender and stir in the cream and sugar. Season with salt and pepper.",
+        "Cook the macaroni in the soup until tender, and boil the eggs for 8–9 minutes.",
+        "Serve the soup with the eggs cut into wedges."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/tomatsuppe-med-kokt-egg/"
+    },
+    {
+      "id": "omelett-med-ost",
+      "name": "Cheese omelette",
+      "protein": "vegetar",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 15,
+      "servings": 4,
+      "ingredients": [
+        "8 eggs",
+        "1 dl milk",
+        "1 tsp salt",
+        "½ tsp pepper",
+        "2 tbsp butter",
+        "3 dl grated cheese",
+        "1 red pepper",
+        "wholemeal bread"
+      ],
+      "steps": [
+        "Lightly whisk the eggs, milk, salt and pepper.",
+        "Melt the butter in a large frying pan and add the diced pepper.",
+        "Pour in the egg mixture and let it set over a medium heat, gently drawing it in towards the middle.",
+        "Sprinkle over the cheese, cover and let the omelette finish on a low heat.",
+        "Cut into four and serve with wholemeal bread and salad."
+      ],
+      "source": "https://www.tine.no/oppskrifter/lunsj-og-smaretter/omeletter-og-pannekaker/omelett-med-ost"
+    },
+    {
+      "id": "vegetartaco-med-bonner",
+      "name": "Vegetarian bean tacos",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "2 tins black beans (400 g each)",
+        "1 onion",
+        "2 garlic cloves",
+        "2 tsp ground cumin",
+        "1 tbsp honey",
+        "1 dl vegetable stock",
+        "8 flour tortillas",
+        "200 g red cabbage",
+        "100 g feta",
+        "1 iceberg lettuce",
+        "2 dl soured cream"
+      ],
+      "steps": [
+        "Soften the chopped onion and garlic in a little oil.",
+        "Add the drained beans, cumin, honey and stock and simmer for 10 minutes. Mash some of the beans.",
+        "Shred the red cabbage and lettuce and crumble the feta.",
+        "Warm the tortillas.",
+        "Put everything on the table and let everyone fill their own tacos."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/kos/vegetartaco-med-bonner/"
+    },
+    {
+      "id": "potet-og-purreloksuppe",
+      "name": "Potato and leek soup",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g potatoes",
+        "2 leeks",
+        "1 garlic clove",
+        "1 tbsp oil",
+        "1 l vegetable stock",
+        "2 dl cooking cream",
+        "2 dl whole milk",
+        "1 tbsp lemon juice",
+        "salt and pepper",
+        "baguette"
+      ],
+      "steps": [
+        "Peel the potatoes and cut into cubes, and slice the leeks into rings.",
+        "Soften the leeks and garlic in oil in a pot.",
+        "Add the potatoes and stock and cook for about 15 minutes until the potatoes are tender.",
+        "Add the cream and milk and blend the soup smooth with a stick blender.",
+        "Season with lemon juice, salt and pepper and serve with baguette."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/enkel-potet--og-purreloksuppe/"
+    }
+  ]
+}

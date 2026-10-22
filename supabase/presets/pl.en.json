@@ -1,0 +1,1585 @@
+{
+  "format": "madplan.profile",
+  "version": 1,
+  "name": "Family Favourites (Poland)",
+  "summary": "Everyday dinners that Polish families with children cook during the week.",
+  "symbol": "fork.knife",
+  "settings": {
+    "noSameProteinInRow": true
+  },
+  "recipes": [
+    {
+      "id": "kotlet-schabowy-z-ziemniakami-i-mizeria",
+      "name": "Kotlet schabowy (breaded pork cutlet) with potatoes and mizeria (cucumber salad)",
+      "protein": "gris",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "4 boneless pork loin slices (approx. 600 g)",
+        "2 eggs",
+        "3 tbsp plain flour",
+        "100 g breadcrumbs",
+        "lard or oil for frying",
+        "1 kg potatoes",
+        "2 cucumbers",
+        "200 g soured cream (18%)",
+        "1 bunch dill",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Peel the potatoes and boil them in salted water.",
+        "Pound the pork with a meat mallet into thin cutlets; season with salt and pepper.",
+        "Coat the cutlets in flour, beaten egg and breadcrumbs.",
+        "Fry in hot fat for 3–4 minutes on each side until golden.",
+        "Slice the cucumbers thinly and mix with the soured cream, dill and salt.",
+        "Serve the cutlets with the potatoes sprinkled with dill and the mizeria."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/kotlety-schabowe"
+    },
+    {
+      "id": "kotlety-mielone-z-buraczkami",
+      "name": "Kotlety mielone (Polish pork patties) with beetroot",
+      "protein": "gris",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "500 g minced pork",
+        "1 stale bread roll",
+        "100 ml milk",
+        "1 onion",
+        "1 egg",
+        "80 g breadcrumbs",
+        "oil for frying",
+        "1 kg potatoes",
+        "500 g cooked beetroot",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Soak the roll in the milk and squeeze it out.",
+        "Grate the onion and mix with the meat, roll, egg, salt and pepper.",
+        "Shape into oval patties and coat them in breadcrumbs.",
+        "Fry over a medium heat for 5–6 minutes on each side.",
+        "Boil the potatoes; grate the beetroot and season with salt, a little sugar and vinegar.",
+        "Serve the patties with the potatoes and beetroot."
+      ],
+      "source": "https://www.kwestiasmaku.com/kuchnia_polska/kotlety_mielone/przepis.html"
+    },
+    {
+      "id": "golabki-bez-zawijania",
+      "name": "Gołąbki bez zawijania (unrolled cabbage rolls)",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "500 g minced pork",
+        "500 g white cabbage",
+        "100 g rice",
+        "1 onion",
+        "1 egg",
+        "500 ml tomato passata",
+        "300 ml stock",
+        "2 tbsp oil",
+        "1 tsp sweet paprika",
+        "1 kg potatoes",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the rice until half done.",
+        "Finely chop the cabbage and onion and fry them in the oil until soft.",
+        "Mix the meat with the rice, cabbage, egg, salt, pepper and paprika.",
+        "Shape into oblong patties and brown them briefly on both sides.",
+        "Pour over the passata and stock, cover and simmer for approx. 30 minutes.",
+        "Meanwhile, boil the potatoes and serve with the gołąbki and sauce."
+      ],
+      "source": "https://aniagotuje.pl/przepis/golabki-bez-zawijania"
+    },
+    {
+      "id": "bigos",
+      "name": "Bigos (hunter's stew with sauerkraut and meat)",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 150,
+      "servings": 4,
+      "ingredients": [
+        "1 kg sauerkraut",
+        "500 g white cabbage",
+        "500 g pork shoulder",
+        "300 g smoked kiełbasa (Polish sausage)",
+        "150 g smoked streaky bacon",
+        "20 g dried mushrooms",
+        "8 prunes",
+        "1 onion",
+        "2 tbsp tomato purée",
+        "2 bay leaves and 4 allspice berries",
+        "salt and pepper",
+        "bread to serve"
+      ],
+      "steps": [
+        "Soak the mushrooms in hot water, then chop them.",
+        "Squeeze out and chop the sauerkraut and shred the white cabbage; cook both with the bay leaves and allspice for approx. 40 minutes.",
+        "Dice the meat, bacon and sausage and brown with the onion.",
+        "Add the meat, the mushrooms with their soaking water and the prunes to the cabbage.",
+        "Simmer over a low heat for approx. 1.5 hours, stirring occasionally.",
+        "Season with the tomato purée, salt and pepper; serve with bread."
+      ],
+      "source": "https://aniagotuje.pl/przepis/bigos"
+    },
+    {
+      "id": "pulpety-w-sosie-koperkowym",
+      "name": "Meatballs in dill sauce",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "500 g minced pork",
+        "1 stale bread roll",
+        "1 egg",
+        "1 onion",
+        "1 l stock",
+        "1 carrot",
+        "200 ml cream (18%)",
+        "2 tbsp plain flour",
+        "1 large bunch dill",
+        "1 kg potatoes",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Soak the roll in water, squeeze it out and mix with the meat, egg, grated onion, salt and pepper.",
+        "Bring the stock to the boil with the sliced carrot.",
+        "Shape into small balls and simmer them in the stock for approx. 20 minutes.",
+        "Boil the potatoes.",
+        "Whisk the cream with the flour, pour into the stock and bring to the boil until the sauce thickens.",
+        "Add the chopped dill, season and serve with the potatoes."
+      ],
+      "source": "https://aniagotuje.pl/przepis/pulpety-w-sosie-koperkowym"
+    },
+    {
+      "id": "gulasz-wieprzowy",
+      "name": "Pork goulash",
+      "protein": "gris",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "700 g pork shoulder",
+        "2 onions",
+        "2 red peppers",
+        "1 carrot",
+        "2 garlic cloves",
+        "2 tbsp tomato purée",
+        "1 tbsp sweet paprika",
+        "500 ml stock",
+        "2 tbsp plain flour",
+        "2 tbsp oil",
+        "1 kg potatoes",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Dice the meat, dust with flour and brown in the oil.",
+        "Add the chopped onion, carrot and garlic and fry for a few minutes.",
+        "Stir in the sweet paprika, add the tomato purée and pour in the stock.",
+        "Cover and simmer for approx. 40 minutes.",
+        "Add the diced peppers and simmer for another 10 minutes.",
+        "Season with salt and pepper; serve with the potatoes and a raw vegetable salad."
+      ],
+      "source": "https://aniagotuje.pl/przepis/gulasz-wieprzowy"
+    },
+    {
+      "id": "zurek-z-kielbasa-i-jajkiem",
+      "name": "Żurek (sour rye soup) with sausage and egg",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 ml żur (fermented rye starter)",
+        "1 l stock",
+        "300 g white or country-style kiełbasa (Polish sausage)",
+        "100 g smoked streaky bacon",
+        "4 eggs",
+        "4 potatoes",
+        "100 ml soured cream (18%)",
+        "2 garlic cloves",
+        "1 tbsp dried marjoram",
+        "salt and pepper",
+        "bread to serve"
+      ],
+      "steps": [
+        "Hard-boil the eggs and peel them.",
+        "Chop the bacon and fry it in a large saucepan.",
+        "Add the stock and diced potatoes and simmer for 15 minutes.",
+        "Add the sliced sausage, pour in the żur and simmer for 5 minutes.",
+        "Add the garlic, marjoram and soured cream; season with salt and pepper.",
+        "Serve with halved eggs and bread."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/zurek-blyskawiczny"
+    },
+    {
+      "id": "lazanki-z-kapusta-i-kielbasa",
+      "name": "Łazanki (pasta squares) with sauerkraut and sausage",
+      "protein": "gris",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "300 g łazanki (Polish pasta squares)",
+        "500 g sauerkraut",
+        "250 g smoked kiełbasa (Polish sausage)",
+        "1 onion",
+        "200 g button mushrooms",
+        "2 tbsp oil",
+        "1 bay leaf",
+        "1 tsp caraway seeds",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Squeeze out and chop the sauerkraut, then cook it with the bay leaf for approx. 20 minutes.",
+        "Cook the pasta al dente.",
+        "Fry the onion and diced sausage in the oil.",
+        "Add the sliced mushrooms and fry until their liquid has evaporated.",
+        "Mix the sauerkraut, pasta and sausage; season with caraway, salt and pepper.",
+        "Heat everything together in the frying pan for a few minutes and serve."
+      ],
+      "source": "https://aniagotuje.pl/przepis/lazanki"
+    },
+    {
+      "id": "fasolka-po-bretonsku",
+      "name": "Fasolka po bretońsku (Polish baked beans with sausage)",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "2 tins white beans (approx. 800 g)",
+        "300 g kiełbasa (Polish sausage)",
+        "150 g smoked streaky bacon",
+        "1 onion",
+        "2 garlic cloves",
+        "1 tin chopped tomatoes",
+        "2 tbsp tomato purée",
+        "1 tbsp dried marjoram",
+        "1 tsp sweet paprika",
+        "2 bay leaves",
+        "salt and pepper",
+        "bread to serve"
+      ],
+      "steps": [
+        "Dice the bacon and sausage and fry in a large saucepan.",
+        "Add the chopped onion and garlic and fry until translucent.",
+        "Add the tomatoes, tomato purée, bay leaves and paprika.",
+        "Add the drained beans and simmer for approx. 20 minutes.",
+        "Season with marjoram, salt and pepper.",
+        "Serve with bread."
+      ],
+      "source": "https://aniagotuje.pl/przepis/fasolka-po-bretonsku"
+    },
+    {
+      "id": "schab-w-sosie-pieczarkowym",
+      "name": "Pork loin in mushroom sauce",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "600 g boneless pork loin",
+        "400 g button mushrooms",
+        "1 onion",
+        "200 ml cream (18%)",
+        "200 ml stock",
+        "2 tbsp plain flour",
+        "2 tbsp butter",
+        "1 bunch dill",
+        "1 kg potatoes",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Boil the potatoes.",
+        "Cut the pork into thin slices, pound lightly, season with salt and dust with flour.",
+        "Brown the meat in the butter on both sides and set aside.",
+        "In the same pan, fry the onion and sliced mushrooms.",
+        "Pour in the stock and cream, return the meat and simmer for approx. 10 minutes.",
+        "Sprinkle with dill and serve with the potatoes."
+      ],
+      "source": "https://www.kwestiasmaku.com/kuchnia_polska/wieprzowina/eskalopki_z_pieczarkami/przepis.html"
+    },
+    {
+      "id": "leczo-z-kielbasa",
+      "name": "Leczo (pepper and tomato stew) with sausage",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "300 g kiełbasa (Polish sausage)",
+        "2 onions",
+        "3 peppers",
+        "1 courgette",
+        "1 tin chopped tomatoes",
+        "2 tbsp tomato purée",
+        "2 garlic cloves",
+        "1 tsp sweet paprika",
+        "2 tbsp oil",
+        "salt and pepper",
+        "bread to serve"
+      ],
+      "steps": [
+        "Cut the sausage into half-moons and fry in the oil.",
+        "Add the chopped onion and garlic and fry for a few minutes.",
+        "Add the diced peppers and courgette and simmer for 10 minutes.",
+        "Pour in the tomatoes and add the tomato purée and sweet paprika.",
+        "Simmer for another 15 minutes and season with salt and pepper; serve with bread."
+      ],
+      "source": "https://aniagotuje.pl/przepis/leczo-z-kielbasa-i-cukinia"
+    },
+    {
+      "id": "grochowka-z-kielbasa",
+      "name": "Grochówka (split pea soup) with sausage",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "300 g split peas",
+        "1.5 l stock",
+        "300 g kiełbasa (Polish sausage)",
+        "4 potatoes",
+        "1 carrot",
+        "1 onion",
+        "1 tbsp butter",
+        "1 tbsp dried marjoram",
+        "salt and pepper",
+        "bread to serve"
+      ],
+      "steps": [
+        "Rinse the peas and simmer them in the stock for approx. 30 minutes.",
+        "Add the diced potatoes and carrot and simmer for 15 minutes.",
+        "Fry the onion with the sliced sausage in the butter.",
+        "Add the sausage to the soup and simmer for another 10 minutes.",
+        "Season with marjoram, salt and pepper; serve with bread."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/zupa-grochowa-z-ziemniakami-i-kielbasa"
+    },
+    {
+      "id": "zapiekanka-makaronowa-z-szynka",
+      "name": "Pasta bake with ham",
+      "protein": "gris",
+      "sides": [
+        "pasta",
+        "salat"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "400 g penne",
+        "250 g ham",
+        "1 pepper",
+        "1 courgette",
+        "1 onion",
+        "1 garlic clove",
+        "300 ml milk",
+        "200 ml cream (18%)",
+        "200 g mild hard cheese (e.g. Gouda or Edam)",
+        "1 tbsp butter",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Preheat the oven to 200°C and cook the pasta al dente.",
+        "Fry the onion and garlic in the butter, then add the diced pepper and courgette.",
+        "Add the chopped ham, pour in the milk and cream and season.",
+        "Mix the sauce with the pasta and half of the grated cheese.",
+        "Transfer to an ovenproof dish, sprinkle with the remaining cheese and bake for 20 minutes.",
+        "Serve with a green salad."
+      ],
+      "source": "https://aniagotuje.pl/przepis/zapiekanka-makaronowa-z-szynka"
+    },
+    {
+      "id": "spaghetti-carbonara",
+      "name": "Spaghetti carbonara",
+      "protein": "gris",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g spaghetti",
+        "200 g streaky bacon or pancetta",
+        "4 egg yolks",
+        "1 egg",
+        "80 g Parmesan",
+        "1 tbsp olive oil",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the pasta in salted water, reserving a cup of the cooking water.",
+        "Cut the bacon into strips and fry in the olive oil until crisp.",
+        "Mix the egg yolks and egg with the grated Parmesan and pepper.",
+        "Tip the drained pasta into the pan with the bacon and take it off the heat.",
+        "Pour in the egg mixture and stir quickly, adding a little pasta water, until a creamy sauce forms."
+      ],
+      "source": "https://aniagotuje.pl/przepis/carbonara"
+    },
+    {
+      "id": "wieprzowina-po-chinsku",
+      "name": "Chinese-style pork",
+      "protein": "gris",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g pork tenderloin",
+        "1 red pepper",
+        "1 carrot",
+        "1 leek",
+        "1 onion",
+        "2 garlic cloves",
+        "1 tsp grated ginger",
+        "4 tbsp soy sauce",
+        "2 tbsp rice vinegar",
+        "1 tbsp sugar",
+        "1 tbsp potato starch",
+        "2 tbsp oil",
+        "300 g rice"
+      ],
+      "steps": [
+        "Cook the rice.",
+        "Cut the meat into strips and coat in the starch mixed with 1 tbsp of the soy sauce.",
+        "Cut the vegetables into thin strips.",
+        "Sear the meat in very hot oil and set aside.",
+        "Stir-fry the vegetables with the garlic and ginger for 4–5 minutes.",
+        "Add the meat, the remaining soy sauce, the vinegar, sugar and a splash of water; cook until the sauce thickens and serve with the rice."
+      ],
+      "source": "https://www.kwestiasmaku.com/kuchnia_polska/wieprzowina/wieprzowina_po_chinsku/przepis.html"
+    },
+    {
+      "id": "papryka-faszerowana",
+      "name": "Stuffed peppers",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "4 large peppers",
+        "400 g minced pork",
+        "100 g rice",
+        "1 onion",
+        "1 garlic clove",
+        "1 tin chopped tomatoes",
+        "1 tbsp tomato purée",
+        "125 g mozzarella",
+        "1 tsp dried oregano",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the rice and preheat the oven to 190°C.",
+        "Fry the onion and garlic, add the meat and fry until no longer pink.",
+        "Mix the meat with the rice, tomato purée, oregano, salt and pepper.",
+        "Cut the tops off the peppers, remove the seeds and fill with the stuffing.",
+        "Arrange the peppers in a dish on top of the tinned tomatoes, cover and bake for 30 minutes.",
+        "Sprinkle with mozzarella and bake for another 10 minutes."
+      ],
+      "source": "https://aniagotuje.pl/przepis/papryka-faszerowana"
+    },
+    {
+      "id": "gulasz-wolowy-z-kasza",
+      "name": "Beef goulash with kasza (barley or buckwheat groats)",
+      "protein": "okse",
+      "sides": [
+        "bulgur",
+        "salat"
+      ],
+      "minutes": 120,
+      "servings": 4,
+      "ingredients": [
+        "800 g stewing beef",
+        "100 g smoked streaky bacon",
+        "2 onions",
+        "1 leek",
+        "2 garlic cloves",
+        "1 red pepper",
+        "250 g button mushrooms",
+        "1 tbsp sweet paprika",
+        "2 tbsp plain flour",
+        "700 ml beef stock",
+        "2 tbsp oil",
+        "300 g pearl barley or buckwheat groats",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Dice the beef, dust with flour and brown in batches in the oil.",
+        "Fry the bacon, onion, leek and garlic.",
+        "Add the meat, sweet paprika and stock; cover and simmer for approx. 1.5 hours.",
+        "Add the pepper and mushrooms and simmer for another 15 minutes.",
+        "Meanwhile, cook the groats.",
+        "Season the goulash with salt and pepper; serve with the groats and fermented dill pickles."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/gulasz-wolowy"
+    },
+    {
+      "id": "spaghetti-bolognese",
+      "name": "Spaghetti bolognese",
+      "protein": "okse",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "500 g minced beef",
+        "400 g spaghetti",
+        "1 onion",
+        "1 carrot",
+        "1 celery stick",
+        "2 garlic cloves",
+        "1 tin chopped tomatoes",
+        "2 tbsp tomato purée",
+        "100 ml milk",
+        "2 tbsp olive oil",
+        "Parmesan for sprinkling",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Finely chop the onion, carrot, celery and garlic; fry in the olive oil.",
+        "Add the meat and fry, breaking up any lumps.",
+        "Pour in the tomatoes and add the tomato purée and milk.",
+        "Simmer over a low heat for approx. 25 minutes; season with salt and pepper.",
+        "Cook the spaghetti al dente.",
+        "Serve the pasta with the sauce and Parmesan."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/spaghetti-bolognese"
+    },
+    {
+      "id": "lasagne",
+      "name": "Lasagne",
+      "protein": "okse",
+      "sides": [
+        "pasta",
+        "salat"
+      ],
+      "minutes": 90,
+      "servings": 4,
+      "ingredients": [
+        "12 lasagne sheets",
+        "500 g minced beef",
+        "1 onion",
+        "1 carrot",
+        "2 garlic cloves",
+        "500 ml passata",
+        "1 tbsp tomato purée",
+        "50 g butter",
+        "50 g plain flour",
+        "700 ml milk",
+        "1 pinch nutmeg",
+        "100 g Parmesan or mild hard cheese",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Fry the onion, carrot and garlic, then add the meat and brown it.",
+        "Pour in the passata, add the tomato purée and simmer the sauce for 20 minutes.",
+        "Melt the butter, add the flour and gradually pour in the milk, stirring, until you have a thick béchamel; season with nutmeg.",
+        "Preheat the oven to 190°C.",
+        "Layer in a dish: meat sauce, pasta, béchamel; repeat and finish with béchamel and cheese.",
+        "Bake for approx. 40 minutes and leave to rest for 10 minutes before cutting."
+      ],
+      "source": "https://www.kwestiasmaku.com/pasta/lasagne_bolognese/przepis.html"
+    },
+    {
+      "id": "chili-con-carne",
+      "name": "Chilli con carne",
+      "protein": "okse",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "500 g minced beef",
+        "1 onion",
+        "2 garlic cloves",
+        "1 red pepper",
+        "1 tin kidney beans",
+        "1 tin chopped tomatoes",
+        "1 tin sweetcorn",
+        "1 tsp ground cumin",
+        "1 tsp sweet paprika",
+        "1 pinch chilli (optional)",
+        "2 tbsp oil",
+        "300 g rice",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Fry the onion and garlic in the oil.",
+        "Add the meat and fry until browned.",
+        "Add the spices, the diced pepper and the tomatoes.",
+        "Simmer for 15 minutes, add the drained beans and sweetcorn and cook for another 10 minutes.",
+        "Cook the rice and serve with the chilli, keeping it mild for children."
+      ],
+      "source": "https://aniagotuje.pl/przepis/chili-con-carne"
+    },
+    {
+      "id": "strogonow",
+      "name": "Beef stroganoff",
+      "protein": "okse",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef (sirloin or fillet)",
+        "1 onion",
+        "1 red pepper",
+        "250 g button mushrooms",
+        "2 fermented dill pickles",
+        "2 tbsp tomato purée",
+        "1 tbsp mustard",
+        "1 tbsp plain flour",
+        "300 ml stock",
+        "2 tbsp oil",
+        "300 g rice",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the rice.",
+        "Cut the beef into thin strips, dust with flour and sear in the oil; set aside.",
+        "Fry the onion, pepper and mushrooms.",
+        "Add the tomato purée, mustard and stock and bring to the boil.",
+        "Add the meat and the pickles cut into strips; simmer for 10 minutes.",
+        "Season with salt and pepper and serve with the rice."
+      ],
+      "source": "https://aniagotuje.pl/przepis/strogonow"
+    },
+    {
+      "id": "domowe-burgery",
+      "name": "Homemade burgers",
+      "protein": "okse",
+      "sides": [
+        "brod",
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "600 g minced beef",
+        "4 burger buns",
+        "4 slices Cheddar",
+        "2 tomatoes",
+        "1 red onion",
+        "iceberg lettuce",
+        "4 gherkins",
+        "ketchup and mayonnaise",
+        "800 g oven chips",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Bake the oven chips according to the packet instructions.",
+        "Divide the meat into 4, shape into flat patties and season with salt and pepper.",
+        "Fry the patties in a very hot pan for 3–4 minutes on each side, adding the cheese towards the end.",
+        "Halve and toast the buns.",
+        "Assemble the burgers with sauce, lettuce, tomato, onion and gherkin; serve with the chips."
+      ],
+      "source": "https://aniagotuje.pl/przepis/burgery-wolowe"
+    },
+    {
+      "id": "tacos-z-miesem-mielonym",
+      "name": "Tacos with minced beef",
+      "protein": "okse",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g minced beef",
+        "8 tortillas or taco shells",
+        "1 onion",
+        "1 garlic clove",
+        "1 tsp ground cumin",
+        "1 tsp sweet paprika",
+        "2 tomatoes",
+        "lettuce",
+        "1 avocado",
+        "150 g grated cheese",
+        "200 g thick soured cream",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Fry the chopped onion and garlic.",
+        "Add the meat and fry, breaking up any lumps.",
+        "Season with cumin, paprika, salt and a splash of water; cook for 5 minutes.",
+        "Chop the tomatoes, lettuce and avocado.",
+        "Warm the tortillas and serve so everyone can add their own meat, vegetables, cheese and soured cream."
+      ],
+      "source": "https://aniagotuje.pl/przepis/tacos"
+    },
+    {
+      "id": "stir-fry-z-wolowina-i-brokulami",
+      "name": "Beef and broccoli stir-fry",
+      "protein": "okse",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef (sirloin)",
+        "1 large head of broccoli",
+        "2 garlic cloves",
+        "1 tsp grated ginger",
+        "4 tbsp soy sauce",
+        "1 tbsp sesame oil",
+        "1 tbsp cornflour",
+        "1 tsp sugar",
+        "2 tbsp oil",
+        "300 g rice"
+      ],
+      "steps": [
+        "Cook the rice.",
+        "Cut the beef into thin strips and mix with 1 tbsp of the soy sauce and the cornflour.",
+        "Break the broccoli into florets and blanch for 2 minutes.",
+        "Sear the meat in batches in very hot oil and set aside.",
+        "Fry the garlic and ginger, then add the broccoli, meat, remaining soy sauce, sugar and sesame oil.",
+        "Toss until the sauce coats everything and serve with the rice."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/stir-fry-z-wolowina-i-brokulami"
+    },
+    {
+      "id": "zapiekanka-pasterska",
+      "name": "Cottage pie",
+      "protein": "okse",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "500 g minced beef",
+        "1 kg potatoes",
+        "1 onion",
+        "2 carrots",
+        "150 g frozen peas",
+        "2 tbsp tomato purée",
+        "300 ml stock",
+        "1 tbsp Worcestershire sauce",
+        "100 ml milk",
+        "30 g butter",
+        "50 g mild hard cheese",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Boil the potatoes and mash them with the milk and butter.",
+        "Fry the onion and grated carrot, then add the meat and brown it.",
+        "Add the tomato purée, stock and Worcestershire sauce and simmer for 15 minutes; add the peas towards the end.",
+        "Preheat the oven to 200°C.",
+        "Transfer the meat to an ovenproof dish, cover with the mash and sprinkle with cheese.",
+        "Bake for 20 minutes until golden on top."
+      ],
+      "source": "https://aniagotuje.pl/przepis/zapiekanka-pasterska"
+    },
+    {
+      "id": "rosol-z-makaronem",
+      "name": "Rosół (Polish chicken soup) with noodles",
+      "protein": "kylling",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 150,
+      "servings": 4,
+      "ingredients": [
+        "1 chicken or 1.5 kg chicken soup pieces",
+        "3 carrots",
+        "1 parsley root",
+        "1 piece of celeriac",
+        "1 leek",
+        "1 onion",
+        "2 bay leaves",
+        "4 allspice berries",
+        "250 g thin soup noodles",
+        "1 bunch flat-leaf parsley",
+        "salt and black peppercorns"
+      ],
+      "steps": [
+        "Put the chicken in a large pan, cover with approx. 3 l cold water and bring slowly to the boil, skimming off the scum.",
+        "Char the onion over a flame or in a dry frying pan.",
+        "Add the peeled vegetables, onion and spices.",
+        "Simmer over a very low heat for approx. 2 hours, adding salt towards the end.",
+        "Cook the noodles separately.",
+        "Strain the soup and serve with the noodles, carrot and parsley."
+      ],
+      "source": "https://aniagotuje.pl/przepis/rosol-z-kury"
+    },
+    {
+      "id": "kotlety-de-volaille",
+      "name": "Kotlety de volaille (chicken Kiev)",
+      "protein": "kylling",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "4 chicken breast fillets",
+        "100 g softened butter",
+        "1 garlic clove",
+        "2 tbsp chopped dill or parsley",
+        "3 tbsp plain flour",
+        "2 eggs",
+        "120 g breadcrumbs",
+        "oil for frying",
+        "1 kg potatoes",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Mix the butter with the garlic and herbs, shape into a log and chill.",
+        "Pound the fillets into thin escalopes and season with salt and pepper.",
+        "Place a piece of the butter on each one and roll up tightly.",
+        "Coat in flour, egg and breadcrumbs, ideally twice.",
+        "Deep-fry for approx. 10 minutes until golden.",
+        "Serve with the potatoes and a raw vegetable salad."
+      ],
+      "source": "https://www.kwestiasmaku.com/kuchnia_polska/kurczak/kurczak_maslo_ziolowe/przepis.html"
+    },
+    {
+      "id": "kurczak-w-sosie-smietanowym",
+      "name": "Chicken in cream sauce",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g chicken breast fillets",
+        "1 onion",
+        "2 garlic cloves",
+        "200 ml cream (30%)",
+        "200 ml stock",
+        "1 tbsp plain flour",
+        "40 g Parmesan",
+        "1 tbsp clarified butter",
+        "300 g rice",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the rice.",
+        "Cut the chicken into pieces, season with salt, dust with flour and brown in the butter.",
+        "Add the chopped onion and garlic and fry for 2–3 minutes.",
+        "Pour in the stock and cream and simmer for 8–10 minutes.",
+        "Add the grated Parmesan, season and serve with the rice."
+      ],
+      "source": "https://aniagotuje.pl/przepis/kurczak-w-sosie-smietanowym"
+    },
+    {
+      "id": "pieczone-udka-z-ziemniakami",
+      "name": "Roast chicken drumsticks with potatoes",
+      "protein": "kylling",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "8 chicken drumsticks",
+        "1 kg potatoes",
+        "3 carrots",
+        "1 leek",
+        "3 garlic cloves",
+        "1 lemon",
+        "2 sprigs rosemary",
+        "3 tbsp oil",
+        "1 tsp sweet paprika",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Preheat the oven to 200°C.",
+        "Rub the drumsticks with oil, paprika, salt and pepper.",
+        "Cut the potatoes, carrots and leek into chunks and toss with oil and salt.",
+        "Spread the vegetables in a roasting tin, place the drumsticks on top and add the garlic, lemon slices and rosemary.",
+        "Roast for approx. 50 minutes until the skin is crisp."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/pieczone-udka-z-ziemniakami-porem-i-marchewka"
+    },
+    {
+      "id": "kurczak-curry-z-ryzem",
+      "name": "Chicken curry with rice",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g chicken breast fillets",
+        "1 onion",
+        "2 garlic cloves",
+        "2 tbsp mild curry powder",
+        "200 ml cooking cream",
+        "400 g frozen mixed vegetables",
+        "2 tbsp oil",
+        "300 g rice",
+        "1 lime",
+        "flat-leaf parsley",
+        "salt"
+      ],
+      "steps": [
+        "Cook the rice.",
+        "Dice the chicken and brown in the oil.",
+        "Add the onion and garlic, stir in the curry powder and fry for a minute.",
+        "Add the vegetables and a little water and simmer for 8 minutes.",
+        "Pour in the cream, bring to the boil and season with salt and lime juice.",
+        "Serve with the rice and parsley."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/kurczak-curry"
+    },
+    {
+      "id": "tortilla-z-kurczakiem",
+      "name": "Chicken tortilla wraps",
+      "protein": "kylling",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "4 large tortillas",
+        "500 g chicken breast fillets",
+        "1 egg",
+        "80 g breadcrumbs",
+        "lettuce",
+        "2 tomatoes",
+        "1 cucumber",
+        "1 pepper",
+        "100 g Cheddar",
+        "3 tbsp mayonnaise",
+        "2 tbsp ketchup",
+        "oil for frying",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cut the chicken into strips, season with salt and coat in egg and breadcrumbs.",
+        "Fry the strips in oil until golden.",
+        "Chop the vegetables and grate the cheese.",
+        "Mix the mayonnaise with the ketchup.",
+        "Warm the tortillas, spread with the sauce, add the vegetables, cheese and chicken and roll up."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/tortilla-z-kurczakiem"
+    },
+    {
+      "id": "kurczak-slodko-kwasny",
+      "name": "Sweet and sour chicken",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "600 g chicken breast fillets",
+        "1 tin pineapple",
+        "1 red pepper",
+        "1 onion",
+        "1 carrot",
+        "2 garlic cloves",
+        "3 tbsp ketchup",
+        "2 tbsp rice vinegar",
+        "2 tbsp soy sauce",
+        "1 tbsp honey",
+        "2 tbsp potato starch",
+        "2 tbsp oil",
+        "300 g rice"
+      ],
+      "steps": [
+        "Cook the rice.",
+        "Dice the chicken, coat in 1 tbsp of the starch and brown in the oil.",
+        "Add the chopped vegetables and garlic and fry for 5 minutes.",
+        "Mix the ketchup, vinegar, soy sauce, honey, pineapple juice and the remaining starch.",
+        "Pour in the sauce, add the pineapple and cook until thickened.",
+        "Serve with the rice."
+      ],
+      "source": "https://aniagotuje.pl/przepis/kurczak-slodko-kwasny"
+    },
+    {
+      "id": "domowe-nuggetsy-z-frytkami",
+      "name": "Homemade chicken nuggets with chips",
+      "protein": "kylling",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g chicken thigh or breast fillets",
+        "2 eggs",
+        "50 g plain flour",
+        "120 g breadcrumbs",
+        "1 tsp sweet paprika",
+        "oil for frying",
+        "800 g oven chips",
+        "1 carrot and 1 apple for the salad",
+        "ketchup",
+        "salt"
+      ],
+      "steps": [
+        "Bake the oven chips according to the packet instructions.",
+        "Cut the chicken into bite-sized pieces and season with salt and paprika.",
+        "Coat the pieces in flour, egg and breadcrumbs.",
+        "Fry in oil for 2–3 minutes on each side.",
+        "Grate the carrot and apple for the salad.",
+        "Serve the nuggets with the chips, salad and ketchup."
+      ],
+      "source": "https://aniagotuje.pl/przepis/prawdziwe-domowe-nuggetsy-z-kurczaka"
+    },
+    {
+      "id": "risotto-z-kurczakiem",
+      "name": "Chicken risotto",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "300 g risotto rice",
+        "400 g chicken breast fillets",
+        "1 onion",
+        "1 red pepper",
+        "1 yellow pepper",
+        "1 l stock",
+        "2 tbsp olive oil",
+        "30 g butter",
+        "50 g Parmesan",
+        "1 tsp sweet paprika",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Dice the chicken, season with paprika and brown in the olive oil; set aside.",
+        "Fry the onion, add the rice and fry for a minute.",
+        "Add the hot stock a ladleful at a time, stirring, for approx. 18 minutes.",
+        "Halfway through, add the diced peppers.",
+        "Stir in the chicken, butter and Parmesan, season and serve."
+      ],
+      "source": "https://aniagotuje.pl/przepis/risotto-z-kurczakiem"
+    },
+    {
+      "id": "zupa-ogorkowa-z-kurczakiem",
+      "name": "Zupa ogórkowa (dill pickle soup) with chicken",
+      "protein": "kylling",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "400 g chicken breast fillets",
+        "1.5 l stock",
+        "4 potatoes",
+        "1 carrot",
+        "1 onion",
+        "4 fermented dill pickles",
+        "100 ml pickle brine",
+        "150 ml soured cream (18%)",
+        "1 bunch dill",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Simmer the chicken in the stock for approx. 15 minutes, then remove and chop it.",
+        "Add the diced potatoes and carrot to the stock and simmer for 15 minutes.",
+        "Fry the onion, add the grated pickles and cook gently for a few minutes.",
+        "Add the pickles to the soup along with the chicken and pickle brine.",
+        "Temper the soured cream with a little hot soup, stir it into the pan and add the dill.",
+        "Serve with bread."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/zupa-ogorkowa-z-kurczakiem"
+    },
+    {
+      "id": "gulasz-z-kurczaka",
+      "name": "Chicken goulash",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g chicken breast fillets",
+        "1 onion",
+        "1 carrot",
+        "2 peppers",
+        "2 garlic cloves",
+        "1 tin chopped tomatoes",
+        "1 tbsp sweet paprika",
+        "1 tsp dried oregano",
+        "1 tbsp plain flour",
+        "2 tbsp oil",
+        "300 g rice or kasza (groats)",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Dice the chicken, dust with flour and brown in the oil.",
+        "Add the onion, carrot and garlic and fry for a few minutes.",
+        "Add the diced peppers, tomatoes, sweet paprika and oregano.",
+        "Cover and simmer for approx. 20 minutes.",
+        "Cook the rice or groats and serve with the goulash."
+      ],
+      "source": "https://aniagotuje.pl/przepis/gulasz-z-kurczaka"
+    },
+    {
+      "id": "zupa-pomidorowa-z-makaronem",
+      "name": "Tomato soup with pasta",
+      "protein": "kylling",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "4 chicken drumsticks or chicken soup pieces",
+        "2 carrots",
+        "1 parsley root",
+        "1 piece of celeriac",
+        "1 onion",
+        "200 g tomato purée",
+        "200 ml soured cream (18%)",
+        "250 g pasta",
+        "flat-leaf parsley",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cover the chicken with 2.5 l water, bring to the boil and skim off the scum.",
+        "Add the peeled vegetables and simmer over a low heat for approx. 40 minutes.",
+        "Remove the meat and vegetables, add the tomato purée to the broth and bring to the boil.",
+        "Temper the soured cream with a little hot soup and stir it into the pan; season.",
+        "Cook the pasta and serve with the soup and parsley."
+      ],
+      "source": "https://aniagotuje.pl/przepis/zupa-pomidorowa"
+    },
+    {
+      "id": "ryba-po-grecku",
+      "name": "Ryba po grecku (fried fish with carrot and tomato topping)",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "600 g white fish fillets (cod or pollock)",
+        "3 tbsp plain flour",
+        "3 carrots",
+        "1 parsley root",
+        "1 onion",
+        "3 tbsp tomato purée",
+        "200 ml water or stock",
+        "4 tbsp oil",
+        "2 bay leaves",
+        "1 kg potatoes",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Grate the carrots and parsley root and chop the onion.",
+        "Cook the vegetables gently in 2 tbsp of the oil with the bay leaves for approx. 15 minutes.",
+        "Add the tomato purée and water, season with salt and pepper and simmer for 5 minutes.",
+        "Cut the fish into pieces, season with salt, coat in flour and fry.",
+        "Boil the potatoes.",
+        "Arrange the fish on plates, cover with the vegetables and serve with the potatoes."
+      ],
+      "source": "https://aniagotuje.pl/przepis/ryba-po-grecku"
+    },
+    {
+      "id": "ryba-w-panierce-z-ziemniakami",
+      "name": "Breaded fish with potatoes",
+      "protein": "fisk",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "600 g cod or pollock fillets",
+        "2 eggs",
+        "100 ml milk",
+        "100 g breadcrumbs",
+        "oil or clarified butter for frying",
+        "1 kg potatoes",
+        "1 bunch dill",
+        "1 lemon",
+        "300 g sauerkraut for the salad",
+        "1 carrot",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Boil the potatoes.",
+        "Cut the fish into portions and season with salt and pepper.",
+        "Dip the fish in the egg beaten with the milk and coat in breadcrumbs.",
+        "Fry for 3–4 minutes on each side until golden.",
+        "Mix the chopped sauerkraut with the grated carrot and a little oil.",
+        "Serve the fish with the dill potatoes, the salad and lemon."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/filety-rybne-smazone-w-panierce"
+    },
+    {
+      "id": "pieczony-losos-z-porem-i-pomidorkami",
+      "name": "Baked salmon with leek and cherry tomatoes",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "700 g salmon fillet",
+        "1 leek",
+        "250 g cherry tomatoes",
+        "1 bunch dill",
+        "1 lemon",
+        "2 tbsp olive oil",
+        "20 g butter",
+        "1 kg new or small potatoes",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Preheat the oven to 200°C and boil the potatoes.",
+        "Cut the leek into half-moons and spread in a dish with the olive oil.",
+        "Place the salmon on the leek, season with salt and pepper and drizzle with lemon juice.",
+        "Add the tomatoes and knobs of butter.",
+        "Bake for approx. 15–18 minutes.",
+        "Sprinkle with dill and serve with the potatoes."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/pieczony-losos-z-koperkiem-porem-i-pomidorkami"
+    },
+    {
+      "id": "kotlety-rybne",
+      "name": "Fish cakes",
+      "protein": "fisk",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g cod fillet",
+        "1 stale bread roll",
+        "100 ml milk",
+        "1 egg",
+        "1 small onion",
+        "2 tbsp chopped dill",
+        "80 g breadcrumbs",
+        "oil for frying",
+        "1 kg potatoes",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Soak the roll in the milk and squeeze it out.",
+        "Mince or finely chop the fish with the onion.",
+        "Mix with the roll, egg, dill, salt and pepper.",
+        "Shape into patties and coat in breadcrumbs.",
+        "Fry for 4 minutes on each side; serve with the potatoes and a raw vegetable salad."
+      ],
+      "source": "https://aniagotuje.pl/przepis/kotlety-rybne"
+    },
+    {
+      "id": "makaron-z-tunczykiem",
+      "name": "Pasta with tuna",
+      "protein": "fisk",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "400 g pasta",
+        "2 tins tuna in spring water",
+        "250 g cherry tomatoes",
+        "2 garlic cloves",
+        "3 tbsp olive oil",
+        "1 lemon",
+        "1 handful black olives (optional)",
+        "flat-leaf parsley",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the pasta in salted water.",
+        "Fry the garlic in the olive oil, add the halved tomatoes and fry for 3 minutes.",
+        "Add the drained tuna and olives and heat through.",
+        "Toss with the pasta, a little of the cooking water and the lemon juice.",
+        "Sprinkle with parsley and season with salt and pepper."
+      ],
+      "source": "https://aniagotuje.pl/przepis/makaron-z-tunczykiem"
+    },
+    {
+      "id": "pierogi-ruskie",
+      "name": "Pierogi ruskie (potato and cheese dumplings)",
+      "protein": "vegetar",
+      "sides": [
+        "salat"
+      ],
+      "minutes": 90,
+      "servings": 4,
+      "ingredients": [
+        "500 g plain flour",
+        "250 ml hot water",
+        "2 tbsp oil",
+        "700 g potatoes",
+        "300 g semi-skimmed twaróg (Polish curd cheese, or quark)",
+        "2 onions",
+        "2 tbsp butter",
+        "soured cream to serve",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Boil the potatoes and press them through a ricer.",
+        "Fry the onions in the butter until translucent; mix half with the potatoes, twaróg, salt and pepper.",
+        "Knead a dough from the flour, hot water, oil and a pinch of salt.",
+        "Roll out thinly, cut out rounds, add the filling and seal the edges well.",
+        "Cook the pierogi in batches in salted water for 2–3 minutes after they rise to the surface.",
+        "Serve with the remaining onion, soured cream and a raw vegetable salad."
+      ],
+      "source": "https://aniagotuje.pl/przepis/pierogi-ruskie"
+    },
+    {
+      "id": "nalesniki-z-serem",
+      "name": "Naleśniki z serem (pancakes with sweet curd cheese)",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "250 g plain flour",
+        "300 ml milk",
+        "200 ml water",
+        "2 eggs",
+        "2 tbsp oil",
+        "500 g twaróg (Polish curd cheese, or quark)",
+        "3 tbsp icing sugar",
+        "1 sachet vanilla sugar",
+        "3 tbsp soured cream",
+        "a pinch of salt"
+      ],
+      "steps": [
+        "Blend the flour, milk, water, eggs, oil and salt into a smooth batter.",
+        "Fry thin pancakes in a lightly greased frying pan.",
+        "Mash the twaróg with a fork together with the soured cream, icing sugar and vanilla sugar.",
+        "Spread the pancakes with the cheese mixture and roll up or fold into triangles.",
+        "Fry briefly in butter and serve, e.g. with fruit or soured cream."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/nale%C5%9Bniki-z-serem"
+    },
+    {
+      "id": "placki-ziemniaczane",
+      "name": "Placki ziemniaczane (potato pancakes)",
+      "protein": "vegetar",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "1.5 kg potatoes",
+        "1 onion",
+        "2 eggs",
+        "3 tbsp plain flour",
+        "oil for frying",
+        "200 g soured cream (18%)",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Peel the potatoes and onion and grate them finely.",
+        "Pour off the excess liquid.",
+        "Add the eggs, flour, salt and pepper and mix.",
+        "Spoon portions into the hot oil and flatten them.",
+        "Fry for 3 minutes on each side until crisp.",
+        "Serve with soured cream or sugar and a raw vegetable salad."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/placki-ziemniaczane"
+    },
+    {
+      "id": "kopytka",
+      "name": "Kopytka (Polish potato dumplings)",
+      "protein": "vegetar",
+      "sides": [
+        "salat"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "1 kg potatoes",
+        "200 g plain flour",
+        "1 egg",
+        "1 tsp salt",
+        "50 g butter",
+        "3 tbsp breadcrumbs",
+        "1 carrot and 1 apple for the salad"
+      ],
+      "steps": [
+        "Boil the potatoes, press through a ricer and leave to cool.",
+        "Add the flour, egg and salt and quickly knead into a dough.",
+        "Shape into logs and cut them diagonally into kopytka.",
+        "Cook in batches in salted water for approx. 2 minutes after they rise to the surface.",
+        "Brown the breadcrumbs in the butter and pour over the kopytka.",
+        "Serve with a carrot and apple salad."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/kopytka"
+    },
+    {
+      "id": "leniwe",
+      "name": "Leniwe (lazy curd cheese dumplings)",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g semi-skimmed twaróg (Polish curd cheese, or quark)",
+        "2 eggs",
+        "150 g plain flour",
+        "a pinch of salt",
+        "50 g butter",
+        "3 tbsp breadcrumbs",
+        "sugar and cinnamon for sprinkling"
+      ],
+      "steps": [
+        "Mash the twaróg with a fork.",
+        "Add the eggs, salt and flour and knead briefly into a dough.",
+        "Shape into logs, flatten slightly and cut diagonally.",
+        "Cook in salted water for approx. 2 minutes after they rise to the surface.",
+        "Pour over the butter with the browned breadcrumbs and sprinkle with cinnamon sugar."
+      ],
+      "source": "https://aniagotuje.pl/przepis/kluski-leniwe"
+    },
+    {
+      "id": "makaron-ze-szpinakiem",
+      "name": "Pasta with spinach",
+      "protein": "vegetar",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "400 g penne or fusilli",
+        "300 g fresh spinach",
+        "1 onion",
+        "2 garlic cloves",
+        "200 ml cream (30%)",
+        "80 g Parmesan",
+        "1 tbsp olive oil",
+        "1 tbsp butter",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the pasta al dente.",
+        "Fry the onion and garlic in the olive oil and butter.",
+        "Add the spinach and cook until wilted.",
+        "Pour in the cream, bring to the boil and add the grated Parmesan.",
+        "Toss with the pasta and season with salt and pepper."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/makaron-ze-szpinakiem"
+    },
+    {
+      "id": "pizza-margherita",
+      "name": "Pizza margherita",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "500 g plain flour",
+        "300 ml warm water",
+        "7 g dried yeast",
+        "2 tbsp olive oil",
+        "1 tsp salt",
+        "400 g tinned tomatoes",
+        "250 g mozzarella",
+        "1 tsp dried oregano",
+        "fresh basil"
+      ],
+      "steps": [
+        "Mix the flour, yeast, salt, water and olive oil and knead into a smooth dough.",
+        "Leave in a warm place for approx. 30 minutes.",
+        "Blend the tomatoes with the oregano and a pinch of salt.",
+        "Preheat the oven to its highest setting and roll out the dough onto 2 baking trays.",
+        "Spread with the sauce, top with the mozzarella and bake for 10–12 minutes.",
+        "Sprinkle with basil and serve."
+      ],
+      "source": "https://aniagotuje.pl/przepis/pizza-margherita"
+    },
+    {
+      "id": "szpinak-z-jajkiem-sadzonym-i-ziemniakami",
+      "name": "Spinach with fried eggs and potatoes",
+      "protein": "vegetar",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "450 g frozen spinach",
+        "1 onion",
+        "2 garlic cloves",
+        "100 ml soured cream (18%)",
+        "2 tbsp butter",
+        "8 eggs",
+        "1 kg potatoes",
+        "1 pinch nutmeg",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Boil the potatoes.",
+        "Fry the onion and garlic in 1 tbsp of the butter until translucent.",
+        "Add the spinach and cook until the water has evaporated.",
+        "Pour in the soured cream and season with salt, pepper and nutmeg.",
+        "Fry the eggs in the remaining butter.",
+        "Serve the spinach with the eggs and potatoes."
+      ],
+      "source": "https://www.przepisy.pl/przepis/szpinak-z-jajkiem"
+    }
+  ]
+}

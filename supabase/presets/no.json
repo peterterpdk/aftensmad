@@ -1,0 +1,1395 @@
+{
+  "format": "madplan.profile",
+  "version": 1,
+  "name": "Familiens favoritter",
+  "summary": "Hverdagsmiddager som norske barnefamilier lager uke etter uke.",
+  "symbol": "fork.knife",
+  "settings": { "noSameProteinInRow": true },
+  "recipes": [
+    {
+      "id": "kjottkaker-i-brun-saus",
+      "name": "Kjøttkaker i brun saus",
+      "protein": "okse",
+      "sides": ["kartofler"],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "500 g kjøttdeig av storfe",
+        "1 ts salt",
+        "1 ss potetmel",
+        "½ ts pepper",
+        "½ ts muskat",
+        "2 dl melk",
+        "3 ss smør",
+        "3 ss hvetemel",
+        "6 dl kjøttkraft",
+        "1 kg poteter",
+        "300 g frosne erter",
+        "tyttebærsyltetøy"
+      ],
+      "steps": [
+        "Rør kjøttdeigen med salt, potetmel og krydder, og spe med melken litt etter litt.",
+        "Form 12–16 kjøttkaker med våte hender og brun dem i stekepannen.",
+        "Kok potetene og ertene.",
+        "Smelt smøret i en kjele, rør inn melet og la det bli nøttebrunt. Spe med kraften mens du rører.",
+        "Legg kjøttkakene i sausen og la dem trekke på svak varme i 15 minutter.",
+        "Server med poteter, erter og tyttebær."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/hjemmelagde-kjottkaker/"
+    },
+    {
+      "id": "karbonader-med-lok",
+      "name": "Karbonader med løk",
+      "protein": "okse",
+      "sides": ["kartofler"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g karbonadedeig",
+        "3 løk",
+        "2 ss smør",
+        "1 ss hvetemel",
+        "3 dl vann",
+        "1 ts salt",
+        "½ ts pepper",
+        "800 g poteter",
+        "4 gulrøtter"
+      ],
+      "steps": [
+        "Kok poteter og gulrøtter.",
+        "Skjær løken i skiver og stek den myk og gyllen i halvparten av smøret. Legg til side.",
+        "Form fire karbonader, krydre med salt og pepper og stek dem 3–4 minutter på hver side.",
+        "Legg løken tilbake, dryss over mel og spe med vannet.",
+        "La karbonadene småkoke i sausen i 5 minutter og server med poteter og gulrøtter."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/karbonader-med-lok/"
+    },
+    {
+      "id": "taco",
+      "name": "Taco",
+      "protein": "okse",
+      "sides": ["brod"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g kjøttdeig",
+        "1 pose tacokrydder",
+        "1 dl vann",
+        "8 tortillalefser",
+        "1 isbergsalat",
+        "2 tomater",
+        "½ agurk",
+        "1 boks mais (ca. 150 g)",
+        "150 g revet ost",
+        "3 dl rømme",
+        "1 glass mild tacosaus"
+      ],
+      "steps": [
+        "Brun kjøttdeigen i en stekepanne.",
+        "Rør inn tacokrydder og vann og la det småkoke i noen minutter.",
+        "Kutt salat, tomat og agurk og sett frem sammen med mais, ost, rømme og saus.",
+        "Varm lefsene i ovnen eller i en tørr panne.",
+        "La alle fylle sin egen taco ved bordet."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/taco/"
+    },
+    {
+      "id": "spaghetti-bolognese",
+      "name": "Spaghetti bolognese",
+      "protein": "okse",
+      "sides": ["pasta"],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "400 g kjøttdeig",
+        "1 løk",
+        "1 gulrot",
+        "2 fedd hvitløk",
+        "1 boks hakkede tomater (400 g)",
+        "2 ss tomatpuré",
+        "1 dl vann",
+        "1 ts oregano",
+        "1 ts salt",
+        "400 g spaghetti",
+        "revet parmesan"
+      ],
+      "steps": [
+        "Finhakk løk, gulrot og hvitløk og fres dem myke i litt olje.",
+        "Tilsett kjøttdeigen og brun den.",
+        "Rør inn tomater, tomatpuré, vann, oregano og salt.",
+        "La sausen småkoke under lokk i 20 minutter.",
+        "Kok spaghettien og server med sausen og revet parmesan."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/gjester/pasta-bolognese/"
+    },
+    {
+      "id": "lasagne",
+      "name": "Lasagne",
+      "protein": "okse",
+      "sides": ["salat"],
+      "minutes": 75,
+      "servings": 4,
+      "ingredients": [
+        "400 g kjøttdeig",
+        "1 løk",
+        "1 gulrot",
+        "2 bokser hakkede tomater (à 400 g)",
+        "2 ss tomatpuré",
+        "1 ts oregano",
+        "50 g smør",
+        "4 ss hvetemel",
+        "7 dl melk",
+        "250 g lasagneplater",
+        "150 g revet ost",
+        "salt og pepper"
+      ],
+      "steps": [
+        "Lag kjøttsaus: brun kjøttdeig med hakket løk og revet gulrot, tilsett tomater, puré og oregano og la det småkoke i 15 minutter.",
+        "Lag hvit saus: smelt smøret, rør inn melet og spe med melken under omrøring. Kok i 5 minutter og smak til med salt og pepper.",
+        "Legg lag med kjøttsaus, plater og hvit saus i en ildfast form. Avslutt med hvit saus.",
+        "Strø over revet ost.",
+        "Stek på 200 °C i ca. 40 minutter og server med salat."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/lasagne/"
+    },
+    {
+      "id": "brun-lapskaus",
+      "name": "Brun lapskaus",
+      "protein": "okse",
+      "sides": ["brod"],
+      "minutes": 120,
+      "servings": 4,
+      "ingredients": [
+        "600 g høyrygg av storfe",
+        "2 løk",
+        "3 ss smør",
+        "3 ss hvetemel",
+        "1 l vann",
+        "2 buljongterninger",
+        "2 laurbærblad",
+        "4 gulrøtter",
+        "¼ kålrot",
+        "800 g poteter",
+        "salt og pepper",
+        "flatbrød"
+      ],
+      "steps": [
+        "Skjær kjøttet i terninger og brun det i smør i en stor gryte sammen med hakket løk.",
+        "Dryss over melet og la det brunes litt.",
+        "Spe med vann, tilsett buljong og laurbær, og la det småkoke under lokk i 1 time.",
+        "Skrell og skjær gulrøtter, kålrot og poteter i terninger og ha dem i gryten.",
+        "Kok videre i ca. 30 minutter til potetene begynner å falle fra hverandre.",
+        "Smak til med salt og pepper og server med flatbrød."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/tradisjon/lapskaus/"
+    },
+    {
+      "id": "farikal",
+      "name": "Fårikål",
+      "protein": "okse",
+      "sides": ["kartofler"],
+      "minutes": 150,
+      "servings": 4,
+      "ingredients": [
+        "1,5 kg fårikålkjøtt av lam",
+        "1,5 kg hvitkål",
+        "2 ss hel sort pepper",
+        "2 ts salt",
+        "2 ss hvetemel",
+        "3 dl vann",
+        "1 kg poteter"
+      ],
+      "steps": [
+        "Del kålen i båter.",
+        "Legg kjøtt og kål lagvis i en stor gryte, med salt, pepper og litt mel mellom lagene. Begynn med kjøtt med fettsiden ned.",
+        "Hell vannet over og kok opp.",
+        "La gryten småkoke under lokk i 2–2½ timer til kjøttet er mørt.",
+        "Kok potetene og server med fårikålen."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/tradisjon/farikal/"
+    },
+    {
+      "id": "chili-con-carne",
+      "name": "Chili con carne",
+      "protein": "okse",
+      "sides": ["ris"],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "400 g kjøttdeig",
+        "1 løk",
+        "2 fedd hvitløk",
+        "1 rød paprika",
+        "1 boks hakkede tomater (400 g)",
+        "1 boks kidneybønner (ca. 400 g)",
+        "2 ss tomatpuré",
+        "1 ts spisskummen",
+        "1 ts paprikapulver",
+        "1 ts salt",
+        "3 dl ris",
+        "rømme"
+      ],
+      "steps": [
+        "Kok risen.",
+        "Fres hakket løk, hvitløk og paprika i litt olje.",
+        "Tilsett kjøttdeigen og brun den.",
+        "Rør inn tomater, tomatpuré, krydder og avrente bønner.",
+        "La det småkoke i 15 minutter og server med ris og en klatt rømme."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/chili-con-carne/"
+    },
+    {
+      "id": "hjemmelagde-hamburgere",
+      "name": "Hjemmelagde hamburgere",
+      "protein": "okse",
+      "sides": ["kartofler"],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "500 g kjøttdeig av storfe",
+        "1 ts salt",
+        "½ ts pepper",
+        "4 hamburgerbrød",
+        "4 skiver ost",
+        "1 tomat",
+        "salatblader",
+        "1 rødløk",
+        "hamburgerdressing",
+        "800 g frossen pommes frites"
+      ],
+      "steps": [
+        "Stek pommes fritesen i ovnen etter anvisning på posen.",
+        "Del kjøttdeigen i fire og form flate burgere. Krydre med salt og pepper.",
+        "Stek burgerne 3–4 minutter på hver side og legg en osteskive på mot slutten.",
+        "Varm brødene og skjær tomat og løk i skiver.",
+        "Bygg burgerne med dressing, salat, tomat og løk, og server med pommes frites."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/kos/cheeseburger-med-hamburgerdressing/"
+    },
+    {
+      "id": "langpannepizza-med-kjottdeig",
+      "name": "Langpannepizza med kjøttdeig",
+      "protein": "okse",
+      "sides": ["salat"],
+      "minutes": 75,
+      "servings": 4,
+      "ingredients": [
+        "8 dl hvetemel",
+        "25 g gjær",
+        "3 dl lunkent vann",
+        "2 ss olje",
+        "1 ts salt",
+        "400 g kjøttdeig",
+        "1 ts oregano",
+        "2 dl pizzasaus",
+        "1 rød paprika",
+        "300 g revet ost"
+      ],
+      "steps": [
+        "Rør gjæren ut i vannet, tilsett olje, salt og mel, og elt til en smidig deig. La heve i 30 minutter.",
+        "Brun kjøttdeigen og krydre med oregano og litt salt.",
+        "Kjevle ut deigen på en langpanne med bakepapir.",
+        "Smør på pizzasaus og fordel kjøttdeig, paprika i strimler og ost.",
+        "Stek på 225 °C i 15–20 minutter og server med salat."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/kos/langpannepizza/"
+    },
+    {
+      "id": "polsegryte",
+      "name": "Pølsegryte",
+      "protein": "gris",
+      "sides": ["ris"],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g kjøttpølse",
+        "1 løk",
+        "1 rød paprika",
+        "1 boks hakkede tomater (400 g)",
+        "1 ss tomatpuré",
+        "2 dl matfløte",
+        "1 ts paprikapulver",
+        "salt og pepper",
+        "3 dl ris"
+      ],
+      "steps": [
+        "Kok risen.",
+        "Skjær pølsen i skiver og løk og paprika i biter.",
+        "Fres løk og paprika i litt olje og ha i pølsene.",
+        "Rør inn tomater, tomatpuré, fløte og paprikapulver og la det småkoke i 10 minutter.",
+        "Smak til med salt og pepper og server med ris."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/polsegryte/"
+    },
+    {
+      "id": "makaronigrateng-med-polse",
+      "name": "Makaronigrateng med pølse",
+      "protein": "gris",
+      "sides": ["pasta", "salat"],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "300 g kjøttpølse",
+        "250 g makaroni",
+        "4 egg",
+        "4 dl melk",
+        "150 g revet ost",
+        "½ ts salt",
+        "½ ts pepper",
+        "3 gulrøtter"
+      ],
+      "steps": [
+        "Kok makaronien litt under anvist tid og la den renne av.",
+        "Skjær pølsen i skiver og bland med makaronien i en smurt ildfast form.",
+        "Visp egg, melk, salt og pepper og hell over.",
+        "Strø over osten og stek på 200 °C i ca. 25 minutter.",
+        "Server med revne gulrøtter."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/makaronigrateng-med-polse/"
+    },
+    {
+      "id": "brennende-kjaerlighet",
+      "name": "Brennende kjærlighet",
+      "protein": "gris",
+      "sides": ["kartofler"],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "1,2 kg poteter",
+        "2 dl melk",
+        "50 g smør",
+        "1 ts salt",
+        "200 g bacon i terninger",
+        "2 løk",
+        "rødbeter"
+      ],
+      "steps": [
+        "Skrell potetene og kok dem møre.",
+        "Stek baconet sprøtt, ha i løk i båter og stek til løken er myk og gyllen.",
+        "Mos potetene med varm melk, smør og salt.",
+        "Legg potetmosen på tallerkenen og topp med bacon og løk.",
+        "Server med rødbeter."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/tradisjon/brennende-kjarlighet/"
+    },
+    {
+      "id": "fleskepannekake",
+      "name": "Fleskepannekake",
+      "protein": "gris",
+      "sides": ["brod"],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "200 g lettsaltet sideflesk eller bacon",
+        "3 dl hvetemel",
+        "6 dl melk",
+        "4 egg",
+        "½ ts salt",
+        "smør til steking",
+        "tyttebærsyltetøy"
+      ],
+      "steps": [
+        "Visp melet med halvparten av melken til en klumpfri røre, og rør inn resten av melken, egg og salt. La svelle i 15 minutter.",
+        "Skjær flesket i terninger og stek det sprøtt i en ovnsfast stekepanne.",
+        "Hell røren over fleskebitene.",
+        "Stek i ovnen på 200 °C i 20–25 minutter til pannekaken er gyllen og stivnet.",
+        "Del i stykker og server med tyttebær."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/tradisjon/fleskepannekake/"
+    },
+    {
+      "id": "ertesuppe-med-svineknoke",
+      "name": "Ertesuppe med svineknoke",
+      "protein": "gris",
+      "sides": ["brod"],
+      "minutes": 150,
+      "servings": 4,
+      "ingredients": [
+        "500 g tørkede gule erter",
+        "1 røkt svineknoke (ca. 1 kg)",
+        "2 l vann",
+        "1 løk",
+        "2 gulrøtter",
+        "¼ kålrot",
+        "2 laurbærblad",
+        "1 ts timian",
+        "salt og pepper",
+        "grovt brød"
+      ],
+      "steps": [
+        "Legg ertene i bløt i kaldt vann over natten.",
+        "Kok knoken i vannet med laurbær i ca. 1 time. Skum av underveis.",
+        "Hell av bløtleggingsvannet og ha ertene i gryten. Kok i ca. 1 time til de er møre.",
+        "Tilsett hakket løk, gulrot og kålrot og kok i 20 minutter til.",
+        "Ta ut knoken, skjær kjøttet i biter og ha det tilbake i suppen.",
+        "Smak til med timian, salt og pepper og server med grovt brød."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/tradisjon/ertesuppe-med-svineknoke/"
+    },
+    {
+      "id": "svinekoteletter-med-surkal",
+      "name": "Svinekoteletter med surkål og poteter",
+      "protein": "gris",
+      "sides": ["kartofler"],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "4 svinekoteletter",
+        "800 g poteter",
+        "500 g ferdig surkål",
+        "1 pose brun saus",
+        "4 dl vann",
+        "1 ss smør",
+        "salt og pepper"
+      ],
+      "steps": [
+        "Kok potetene.",
+        "Varm surkålen i en kjele.",
+        "Krydre kotelettene med salt og pepper og stek dem i smør 3–4 minutter på hver side.",
+        "Rør ut brun saus i vann og kok opp etter anvisning.",
+        "Server kotelettene med poteter, surkål og saus."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/svinekoteletter-med-surkal-og-poteter/"
+    },
+    {
+      "id": "pasta-carbonara",
+      "name": "Pasta carbonara",
+      "protein": "gris",
+      "sides": ["pasta"],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "400 g spaghetti",
+        "200 g bacon i terninger",
+        "3 egg",
+        "1 dl revet parmesan",
+        "1 fedd hvitløk",
+        "½ ts pepper",
+        "salt"
+      ],
+      "steps": [
+        "Kok spaghettien i godt saltet vann. Ta vare på 1 dl av kokevannet.",
+        "Stek bacon og knust hvitløk sprøtt i en stor panne.",
+        "Visp egg, parmesan og pepper i en bolle.",
+        "Ha den varme pastaen i pannen med baconet og ta pannen av platen.",
+        "Rør inn eggeblandingen og litt kokevann til sausen blir kremet. Server med en gang."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/kos/pasta-carbonara/"
+    },
+    {
+      "id": "wok-med-svinekjott",
+      "name": "Wok med svinekjøtt",
+      "protein": "gris",
+      "sides": ["ris"],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "400 g strimlet svinekjøtt",
+        "1 brokkoli",
+        "1 rød paprika",
+        "2 gulrøtter",
+        "1 løk",
+        "3 ss soyasaus",
+        "1 ss honning",
+        "1 ts revet ingefær",
+        "2 ss olje",
+        "3 dl jasminris"
+      ],
+      "steps": [
+        "Kok risen.",
+        "Skjær grønnsakene i biter og strimler.",
+        "Stek kjøttet raskt i olje på høy varme og legg det til side.",
+        "Wok grønnsakene i noen minutter så de fortsatt er sprø.",
+        "Ha kjøttet tilbake, rør inn soyasaus, honning og ingefær og server med ris."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/sunn/wok-med-svinekjott/"
+    },
+    {
+      "id": "kjottboller-i-tomatsaus",
+      "name": "Kjøttboller i tomatsaus",
+      "protein": "gris",
+      "sides": ["pasta"],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g kjøttdeig av svin",
+        "1 egg",
+        "½ dl griljermel",
+        "1 ts salt",
+        "1 løk",
+        "1 fedd hvitløk",
+        "2 bokser hakkede tomater (à 400 g)",
+        "1 ts oregano",
+        "400 g spaghetti",
+        "revet ost"
+      ],
+      "steps": [
+        "Bland kjøttdeig, egg, griljermel og salt og trill små boller.",
+        "Brun kjøttbollene i litt olje og legg dem til side.",
+        "Fres hakket løk og hvitløk, tilsett tomater og oregano og kok opp.",
+        "Legg bollene i sausen og la dem småkoke i 10–15 minutter.",
+        "Kok spaghettien og server med kjøttbollene og revet ost."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/kjottboller-i-tomatsaus/"
+    },
+    {
+      "id": "medisterkaker-med-potetstappe",
+      "name": "Medisterkaker med potetstappe og erter",
+      "protein": "gris",
+      "sides": ["kartofler"],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "600 g medisterdeig",
+        "1 kg poteter",
+        "2 dl melk",
+        "30 g smør",
+        "300 g frosne erter",
+        "100 g bacon i terninger",
+        "1 pose brun saus",
+        "salt og pepper"
+      ],
+      "steps": [
+        "Kok potetene møre.",
+        "Form medisterdeigen til 8–12 kaker og stek dem gjennom på middels varme.",
+        "Stek baconet sprøtt og kok ertene.",
+        "Lag brun saus etter anvisning.",
+        "Stapp potetene med varm melk, smør og salt, og server med medisterkaker, erter, bacon og saus."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/medisterkaker-med-potetstappe-erter-og-bacon/"
+    },
+    {
+      "id": "polsepytt-i-panne",
+      "name": "Pytt i panne med pølser",
+      "protein": "gris",
+      "sides": ["kartofler"],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g kjøttpølse",
+        "800 g kokte poteter",
+        "1 løk",
+        "1 rød paprika",
+        "2 ss smør",
+        "4 egg",
+        "salt og pepper",
+        "rødbeter"
+      ],
+      "steps": [
+        "Skjær poteter, pølse, løk og paprika i små terninger.",
+        "Stek potetene i smør til de får farge.",
+        "Ha i løk, paprika og pølse og stek videre til alt er varmt og gyllent.",
+        "Smak til med salt og pepper.",
+        "Stek speilegg og server pyttipannen med egg og rødbeter."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/rask-polsepytt-i-panne/"
+    },
+    {
+      "id": "kyllinggryte-med-kokosmelk",
+      "name": "Kyllinggryte med kokosmelk",
+      "protein": "kylling",
+      "sides": ["ris"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g strimlet kyllingfilet",
+        "1 løk",
+        "1 fedd hvitløk",
+        "2 ts karri",
+        "½ ts gurkemeie",
+        "4 dl kokosmelk",
+        "1 dl vann",
+        "1 hønsebuljongterning",
+        "2 gulrøtter",
+        "150 g sukkererter",
+        "3 dl jasminris",
+        "salt"
+      ],
+      "steps": [
+        "Kok risen.",
+        "Fres hakket løk og hvitløk med karri og gurkemeie i litt olje.",
+        "Ha i kyllingen og stek til den har fått farge.",
+        "Tilsett kokosmelk, vann, buljong og gulrot i skiver og la det småkoke i 10 minutter.",
+        "Ha i sukkerertene de siste minuttene, smak til med salt og server med ris."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/kos/kyllinggryte-med-kokosmelk/"
+    },
+    {
+      "id": "kyllingwok-med-gronnsaker",
+      "name": "Kyllingwok med grønnsaker",
+      "protein": "kylling",
+      "sides": ["nudler"],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g kyllingfilet",
+        "250 g eggnudler",
+        "1 brokkoli",
+        "1 rød paprika",
+        "2 gulrøtter",
+        "100 g sukkererter",
+        "1 fedd hvitløk",
+        "3 ss soyasaus",
+        "2 ss sweet chilisaus",
+        "2 ss olje"
+      ],
+      "steps": [
+        "Kok nudlene etter anvisning.",
+        "Skjær kylling og grønnsaker i strimler.",
+        "Stek kyllingen i olje på høy varme til den er gjennomstekt.",
+        "Ha i hvitløk og grønnsaker og wok i 3–4 minutter.",
+        "Vend inn nudler, soyasaus og sweet chilisaus og server med en gang."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/kyllingwok-med-gronnsaker/"
+    },
+    {
+      "id": "kylling-alfredo",
+      "name": "Kylling Alfredo",
+      "protein": "kylling",
+      "sides": ["pasta"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g kyllingfilet",
+        "400 g tagliatelle",
+        "1 ss smør",
+        "2 fedd hvitløk",
+        "3 dl matfløte",
+        "1 dl revet parmesan",
+        "200 g brokkoli",
+        "salt og pepper"
+      ],
+      "steps": [
+        "Kok pastaen og ha brokkolibukettene i de siste 3 minuttene.",
+        "Skjær kyllingen i biter, krydre og stek den gjennom i smør.",
+        "Ha i hvitløk og fløte og la sausen koke litt inn.",
+        "Rør inn parmesan og smak til med salt og pepper.",
+        "Vend pasta og brokkoli inn i sausen og server."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/kylling-alfredo/"
+    },
+    {
+      "id": "kyllingfilet-i-form",
+      "name": "Kyllingfilet i form",
+      "protein": "kylling",
+      "sides": ["ris", "salat"],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "4 kyllingfileter",
+        "1 løk",
+        "1 rød paprika",
+        "3 dl matfløte",
+        "1 dl ketchup",
+        "2 ts karri",
+        "1 ts salt",
+        "3 dl ris",
+        "salat"
+      ],
+      "steps": [
+        "Legg kyllingfiletene i en ildfast form og strø over salt.",
+        "Fordel løk og paprika i biter rundt kyllingen.",
+        "Rør sammen fløte, ketchup og karri og hell over.",
+        "Stek på 200 °C i 25–30 minutter til kyllingen er gjennomstekt.",
+        "Kok risen og server med salat."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/kyllingfilet-i-form/"
+    },
+    {
+      "id": "ovnsbakt-kylling-med-sotpotet",
+      "name": "Ovnsbakt kylling med søtpotet",
+      "protein": "kylling",
+      "sides": ["kartofler"],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "600 g kyllinglårfilet",
+        "2 søtpoteter",
+        "2 rødløk",
+        "1 boks kikerter (ca. 400 g)",
+        "3 fedd hvitløk",
+        "1 sitron",
+        "3 ss olivenolje",
+        "1 ts timian",
+        "1 ts salt",
+        "½ ts pepper",
+        "persille"
+      ],
+      "steps": [
+        "Skjær søtpotet og løk i biter og legg dem på en stekeplate med bakepapir.",
+        "Legg på kylling, avrente kikerter, hvitløksfedd og sitronbåter.",
+        "Drypp over olje og krydre med timian, salt og pepper.",
+        "Stek på 200 °C i 30–35 minutter til kyllingen er gjennomstekt.",
+        "Strø over persille og server."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/sunn/tray-bake-med-kylling/"
+    },
+    {
+      "id": "hjemmelagde-kyllingnuggets",
+      "name": "Hjemmelagde kyllingnuggets",
+      "protein": "kylling",
+      "sides": ["kartofler", "salat"],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g kyllingfilet",
+        "1 dl hvetemel",
+        "2 egg",
+        "2 dl griljermel",
+        "1 ts salt",
+        "1 ts paprikapulver",
+        "olje til steking",
+        "800 g poteter",
+        "1 agurk",
+        "3 gulrøtter"
+      ],
+      "steps": [
+        "Skjær potetene i båter, vend dem i litt olje og salt og stek dem på 220 °C i ca. 30 minutter.",
+        "Skjær kyllingen i biter.",
+        "Vend bitene i mel, så i sammenvispet egg og til slutt i griljermel blandet med salt og paprika.",
+        "Stek nuggetsene i olje til de er gylne og gjennomstekte.",
+        "Server med potetbåter, agurk- og gulrotstaver."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/kyllingnuggets-med-gronn-potetsalat/"
+    },
+    {
+      "id": "butter-chicken",
+      "name": "Butter chicken",
+      "protein": "kylling",
+      "sides": ["ris"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "650 g kyllingfilet",
+        "1 rødløk",
+        "2 fedd hvitløk",
+        "1 ss revet ingefær",
+        "2 ts garam masala",
+        "1 ts gurkemeie",
+        "1 ts spisskummen",
+        "2 ss smør",
+        "1 boks hakkede tomater (400 g)",
+        "2 dl matfløte",
+        "1 ts honning",
+        "3 dl basmatiris",
+        "salt"
+      ],
+      "steps": [
+        "Kok risen.",
+        "Skjær kyllingen i biter og stek den i smør til den får farge.",
+        "Ha i hakket løk, hvitløk, ingefær og krydder og fres i et par minutter.",
+        "Tilsett tomater, fløte og honning og la det småkoke i 10–15 minutter.",
+        "Smak til med salt og server med ris."
+      ],
+      "source": "https://www.tine.no/oppskrifter/middag-og-hovedretter/kylling-og-fjarkre/butter-chicken-p%C3%A5-20-minutter"
+    },
+    {
+      "id": "kyllingsuppe-med-pasta",
+      "name": "Kyllingsuppe med pasta og brokkoli",
+      "protein": "kylling",
+      "sides": ["brod"],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "300 g kyllingfilet",
+        "1,5 l vann",
+        "2 hønsebuljongterninger",
+        "2 gulrøtter",
+        "1 purreløk",
+        "150 g makaroni",
+        "200 g brokkoli",
+        "salt og pepper",
+        "grovt brød"
+      ],
+      "steps": [
+        "Kok opp vann og buljong.",
+        "Ha i gulrot i skiver og purreløk i ringer og kok i 5 minutter.",
+        "Tilsett makaroni og kyllingfilet i små biter og kok i 8 minutter.",
+        "Ha i brokkolibukettene og kok i 3 minutter til.",
+        "Smak til med salt og pepper og server med grovt brød."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/sunn/kyllingsuppe-med-pasta-og-brokkoli/"
+    },
+    {
+      "id": "kylling-i-pita",
+      "name": "Kylling i pita",
+      "protein": "kylling",
+      "sides": ["brod"],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "500 g kyllingfilet",
+        "2 ts tikka masala-krydder",
+        "1 ss olje",
+        "1 rød paprika",
+        "1 gul paprika",
+        "4 vårløk",
+        "2 dl matyoghurt",
+        "8 grove pitabrød",
+        "1 crispisalat"
+      ],
+      "steps": [
+        "Skjær kyllingen i strimler og vend den i krydder og olje.",
+        "Stek kyllingen gjennom i en varm panne.",
+        "Skjær paprika og vårløk i strimler og riv salaten.",
+        "Varm pitabrødene i brødristeren eller ovnen.",
+        "Fyll brødene med salat, grønnsaker, kylling og en klatt yoghurt."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/kylling-i-pita/"
+    },
+    {
+      "id": "kylling-i-form-med-sopp",
+      "name": "Kylling i form med sopp",
+      "protein": "kylling",
+      "sides": ["kartofler"],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "8 kyllinglår",
+        "250 g sjampinjong",
+        "1 løk",
+        "1 pose soppsaus",
+        "3 dl vann",
+        "2 dl crème fraîche",
+        "salt og pepper",
+        "1 kg poteter",
+        "gressløk"
+      ],
+      "steps": [
+        "Legg kyllinglårene i en ildfast form, krydre med salt og pepper og stek på 200 °C i 20 minutter.",
+        "Stek sopp og løk i litt smør.",
+        "Rør ut soppsausen i vannet, kok opp og rør inn crème fraîche.",
+        "Fordel sopp og saus over kyllingen og stek videre i 15–20 minutter.",
+        "Kok potetene og server med hakket gressløk på toppen."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/kylling-i-form/"
+    },
+    {
+      "id": "kyllinggryte-med-gronnsaker",
+      "name": "Kyllinggryte med grønnsaker",
+      "protein": "kylling",
+      "sides": ["kartofler", "brod"],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "450 g kyllingfilet",
+        "500 g fast potet",
+        "3 gulrøtter",
+        "2 selleristilker",
+        "1 løk",
+        "1 boks hakkede tomater (400 g)",
+        "2 ss tomatpuré",
+        "5 dl vann",
+        "1 hønsebuljongterning",
+        "salt og pepper",
+        "grovt brød"
+      ],
+      "steps": [
+        "Skjær kylling, poteter og grønnsaker i terninger.",
+        "Brun kyllingen i litt olje i en gryte.",
+        "Ha i løk og selleri og fres et par minutter.",
+        "Tilsett poteter, gulrot, tomater, tomatpuré, vann og buljong og la det småkoke i 20 minutter.",
+        "Smak til med salt og pepper og server med grovt brød."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/sunn/kyllinggryte-med-gronnsaker/"
+    },
+    {
+      "id": "fiskekaker-med-gressloksaus",
+      "name": "Fiskekaker med gressløksaus",
+      "protein": "fisk",
+      "sides": ["kartofler"],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g seifilet",
+        "1 ts salt",
+        "1 ss potetmel",
+        "1 egg",
+        "1,5 dl melk",
+        "½ løk",
+        "smør til steking",
+        "2 dl rømme",
+        "1 bunt gressløk",
+        "800 g poteter",
+        "3 gulrøtter"
+      ],
+      "steps": [
+        "Kok potetene.",
+        "Kjør fisk, salt og potetmel i en hurtigmikser, og tilsett egg, melk og revet løk litt etter litt til farsen er jevn.",
+        "Form kaker med en våt skje og stek dem gylne i smør, ca. 3 minutter på hver side.",
+        "Rør rømme med finklippet gressløk og litt salt.",
+        "Server fiskekakene med poteter, gressløksaus og revne gulrøtter."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/seikaker-med-gressloksaus/"
+    },
+    {
+      "id": "fiskepinner-med-potetmos",
+      "name": "Fiskepinner med potetmos og råkost",
+      "protein": "fisk",
+      "sides": ["kartofler", "salat"],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g torskefilet",
+        "1 dl hvetemel",
+        "2 egg",
+        "2 dl griljermel",
+        "1 ts salt",
+        "smør til steking",
+        "1 kg poteter",
+        "2 dl melk",
+        "3 gulrøtter",
+        "1 eple",
+        "remulade"
+      ],
+      "steps": [
+        "Kok potetene og mos dem med varm melk, en klatt smør og salt.",
+        "Skjær fisken i fingertykke pinner og strø over salt.",
+        "Vend pinnene i mel, egg og griljermel.",
+        "Stek fiskepinnene gylne i smør, ca. 2 minutter på hver side.",
+        "Riv gulrot og eple til råkost og server med fiskepinner, potetmos og remulade."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/hjemmelagde-fiskepinner-med-rakost-og-potetmos/"
+    },
+    {
+      "id": "ovnsbakt-laks",
+      "name": "Ovnsbakt laks med blomkål og spinat",
+      "protein": "fisk",
+      "sides": ["kartofler"],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "600 g laksefilet",
+        "1 blomkål",
+        "100 g babyspinat",
+        "2 ss olivenolje",
+        "1 sitron",
+        "1 ts salt",
+        "½ ts pepper",
+        "800 g småpoteter",
+        "2 dl rømme"
+      ],
+      "steps": [
+        "Kok potetene.",
+        "Del blomkålen i små buketter, vend dem i olje og salt og stek på 200 °C i 10 minutter.",
+        "Legg laksen på brettet, krydre med salt og pepper og stek videre i 12–15 minutter.",
+        "Vend spinaten inn i den varme blomkålen.",
+        "Server laksen med grønnsaker, poteter, sitronbåter og rømme."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/ovnsbakt-laks-med-spinat-og-blomkal/"
+    },
+    {
+      "id": "fiskegrateng",
+      "name": "Fiskegrateng",
+      "protein": "fisk",
+      "sides": ["pasta", "salat"],
+      "minutes": 55,
+      "servings": 4,
+      "ingredients": [
+        "500 g torsk eller sei",
+        "150 g makaroni",
+        "50 g smør",
+        "6 ss hvetemel",
+        "5 dl melk",
+        "3 egg",
+        "1 ts salt",
+        "½ ts muskat",
+        "3 ss griljermel",
+        "4 gulrøtter"
+      ],
+      "steps": [
+        "Kok makaronien og la den renne av.",
+        "Smelt smøret, rør inn melet og spe med melken. Kok sausen i 5 minutter og la den avkjøles litt.",
+        "Rør inn eggeplommene, salt og muskat, og vend til slutt inn stivpisket eggehvite.",
+        "Legg fisk i biter og makaroni i en smurt form og hell sausen over. Strø over griljermel.",
+        "Stek på 180 °C i ca. 40 minutter og server med revne gulrøtter."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/fiskegrateng/"
+    },
+    {
+      "id": "plukkfisk",
+      "name": "Plukkfisk",
+      "protein": "fisk",
+      "sides": ["kartofler"],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "600 g lettsaltet torsk",
+        "800 g poteter",
+        "40 g smør",
+        "3 ss hvetemel",
+        "5 dl melk",
+        "½ ts muskat",
+        "hvit pepper",
+        "100 g bacon i terninger",
+        "gressløk"
+      ],
+      "steps": [
+        "Kok potetene og skjær dem i terninger.",
+        "Trekk fisken i lettsaltet vann i ca. 8 minutter, og plukk den i biter uten skinn og bein.",
+        "Lag en hvit saus av smør, mel og melk og smak til med muskat og pepper.",
+        "Vend fisk og poteter forsiktig inn i sausen og varm opp.",
+        "Server med sprøstekt bacon og hakket gressløk på toppen."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/tradisjon/plukkfisk/"
+    },
+    {
+      "id": "kokt-torsk",
+      "name": "Kokt torsk med smør og poteter",
+      "protein": "fisk",
+      "sides": ["kartofler", "salat"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "800 g torskefilet",
+        "2 l vann",
+        "2 ss salt",
+        "1 kg poteter",
+        "100 g smør",
+        "1 dl fløte",
+        "1 ss hakket persille",
+        "½ sitron",
+        "1 agurk",
+        "1 ss eddik",
+        "1 ss sukker"
+      ],
+      "steps": [
+        "Kok potetene.",
+        "Lag agurksalat: skjær agurken i tynne skiver og vend med eddik, sukker og litt vann.",
+        "Kok opp vann og salt, legg i fisken i stykker og la den trekke på svak varme i 6–8 minutter.",
+        "Kok opp fløten, ta kjelen av platen og visp inn smøret i biter. Smak til med sitron og persille.",
+        "Server torsken med poteter, smørsaus og agurksalat."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/tradisjon/kokt-torsk/"
+    },
+    {
+      "id": "fiskesuppe",
+      "name": "Fiskesuppe",
+      "protein": "fisk",
+      "sides": ["brod"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "200 g laksefilet",
+        "200 g torskefilet",
+        "1 løk",
+        "2 gulrøtter",
+        "1 purreløk",
+        "2 ss smør",
+        "2 ss hvetemel",
+        "8 dl fiskekraft",
+        "3 dl matfløte",
+        "salt og pepper",
+        "gressløk",
+        "grovt brød"
+      ],
+      "steps": [
+        "Skjær løk, gulrot og purreløk i små biter og fres dem myke i smør.",
+        "Dryss over melet og spe med fiskekraft under omrøring.",
+        "Ha i fløten og la suppen småkoke i 10 minutter.",
+        "Legg i fisken i terninger og la den trekke i 4–5 minutter uten å koke.",
+        "Smak til med salt og pepper, strø over gressløk og server med grovt brød."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/kremet-fiskesuppe/"
+    },
+    {
+      "id": "fisketaco",
+      "name": "Fisketaco",
+      "protein": "fisk",
+      "sides": ["brod"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g torskeloin",
+        "2 ts tacokrydder",
+        "1 ss olje",
+        "8 tortillalefser",
+        "¼ hodekål",
+        "2 tomater",
+        "1 avokado",
+        "2 dl rømme",
+        "1 lime",
+        "salt"
+      ],
+      "steps": [
+        "Skjær fisken i biter og vend den i tacokrydder og olje.",
+        "Stek fisken i en varm panne i 2–3 minutter på hver side.",
+        "Strimle kålen og bland med litt limesaft og salt. Skjær tomat og avokado i terninger.",
+        "Varm lefsene.",
+        "Fyll lefsene med kål, fisk, tomat, avokado og rømme."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/fisketaco/"
+    },
+    {
+      "id": "seibiff-med-lok",
+      "name": "Seibiff med løk",
+      "protein": "fisk",
+      "sides": ["kartofler"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "700 g seifilet",
+        "3 løk",
+        "2 ss hvetemel",
+        "1 ts salt",
+        "½ ts pepper",
+        "50 g smør",
+        "3 dl vann",
+        "800 g poteter",
+        "4 gulrøtter"
+      ],
+      "steps": [
+        "Kok poteter og gulrøtter.",
+        "Skjær løken i skiver og stek den myk og gyllen i halvparten av smøret. Legg til side.",
+        "Del fisken i porsjonsstykker og vend dem i mel med salt og pepper.",
+        "Stek fisken i resten av smøret 2–3 minutter på hver side.",
+        "Legg løken over fisken, hell på vannet og la det trekke i 5 minutter. Server med poteter og gulrøtter."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/tradisjon/seibiff-med-lok/"
+    },
+    {
+      "id": "pasta-med-varmrokt-laks",
+      "name": "Pasta med varmrøkt laks",
+      "protein": "fisk",
+      "sides": ["pasta"],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "400 g tagliatelle",
+        "250 g varmrøkt laks",
+        "3 dl matfløte",
+        "200 g frosne erter",
+        "50 g babyspinat",
+        "3 vårløk",
+        "1 fedd hvitløk",
+        "salt og pepper"
+      ],
+      "steps": [
+        "Kok pastaen.",
+        "Fres hakket vårløk og hvitløk i litt olje.",
+        "Ha i fløte og erter og la det koke et par minutter.",
+        "Vend inn spinat og laks i biter og varm forsiktig opp.",
+        "Bland med pastaen, smak til med salt og pepper og server."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/pasta-med-varmrokt-laks/"
+    },
+    {
+      "id": "lettsaltet-torsk-med-bacon",
+      "name": "Lettsaltet torsk med bacon",
+      "protein": "fisk",
+      "sides": ["kartofler"],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "800 g lettsaltet torsk",
+        "150 g bacon i terninger",
+        "1 kg poteter",
+        "4 gulrøtter",
+        "50 g smør",
+        "pepper",
+        "hakket persille"
+      ],
+      "steps": [
+        "Kok poteter og gulrøtter.",
+        "Legg torsken i kokende vann, ta kjelen av platen og la fisken trekke i 8–10 minutter.",
+        "Stek baconet sprøtt og smelt smøret.",
+        "Legg fisken på et fat og strø over bacon, persille og pepper.",
+        "Server med poteter, gulrøtter og smeltet smør."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/tradisjon/lettsaltet-torsk-med-bacon/"
+    },
+    {
+      "id": "pannekaker-med-blabaersyltetoy",
+      "name": "Pannekaker med blåbærsyltetøy",
+      "protein": "vegetar",
+      "sides": ["brod"],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "3 dl hvetemel",
+        "6 dl melk",
+        "4 egg",
+        "½ ts salt",
+        "1 ss sukker",
+        "smør til steking",
+        "blåbærsyltetøy",
+        "sukker til servering"
+      ],
+      "steps": [
+        "Visp melet med halvparten av melken til en klumpfri røre.",
+        "Rør inn resten av melken, egg, salt og sukker og la røren svelle i 15 minutter.",
+        "Smelt litt smør i en stekepanne og hell i et tynt lag røre.",
+        "Stek pannekakene gylne på begge sider.",
+        "Server med blåbærsyltetøy og sukker."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/pannekaker/"
+    },
+    {
+      "id": "pasta-med-kremet-sopp",
+      "name": "Pasta med kremet sopp",
+      "protein": "vegetar",
+      "sides": ["pasta"],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g tagliatelle",
+        "300 g sjampinjong",
+        "½ løk",
+        "1 fedd hvitløk",
+        "2 ss smør",
+        "3 dl matfløte",
+        "100 g babyspinat",
+        "4 ss revet parmesan",
+        "1 ss soyasaus",
+        "salt og pepper"
+      ],
+      "steps": [
+        "Kok pastaen.",
+        "Skjær soppen i skiver og stek den i smør til den får farge.",
+        "Ha i hakket løk og hvitløk og stek videre et par minutter.",
+        "Tilsett fløte og soyasaus og la sausen koke litt inn. Vend inn spinaten.",
+        "Bland med pastaen, smak til og server med revet parmesan."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/kos/pasta-med-kremet-sopp/"
+    },
+    {
+      "id": "mac-n-cheese-med-blomkal",
+      "name": "Mac 'n' cheese med blomkål",
+      "protein": "vegetar",
+      "sides": ["pasta"],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "300 g makaroni",
+        "½ blomkål",
+        "50 g smør",
+        "4 ss hvetemel",
+        "6 dl melk",
+        "200 g revet ost",
+        "200 g frosne erter",
+        "1 fedd hvitløk",
+        "3 ss griljermel",
+        "salt og pepper"
+      ],
+      "steps": [
+        "Kok makaroni og små blomkålbuketter sammen i 6–7 minutter. Ha i ertene det siste minuttet og hell av vannet.",
+        "Smelt smøret med knust hvitløk, rør inn melet og spe med melken under omrøring.",
+        "Rør inn det meste av osten og smak til med salt og pepper.",
+        "Vend makaroni og grønnsaker inn i ostesausen og ha alt i en ildfast form.",
+        "Strø over resten av osten og griljermel og stek på 200 °C i ca. 20 minutter."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/mac-n-cheese-med-blomkal/"
+    },
+    {
+      "id": "tomatsuppe-med-egg",
+      "name": "Tomatsuppe med egg og makaroni",
+      "protein": "vegetar",
+      "sides": ["brod"],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "1 løk",
+        "2 fedd hvitløk",
+        "2 bokser hakkede tomater (à 400 g)",
+        "2 ss tomatpuré",
+        "7 dl grønnsakskraft",
+        "1 dl matfløte",
+        "1 ts sukker",
+        "100 g makaroni",
+        "4 egg",
+        "salt og pepper"
+      ],
+      "steps": [
+        "Fres hakket løk og hvitløk myk i litt olje.",
+        "Tilsett tomater, tomatpuré og kraft og la det koke i 10 minutter.",
+        "Kjør suppen jevn med stavmikser og rør inn fløte og sukker. Smak til med salt og pepper.",
+        "Kok makaronien i suppen til den er mør, og kok eggene i 8–9 minutter.",
+        "Server suppen med egg i båter."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/familien/tomatsuppe-med-kokt-egg/"
+    },
+    {
+      "id": "omelett-med-ost",
+      "name": "Omelett med ost",
+      "protein": "vegetar",
+      "sides": ["brod", "salat"],
+      "minutes": 15,
+      "servings": 4,
+      "ingredients": [
+        "8 egg",
+        "1 dl melk",
+        "1 ts salt",
+        "½ ts pepper",
+        "2 ss smør",
+        "3 dl revet ost",
+        "1 rød paprika",
+        "grovt brød"
+      ],
+      "steps": [
+        "Visp egg, melk, salt og pepper lett sammen.",
+        "Smelt smøret i en stor stekepanne og ha i paprika i terninger.",
+        "Hell i eggeblandingen og la den stivne på middels varme mens du drar den forsiktig inn mot midten.",
+        "Strø over osten, legg på lokk og la omeletten bli ferdig på svak varme.",
+        "Del i fire og server med grovt brød og salat."
+      ],
+      "source": "https://www.tine.no/oppskrifter/lunsj-og-smaretter/omeletter-og-pannekaker/omelett-med-ost"
+    },
+    {
+      "id": "vegetartaco-med-bonner",
+      "name": "Vegetartaco med bønner",
+      "protein": "vegetar",
+      "sides": ["brod"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "2 bokser svarte bønner (à 400 g)",
+        "1 løk",
+        "2 fedd hvitløk",
+        "2 ts spisskummen",
+        "1 ss honning",
+        "1 dl grønnsakskraft",
+        "8 tortillalefser",
+        "200 g rødkål",
+        "100 g fetaost",
+        "1 isbergsalat",
+        "2 dl rømme"
+      ],
+      "steps": [
+        "Fres hakket løk og hvitløk myk i litt olje.",
+        "Ha i avrente bønner, spisskummen, honning og kraft og la det småkoke i 10 minutter. Mos litt av bønnene.",
+        "Strimle rødkål og salat og smuldre fetaosten.",
+        "Varm lefsene.",
+        "Sett alt på bordet og la alle fylle sin egen taco."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/kos/vegetartaco-med-bonner/"
+    },
+    {
+      "id": "potet-og-purreloksuppe",
+      "name": "Potet- og purreløksuppe",
+      "protein": "vegetar",
+      "sides": ["brod"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g poteter",
+        "2 purreløk",
+        "1 fedd hvitløk",
+        "1 ss olje",
+        "1 l grønnsakskraft",
+        "2 dl matfløte",
+        "2 dl helmelk",
+        "1 ss sitronsaft",
+        "salt og pepper",
+        "baguette"
+      ],
+      "steps": [
+        "Skrell og skjær potetene i terninger, og skjær purreløken i ringer.",
+        "Fres purre og hvitløk myk i olje i en gryte.",
+        "Ha i poteter og kraft og kok i ca. 15 minutter til potetene er møre.",
+        "Tilsett fløte og melk og kjør suppen jevn med stavmikser.",
+        "Smak til med sitronsaft, salt og pepper og server med baguette."
+      ],
+      "source": "https://www.matprat.no/oppskrifter/rask/enkel-potet--og-purreloksuppe/"
+    }
+  ]
+}

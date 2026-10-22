@@ -1,0 +1,1472 @@
+{
+  "format": "madplan.profile",
+  "version": 1,
+  "name": "Favorieten van het gezin",
+  "summary": "De 50 gerechten die Nederlandse gezinnen doordeweeks het liefst op tafel zetten.",
+  "symbol": "fork.knife",
+  "settings": {
+    "noSameProteinInRow": true
+  },
+  "recipes": [
+    {
+      "id": "spaghetti-bolognese",
+      "name": "Spaghetti bolognese",
+      "protein": "okse",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "500 g rundergehakt",
+        "400 g spaghetti",
+        "1 ui",
+        "2 winterpenen",
+        "1 stengel bleekselderij",
+        "2 el olijfolie",
+        "1 el tomatenpuree",
+        "800 g tomatenblokjes (blik)",
+        "1 tl gedroogde Italiaanse kruiden",
+        "geraspte Parmezaanse kaas",
+        "peper en zout"
+      ],
+      "steps": [
+        "Snipper de ui en snijd wortel en selderij in kleine blokjes.",
+        "Bak het gehakt rul in de olie, voeg de groenten toe en bak 5 minuten mee.",
+        "Roer de tomatenpuree erdoor, voeg tomatenblokjes en kruiden toe en laat 25 minuten zacht pruttelen.",
+        "Kook intussen de spaghetti beetgaar.",
+        "Breng de saus op smaak en serveer met spaghetti en kaas."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R615118/eenvoudige-spaghetti-bolognese"
+    },
+    {
+      "id": "lasagne",
+      "name": "Lasagne",
+      "protein": "okse",
+      "sides": [
+        "pasta",
+        "salat"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "400 g rundergehakt",
+        "2 uien",
+        "2 tenen knoflook",
+        "2 el olijfolie",
+        "680 g pastasaus (pot)",
+        "250 g lasagnebladen",
+        "40 g boter",
+        "40 g bloem",
+        "600 ml melk",
+        "150 g geraspte kaas",
+        "peper en zout"
+      ],
+      "steps": [
+        "Verwarm de oven voor op 200 °C. Snipper ui en knoflook.",
+        "Bak het gehakt rul in de olie met ui en knoflook en voeg de pastasaus toe.",
+        "Smelt de boter, roer de bloem erdoor en voeg al roerend de melk toe tot een gladde witte saus.",
+        "Leg in een ovenschaal laagjes vleessaus, lasagnebladen en witte saus; eindig met witte saus en kaas.",
+        "Bak de lasagne 35 minuten in de oven tot hij goudbruin is."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R380622/makkelijke-lasagne-met-gehakt-tomatensaus"
+    },
+    {
+      "id": "chili-con-carne",
+      "name": "Chili con carne",
+      "protein": "okse",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g rundergehakt",
+        "1 ui",
+        "2 tenen knoflook",
+        "2 rode paprika's",
+        "2 el olijfolie",
+        "1 tl paprikapoeder",
+        "1 tl gemalen komijn",
+        "800 g tomatenblokjes (blik)",
+        "400 g bruine bonen (pot)",
+        "150 g mais (blik)",
+        "300 g rijst",
+        "geraspte belegen kaas"
+      ],
+      "steps": [
+        "Snipper ui en knoflook en snijd de paprika in blokjes.",
+        "Bak het gehakt rul in de olie, voeg ui, knoflook en kruiden toe en bak 2 minuten mee.",
+        "Voeg paprika en tomatenblokjes toe en laat 15 minuten zacht koken.",
+        "Kook intussen de rijst.",
+        "Schep uitgelekte bonen en mais erdoor, warm 5 minuten mee en serveer met rijst en kaas."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1198941/oma-s-chili-con-carne"
+    },
+    {
+      "id": "wraps-met-gehakt",
+      "name": "Wraps met gehakt",
+      "protein": "okse",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g rundergehakt",
+        "1 ui",
+        "1 el olijfolie",
+        "70 g tomatenpuree",
+        "1 tl paprikapoeder",
+        "1 tl gemalen komijn",
+        "8 tortillawraps",
+        "200 g ijsbergsla",
+        "2 tomaten",
+        "150 g geraspte kaas",
+        "knoflooksaus"
+      ],
+      "steps": [
+        "Snipper de ui en bak hem glazig in de olie.",
+        "Voeg het gehakt toe en bak rul; roer tomatenpuree, kruiden en een scheutje water erdoor en laat 5 minuten pruttelen.",
+        "Snijd sla en tomaten en verwarm de wraps kort in de oven of pan.",
+        "Zet alles op tafel en laat iedereen zijn eigen wrap vullen met gehakt, groente, kaas en saus."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R451526/wraps-met-gehakt"
+    },
+    {
+      "id": "biefstuk-met-gebakken-aardappelen",
+      "name": "Biefstuk met gebakken aardappelen en sperziebonen",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "4 biefstukken (à 125 g)",
+        "800 g vastkokende aardappelen",
+        "400 g sperziebonen",
+        "50 g roomboter",
+        "2 el olie",
+        "1 ui",
+        "peper en zout"
+      ],
+      "steps": [
+        "Kook de aardappelen 15 minuten, laat uitlekken en snijd in plakjes.",
+        "Bak de aardappelplakjes met de gesnipperde ui in de olie goudbruin en knapperig.",
+        "Kook de sperziebonen in 8 minuten gaar.",
+        "Bestrooi de biefstukken met peper en zout en bak ze in de hete boter 2–3 minuten per kant.",
+        "Laat de biefstuk even rusten en serveer met de jus uit de pan, aardappelen en bonen."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R733256/biefstuk-bakken"
+    },
+    {
+      "id": "hamburgers",
+      "name": "Hamburgers",
+      "protein": "okse",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "500 g rundergehakt",
+        "4 hamburgerbroodjes",
+        "4 plakken jong belegen kaas",
+        "1 krop little gem",
+        "2 tomaten",
+        "2 el mayonaise",
+        "2 el ketchup",
+        "4 el augurkrelish",
+        "1 el olie",
+        "peper en zout"
+      ],
+      "steps": [
+        "Kneed het gehakt met peper en zout en vorm 4 platte burgers.",
+        "Bak de burgers in de olie 4 minuten per kant en leg de laatste minuut een plak kaas erop.",
+        "Snijd de tomaten in plakken en rooster de broodjes kort.",
+        "Beleg de broodjes met sla, burger, tomaat, relish, mayonaise en ketchup."
+      ],
+      "source": "https://www.jumbo.com/recepten/klassieke-burger-met-gegrilde-tomaat-en-chips-501687"
+    },
+    {
+      "id": "gehaktballen-met-jus",
+      "name": "Gehaktballen met jus, aardappelen en sperziebonen",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "500 g half-om-half gehakt",
+        "1 snee wit brood",
+        "50 ml melk",
+        "1 ei",
+        "1 kleine ui",
+        "4 el paneermeel",
+        "snufje nootmuskaat",
+        "50 g roomboter",
+        "1 kg aardappelen",
+        "500 g sperziebonen",
+        "peper en zout"
+      ],
+      "steps": [
+        "Week het brood in de melk en snipper de ui fijn.",
+        "Meng gehakt, brood, ei, ui, nootmuskaat, peper en zout en draai er 4 ballen van; rol ze door het paneermeel.",
+        "Bak de ballen rondom bruin in de boter, giet een scheutje water erbij en laat ze afgedekt 20 minuten zacht garen.",
+        "Kook intussen de aardappelen en de sperziebonen gaar.",
+        "Serveer de gehaktballen met de jus uit de pan, aardappelen en bonen."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R845634/gehaktballen-basisrecept"
+    },
+    {
+      "id": "broccoli-ovenschotel-met-gehakt",
+      "name": "Broccoli-ovenschotel met gehakt",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 70,
+      "servings": 4,
+      "ingredients": [
+        "500 g rundergehakt",
+        "1 kg kruimige aardappelen",
+        "600 g broccoli",
+        "2 uien",
+        "2 tenen knoflook",
+        "2 el olijfolie",
+        "1 el tomatenpuree",
+        "40 g roomboter",
+        "100 ml melk",
+        "175 g geraspte jong belegen kaas",
+        "snufje nootmuskaat"
+      ],
+      "steps": [
+        "Kook de aardappelen gaar en stamp ze met boter, melk, nootmuskaat en zout tot puree.",
+        "Verwarm de oven voor op 200 °C en kook de broccoliroosjes 4 minuten.",
+        "Bak ui en knoflook in de olie, voeg het gehakt toe en bak rul; roer de tomatenpuree erdoor.",
+        "Schep gehakt en broccoli in een ovenschaal, verdeel de puree erover en bestrooi met kaas.",
+        "Bak de schotel 30 minuten in de oven tot de kaas goudbruin is."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1201600/broccoli-ovenschotel-met-gehakt"
+    },
+    {
+      "id": "groentesoep-met-balletjes",
+      "name": "Groentesoep met balletjes",
+      "protein": "okse",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "250 g rundergehakt",
+        "1,5 l water",
+        "2 bouillonblokjes",
+        "400 g aardappelen",
+        "2 winterpenen",
+        "1 prei",
+        "100 g sperziebonen",
+        "2 tl Provençaalse kruiden",
+        "verse selderij",
+        "8 sneetjes brood",
+        "peper en zout"
+      ],
+      "steps": [
+        "Breng het water met de bouillonblokjes aan de kook.",
+        "Snijd aardappelen, wortel, prei en bonen in kleine stukjes en kook ze 10 minuten in de bouillon.",
+        "Meng het gehakt met de kruiden, peper en zout en draai er kleine balletjes van.",
+        "Laat de balletjes 8 minuten in de soep garen.",
+        "Breng op smaak, bestrooi met selderij en serveer met brood."
+      ],
+      "source": "https://ah.nl/allerhande/recept/R-R1199637/groentesoep-met-balletjes"
+    },
+    {
+      "id": "hachee",
+      "name": "Hachee met aardappelen en rode kool",
+      "protein": "okse",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 200,
+      "servings": 4,
+      "ingredients": [
+        "700 g runderriblappen",
+        "5 uien",
+        "50 g roomboter",
+        "3 el bloem",
+        "500 ml water",
+        "1 runderbouillonblokje",
+        "2 el azijn",
+        "2 laurierblaadjes",
+        "4 kruidnagels",
+        "1 kg aardappelen",
+        "500 g rode kool met appel (pot)"
+      ],
+      "steps": [
+        "Snijd het vlees in grote blokken en de uien in halve ringen.",
+        "Bak het vlees in de boter rondom bruin, voeg de uien toe en bak ze zacht.",
+        "Strooi de bloem erover, roer goed en voeg water, bouillonblokje, azijn, laurier en kruidnagels toe.",
+        "Laat de hachee afgedekt ongeveer 3 uur heel zacht stoven tot het vlees uit elkaar valt.",
+        "Kook de aardappelen en warm de rode kool op; serveer met de hachee."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R8302/hachee-basisrecept"
+    },
+    {
+      "id": "boerenkoolstamppot-met-rookworst",
+      "name": "Boerenkoolstamppot met rookworst",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "1,5 kg kruimige aardappelen",
+        "500 g gesneden boerenkool",
+        "1 rookworst (275 g)",
+        "150 ml warme melk",
+        "50 g roomboter",
+        "snufje nootmuskaat",
+        "mosterd",
+        "peper en zout"
+      ],
+      "steps": [
+        "Schil de aardappelen, snijd ze in stukken en kook ze met de boerenkool erop in 20 minuten gaar.",
+        "Verwarm de rookworst 15 minuten in heet water (niet laten koken).",
+        "Giet de aardappelen en boerenkool af en stamp ze met melk en boter tot een smeuïge stamppot.",
+        "Breng op smaak met nootmuskaat, peper en zout.",
+        "Serveer met plakken rookworst en mosterd."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R7456/klassieke-boerenkoolstamppot"
+    },
+    {
+      "id": "hutspot-met-speklapjes",
+      "name": "Hutspot met speklapjes",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "1 kg kruimige aardappelen",
+        "600 g winterpenen",
+        "3 uien",
+        "8 speklapjes (ca. 500 g)",
+        "1 el olie",
+        "100 ml melk",
+        "40 g roomboter",
+        "peper en zout"
+      ],
+      "steps": [
+        "Schil de aardappelen en snijd aardappelen, wortels en uien in stukken.",
+        "Kook alles samen in 20 minuten gaar in water met zout.",
+        "Bestrooi de speklapjes met peper en zout en bak ze in de olie aan beide kanten knapperig.",
+        "Giet de groenten af en stamp ze grof met melk en boter.",
+        "Serveer de hutspot met de speklapjes en het bakvet als jus."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1199963/hutspot-met-speklapjes"
+    },
+    {
+      "id": "zuurkoolstamppot-met-rookworst",
+      "name": "Zuurkoolstamppot met rookworst",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "1,2 kg kruimige aardappelen",
+        "500 g zuurkool",
+        "1 rookworst (275 g)",
+        "125 g spekblokjes",
+        "1 appel",
+        "100 ml melk",
+        "1 el mosterd",
+        "peper"
+      ],
+      "steps": [
+        "Kook de aardappelen in 20 minuten gaar; laat de zuurkool de laatste 10 minuten meekoken.",
+        "Verwarm de rookworst in heet water.",
+        "Bak de spekblokjes uit en bak de appel in blokjes kort mee.",
+        "Giet aardappelen en zuurkool af en stamp met melk en mosterd.",
+        "Schep spek en appel erdoor en serveer met plakken rookworst."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R591684/zuurkool-appelstamp-met-rookworst"
+    },
+    {
+      "id": "andijviestamppot-met-spekjes",
+      "name": "Andijviestamppot met spekjes",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "1,25 kg kruimige aardappelen",
+        "500 g gesneden andijvie",
+        "250 g gerookte spekreepjes",
+        "150 ml melk",
+        "30 g roomboter",
+        "snufje nootmuskaat",
+        "peper en zout"
+      ],
+      "steps": [
+        "Kook de aardappelen in 20 minuten gaar.",
+        "Bak intussen de spekreepjes knapperig in een droge koekenpan.",
+        "Giet de aardappelen af en stamp ze met melk en boter tot puree.",
+        "Roer de rauwe andijvie en de helft van de spekjes door de puree.",
+        "Breng op smaak met nootmuskaat, peper en zout en verdeel de rest van de spekjes erover."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1192903/andijviestamppot-met-spekjes"
+    },
+    {
+      "id": "slavinken-met-bloemkool-en-kaassaus",
+      "name": "Slavinken met aardappelen, bloemkool en kaassaus",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "4 slavinken",
+        "1 kg aardappelen",
+        "1 bloemkool (ca. 600 g)",
+        "1 el olie",
+        "30 g roomboter",
+        "30 g bloem",
+        "400 ml melk",
+        "100 g geraspte belegen kaas",
+        "snufje nootmuskaat"
+      ],
+      "steps": [
+        "Kook de aardappelen en de bloemkoolroosjes apart in 15–20 minuten gaar.",
+        "Bak de slavinken in de olie op middelhoog vuur in ca. 15 minuten rondom bruin en gaar.",
+        "Smelt de boter, roer de bloem erdoor en voeg al roerend de melk toe; laat binden.",
+        "Smelt de kaas in de saus en breng op smaak met nootmuskaat.",
+        "Serveer slavinken met aardappelen en bloemkool met kaassaus."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1199949/slavink-met-aardappelen-bloemkool-en-kaassaus"
+    },
+    {
+      "id": "karbonade-met-aardappeltjes",
+      "name": "Karbonade met gebakken aardappeltjes en rodekoolsalade",
+      "protein": "gris",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "4 ribkarbonades",
+        "600 g krieltjes",
+        "3 el kruidenboter",
+        "300 g gesneden rode kool",
+        "1 appel",
+        "75 g rozijnen",
+        "3 el mayonaise",
+        "1 el azijn",
+        "peper en zout"
+      ],
+      "steps": [
+        "Kook de krieltjes 10 minuten voor en bak ze daarna in 1 el kruidenboter goudbruin.",
+        "Meng rode kool, appel in reepjes en rozijnen met mayonaise en azijn tot een salade.",
+        "Bestrooi de karbonades met peper en zout.",
+        "Bak ze in de rest van de kruidenboter 4–5 minuten per kant gaar.",
+        "Serveer met de aardappeltjes en de rodekoolsalade."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1186740/karbonade-aardappeltjes-en-rodekool-rozijnensalade"
+    },
+    {
+      "id": "macaroni-met-ham-en-kaas",
+      "name": "Macaroni met ham en kaas",
+      "protein": "gris",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "300 g macaroni",
+        "200 g hamblokjes",
+        "1 ui",
+        "1 rode paprika",
+        "2 el olie",
+        "500 g tomatenblokjes (blik)",
+        "1 el tomatenpuree",
+        "1 tl Italiaanse kruiden",
+        "150 g geraspte kaas"
+      ],
+      "steps": [
+        "Kook de macaroni beetgaar en verwarm de oven voor op 200 °C.",
+        "Bak ui en paprika in de olie, voeg ham, tomatenpuree, tomatenblokjes en kruiden toe en laat 5 minuten pruttelen.",
+        "Meng de saus met de macaroni en schep alles in een ovenschaal.",
+        "Bestrooi met kaas en gratineer 15 minuten in de oven."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1038442/macaroni-met-ham-en-kaas"
+    },
+    {
+      "id": "witlof-met-ham-en-kaas",
+      "name": "Witlof met ham en kaas uit de oven",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 55,
+      "servings": 4,
+      "ingredients": [
+        "4 stronken witlof",
+        "8 plakken achterham",
+        "1 kg aardappelen",
+        "30 g roomboter",
+        "30 g bloem",
+        "400 ml melk",
+        "100 g geraspte belegen kaas",
+        "snufje nootmuskaat"
+      ],
+      "steps": [
+        "Verwarm de oven voor op 200 °C. Halveer het witlof in de lengte en kook het 5 minuten; laat goed uitlekken.",
+        "Rol elke helft in een plak ham en leg de rolletjes in een ovenschaal.",
+        "Maak van boter, bloem en melk een witte saus en roer de helft van de kaas en de nootmuskaat erdoor.",
+        "Giet de saus over het witlof, bestrooi met de rest van de kaas en bak 25 minuten in de oven.",
+        "Kook intussen de aardappelen en serveer ze erbij."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R940670/witlof-uit-de-oven-met-ham-en-kaas"
+    },
+    {
+      "id": "erwtensoep",
+      "name": "Erwtensoep (snert)",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 120,
+      "servings": 4,
+      "ingredients": [
+        "400 g spliterwten",
+        "500 g varkensribbetjes",
+        "2 l water",
+        "2 runderbouillonblokjes",
+        "2 laurierblaadjes",
+        "1 winterpeen",
+        "2 preien",
+        "300 g knolselderij",
+        "1 rookworst (275 g)",
+        "verse selderij",
+        "roggebrood"
+      ],
+      "steps": [
+        "Spoel de spliterwten en breng ze met water, ribbetjes, bouillonblokjes en laurier aan de kook.",
+        "Laat 60 minuten zacht koken en roer af en toe.",
+        "Snijd wortel, prei en knolselderij in blokjes, voeg toe en kook nog 30 minuten.",
+        "Haal het vlees van de botjes en doe het terug in de soep; voeg de rookworst in plakjes toe.",
+        "Bestrooi met selderij en serveer met roggebrood."
+      ],
+      "source": "https://www.jumbo.com/recepten/erwtensoep-503768"
+    },
+    {
+      "id": "nasi-goreng",
+      "name": "Nasi goreng met ham",
+      "protein": "gris",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "300 g rijst",
+        "250 g hamblokjes",
+        "900 g nasigroente (zak)",
+        "95 g boemboe nasi goreng",
+        "2 el zonnebloemolie",
+        "2 el ketjap manis",
+        "4 eieren",
+        "kroepoek"
+      ],
+      "steps": [
+        "Kook de rijst en laat hem goed afkoelen (bij voorkeur een dag van tevoren).",
+        "Fruit de boemboe kort in de olie in een wok.",
+        "Roerbak de nasigroente 5 minuten en voeg de hamblokjes toe.",
+        "Schep de rijst erdoor, voeg ketjap toe en roerbak tot alles heet is.",
+        "Bak de eieren en serveer de nasi met een spiegelei en kroepoek."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1199969/nasi"
+    },
+    {
+      "id": "boerenomelet",
+      "name": "Boerenomelet",
+      "protein": "gris",
+      "sides": [
+        "kartofler",
+        "brod"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "8 eieren",
+        "150 g gerookte spekblokjes",
+        "400 g aardappelblokjes (diepvries)",
+        "300 g roerbakgroente (prei, wortel, ui)",
+        "2 el roomboter",
+        "3 el melk",
+        "verse bieslook",
+        "4 sneetjes brood",
+        "peper en zout"
+      ],
+      "steps": [
+        "Bak de spekblokjes uit in de boter in een grote koekenpan.",
+        "Voeg de aardappelblokjes toe en bak ze in 10 minuten goudbruin.",
+        "Bak de groente 5 minuten mee.",
+        "Klop de eieren los met melk, peper en zout en giet over de groenten.",
+        "Laat de omelet op laag vuur afgedekt stollen, bestrooi met bieslook en serveer met brood."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R7890/boerenomelet"
+    },
+    {
+      "id": "spaghetti-carbonara",
+      "name": "Spaghetti carbonara",
+      "protein": "gris",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "400 g spaghetti",
+        "200 g spekblokjes",
+        "4 eieren",
+        "80 g geraspte Parmezaanse kaas",
+        "1 el olijfolie",
+        "versgemalen peper"
+      ],
+      "steps": [
+        "Kook de spaghetti beetgaar en bewaar een kopje kookvocht.",
+        "Bak de spekblokjes knapperig in de olie.",
+        "Klop eieren en kaas los met flink wat peper.",
+        "Meng de spaghetti van het vuur af met het spek en het eimengsel; voeg wat kookvocht toe tot een romige saus.",
+        "Serveer direct met extra kaas."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1200422/klassieke-spaghetti-carbonara"
+    },
+    {
+      "id": "kip-met-appelmoes-en-friet",
+      "name": "Kip met appelmoes en friet",
+      "protein": "kylling",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "8 kippenpoten (drumsticks)",
+        "1 el paprikapoeder",
+        "2 el olie",
+        "750 g ovenfriet",
+        "400 g appelmoes",
+        "450 g doperwten (diepvries)",
+        "25 g roomboter",
+        "mayonaise",
+        "peper en zout"
+      ],
+      "steps": [
+        "Verwarm de oven voor op 200 °C.",
+        "Wrijf de kippenpoten in met olie, paprikapoeder, peper en zout en leg ze in een ovenschaal.",
+        "Rooster de kip 45 minuten; schuif de laatste 25 minuten de friet erbij.",
+        "Kook de doperwten kort en schep de boter erdoor.",
+        "Serveer kip en friet met appelmoes, doperwten en mayonaise."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R810388/kip-met-appelmoes"
+    },
+    {
+      "id": "kipsate-met-rijst",
+      "name": "Kipsaté met rijst en pindasaus",
+      "protein": "kylling",
+      "sides": [
+        "ris",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g kipfilet",
+        "2 el ketjap manis",
+        "1 tl kerriepoeder",
+        "2 el zonnebloemolie",
+        "300 g rijst",
+        "400 g sperziebonen",
+        "250 g satésaus (kant-en-klaar)",
+        "kroepoek"
+      ],
+      "steps": [
+        "Snijd de kip in blokjes en marineer ze 10 minuten in ketjap, kerrie en 1 el olie.",
+        "Rijg de kip aan satéstokjes en kook intussen de rijst.",
+        "Kook de sperziebonen in 8 minuten gaar.",
+        "Bak de saté in de rest van de olie in een grillpan rondom in 8–10 minuten gaar.",
+        "Verwarm de satésaus met een scheutje water en serveer met rijst, bonen en kroepoek."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R365848/kipsate-met-javaanse-pindasaus"
+    },
+    {
+      "id": "bami-goreng-met-kip",
+      "name": "Bami goreng met kip",
+      "protein": "kylling",
+      "sides": [
+        "nudler"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g kipfilet",
+        "400 g mienestjes",
+        "1 ui",
+        "1 teen knoflook",
+        "500 g prei",
+        "200 g wittekool of taugé",
+        "1 zakje bami-kruiden",
+        "3 el zonnebloemolie",
+        "3 el ketjap manis"
+      ],
+      "steps": [
+        "Kook de mie volgens de verpakking en laat uitlekken.",
+        "Snijd de kip in reepjes en de prei in ringen; snipper ui en knoflook.",
+        "Roerbak de kip in de olie goudbruin en voeg ui, knoflook en bami-kruiden toe.",
+        "Voeg prei en kool toe en roerbak 4 minuten.",
+        "Schep de mie en ketjap erdoor en roerbak tot alles heet is."
+      ],
+      "source": "https://www.jumbo.com/recepten/bami-goreng-met-kip-en-prei-1000377"
+    },
+    {
+      "id": "kipkerrie-met-rijst",
+      "name": "Kip-kerrie met rijst",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g kippendijfilet",
+        "1 ui",
+        "1 rode paprika",
+        "2 el zonnebloemolie",
+        "1 el milde kerriepoeder",
+        "1 el bloem",
+        "400 ml kippenbouillon",
+        "100 ml kookroom",
+        "300 g pandanrijst",
+        "2 el amandelschaafsel"
+      ],
+      "steps": [
+        "Kook de rijst en rooster het amandelschaafsel in een droge pan.",
+        "Snijd kip, ui en paprika in stukjes.",
+        "Bak de kip in de olie bruin, voeg ui en paprika toe en bak 3 minuten mee.",
+        "Strooi kerrie en bloem erover, roer en voeg al roerend bouillon en room toe; laat 10 minuten zacht koken.",
+        "Serveer de kip-kerrie op de rijst, bestrooid met amandel."
+      ],
+      "source": "https://www.jumbo.com/recepten/kipkerrie-met-geurige-amandelrijst-503882"
+    },
+    {
+      "id": "kipschnitzel-met-gebakken-aardappelen",
+      "name": "Kipschnitzel met gebakken aardappelen en spruitjes",
+      "protein": "kylling",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "4 kipschnitzels",
+        "900 g voorgekookte aardappelschijfjes",
+        "500 g spruitjes",
+        "1 rode ui",
+        "5 el olijfolie",
+        "1 tl kerriepoeder",
+        "peper en zout"
+      ],
+      "steps": [
+        "Bak de aardappelschijfjes met de rode ui in 3 el olie in 15 minuten goudbruin.",
+        "Halveer de spruitjes en kook ze 6 minuten; laat uitlekken.",
+        "Bak de spruitjes nog kort in de pan met de kerrie.",
+        "Bak de kipschnitzels in de rest van de olie 3–4 minuten per kant gaar.",
+        "Serveer met de aardappelen en spruitjes."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1199341/kipschnitzel-met-gebakken-aardappelen-en-spruitjes"
+    },
+    {
+      "id": "kipshoarma-met-pita",
+      "name": "Kipshoarma met pita",
+      "protein": "kylling",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "500 g kippendijreepjes",
+        "2 el shoarmakruiden",
+        "1 el olie",
+        "4 grote pitabroodjes",
+        "2 paprika's",
+        "1 komkommer",
+        "2 tomaten",
+        "150 g ijsbergsla",
+        "200 ml knoflooksaus"
+      ],
+      "steps": [
+        "Meng de kip met de shoarmakruiden.",
+        "Bak de kip met de paprika in reepjes in de olie in 8 minuten gaar.",
+        "Snijd komkommer, tomaat en sla.",
+        "Verwarm de pitabroodjes 5 minuten in de oven en snijd ze open.",
+        "Vul de pita's met sla, groente en kip en schep er knoflooksaus over."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1194510/kipshoarma-met-pita-en-paprika"
+    },
+    {
+      "id": "zoetzure-kip-met-rijst",
+      "name": "Zoetzure kip met rijst",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "500 g kipfilet",
+        "300 g rijst",
+        "2 groene paprika's",
+        "1 ui",
+        "2 el roomboter",
+        "1 blik halve abrikozen op siroop (840 g)",
+        "150 ml curryketchup",
+        "3 el azijn"
+      ],
+      "steps": [
+        "Kook de rijst.",
+        "Snijd de kip in blokjes en paprika en ui in stukjes; laat de abrikozen uitlekken en bewaar wat siroop.",
+        "Bak de kip in de boter goudbruin en bak paprika en ui 3 minuten mee.",
+        "Voeg curryketchup, azijn, 100 ml siroop en de abrikozen in stukjes toe en laat 5 minuten pruttelen.",
+        "Serveer de zoetzure kip met rijst."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R65878/zoetzure-kip-met-rijst"
+    },
+    {
+      "id": "romige-pasta-met-kip-en-champignons",
+      "name": "Romige pasta met kip en champignons",
+      "protein": "kylling",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g kipfilet",
+        "350 g pasta (penne of spaghetti)",
+        "400 g champignons",
+        "1 ui",
+        "2 tenen knoflook",
+        "3 el olijfolie",
+        "70 g tomatenpuree",
+        "250 g cherrytomaten",
+        "200 ml kookroom",
+        "peper en zout"
+      ],
+      "steps": [
+        "Kook de pasta beetgaar.",
+        "Snijd kip in blokjes, champignons in plakjes en snipper ui en knoflook.",
+        "Bak de kip in de olie goudbruin; voeg ui, knoflook en champignons toe en bak 5 minuten mee.",
+        "Roer de tomatenpuree erdoor, voeg gehalveerde tomaatjes en room toe en laat 5 minuten zacht koken.",
+        "Meng de saus met de pasta en breng op smaak."
+      ],
+      "source": "https://www.jumbo.com/recepten/romige-pasta-met-kip-en-champignons-506386"
+    },
+    {
+      "id": "ovenschotel-kip-broccoli-aardappel",
+      "name": "Ovenschotel met kip, broccoli en aardappel",
+      "protein": "kylling",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 65,
+      "servings": 4,
+      "ingredients": [
+        "400 g kipfilet",
+        "700 g aardappelschijfjes",
+        "500 g broccoli",
+        "1 ui",
+        "2 el olijfolie",
+        "200 ml kookroom",
+        "1 ei",
+        "175 g geraspte belegen kaas",
+        "peper en zout"
+      ],
+      "steps": [
+        "Verwarm de oven voor op 200 °C en kook de broccoliroosjes 3 minuten.",
+        "Bak de kip in blokjes met de ui in de olie goudbruin.",
+        "Leg aardappelschijfjes, kip en broccoli in een ingevette ovenschaal.",
+        "Klop room, ei, peper en zout los, giet over de schotel en bestrooi met kaas.",
+        "Bak de schotel 40–45 minuten tot de aardappels gaar zijn en de kaas goudbruin."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R818504/aardappelschotel-met-kip-en-broccoli"
+    },
+    {
+      "id": "kip-teriyaki-met-noodles",
+      "name": "Kip teriyaki met noodles",
+      "protein": "kylling",
+      "sides": [
+        "nudler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g kippendijfilet",
+        "400 g noedels",
+        "6 el teriyakisaus",
+        "2 el sojasaus",
+        "2 tenen knoflook",
+        "1 bos lente-ui",
+        "2 paksoi",
+        "3 el zonnebloemolie",
+        "1 tl sesamzaad"
+      ],
+      "steps": [
+        "Kook de noedels volgens de verpakking en laat uitlekken.",
+        "Snijd de kip in reepjes, de paksoi in stukken en de lente-ui in ringetjes.",
+        "Roerbak de kip met knoflook in de olie goudbruin.",
+        "Voeg paksoi en lente-ui toe en roerbak 3 minuten.",
+        "Schep noedels, teriyaki- en sojasaus erdoor en bestrooi met sesamzaad."
+      ],
+      "source": "https://www.jumbo.com/recepten/kip-teriyaki-met-noodles-1000954"
+    },
+    {
+      "id": "kip-met-champignonsaus",
+      "name": "Kip met champignonsaus, aardappelen en groente",
+      "protein": "kylling",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g kippendijfilet",
+        "1 kg aardappelen",
+        "400 g kastanjechampignons",
+        "400 g broccoli",
+        "400 g bloemkool",
+        "50 g vloeibare margarine",
+        "300 ml kippenbouillon",
+        "1,5 el maïzena",
+        "peper en zout"
+      ],
+      "steps": [
+        "Kook de aardappelen en de broccoli en bloemkool gaar.",
+        "Snijd de kip in blokjes en bak ze in de margarine goudbruin.",
+        "Voeg de champignons in plakjes toe en bak 5 minuten mee.",
+        "Giet de bouillon erbij en bind met de maïzena, aangelengd met een beetje water.",
+        "Breng op smaak en serveer met aardappelen en groente."
+      ],
+      "source": "https://www.jumbo.com/recepten/kip-met-champignonsaus-en-groenten-505793"
+    },
+    {
+      "id": "kibbeling-met-friet",
+      "name": "Kibbeling met friet en remouladesaus",
+      "protein": "fisk",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g kabeljauwfilet",
+        "200 g bloem",
+        "1 ei",
+        "300 ml koud bruisend water",
+        "2 tl viskruiden",
+        "1 l zonnebloemolie (om te frituren)",
+        "750 g ovenfriet",
+        "150 ml remouladesaus",
+        "1 citroen",
+        "komkommersalade"
+      ],
+      "steps": [
+        "Bak de friet volgens de verpakking in de oven.",
+        "Snijd de kabeljauw in stukjes en bestrooi met de viskruiden.",
+        "Klop bloem, ei, bruisend water en een snufje zout tot een glad beslag.",
+        "Verhit de olie tot 180 °C, haal de vis door het beslag en frituur in porties in 3–4 minuten goudbruin.",
+        "Laat uitlekken en serveer met friet, remouladesaus, citroen en salade."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1197144/kibbeling-basisrecept"
+    },
+    {
+      "id": "vissticks-met-aardappelpartjes",
+      "name": "Vissticks met aardappelpartjes en broccoli",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "500 g witvisfilet (pangasius of koolvis)",
+        "2 eieren",
+        "100 g panko",
+        "3 el bloem",
+        "800 g vastkokende aardappelen",
+        "5 el olijfolie",
+        "600 g broccoli",
+        "150 g Griekse yoghurt",
+        "2 el mayonaise",
+        "4 el augurkjes, fijngehakt"
+      ],
+      "steps": [
+        "Verwarm de oven voor op 220 °C. Snijd de aardappelen in partjes, meng met 3 el olie en zout en rooster 30 minuten.",
+        "Snijd de vis in repen, haal ze door bloem, losgeklopt ei en panko.",
+        "Leg de vissticks op een bakplaat, besprenkel met de rest van de olie en bak de laatste 15 minuten mee.",
+        "Kook de broccoli 5 minuten.",
+        "Meng yoghurt, mayonaise en augurk tot een saus en serveer alles samen."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1187168/homemade-vissticks-met-aardappelruiten"
+    },
+    {
+      "id": "zalm-uit-de-oven-met-krieltjes",
+      "name": "Zalm uit de oven met krieltjes en spinazie",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "4 zalmfilets (ca. 500 g)",
+        "800 g krieltjes",
+        "200 g peultjes",
+        "2 tomaten",
+        "600 g verse spinazie",
+        "1 teen knoflook",
+        "3 el olijfolie",
+        "1 citroen",
+        "peper en zout"
+      ],
+      "steps": [
+        "Verwarm de oven voor op 200 °C. Halveer de krieltjes, meng met 2 el olie en zout en rooster 25 minuten.",
+        "Leg de zalm met tomaatpartjes en peultjes tussen de krieltjes, besprenkel met citroensap en bak 15 minuten mee.",
+        "Bak de knoflook kort in de rest van de olie en laat de spinazie erin slinken.",
+        "Breng de spinazie op smaak met peper en zout.",
+        "Serveer de zalm met krieltjes, groente en een partje citroen."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1186687/zalm-uit-de-oven-met-krieltjes-spinazie-en-peultjes"
+    },
+    {
+      "id": "visovenschotel-met-kabeljauw",
+      "name": "Visovenschotel met kabeljauw en puree",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "4 kabeljauwfilets (ca. 500 g)",
+        "1,2 kg kruimige aardappelen",
+        "200 ml melk",
+        "25 g roomboter",
+        "2 uien",
+        "2 rode paprika's",
+        "1 courgette",
+        "2 el olijfolie",
+        "400 g tomatenblokjes (blik)",
+        "2 el verse peterselie",
+        "50 g geraspte kaas"
+      ],
+      "steps": [
+        "Kook de aardappelen gaar en stamp ze met melk, boter, peterselie en zout tot puree.",
+        "Verwarm de oven voor op 200 °C. Bak ui, paprika en courgette in de olie en voeg de tomatenblokjes toe; laat 5 minuten pruttelen.",
+        "Schep de groentesaus in een ovenschaal en leg de kabeljauw in stukken erop.",
+        "Verdeel de puree over de vis en bestrooi met kaas.",
+        "Bak de schotel 25 minuten in de oven tot de bovenkant goudbruin is."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1189262/ovenschotel-met-kabeljauw-en-kruidenpuree"
+    },
+    {
+      "id": "pasta-met-tonijn-tomatensaus",
+      "name": "Pasta met tonijn-tomatensaus",
+      "protein": "fisk",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "350 g fusilli",
+        "2 blikjes tonijn in water (à 145 g)",
+        "300 g broccoli",
+        "1 rode ui",
+        "1 el olijfolie",
+        "400 g tomatenblokjes (blik)",
+        "1 tl gedroogde oregano",
+        "geraspte kaas"
+      ],
+      "steps": [
+        "Kook de pasta beetgaar en kook de broccoliroosjes de laatste 4 minuten mee.",
+        "Snipper de ui en bak hem zacht in de olie.",
+        "Voeg tomatenblokjes en oregano toe en laat 8 minuten pruttelen.",
+        "Roer de uitgelekte tonijn door de saus en warm kort mee.",
+        "Meng met pasta en broccoli en serveer met kaas."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R487650/pasta-met-tomaten-tonijnsaus"
+    },
+    {
+      "id": "tagliatelle-met-zalm-en-spinazie",
+      "name": "Tagliatelle met gerookte zalm en spinazie",
+      "protein": "fisk",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "500 g verse tagliatelle",
+        "200 g gerookte zalmsnippers",
+        "600 g verse spinazie",
+        "250 g cherrytomaten",
+        "150 g kruidenroomkaas",
+        "2 el olijfolie",
+        "peper"
+      ],
+      "steps": [
+        "Kook de tagliatelle volgens de verpakking en bewaar een scheutje kookvocht.",
+        "Bak de gehalveerde tomaatjes kort in de olie.",
+        "Laat de spinazie in de pan slinken.",
+        "Roer de roomkaas en wat kookvocht erdoor tot een romige saus.",
+        "Schep pasta en zalm erdoor, breng op smaak met peper en serveer direct."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1178290/verse-tagliatelle-met-gerookte-zalm-en-spinazie"
+    },
+    {
+      "id": "gebakken-kabeljauw-met-krieltjes",
+      "name": "Gebakken kabeljauw met krieltjes en komkommersalade",
+      "protein": "fisk",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "4 kabeljauwfilets (ca. 500 g)",
+        "1 kg krieltjes",
+        "2 el viskruiden",
+        "3 el olijfolie",
+        "1 komkommer",
+        "150 ml yoghurt",
+        "1 bosje bieslook",
+        "150 g geraspte rauwe bietjes",
+        "peper en zout"
+      ],
+      "steps": [
+        "Kook de krieltjes in 15 minuten gaar.",
+        "Snijd de komkommer in plakjes en meng met yoghurt, bieslook, peper en zout.",
+        "Bestrooi de kabeljauw met de viskruiden.",
+        "Bak de vis in de olie 3–4 minuten per kant gaar.",
+        "Serveer de vis met krieltjes, komkommersalade en bietjes."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1190260/gebakken-kabeljauw-met-aardappel-komkommersalade"
+    },
+    {
+      "id": "pannenkoeken",
+      "name": "Pannenkoeken",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "400 g bloem",
+        "1 tl zout",
+        "3 eieren",
+        "750 ml melk",
+        "40 g roomboter",
+        "150 g geraspte kaas",
+        "2 appels",
+        "stroop en poedersuiker"
+      ],
+      "steps": [
+        "Meng bloem en zout, voeg de eieren en de helft van de melk toe en klop tot een glad beslag.",
+        "Roer de rest van de melk erdoor en laat het beslag 15 minuten rusten.",
+        "Smelt wat boter in een koekenpan en bak dunne pannenkoeken aan beide kanten goudbruin.",
+        "Strooi naar wens kaas of dunne appelschijfjes op het beslag voordat je de pannenkoek keert.",
+        "Serveer met stroop en poedersuiker."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1189426/pannenkoeken-basisrecept"
+    },
+    {
+      "id": "tomatensoep-met-tosti",
+      "name": "Tomatensoep met tosti's",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "1 ui",
+        "1 teen knoflook",
+        "2 el olijfolie",
+        "1 kg tomaten",
+        "500 ml groentebouillon",
+        "1 el tomatenpuree",
+        "8 sneetjes brood",
+        "8 plakken jong belegen kaas",
+        "125 g mozzarella",
+        "40 g roomboter"
+      ],
+      "steps": [
+        "Snipper ui en knoflook en bak ze zacht in de olie.",
+        "Voeg de tomaten in stukken, tomatenpuree en bouillon toe en laat 15 minuten koken.",
+        "Pureer de soep glad met een staafmixer en breng op smaak.",
+        "Beleg 4 sneetjes brood met kaas en mozzarella, dek af met de rest en besmeer de buitenkant met boter.",
+        "Bak de tosti's in een koekenpan of tosti-ijzer goudbruin en serveer bij de soep."
+      ],
+      "source": "https://ah.nl/allerhande/recept/R-R1189472/tomatensoep-met-italiaanse-tosti"
+    },
+    {
+      "id": "eieren-in-kerriesaus",
+      "name": "Eieren in kerriesaus met rijst en sperziebonen",
+      "protein": "vegetar",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "8 eieren",
+        "300 g basmatirijst",
+        "400 g sperziebonen",
+        "1 ui",
+        "30 g roomboter",
+        "1 el milde kerriepoeder",
+        "30 g bloem",
+        "500 ml groentebouillon",
+        "100 ml kokosmelk",
+        "2 el amandelschaafsel"
+      ],
+      "steps": [
+        "Kook de rijst en kook de eieren in 8 minuten hard; pel ze.",
+        "Kook de sperziebonen in 8 minuten gaar.",
+        "Fruit de gesnipperde ui in de boter, roer kerrie en bloem erdoor en bak 1 minuut.",
+        "Voeg al roerend bouillon en kokosmelk toe en laat 5 minuten zacht binden.",
+        "Leg de gehalveerde eieren in de saus en serveer met rijst, bonen en amandel."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1188290/eieren-met-mildpittige-currysaus-en-rijst"
+    },
+    {
+      "id": "preitaart-met-kaas",
+      "name": "Preitaart met kaas",
+      "protein": "vegetar",
+      "sides": [
+        "salat"
+      ],
+      "minutes": 70,
+      "servings": 4,
+      "ingredients": [
+        "6 plakjes bladerdeeg (diepvries)",
+        "600 g prei",
+        "1 el olijfolie",
+        "3 eieren",
+        "250 g Griekse yoghurt",
+        "150 g geraspte kaas",
+        "snufje nootmuskaat",
+        "1 krop sla",
+        "peper en zout"
+      ],
+      "steps": [
+        "Verwarm de oven voor op 200 °C en laat het bladerdeeg ontdooien.",
+        "Bekleed een ingevette taartvorm met het bladerdeeg.",
+        "Snijd de prei in ringen en bak 5 minuten zacht in de olie.",
+        "Klop eieren, yoghurt, kaas, nootmuskaat, peper en zout los en meng de prei erdoor.",
+        "Giet de vulling in de vorm en bak de taart 40 minuten tot hij gestold en goudbruin is.",
+        "Serveer met een groene salade."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1198468/preitaart-met-kaas"
+    },
+    {
+      "id": "pizza-margherita",
+      "name": "Pizza margherita",
+      "protein": "vegetar",
+      "sides": [
+        "salat"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "2 rollen vers pizzadeeg",
+        "400 g gepelde tomaten (blik)",
+        "1 teen knoflook",
+        "2 el olijfolie",
+        "1 tl gedroogde oregano",
+        "250 g mozzarella",
+        "100 g geraspte pizzakaas",
+        "verse basilicum",
+        "komkommer en snoeptomaatjes"
+      ],
+      "steps": [
+        "Verwarm de oven voor op 230 °C en rol het deeg uit op twee bakplaten.",
+        "Prak de tomaten met knoflook, olie, oregano en een snufje zout tot een saus.",
+        "Besmeer het deeg met de saus en verdeel mozzarella en geraspte kaas erover.",
+        "Bak de pizza's 12–15 minuten tot de bodem knapperig is.",
+        "Leg verse basilicum erop en serveer met rauwkost."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R424724/pizza-margherita"
+    },
+    {
+      "id": "tortelloni-met-spinazie-uit-de-oven",
+      "name": "Tortelloni met spinazie uit de oven",
+      "protein": "vegetar",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g verse tortelloni met kaas",
+        "600 g verse spinazie",
+        "2 tenen knoflook",
+        "2 el olijfolie",
+        "125 ml zure room",
+        "2 sneetjes brood",
+        "50 g pijnboompitten",
+        "50 g geraspte Parmezaanse kaas"
+      ],
+      "steps": [
+        "Verwarm de oven voor op 200 °C en kook de tortelloni volgens de verpakking.",
+        "Bak de knoflook in de olie en laat de spinazie erin slinken.",
+        "Meng tortelloni, spinazie en zure room in een ovenschaal.",
+        "Kruimel het brood met de pijnboompitten en kaas en strooi over de schotel.",
+        "Bak 10–12 minuten tot de bovenkant knapperig is."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R444872/tortelloni-met-spinazie-uit-de-oven"
+    },
+    {
+      "id": "tagliatelle-met-pesto",
+      "name": "Tagliatelle met pesto, mozzarella en tomaatjes",
+      "protein": "vegetar",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 15,
+      "servings": 4,
+      "ingredients": [
+        "500 g verse tagliatelle",
+        "100 g groene pesto",
+        "400 g snoeptomaatjes",
+        "250 g mozzarella",
+        "100 g rucola",
+        "2 el geraspte Parmezaanse kaas"
+      ],
+      "steps": [
+        "Kook de tagliatelle volgens de verpakking.",
+        "Halveer de tomaatjes en scheur de mozzarella in stukjes.",
+        "Giet de pasta af en meng direct met de pesto.",
+        "Schep tomaatjes, mozzarella en rucola erdoor en bestrooi met Parmezaanse kaas."
+      ],
+      "source": "https://www.jumbo.com/recepten/tagliatelle-met-groene-pesto-buffelmozzarella-en-tomaatjes-506818"
+    },
+    {
+      "id": "spinaziestamppot-met-ei",
+      "name": "Spinaziestamppot met ei",
+      "protein": "vegetar",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "1,2 kg kruimige aardappelen",
+        "450 g bladspinazie (diepvries)",
+        "300 g doperwten (diepvries)",
+        "8 eieren",
+        "150 ml melk",
+        "30 g roomboter",
+        "snufje nootmuskaat",
+        "peper en zout"
+      ],
+      "steps": [
+        "Kook de aardappelen in 20 minuten gaar.",
+        "Kook de eieren in 8 minuten hard en pel ze.",
+        "Verwarm spinazie en doperwten in een pan tot ze ontdooid en heet zijn.",
+        "Giet de aardappelen af en stamp ze met melk en boter; roer spinazie en erwten erdoor.",
+        "Breng op smaak met nootmuskaat, peper en zout en serveer met de gehalveerde eieren."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1200789/tuinerwten-spinaziestamppot-met-ei-van-kindergarden"
+    },
+    {
+      "id": "foe-yong-hai",
+      "name": "Foe yong hai met rijst",
+      "protein": "vegetar",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "8 eieren",
+        "200 g doperwten (diepvries)",
+        "1 bos lente-ui",
+        "150 g taugé",
+        "2 el zonnebloemolie",
+        "330 ml tomato frito",
+        "2 el ketchup",
+        "2 el gembersiroop",
+        "300 g rijst"
+      ],
+      "steps": [
+        "Kook de rijst.",
+        "Verwarm tomato frito, ketchup en gembersiroop in een pannetje tot een zoete saus.",
+        "Klop de eieren los met een snufje zout en roer erwten, lente-ui en taugé erdoor.",
+        "Bak in de olie twee dikke omeletten op laag vuur tot ze gestold zijn.",
+        "Snijd in punten en serveer met de saus en rijst."
+      ],
+      "source": "https://www.jumbo.com/recepten/foe-yong-hai-504368"
+    },
+    {
+      "id": "gevulde-paprika",
+      "name": "Gevulde paprika's met rijst",
+      "protein": "vegetar",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "4 grote paprika's",
+        "350 g vegetarisch gehakt",
+        "1 courgette",
+        "1 ui",
+        "2 tenen knoflook",
+        "2 el olijfolie",
+        "300 g zilvervliesrijst",
+        "100 g geraspte kaas",
+        "150 g Griekse yoghurt"
+      ],
+      "steps": [
+        "Kook de rijst en verwarm de oven voor op 200 °C.",
+        "Bak ui, knoflook en courgette in blokjes in de olie; voeg het vegetarisch gehakt toe en bak 5 minuten.",
+        "Halveer de paprika's in de lengte en verwijder de zaadlijsten.",
+        "Vul de paprika's met het gehaktmengsel, bestrooi met kaas en bak ze 20 minuten in de oven.",
+        "Serveer met de rijst en een klodder yoghurt."
+      ],
+      "source": "https://www.jumbo.com/recepten/gevulde-paprika-met-saus-van-yoghurt-506458"
+    }
+  ]
+}

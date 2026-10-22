@@ -1,0 +1,1527 @@
+{
+  "format": "madplan.profile",
+  "version": 1,
+  "name": "Family Favourites (UK)",
+  "summary": "Fifty everyday dinners that British families cook on a normal weeknight.",
+  "symbol": "fork.knife",
+  "settings": {
+    "noSameProteinInRow": true
+  },
+  "recipes": [
+    {
+      "id": "cottage-pie",
+      "name": "Cottage pie",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef mince",
+        "1 onion",
+        "2 carrots",
+        "1 tbsp plain flour",
+        "1 tbsp tomato purée",
+        "1 tbsp Worcestershire sauce",
+        "400 ml beef stock",
+        "1 kg floury potatoes (e.g. Maris Piper)",
+        "50 g butter",
+        "75 ml milk",
+        "50 g mature Cheddar, grated",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Brown the mince in a large pan, then add the chopped onion and diced carrots and cook for 5 minutes.",
+        "Stir in the flour and tomato purée, add the stock and Worcestershire sauce and simmer for 20 minutes until thick.",
+        "Meanwhile, boil the peeled potatoes until tender, then mash with the butter and milk.",
+        "Heat the oven to 200°C (180°C fan). Spoon the mince into an ovenproof dish and spread the mash over the top.",
+        "Scatter over the cheese and bake for 20–25 minutes until golden and bubbling."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/classic-cottage-pie"
+    },
+    {
+      "id": "shepherds-pie",
+      "name": "Shepherd's pie",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 75,
+      "servings": 4,
+      "ingredients": [
+        "500 g lamb mince",
+        "1 onion",
+        "2 carrots",
+        "1 tbsp plain flour",
+        "1 tbsp tomato purée",
+        "1 tbsp Worcestershire sauce",
+        "400 ml lamb or beef stock",
+        "1 tsp dried thyme",
+        "100 g frozen peas",
+        "1 kg floury potatoes",
+        "50 g butter",
+        "75 ml milk",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Brown the lamb mince in a large pan and pour off any excess fat.",
+        "Add the chopped onion and carrots and soften for 5 minutes, then stir in the flour and tomato purée.",
+        "Pour in the stock, Worcestershire sauce and thyme and simmer for 25 minutes. Stir in the peas at the end.",
+        "Boil the potatoes until tender and mash with the butter and milk.",
+        "Heat the oven to 200°C (180°C fan). Put the lamb in a dish, top with the mash and rough it up with a fork.",
+        "Bake for 25–30 minutes until the top is crisp and golden."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/classic-shepherds-pie"
+    },
+    {
+      "id": "spaghetti-bolognese",
+      "name": "Spaghetti bolognese",
+      "protein": "okse",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef mince",
+        "1 onion",
+        "1 carrot",
+        "1 celery stick",
+        "2 garlic cloves",
+        "2 x 400 g tins chopped tomatoes",
+        "1 tbsp tomato purée",
+        "1 beef stock cube",
+        "1 tsp dried oregano",
+        "400 g spaghetti",
+        "grated Parmesan or Cheddar, to serve"
+      ],
+      "steps": [
+        "Finely chop the onion, carrot, celery and garlic and soften in a little oil for 5 minutes.",
+        "Add the mince and cook until browned all over.",
+        "Stir in the tomatoes, tomato purée, crumbled stock cube and oregano. Simmer for 20–25 minutes.",
+        "Cook the spaghetti in salted water following the pack instructions and drain.",
+        "Serve the sauce over the spaghetti with grated cheese."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/spaghetti-bolognese"
+    },
+    {
+      "id": "lasagne",
+      "name": "Lasagne",
+      "protein": "okse",
+      "sides": [
+        "pasta",
+        "salat"
+      ],
+      "minutes": 75,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef mince",
+        "1 onion",
+        "2 garlic cloves",
+        "400 g tin chopped tomatoes",
+        "2 tbsp tomato purée",
+        "1 tsp dried mixed herbs",
+        "50 g butter",
+        "50 g plain flour",
+        "600 ml milk",
+        "9 dried lasagne sheets",
+        "100 g mature Cheddar, grated",
+        "green salad, to serve"
+      ],
+      "steps": [
+        "Brown the mince with the chopped onion and garlic, then add the tomatoes, purée and herbs. Simmer for 20 minutes.",
+        "For the white sauce, melt the butter, stir in the flour, then whisk in the milk a little at a time until smooth and thick.",
+        "Heat the oven to 190°C (170°C fan).",
+        "Layer meat sauce, lasagne sheets and white sauce in an ovenproof dish, finishing with white sauce.",
+        "Top with the cheese and bake for 35–40 minutes until golden. Rest for 5 minutes and serve with salad."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/simple-lasagne"
+    },
+    {
+      "id": "chilli-con-carne",
+      "name": "Chilli con carne",
+      "protein": "okse",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef mince",
+        "1 onion",
+        "1 red pepper",
+        "2 garlic cloves",
+        "1 tsp mild chilli powder",
+        "1 tsp ground cumin",
+        "1 tsp smoked paprika",
+        "400 g tin chopped tomatoes",
+        "400 g tin kidney beans, drained",
+        "1 beef stock cube",
+        "300 g long-grain rice",
+        "soured cream and grated Cheddar, to serve"
+      ],
+      "steps": [
+        "Soften the chopped onion, pepper and garlic in a little oil for 5 minutes.",
+        "Add the mince and brown it, then stir in the spices and cook for 1 minute.",
+        "Add the tomatoes, crumbled stock cube and a splash of water. Simmer for 20 minutes.",
+        "Stir in the kidney beans and cook for 5 minutes more while the rice cooks.",
+        "Serve with rice, a spoonful of soured cream and grated cheese."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/easy-chilli-con-carne"
+    },
+    {
+      "id": "beef-stew-and-dumplings",
+      "name": "Beef stew and dumplings",
+      "protein": "okse",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 150,
+      "servings": 4,
+      "ingredients": [
+        "800 g braising steak, diced",
+        "2 tbsp plain flour",
+        "1 onion",
+        "3 carrots",
+        "2 celery sticks",
+        "1 tbsp tomato purée",
+        "1 tbsp Worcestershire sauce",
+        "750 ml beef stock",
+        "2 bay leaves",
+        "100 g self-raising flour",
+        "50 g shredded suet",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Toss the beef in the plain flour with salt and pepper, then brown it in batches in a casserole dish.",
+        "Add the chopped onion, carrots and celery and cook for 5 minutes.",
+        "Stir in the tomato purée, Worcestershire sauce, stock and bay leaves. Cover and simmer gently for 2 hours.",
+        "Mix the self-raising flour, suet and a pinch of salt with about 5 tbsp cold water to a soft dough and shape into 8 balls.",
+        "Sit the dumplings on top of the stew, cover and cook for 20–25 minutes until risen and fluffy."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/beef-stew-with-dumplings"
+    },
+    {
+      "id": "homemade-beef-burgers",
+      "name": "Homemade beef burgers",
+      "protein": "okse",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef mince",
+        "1 small onion, finely grated",
+        "1 egg",
+        "25 g breadcrumbs",
+        "4 burger buns",
+        "4 slices Cheddar",
+        "1 little gem lettuce",
+        "2 tomatoes",
+        "ketchup and mayonnaise, to serve",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Mix the mince, onion, egg, breadcrumbs and some salt and pepper with your hands.",
+        "Shape into 4 burgers and chill for 10 minutes if you have time.",
+        "Fry or grill the burgers for 4–5 minutes on each side until cooked through.",
+        "Lay a slice of cheese on each burger for the last minute and toast the buns.",
+        "Build the burgers with lettuce, sliced tomato and sauces."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/classic-homemade-burger"
+    },
+    {
+      "id": "spaghetti-and-meatballs",
+      "name": "Spaghetti and meatballs",
+      "protein": "okse",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef mince",
+        "50 g fresh breadcrumbs",
+        "1 egg",
+        "25 g Parmesan, grated",
+        "1 onion",
+        "2 garlic cloves",
+        "2 x 400 g tins chopped tomatoes",
+        "1 tsp dried oregano",
+        "1 tbsp olive oil",
+        "400 g spaghetti"
+      ],
+      "steps": [
+        "Mix the mince, breadcrumbs, egg and Parmesan and roll into about 20 small meatballs.",
+        "Brown the meatballs in the oil, then lift out.",
+        "Soften the chopped onion and garlic in the same pan, add the tomatoes and oregano and simmer for 10 minutes.",
+        "Return the meatballs to the sauce and simmer for 10–15 minutes until cooked through.",
+        "Cook the spaghetti, drain and serve topped with the meatballs and sauce."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/spaghetti-and-meatballs"
+    },
+    {
+      "id": "beef-stroganoff",
+      "name": "Beef stroganoff",
+      "protein": "okse",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g rump or sirloin steak, cut into strips",
+        "1 onion",
+        "250 g chestnut mushrooms",
+        "1 tsp paprika",
+        "1 tbsp Dijon mustard",
+        "200 ml beef stock",
+        "150 ml soured cream",
+        "1 tbsp vegetable oil",
+        "15 g butter",
+        "small bunch parsley",
+        "300 g long-grain rice"
+      ],
+      "steps": [
+        "Put the rice on to cook.",
+        "Fry the beef strips quickly in the hot oil until browned, then lift out.",
+        "Add the butter, sliced onion and mushrooms to the pan and cook for 5–6 minutes.",
+        "Stir in the paprika and mustard, pour in the stock and bubble for 3 minutes.",
+        "Return the beef, stir in the soured cream and warm through. Scatter with parsley and serve with rice."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/speedy-beef-stroganoff"
+    },
+    {
+      "id": "pepper-steak-stir-fry",
+      "name": "Pepper steak stir-fry",
+      "protein": "okse",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g rump steak, thinly sliced",
+        "1 red pepper",
+        "1 green pepper",
+        "1 onion",
+        "2 garlic cloves",
+        "thumb-sized piece ginger",
+        "3 tbsp soy sauce",
+        "2 tbsp oyster sauce",
+        "1 tsp cornflour",
+        "1 tbsp vegetable oil",
+        "300 g long-grain rice"
+      ],
+      "steps": [
+        "Cook the rice. Toss the beef with the cornflour and 1 tbsp of the soy sauce.",
+        "Stir-fry the beef in a very hot wok for 2 minutes, then lift out.",
+        "Stir-fry the sliced peppers and onion for 3–4 minutes, adding the garlic and ginger for the last minute.",
+        "Return the beef with the rest of the soy and the oyster sauce and toss until glossy.",
+        "Serve straight away with the rice."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/pepper-steak-stir-fry"
+    },
+    {
+      "id": "beef-burritos",
+      "name": "Beef burritos",
+      "protein": "okse",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "400 g beef mince",
+        "1 onion",
+        "1 red pepper",
+        "1 tsp ground cumin",
+        "1 tsp smoked paprika",
+        "400 g tin black beans, drained",
+        "250 g pouch cooked rice",
+        "8 flour tortillas",
+        "100 g Cheddar, grated",
+        "soured cream and salsa, to serve"
+      ],
+      "steps": [
+        "Fry the chopped onion and pepper for 5 minutes, then add the mince and brown it.",
+        "Stir in the spices and beans with a splash of water and cook for 5 minutes.",
+        "Heat the rice following the pack instructions.",
+        "Warm the tortillas, then fill each with rice, the beef mixture and cheese.",
+        "Roll up tightly and serve with soured cream and salsa."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/beef-burritos"
+    },
+    {
+      "id": "corned-beef-hash",
+      "name": "Corned beef hash",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "340 g tin corned beef",
+        "800 g potatoes",
+        "1 onion",
+        "1 tbsp Worcestershire sauce",
+        "2 tbsp vegetable oil",
+        "4 eggs",
+        "brown sauce or ketchup, to serve",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Dice the potatoes and boil for 8 minutes until just tender, then drain well.",
+        "Fry the chopped onion in the oil for 5 minutes, add the potatoes and fry until golden.",
+        "Cut the corned beef into chunks and add with the Worcestershire sauce. Fry, pressing down, until crisp underneath.",
+        "Fry or poach the eggs.",
+        "Serve the hash topped with an egg, with brown sauce or ketchup."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/corned-beef-hash-with-eggs"
+    },
+    {
+      "id": "sausage-and-mash",
+      "name": "Sausage and mash",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "8 pork sausages",
+        "1 kg floury potatoes",
+        "50 g butter",
+        "75 ml milk",
+        "2 onions",
+        "1 tbsp plain flour",
+        "400 ml beef stock",
+        "200 g frozen peas",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Heat the grill or oven and cook the sausages for 20 minutes, turning, until browned.",
+        "Boil the potatoes until tender, then mash with half the butter and the milk.",
+        "For the gravy, cook the sliced onions slowly in the rest of the butter for 10 minutes until soft and golden.",
+        "Stir in the flour, then gradually add the stock and simmer until thickened.",
+        "Cook the peas and serve with the sausages, mash and onion gravy."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/sausage-and-mash"
+    },
+    {
+      "id": "toad-in-the-hole",
+      "name": "Toad in the hole",
+      "protein": "gris",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "8 pork sausages",
+        "3 tbsp vegetable oil",
+        "140 g plain flour",
+        "4 eggs",
+        "200 ml milk",
+        "2 onions",
+        "1 tbsp plain flour (for the gravy)",
+        "400 ml beef stock",
+        "steamed greens, to serve"
+      ],
+      "steps": [
+        "Heat the oven to 220°C (200°C fan). Put the sausages and oil in a roasting tin and cook for 10 minutes.",
+        "Whisk the flour, eggs and milk to a smooth batter with a pinch of salt.",
+        "Pour the batter quickly into the hot tin around the sausages and bake for 25–30 minutes without opening the door.",
+        "Meanwhile, soften the sliced onions, stir in the flour and add the stock to make an onion gravy.",
+        "Serve in big squares with the gravy, greens and mash if you like."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/toad-in-the-hole-with-onion-gravy"
+    },
+    {
+      "id": "gammon-egg-and-chips",
+      "name": "Gammon, egg and chips",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "4 gammon steaks",
+        "1 kg potatoes",
+        "2 tbsp vegetable oil",
+        "4 eggs",
+        "200 g frozen peas",
+        "4 pineapple rings (optional)",
+        "salt"
+      ],
+      "steps": [
+        "Heat the oven to 220°C (200°C fan). Cut the potatoes into chips, toss with oil and salt and roast for 35 minutes, turning once.",
+        "Snip the fat on the gammon steaks so they stay flat.",
+        "Grill or fry the gammon for 3–4 minutes each side, adding pineapple rings to warm through if using.",
+        "Fry the eggs and cook the peas.",
+        "Serve the gammon with an egg on top, chips and peas."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/smoky-ham-egg-and-chips"
+    },
+    {
+      "id": "sausage-casserole",
+      "name": "Sausage casserole",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "8 pork sausages",
+        "1 onion",
+        "1 red pepper",
+        "2 garlic cloves",
+        "1 tsp smoked paprika",
+        "400 g tin chopped tomatoes",
+        "400 g tin cannellini beans, drained",
+        "300 ml chicken stock",
+        "1 tsp dried mixed herbs",
+        "mashed potato or crusty bread, to serve"
+      ],
+      "steps": [
+        "Brown the sausages in a large pan, then lift out and cut in half.",
+        "Soften the sliced onion, pepper and garlic in the same pan for 5 minutes.",
+        "Stir in the paprika, tomatoes, stock and herbs.",
+        "Return the sausages, add the beans and simmer for 20 minutes until thick.",
+        "Serve with mash or crusty bread."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/simple-sausage-casserole"
+    },
+    {
+      "id": "spaghetti-carbonara",
+      "name": "Spaghetti carbonara",
+      "protein": "gris",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g spaghetti",
+        "150 g smoked pancetta cubes or bacon lardons",
+        "3 eggs",
+        "50 g Parmesan, finely grated",
+        "1 garlic clove",
+        "1 tbsp olive oil",
+        "black pepper"
+      ],
+      "steps": [
+        "Cook the spaghetti in plenty of salted water.",
+        "Fry the pancetta in the oil with the bashed garlic clove until crisp, then remove the garlic.",
+        "Beat the eggs with most of the Parmesan and plenty of black pepper.",
+        "Drain the pasta, keeping a cup of the water, and toss it in the pancetta pan off the heat.",
+        "Stir in the egg mixture with a splash of pasta water until creamy. Serve with the rest of the cheese."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/spaghetti-carbonara"
+    },
+    {
+      "id": "sweet-and-sour-pork",
+      "name": "Sweet and sour pork",
+      "protein": "gris",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "500 g pork tenderloin, sliced",
+        "1 tbsp cornflour",
+        "1 red pepper",
+        "1 green pepper",
+        "1 onion",
+        "227 g tin pineapple chunks in juice",
+        "3 tbsp tomato ketchup",
+        "2 tbsp rice vinegar",
+        "1 tbsp soy sauce",
+        "1 tbsp light brown sugar",
+        "1 tbsp vegetable oil",
+        "300 g long-grain rice"
+      ],
+      "steps": [
+        "Cook the rice. Toss the pork in the cornflour.",
+        "Mix the pineapple juice from the tin with the ketchup, vinegar, soy sauce and sugar.",
+        "Stir-fry the pork in the hot oil for 4–5 minutes until golden, then lift out.",
+        "Stir-fry the chopped peppers and onion for 3 minutes, then add the pineapple and the sauce.",
+        "Return the pork and bubble until the sauce is glossy. Serve with rice."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/sweet-and-sour-pork-stir-fry"
+    },
+    {
+      "id": "sausage-pasta-bake",
+      "name": "Sausage pasta bake",
+      "protein": "gris",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "6 pork sausages",
+        "350 g penne",
+        "1 onion",
+        "1 courgette",
+        "2 garlic cloves",
+        "400 g tin chopped tomatoes",
+        "1 tbsp tomato purée",
+        "1 tsp dried oregano",
+        "125 g mozzarella",
+        "50 g Cheddar, grated"
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan) and cook the pasta for 2 minutes less than the pack says.",
+        "Squeeze the sausage meat out of the skins and fry in small pieces until browned.",
+        "Add the chopped onion, courgette and garlic and cook for 5 minutes, then stir in the tomatoes, purée and oregano.",
+        "Mix the drained pasta into the sauce and tip into an ovenproof dish.",
+        "Top with torn mozzarella and Cheddar and bake for 20 minutes until bubbling."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/sausage-and-courgette-pasta-bake"
+    },
+    {
+      "id": "pork-chops-with-apple-mash",
+      "name": "Pork chops with apple mash",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "4 boneless pork loin steaks",
+        "1 kg potatoes",
+        "2 eating apples",
+        "40 g butter",
+        "50 ml milk",
+        "1 tsp dried sage",
+        "1 tbsp vegetable oil",
+        "200 ml chicken stock",
+        "300 g green beans",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Boil the potatoes for 10 minutes, then add the peeled, chopped apples and cook for 5 minutes more.",
+        "Season the pork with sage, salt and pepper and fry in the oil for 4–5 minutes each side.",
+        "Lift the pork out to rest, pour the stock into the pan and bubble to a quick gravy.",
+        "Drain the potatoes and apples and mash with the butter and milk. Cook the green beans.",
+        "Serve the pork on the apple mash with beans and the pan gravy."
+      ],
+      "source": "https://realfood.tesco.com/recipes/sage-pork-with-potato-and-apple-mash.html"
+    },
+    {
+      "id": "bacon-pea-and-broccoli-risotto",
+      "name": "Bacon, pea and broccoli risotto",
+      "protein": "gris",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "8 rashers smoked streaky bacon",
+        "1 onion",
+        "1 tbsp olive oil",
+        "300 g risotto rice",
+        "1.2 l hot chicken stock",
+        "1 head broccoli",
+        "150 g frozen peas",
+        "25 g butter",
+        "40 g Parmesan, grated"
+      ],
+      "steps": [
+        "Fry the chopped bacon in the oil until crisp, then add the chopped onion and soften.",
+        "Stir in the rice for 1 minute, then add the stock a ladleful at a time, stirring, for about 20 minutes.",
+        "Add the small broccoli florets and peas for the last 5 minutes.",
+        "When the rice is tender, stir in the butter and Parmesan.",
+        "Rest for 2 minutes, then serve."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/broccoli-bacon-and-pea-risotto"
+    },
+    {
+      "id": "quiche-lorraine",
+      "name": "Quiche Lorraine",
+      "protein": "gris",
+      "sides": [
+        "salat",
+        "kartofler"
+      ],
+      "minutes": 70,
+      "servings": 4,
+      "ingredients": [
+        "320 g ready-rolled shortcrust pastry",
+        "200 g smoked bacon lardons",
+        "1 small onion",
+        "4 eggs",
+        "200 ml double cream",
+        "100 ml milk",
+        "100 g Gruyère or mature Cheddar, grated",
+        "green salad, to serve",
+        "500 g new potatoes, to serve"
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan). Line a 23 cm tart tin with the pastry and chill for 10 minutes.",
+        "Line with baking paper and beans and bake for 15 minutes, then remove the paper and bake for 5 minutes more.",
+        "Fry the lardons and chopped onion until golden. Whisk the eggs, cream and milk with pepper.",
+        "Scatter the bacon and cheese into the case, pour in the egg mixture and bake at 180°C (160°C fan) for 30 minutes until just set.",
+        "Rest for 10 minutes and serve with salad and new potatoes."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/classic-quiche-lorraine"
+    },
+    {
+      "id": "chicken-tikka-masala",
+      "name": "Chicken tikka masala",
+      "protein": "kylling",
+      "sides": [
+        "ris",
+        "brod"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g chicken breasts, diced",
+        "150 g natural yoghurt",
+        "2 tbsp mild tikka curry paste",
+        "1 onion",
+        "2 garlic cloves",
+        "thumb-sized piece ginger",
+        "400 g tin chopped tomatoes",
+        "100 ml double cream",
+        "1 tsp garam masala",
+        "small bunch coriander",
+        "300 g basmati rice",
+        "naan bread, to serve"
+      ],
+      "steps": [
+        "Mix the chicken with the yoghurt and 1 tbsp of the curry paste and leave while you prepare the rest.",
+        "Soften the chopped onion, garlic and ginger in a little oil, then stir in the remaining paste.",
+        "Add the tomatoes and simmer for 10 minutes.",
+        "Grill or fry the chicken until lightly charred, then add it to the sauce and simmer for 10 minutes. Cook the rice.",
+        "Stir in the cream and garam masala, scatter with coriander and serve with rice and naan."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/chicken-tikka-masala"
+    },
+    {
+      "id": "chicken-fajitas",
+      "name": "Chicken fajitas",
+      "protein": "kylling",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "3 chicken breasts, sliced",
+        "1 red pepper",
+        "1 yellow pepper",
+        "1 red onion",
+        "1 tsp smoked paprika",
+        "1 tsp ground cumin",
+        "1 lime",
+        "1 tbsp vegetable oil",
+        "8 flour tortillas",
+        "150 ml soured cream",
+        "1 avocado",
+        "50 g Cheddar, grated"
+      ],
+      "steps": [
+        "Toss the chicken with the paprika, cumin, half the lime juice and the oil.",
+        "Fry the chicken in a hot pan for 5–6 minutes until cooked, then lift out.",
+        "Fry the sliced peppers and onion for 4–5 minutes until softened and charred at the edges.",
+        "Return the chicken, squeeze over the rest of the lime and warm the tortillas.",
+        "Serve everything on the table with soured cream, sliced avocado and cheese for everyone to wrap their own."
+      ],
+      "source": "https://realfood.tesco.com/recipes/creamy-chicken-fajitas.html"
+    },
+    {
+      "id": "chicken-and-leek-pie",
+      "name": "Chicken and leek pie",
+      "protein": "kylling",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "500 g chicken thigh fillets, diced",
+        "2 leeks",
+        "25 g butter",
+        "1 tbsp plain flour",
+        "300 ml chicken stock",
+        "100 ml double cream",
+        "1 tsp dried thyme",
+        "320 g ready-rolled puff pastry",
+        "1 egg, beaten",
+        "new potatoes and green veg, to serve"
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan). Brown the chicken in the butter, then add the sliced leeks and cook for 5 minutes.",
+        "Stir in the flour, then add the stock, cream and thyme and simmer for 10 minutes until thick.",
+        "Spoon the filling into a pie dish and cover with the pastry, pressing the edges down.",
+        "Brush with egg, make a small hole in the middle and bake for 25 minutes until puffed and golden.",
+        "Serve with new potatoes and green veg."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/chicken-and-leek-pot-pies"
+    },
+    {
+      "id": "chicken-noodle-stir-fry",
+      "name": "Chicken noodle stir-fry",
+      "protein": "kylling",
+      "sides": [
+        "nudler"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "4 chicken thigh fillets, sliced",
+        "300 g medium egg noodles",
+        "1 red pepper",
+        "1 carrot",
+        "150 g mangetout",
+        "4 spring onions",
+        "2 garlic cloves",
+        "3 tbsp soy sauce",
+        "2 tbsp oyster sauce",
+        "1 tsp sesame oil",
+        "1 tbsp vegetable oil"
+      ],
+      "steps": [
+        "Cook the noodles following the pack instructions, drain and toss with the sesame oil.",
+        "Stir-fry the chicken in the vegetable oil for 5–6 minutes until golden and cooked through.",
+        "Add the sliced pepper, carrot matchsticks, mangetout and garlic and stir-fry for 3 minutes.",
+        "Add the noodles, soy and oyster sauce and toss everything together.",
+        "Scatter with sliced spring onions and serve."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/chicken-noodle-stir-fry"
+    },
+    {
+      "id": "chicken-traybake",
+      "name": "Chicken traybake",
+      "protein": "kylling",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 55,
+      "servings": 4,
+      "ingredients": [
+        "8 chicken thighs, skin on",
+        "800 g baby new potatoes, halved",
+        "2 red onions",
+        "2 peppers",
+        "4 garlic cloves",
+        "2 tbsp olive oil",
+        "1 tsp smoked paprika",
+        "1 tsp dried oregano",
+        "1 lemon",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan).",
+        "Toss the potatoes, onion wedges, sliced peppers and whole garlic cloves with the oil, paprika and oregano in a large roasting tin.",
+        "Sit the chicken on top, skin side up, season and add the lemon cut into wedges.",
+        "Roast for 45 minutes until the chicken is golden and the potatoes are tender.",
+        "Squeeze over the roasted lemon and serve straight from the tin."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/easy-chicken-traybake"
+    },
+    {
+      "id": "hunters-chicken",
+      "name": "Hunter's chicken",
+      "protein": "kylling",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "4 chicken breasts",
+        "8 rashers smoked streaky bacon",
+        "100 ml BBQ sauce",
+        "75 g mature Cheddar, grated",
+        "1 kg potatoes",
+        "2 tbsp vegetable oil",
+        "1 tsp paprika",
+        "4 corn on the cob or a green salad, to serve"
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan). Cut the potatoes into wedges, toss with oil and paprika and roast for 35 minutes.",
+        "Wrap each chicken breast in 2 rashers of bacon and put in an ovenproof dish.",
+        "Roast for 20 minutes, then spoon over the BBQ sauce and top with the cheese.",
+        "Bake for 10 minutes more until the cheese is melted and the chicken is cooked through.",
+        "Serve with the wedges and corn or salad."
+      ],
+      "source": "https://realfood.tesco.com/recipes/hunters-chicken.html"
+    },
+    {
+      "id": "chicken-kiev",
+      "name": "Chicken Kiev",
+      "protein": "kylling",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "4 chicken breasts",
+        "75 g butter, softened",
+        "2 garlic cloves, crushed",
+        "small bunch parsley",
+        "50 g plain flour",
+        "2 eggs",
+        "100 g panko breadcrumbs",
+        "2 tbsp vegetable oil",
+        "750 g new potatoes",
+        "200 g frozen peas"
+      ],
+      "steps": [
+        "Mix the butter, garlic and chopped parsley and chill for 10 minutes. Heat the oven to 200°C (180°C fan).",
+        "Cut a deep pocket in the side of each chicken breast and stuff with the garlic butter.",
+        "Dip the chicken in flour, then beaten egg, then breadcrumbs.",
+        "Brown briefly in the oil, then bake for 20–25 minutes until cooked through.",
+        "Serve with boiled new potatoes and peas."
+      ],
+      "source": "https://realfood.tesco.com/recipes/quick-chicken-kiev.html"
+    },
+    {
+      "id": "cheesy-chicken-pasta-bake",
+      "name": "Cheesy chicken pasta bake",
+      "protein": "kylling",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "350 g penne",
+        "2 chicken breasts, diced",
+        "200 g mushrooms",
+        "1 onion",
+        "150 g broccoli florets",
+        "25 g butter",
+        "25 g plain flour",
+        "500 ml milk",
+        "100 g mature Cheddar, grated",
+        "1 tbsp olive oil"
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan). Cook the pasta, adding the broccoli for the last 3 minutes, and drain.",
+        "Fry the chicken in the oil until golden, add the sliced onion and mushrooms and cook for 5 minutes.",
+        "Melt the butter, stir in the flour, then whisk in the milk until thick. Stir in most of the cheese.",
+        "Mix the pasta, broccoli, chicken and sauce in an ovenproof dish and top with the rest of the cheese.",
+        "Bake for 20 minutes until golden and bubbling."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/cheesy-chicken-and-mushroom-pasta-bake"
+    },
+    {
+      "id": "homemade-chicken-nuggets",
+      "name": "Homemade chicken nuggets",
+      "protein": "kylling",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g chicken mince",
+        "1 courgette, finely grated",
+        "1 carrot, finely grated",
+        "1 tsp garlic granules",
+        "50 g plain flour",
+        "2 eggs",
+        "100 g panko breadcrumbs",
+        "2 tbsp vegetable oil",
+        "750 g oven chips",
+        "ketchup and peas, to serve"
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan) and put the chips in.",
+        "Squeeze the grated veg dry in a clean tea towel and mix with the chicken mince and garlic.",
+        "Shape into about 20 small nuggets.",
+        "Dip in flour, then beaten egg, then breadcrumbs, and put on an oiled baking tray.",
+        "Drizzle with oil and bake for 18–20 minutes, turning once, until golden. Serve with chips, peas and ketchup."
+      ],
+      "source": "https://realfood.tesco.com/recipes/chicken-nuggets-with-hidden-veg.html"
+    },
+    {
+      "id": "roast-chicken-dinner",
+      "name": "Roast chicken dinner",
+      "protein": "kylling",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 95,
+      "servings": 4,
+      "ingredients": [
+        "1.6 kg whole chicken",
+        "1 lemon",
+        "2 tbsp olive oil",
+        "1.2 kg floury potatoes",
+        "3 tbsp vegetable oil",
+        "4 carrots",
+        "300 g tenderstem broccoli",
+        "1 tbsp plain flour",
+        "500 ml chicken stock",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan). Put the halved lemon inside the chicken, rub with olive oil and season.",
+        "Roast for about 1 hour 20 minutes, until the juices run clear.",
+        "Parboil the potatoes for 8 minutes, shake to rough up, then roast in hot vegetable oil for 50 minutes.",
+        "Rest the chicken for 15 minutes while you cook the carrots and broccoli.",
+        "Stir the flour into the roasting tin juices, add the stock and bubble to a gravy. Carve and serve."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/classic-roast-chicken"
+    },
+    {
+      "id": "smoky-chicken-drumsticks-with-slaw",
+      "name": "Smoky chicken drumsticks with slaw",
+      "protein": "kylling",
+      "sides": [
+        "ris",
+        "salat"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "8 chicken drumsticks",
+        "1 tbsp smoked paprika",
+        "1 tbsp honey",
+        "2 tbsp olive oil",
+        "1 tsp garlic granules",
+        "200 g white cabbage",
+        "2 carrots",
+        "3 tbsp mayonnaise",
+        "1 tbsp natural yoghurt",
+        "300 g long-grain rice"
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan). Mix the paprika, honey, oil and garlic and coat the drumsticks.",
+        "Roast for 40–45 minutes, turning once, until sticky and cooked through.",
+        "Cook the rice.",
+        "For the slaw, finely shred the cabbage, grate the carrots and mix with the mayonnaise and yoghurt.",
+        "Serve the drumsticks with rice and slaw."
+      ],
+      "source": "https://realfood.tesco.com/recipes/smoky-chicken-drumsticks-with-slaw.html"
+    },
+    {
+      "id": "chicken-enchiladas",
+      "name": "Chicken enchiladas",
+      "protein": "kylling",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "3 chicken breasts, sliced",
+        "1 onion",
+        "1 red pepper",
+        "1 tsp ground cumin",
+        "1 tsp smoked paprika",
+        "500 g passata",
+        "198 g tin sweetcorn, drained",
+        "8 flour tortillas",
+        "125 g Cheddar, grated",
+        "soured cream and green salad, to serve"
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan). Fry the chicken, onion and pepper for 8 minutes, then add the spices.",
+        "Stir in half the passata and the sweetcorn and simmer for 5 minutes.",
+        "Fill the tortillas with the chicken mixture, roll up and lay them side by side in a baking dish.",
+        "Pour over the rest of the passata and scatter with the cheese.",
+        "Bake for 20 minutes until golden. Serve with soured cream and salad."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/chicken-enchiladas"
+    },
+    {
+      "id": "chicken-casserole",
+      "name": "Chicken casserole",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "8 boneless chicken thighs",
+        "1 tbsp olive oil",
+        "2 onions",
+        "2 peppers",
+        "2 garlic cloves",
+        "1 tsp smoked paprika",
+        "400 g tin chopped tomatoes",
+        "300 ml chicken stock",
+        "1 bay leaf",
+        "300 g long-grain rice",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Season the chicken and brown it in the oil in a casserole dish, then lift out.",
+        "Soften the sliced onions and peppers for 8 minutes, adding the garlic and paprika at the end.",
+        "Pour in the tomatoes and stock, add the bay leaf and return the chicken.",
+        "Cover and simmer gently for 35 minutes until the chicken is tender. Cook the rice.",
+        "Serve the casserole spooned over the rice."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/baked-spanish-chicken-casserole"
+    },
+    {
+      "id": "fish-pie",
+      "name": "Fish pie",
+      "protein": "fisk",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "400 g fish pie mix (salmon, cod and smoked haddock)",
+        "1 kg floury potatoes",
+        "50 g butter",
+        "500 ml milk",
+        "40 g plain flour",
+        "1 bay leaf",
+        "150 g frozen peas",
+        "small bunch parsley",
+        "50 g Cheddar, grated",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Boil the potatoes and mash with half the butter and a splash of the milk.",
+        "Gently poach the fish in the rest of the milk with the bay leaf for 5 minutes, then lift out the fish and keep the milk.",
+        "Melt the remaining butter, stir in the flour and whisk in the warm milk to a smooth sauce. Add the parsley.",
+        "Heat the oven to 200°C (180°C fan). Put the fish and peas in a dish, pour over the sauce and top with mash.",
+        "Scatter with cheese and bake for 25 minutes until golden."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/fish-pie"
+    },
+    {
+      "id": "fish-and-chips-with-peas",
+      "name": "Fish and chips with peas",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "4 skinless cod or haddock fillets",
+        "1 kg floury potatoes",
+        "3 tbsp vegetable oil",
+        "50 g plain flour",
+        "1 egg",
+        "80 g panko breadcrumbs",
+        "300 g frozen peas",
+        "15 g butter",
+        "1 lemon",
+        "tartare sauce, to serve"
+      ],
+      "steps": [
+        "Heat the oven to 220°C (200°C fan). Cut the potatoes into chunky chips, toss with 2 tbsp oil and salt and roast for 40 minutes.",
+        "Dip the fish in flour, then beaten egg, then breadcrumbs.",
+        "Put the fish on an oiled tray, drizzle with the rest of the oil and bake for the last 15 minutes of the chips' time.",
+        "Cook the peas, then roughly crush with the butter.",
+        "Serve the fish and chips with crushed peas, lemon wedges and tartare sauce."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/homemade-fish-and-chips-with-peas"
+    },
+    {
+      "id": "fish-finger-sandwiches",
+      "name": "Fish finger sandwiches",
+      "protein": "fisk",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "500 g skinless white fish fillets (e.g. basa or cod)",
+        "50 g plain flour",
+        "1 egg",
+        "80 g breadcrumbs",
+        "2 tbsp vegetable oil",
+        "4 soft white rolls or 8 slices bread",
+        "1 little gem lettuce",
+        "4 tbsp mayonnaise or tartare sauce",
+        "1 lemon"
+      ],
+      "steps": [
+        "Cut the fish into thick fingers.",
+        "Dip in flour, then beaten egg, then breadcrumbs.",
+        "Fry in the oil for 2–3 minutes each side until golden and cooked through.",
+        "Spread the rolls with mayonnaise or tartare sauce and add some lettuce.",
+        "Fill with the hot fish fingers and a squeeze of lemon."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/posh-fish-finger-sandwiches"
+    },
+    {
+      "id": "salmon-fishcakes",
+      "name": "Salmon fishcakes",
+      "protein": "fisk",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "600 g floury potatoes",
+        "250 g salmon fillets",
+        "4 spring onions",
+        "small bunch parsley",
+        "1 lemon",
+        "1 egg",
+        "50 g plain flour",
+        "80 g breadcrumbs",
+        "2 tbsp vegetable oil",
+        "salad and frozen peas, to serve"
+      ],
+      "steps": [
+        "Boil the potatoes until tender, drain well and mash. Steam or microwave the salmon for 5 minutes and flake it.",
+        "Mix the mash, salmon, sliced spring onions, chopped parsley and lemon zest. Shape into 8 cakes and chill for 15 minutes.",
+        "Dip the cakes in flour, then beaten egg, then breadcrumbs.",
+        "Fry in the oil for 3–4 minutes each side until golden and hot through.",
+        "Serve with lemon wedges, salad and peas."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/salmon-and-spring-onion-fishcakes"
+    },
+    {
+      "id": "tuna-pasta-bake",
+      "name": "Tuna pasta bake",
+      "protein": "fisk",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "350 g pasta shells",
+        "2 x 145 g tins tuna, drained",
+        "198 g tin sweetcorn, drained",
+        "150 g frozen peas",
+        "25 g butter",
+        "25 g plain flour",
+        "500 ml milk",
+        "100 g mature Cheddar, grated"
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan). Cook the pasta, adding the peas for the last minute, and drain.",
+        "Melt the butter, stir in the flour, then gradually whisk in the milk until thick and smooth.",
+        "Stir in most of the cheese, then the tuna, sweetcorn, pasta and peas.",
+        "Tip into an ovenproof dish and scatter with the rest of the cheese.",
+        "Bake for 15–20 minutes until golden."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/tuna-pasta-bake"
+    },
+    {
+      "id": "kedgeree",
+      "name": "Kedgeree",
+      "protein": "fisk",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "400 g undyed smoked haddock",
+        "300 g basmati rice",
+        "4 eggs",
+        "1 onion",
+        "25 g butter",
+        "1 tsp mild curry powder",
+        "1/2 tsp ground turmeric",
+        "100 g frozen peas",
+        "small bunch parsley",
+        "1 lemon"
+      ],
+      "steps": [
+        "Poach the haddock in a pan of simmering water for 5 minutes, then lift out and flake. Keep the water.",
+        "Soften the chopped onion in the butter, stir in the curry powder and turmeric, then add the rice.",
+        "Add 600 ml of the fish water, cover and simmer for 12 minutes, adding the peas for the last 3 minutes.",
+        "Meanwhile, boil the eggs for 7 minutes, then cool, peel and quarter.",
+        "Fork the fish and parsley through the rice, top with the eggs and serve with lemon wedges."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/kedgeree"
+    },
+    {
+      "id": "prawn-fried-rice",
+      "name": "Prawn fried rice",
+      "protein": "fisk",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "2 x 250 g pouches cooked long-grain rice",
+        "200 g cooked peeled prawns",
+        "3 eggs",
+        "150 g frozen peas",
+        "198 g tin sweetcorn, drained",
+        "4 spring onions",
+        "2 garlic cloves",
+        "3 tbsp soy sauce",
+        "1 tsp sesame oil",
+        "1 tbsp vegetable oil"
+      ],
+      "steps": [
+        "Heat the vegetable oil in a wok and fry the garlic and white parts of the spring onions for 1 minute.",
+        "Add the peas and sweetcorn and stir-fry for 2 minutes.",
+        "Push to one side, scramble the beaten eggs in the space, then mix through.",
+        "Add the rice and prawns and stir-fry for 4–5 minutes until piping hot.",
+        "Season with the soy sauce and sesame oil and scatter with the green spring onion tops."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/prawn-fried-rice"
+    },
+    {
+      "id": "teriyaki-salmon-with-noodles",
+      "name": "Teriyaki salmon with noodles",
+      "protein": "fisk",
+      "sides": [
+        "nudler"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "4 salmon fillets",
+        "4 tbsp teriyaki sauce",
+        "1 tbsp honey",
+        "300 g medium egg noodles",
+        "200 g tenderstem broccoli",
+        "1 red pepper",
+        "4 spring onions",
+        "1 tbsp soy sauce",
+        "1 tsp sesame seeds",
+        "1 tbsp vegetable oil"
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan). Brush the salmon with half the teriyaki sauce and the honey and bake for 12–15 minutes.",
+        "Cook the noodles following the pack instructions and drain.",
+        "Stir-fry the broccoli and sliced pepper in the oil for 4 minutes.",
+        "Add the noodles, the rest of the teriyaki sauce and the soy sauce and toss together.",
+        "Serve the salmon on the noodles, scattered with spring onions and sesame seeds."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/teriyaki-salmon-noodles"
+    },
+    {
+      "id": "macaroni-cheese",
+      "name": "Macaroni cheese",
+      "protein": "vegetar",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "350 g macaroni",
+        "50 g butter",
+        "50 g plain flour",
+        "700 ml milk",
+        "200 g mature Cheddar, grated",
+        "25 g Parmesan, grated",
+        "1/2 tsp mustard powder",
+        "2 tomatoes, sliced",
+        "25 g breadcrumbs"
+      ],
+      "steps": [
+        "Heat the oven to 200°C (180°C fan) and cook the macaroni for 2 minutes less than the pack says.",
+        "Melt the butter, stir in the flour, then gradually whisk in the milk and simmer until thick.",
+        "Take off the heat and stir in most of the Cheddar and the mustard powder.",
+        "Mix in the drained macaroni and tip into a baking dish. Top with tomato slices, breadcrumbs, Parmesan and the rest of the Cheddar.",
+        "Bake for 20 minutes until golden and bubbling."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/macaroni-cheese"
+    },
+    {
+      "id": "jacket-potatoes-with-beans-and-cheese",
+      "name": "Jacket potatoes with beans and cheese",
+      "protein": "vegetar",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "4 large baking potatoes",
+        "1 tbsp olive oil",
+        "2 x 415 g tins baked beans",
+        "25 g butter",
+        "100 g mature Cheddar, grated",
+        "salad leaves and cherry tomatoes, to serve",
+        "sea salt"
+      ],
+      "steps": [
+        "Prick the potatoes and microwave for 12–15 minutes until nearly soft.",
+        "Rub with oil and salt and crisp in the oven at 220°C (200°C fan) for 20 minutes.",
+        "Warm the baked beans in a pan.",
+        "Split the potatoes, add a knob of butter and spoon over the beans.",
+        "Top with the cheese and serve with a simple salad."
+      ],
+      "source": "https://realfood.tesco.com/recipes/jacket-potato-with-baked-beans-and-cheese.html"
+    },
+    {
+      "id": "tomato-soup-and-cheese-toasties",
+      "name": "Tomato soup and cheese toasties",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "1 tbsp olive oil",
+        "1 onion",
+        "1 carrot",
+        "2 garlic cloves",
+        "2 x 400 g tins chopped tomatoes",
+        "500 ml vegetable stock",
+        "1 tsp sugar",
+        "8 slices bread",
+        "150 g Red Leicester or Cheddar, grated",
+        "2 tbsp green pesto",
+        "25 g butter"
+      ],
+      "steps": [
+        "Soften the chopped onion, carrot and garlic in the oil for 8 minutes.",
+        "Add the tomatoes, stock and sugar and simmer for 15 minutes.",
+        "Blend the soup until smooth and season to taste.",
+        "Spread 4 slices of bread with pesto, top with cheese and the remaining bread, and butter the outsides.",
+        "Fry the toasties for 2–3 minutes each side until golden and melted. Serve with the soup for dunking."
+      ],
+      "source": "https://realfood.tesco.com/recipes/tomato-soup-with-pesto-toasties.html"
+    },
+    {
+      "id": "sweet-potato-and-chickpea-curry",
+      "name": "Sweet potato and chickpea curry",
+      "protein": "vegetar",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "1 onion",
+        "2 garlic cloves",
+        "thumb-sized piece ginger",
+        "2 tbsp mild curry paste",
+        "600 g sweet potatoes",
+        "400 g tin chickpeas, drained",
+        "400 ml tin coconut milk",
+        "400 g tin chopped tomatoes",
+        "2 tbsp smooth peanut butter",
+        "100 g spinach",
+        "300 g basmati rice"
+      ],
+      "steps": [
+        "Soften the chopped onion, garlic and ginger in a little oil, then stir in the curry paste.",
+        "Add the peeled, diced sweet potatoes, coconut milk, tomatoes and peanut butter.",
+        "Simmer for 20 minutes until the sweet potato is tender. Cook the rice.",
+        "Stir in the chickpeas and spinach and cook until the spinach wilts.",
+        "Serve with the rice."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/sweet-potato-peanut-butter-and-chickpea-curry"
+    },
+    {
+      "id": "pea-and-mozzarella-frittata",
+      "name": "Pea and mozzarella frittata",
+      "protein": "vegetar",
+      "sides": [
+        "salat",
+        "brod"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "8 eggs",
+        "200 g frozen peas",
+        "125 g mozzarella",
+        "25 g Parmesan, grated",
+        "4 spring onions",
+        "small bunch mint or basil",
+        "1 tbsp olive oil",
+        "salad and crusty bread, to serve"
+      ],
+      "steps": [
+        "Heat the grill. Beat the eggs with the Parmesan, chopped herbs and some salt and pepper.",
+        "Soften the sliced spring onions in the oil in an ovenproof frying pan, then add the peas.",
+        "Pour in the eggs and cook gently for 6–8 minutes until almost set.",
+        "Tear the mozzarella over the top and grill for 3–4 minutes until golden and set.",
+        "Cut into wedges and serve with salad and crusty bread."
+      ],
+      "source": "https://realfood.tesco.com/recipes/pea-and-mozzarella-frittata.html"
+    },
+    {
+      "id": "pesto-pasta-with-peas",
+      "name": "Pesto pasta with peas",
+      "protein": "vegetar",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "400 g spaghetti",
+        "150 g frozen peas",
+        "100 g spinach",
+        "190 g jar green pesto",
+        "1 lemon",
+        "40 g Parmesan or pecorino, grated",
+        "200 g cherry tomatoes"
+      ],
+      "steps": [
+        "Cook the spaghetti in salted water, adding the peas for the last 2 minutes.",
+        "Drain, keeping a cupful of the cooking water.",
+        "Return to the pan with the spinach and stir until it wilts.",
+        "Stir in the pesto, lemon zest and a splash of the cooking water to make it glossy.",
+        "Serve topped with halved cherry tomatoes and grated cheese."
+      ],
+      "source": "https://realfood.tesco.com/recipes/green-pesto-spaghetti.html"
+    },
+    {
+      "id": "margherita-pizza",
+      "name": "Margherita pizza",
+      "protein": "vegetar",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "2 large ready-made pizza bases (or 500 g fresh pizza dough)",
+        "200 g passata",
+        "1 tbsp tomato purée",
+        "1 tsp dried oregano",
+        "2 x 125 g balls mozzarella",
+        "50 g Cheddar, grated",
+        "handful basil leaves",
+        "1 tbsp olive oil",
+        "green salad, to serve"
+      ],
+      "steps": [
+        "Heat the oven to 220°C (200°C fan) with a baking tray inside.",
+        "Mix the passata, tomato purée and oregano and spread thinly over the bases.",
+        "Tear over the mozzarella and scatter with the Cheddar.",
+        "Bake on the hot tray for 10–12 minutes until the base is crisp and the cheese is bubbling.",
+        "Top with basil and a drizzle of oil, slice and serve with salad."
+      ],
+      "source": "https://www.tesco.com/recipes/en-GB/recipe/margherita-pizza"
+    }
+  ]
+}

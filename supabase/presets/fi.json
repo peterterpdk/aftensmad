@@ -1,0 +1,1551 @@
+{
+  "format": "madplan.profile",
+  "version": 1,
+  "name": "Perheen suosikit",
+  "summary": "Arkiruokia, joita suomalaiset lapsiperheet tekevät viikosta toiseen.",
+  "symbol": "fork.knife",
+  "settings": {
+    "noSameProteinInRow": true
+  },
+  "recipes": [
+    {
+      "id": "makaronilaatikko",
+      "name": "Makaronilaatikko",
+      "protein": "okse",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 70,
+      "servings": 4,
+      "ingredients": [
+        "400 g makaroneja",
+        "400 g naudan jauhelihaa",
+        "1 sipuli",
+        "1 rkl öljyä",
+        "1 tl suolaa",
+        "½ tl mustapippuria",
+        "3 kananmunaa",
+        "7 dl maitoa",
+        "1 dl juustoraastetta",
+        "ketsuppia tarjoiluun"
+      ],
+      "steps": [
+        "Kuumenna uuni 200 asteeseen ja voitele uunivuoka.",
+        "Keitä makaronit lähes kypsiksi ja valuta.",
+        "Ruskista jauheliha ja hienonnettu sipuli öljyssä ja mausta suolalla ja pippurilla.",
+        "Sekoita makaronit ja jauhelihaseos vuokaan.",
+        "Vatkaa munat ja maito keskenään, lisää ripaus suolaa ja kaada vuokaan.",
+        "Ripottele pinnalle juustoraaste ja paista noin tunti, kunnes munamaito on hyytynyt.",
+        "Tarjoa ketsupin ja salaatin kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/liha-makaronilaatikko"
+    },
+    {
+      "id": "spagetti-ja-jauhelihakastike",
+      "name": "Spagetti ja jauhelihakastike",
+      "protein": "okse",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g naudan jauhelihaa",
+        "1 sipuli",
+        "2 valkosipulinkynttä",
+        "1 rkl öljyä",
+        "500 g tomaattimurskaa",
+        "1 dl vettä",
+        "2 tl oreganoa",
+        "1 tl suolaa",
+        "½ tl mustapippuria",
+        "400 g spagettia",
+        "juustoraastetta tarjoiluun"
+      ],
+      "steps": [
+        "Hienonna sipuli ja valkosipuli.",
+        "Ruskista jauheliha öljyssä, lisää sipulit ja kuullota hetki.",
+        "Lisää tomaattimurska, vesi ja mausteet ja hauduta miedolla lämmöllä 15 minuuttia.",
+        "Keitä spagetti sillä välin suolalla maustetussa vedessä.",
+        "Tarjoa kastike spagetin kanssa ja ripottele päälle juustoraastetta."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/jauhelihakastike"
+    },
+    {
+      "id": "lihapullat-ja-perunamuusi",
+      "name": "Lihapullat ja perunamuusi",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "400 g jauhelihaa",
+        "1 dl korppujauhoja",
+        "2 dl kermaviiliä",
+        "1 sipuli",
+        "1 kananmuna",
+        "1 tl suolaa",
+        "1 kg jauhoisia perunoita",
+        "2 dl maitoa",
+        "30 g voita",
+        "2 rkl vehnäjauhoja",
+        "3 dl vettä",
+        "2 dl ruokakermaa",
+        "puolukkasurvosta tarjoiluun"
+      ],
+      "steps": [
+        "Sekoita korppujauhot ja kermaviili ja anna turvota hetki.",
+        "Lisää jauheliha, raastettu sipuli, kananmuna ja suola ja sekoita tasaiseksi.",
+        "Pyörittele pieniä pullia ja paista ne uunissa 225 asteessa noin 15 minuuttia.",
+        "Keitä perunat kypsiksi ja soseuta ne lämpimän maidon, voin ja suolan kanssa.",
+        "Ripottele jauhot pannulle, lisää vesi ja kerma ja keitä kastikkeeksi. Lisää lihapullat.",
+        "Tarjoa lihapullat muusin, kastikkeen ja puolukan kanssa."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/maukkaat-lihapullat/recipe-2508"
+    },
+    {
+      "id": "lihakeitto",
+      "name": "Lihakeitto",
+      "protein": "okse",
+      "sides": [
+        "kartofler",
+        "brod"
+      ],
+      "minutes": 100,
+      "servings": 4,
+      "ingredients": [
+        "800 g naudan lapaa paloina",
+        "15 dl vettä",
+        "2 tl suolaa",
+        "10 maustepippuria",
+        "2 laakerinlehteä",
+        "1 sipuli",
+        "8 perunaa",
+        "3 porkkanaa",
+        "200 g lanttua",
+        "1 palsternakka",
+        "persiljaa"
+      ],
+      "steps": [
+        "Laita liha kylmään veteen, kuumenna kiehuvaksi ja kuori vaahto pois.",
+        "Lisää suola, maustepippurit ja laakerinlehdet ja keitä miedolla lämmöllä noin tunti.",
+        "Kuori ja pilko sipuli, perunat ja juurekset sopiviksi paloiksi.",
+        "Lisää kasvikset ja keitä vielä 20–25 minuuttia, kunnes kaikki on kypsää.",
+        "Tarkista suola ja ripottele pinnalle hienonnettua persiljaa.",
+        "Tarjoa ruisleivän kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/lihakeitto"
+    },
+    {
+      "id": "karjalanpaisti",
+      "name": "Karjalanpaisti",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 180,
+      "servings": 4,
+      "ingredients": [
+        "800 g karjalanpaistilihaa (nautaa ja porsasta)",
+        "2 sipulia",
+        "2 porkkanaa",
+        "1 tl suolaa",
+        "10 maustepippuria",
+        "2 laakerinlehteä",
+        "vettä",
+        "1 kg perunoita",
+        "2 dl maitoa",
+        "30 g voita",
+        "puolukkasurvosta tarjoiluun"
+      ],
+      "steps": [
+        "Kuumenna uuni 175 asteeseen.",
+        "Laita lihapalat, lohkotut sipulit ja porkkanapalat pataan ja mausta suolalla, maustepippureilla ja laakerinlehdillä.",
+        "Lisää vettä niin, että liha juuri peittyy.",
+        "Hauduta kannen alla uunissa 2½–3 tuntia, kunnes liha on mureaa.",
+        "Keitä perunat ja muussaa ne maidon ja voin kanssa.",
+        "Tarjoa paisti perunamuusin ja puolukan kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/karjalanpaisti"
+    },
+    {
+      "id": "kaalipata",
+      "name": "Kaalipata",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 55,
+      "servings": 4,
+      "ingredients": [
+        "400 g naudan jauhelihaa",
+        "1 kg valkokaalia",
+        "4 porkkanaa",
+        "1 sipuli",
+        "½ dl puuroriisiä",
+        "3 dl vettä",
+        "2 rkl siirappia",
+        "2 tl meiramia",
+        "1½ tl suolaa",
+        "mustapippuria",
+        "800 g perunoita",
+        "puolukkasurvosta tarjoiluun"
+      ],
+      "steps": [
+        "Ruskista jauheliha isossa kattilassa.",
+        "Lisää suikaloitu kaali, porkkanaviipaleet ja hienonnettu sipuli ja kuullota hetki.",
+        "Lisää vesi, riisi, siirappi ja mausteet.",
+        "Hauduta kannen alla miedolla lämmöllä noin 40 minuuttia välillä sekoittaen.",
+        "Keitä perunat samaan aikaan.",
+        "Tarjoa perunoiden ja puolukan kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/kaalipata"
+    },
+    {
+      "id": "lasagne",
+      "name": "Lasagne",
+      "protein": "okse",
+      "sides": [
+        "salat"
+      ],
+      "minutes": 75,
+      "servings": 4,
+      "ingredients": [
+        "400 g naudan jauhelihaa",
+        "1 sipuli",
+        "500 g tomaattimurskaa",
+        "1 tl suolaa",
+        "2 tl oreganoa",
+        "40 g voita",
+        "1 dl vehnäjauhoja",
+        "10 dl maitoa",
+        "150 g juustoraastetta",
+        "180 g lasagnelevyjä"
+      ],
+      "steps": [
+        "Ruskista jauheliha ja sipuli, lisää tomaattimurska ja mausteet ja hauduta 10 minuuttia.",
+        "Sulata voi, sekoita jauhot joukkoon ja lisää maito vähitellen vatkaten. Keitä sakeaksi ja mausta suolalla.",
+        "Kuumenna uuni 200 asteeseen.",
+        "Lado vuokaan kerroksittain valkokastiketta, levyjä ja jauhelihakastiketta; viimeiseksi valkokastiketta.",
+        "Ripottele pinnalle juustoraaste ja paista noin 45 minuuttia.",
+        "Anna vetäytyä hetki ja tarjoa salaatin kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/lasagne"
+    },
+    {
+      "id": "jauhelihakeitto",
+      "name": "Jauhelihakeitto",
+      "protein": "okse",
+      "sides": [
+        "kartofler",
+        "brod"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "400 g naudan jauhelihaa",
+        "600 g perunoita",
+        "2 porkkanaa",
+        "1 sipuli",
+        "10 dl vettä",
+        "1 lihaliemikuutio",
+        "8 maustepippuria",
+        "2 laakerinlehteä",
+        "200 g keittojuureksia (pakaste)",
+        "½ tl suolaa",
+        "1 dl persiljaa"
+      ],
+      "steps": [
+        "Ruskista jauheliha kattilassa ja lisää hienonnettu sipuli.",
+        "Lisää vesi, liemikuutio, maustepippurit ja laakerinlehdet ja kiehauta.",
+        "Lisää kuutioidut perunat ja porkkanat ja keitä 15 minuuttia.",
+        "Lisää keittojuurekset ja keitä vielä 5–10 minuuttia.",
+        "Mausta suolalla, ripottele pinnalle persiljaa ja tarjoa leivän kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/jauhelihakeitto"
+    },
+    {
+      "id": "hampurilaiset",
+      "name": "Hampurilaiset",
+      "protein": "okse",
+      "sides": [
+        "brod",
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "600 g naudan jauhelihaa",
+        "1 tl suolaa",
+        "mustapippuria",
+        "1 rkl öljyä",
+        "4 hampurilaissämpylää",
+        "4 juustoviipaletta",
+        "jäävuorisalaattia",
+        "1 tomaatti",
+        "kurkkua",
+        "ketsuppia ja majoneesia",
+        "600 g uuniranskalaisia"
+      ],
+      "steps": [
+        "Paista ranskalaiset uunissa pakkauksen ohjeen mukaan.",
+        "Mausta jauheliha suolalla ja pippurilla ja muotoile neljä pihviä.",
+        "Paista pihvejä pannulla öljyssä 3–4 minuuttia kummaltakin puolelta.",
+        "Nosta juustoviipale pihvien päälle loppuvaiheessa ja lämmitä sämpylät.",
+        "Kokoa hampurilaiset salaatin, tomaatin, kurkun ja kastikkeiden kanssa.",
+        "Tarjoa ranskalaisten kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/hampurilaispihvit"
+    },
+    {
+      "id": "jauhelihaburritot",
+      "name": "Jauhelihaburritot",
+      "protein": "okse",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g naudan jauhelihaa",
+        "1 sipuli",
+        "1 tlk (380 g) kidneypapuja",
+        "1 prk (315 g) mietoa salsaa",
+        "½ dl vettä",
+        "½ tl suolaa",
+        "8 tortillaa",
+        "150 g juustoraastetta",
+        "200 g turkkilaista jogurttia",
+        "jäävuorisalaattia"
+      ],
+      "steps": [
+        "Ruskista jauheliha ja hienonnettu sipuli pannulla.",
+        "Lisää huuhdotut pavut, salsa, vesi ja suola ja hauduta 5 minuuttia.",
+        "Lämmitä tortillat.",
+        "Levitä täyte tortilloille, lisää juustoa, jogurttia ja salaattia ja kääri rullalle.",
+        "Tarjoa heti."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/helpot-jauhelihaburritot"
+    },
+    {
+      "id": "nakkikastike-ja-perunamuusi",
+      "name": "Nakkikastike ja perunamuusi",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "300 g nakkeja",
+        "1 sipuli",
+        "1 rkl voita",
+        "2 rkl vehnäjauhoja",
+        "4 dl vettä",
+        "1 lihaliemikuutio",
+        "2 rkl ketsuppia",
+        "1 rkl sinappia",
+        "1 dl ruokakermaa",
+        "1 kg perunoita",
+        "2 dl maitoa",
+        "30 g voita muusiin"
+      ],
+      "steps": [
+        "Keitä perunat kypsiksi.",
+        "Viipaloi nakit ja hienonna sipuli.",
+        "Kuullota sipuli voissa, lisää nakit ja ruskista kevyesti.",
+        "Ripottele jauhot pannulle, lisää vesi ja liemikuutio ja keitä sakeaksi.",
+        "Mausta ketsupilla ja sinapilla, lisää kerma ja hauduta pari minuuttia.",
+        "Muussaa perunat lämpimän maidon ja voin kanssa ja tarjoa kastikkeen kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/nakkikastike"
+    },
+    {
+      "id": "makkarakeitto",
+      "name": "Makkarakeitto",
+      "protein": "gris",
+      "sides": [
+        "kartofler",
+        "brod"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "300 g lenkkimakkaraa",
+        "300 g valkokaalia",
+        "10 dl vettä",
+        "2 kasvisliemikuutiota",
+        "2 laakerinlehteä",
+        "8 mustapippuria",
+        "750 g peruna-keittojuuressekoitusta (pakaste)",
+        "1 dl persiljaa",
+        "4 rkl smetanaa"
+      ],
+      "steps": [
+        "Kiehauta vesi, liemikuutiot ja mausteet.",
+        "Lisää peruna-juuressekoitus ja keitä 10 minuuttia.",
+        "Lisää kuutioitu makkara ja suikaloitu kaali ja keitä vielä 5–8 minuuttia.",
+        "Tarkista maku ja ripottele pinnalle persiljaa.",
+        "Tarjoa smetanan ja leivän kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/kaali-makkarakeitto"
+    },
+    {
+      "id": "uunimakkara-ja-perunamuusi",
+      "name": "Uunimakkara ja perunamuusi",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "540 g lenkkimakkaraa",
+        "100 g juustoviipaleita",
+        "1 tomaatti",
+        "1 sipuli",
+        "2 rkl sinappia",
+        "1 kg perunoita",
+        "2 dl maitoa",
+        "30 g voita",
+        "suolaa"
+      ],
+      "steps": [
+        "Kuumenna uuni 225 asteeseen.",
+        "Viillä makkaraan taskuja ja sivele sinapilla.",
+        "Täytä taskut juustolla, tomaattiviipaleilla ja sipulilla.",
+        "Paista uunissa noin 20 minuuttia.",
+        "Keitä perunat ja muussaa ne maidon, voin ja suolan kanssa.",
+        "Tarjoa makkara muusin kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/uunimakkara"
+    },
+    {
+      "id": "pyttipannu",
+      "name": "Pyttipannu",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "1 kg keitettyjä perunoita",
+        "2 sipulia",
+        "400 g lenkkimakkaraa",
+        "2 rkl rypsiöljyä",
+        "1 tl suolaa",
+        "½ tl mustapippuria",
+        "4 kananmunaa",
+        "punajuuria (säilyke)",
+        "ruohosipulia"
+      ],
+      "steps": [
+        "Kuutioi perunat, makkara ja sipulit.",
+        "Paista perunakuutioita öljyssä, kunnes ne saavat väriä.",
+        "Lisää sipuli ja makkara ja paista vielä noin 10 minuuttia välillä sekoittaen.",
+        "Mausta suolalla ja pippurilla.",
+        "Paista kananmunat erikseen.",
+        "Tarjoa pyttipannu kananmunan, punajuurien ja ruohosipulin kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/pyttipannu"
+    },
+    {
+      "id": "hernekeitto",
+      "name": "Hernekeitto",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 150,
+      "servings": 4,
+      "ingredients": [
+        "500 g kuivattuja keltaisia herneitä",
+        "25 dl vettä",
+        "500 g savupotkaa",
+        "300 g porsaan lapaa",
+        "1 sipuli",
+        "3 porkkanaa",
+        "1 tl suolaa",
+        "2 tl meiramia",
+        "sinappia tarjoiluun",
+        "ruisleipää tarjoiluun"
+      ],
+      "steps": [
+        "Liota herneitä yön yli runsaassa vedessä ja huuhtele.",
+        "Laita herneet, vesi, potka ja lapa kattilaan, kiehauta ja kuori vaahto.",
+        "Lisää hienonnettu sipuli ja keitä miedolla lämmöllä 1½–2 tuntia.",
+        "Lisää porkkanapalat viimeiseksi puoleksi tunniksi.",
+        "Nosta lihat pois, irrota luut ja pilko liha takaisin keittoon.",
+        "Mausta suolalla ja meiramilla ja tarjoa sinapin ja leivän kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/hernekeitto"
+    },
+    {
+      "id": "kinkkukiusaus",
+      "name": "Kinkkukiusaus",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "1 kg peruna-sipulisekoitusta (pakaste)",
+        "300 g kinkkusuikaleita",
+        "1 tl suolaa",
+        "½ tl mustapippuria",
+        "2 dl ruokakermaa",
+        "2 dl maitoa",
+        "1 dl juustoraastetta",
+        "persiljaa"
+      ],
+      "steps": [
+        "Kuumenna uuni 200 asteeseen ja voitele vuoka.",
+        "Levitä vuokaan kerroksittain peruna-sipulisekoitusta ja kinkkua.",
+        "Sekoita kerma, maito, suola ja pippuri ja kaada vuokaan.",
+        "Ripottele pinnalle juustoraaste.",
+        "Paista noin 50 minuuttia, kunnes perunat ovat kypsiä.",
+        "Ripottele päälle persiljaa ja tarjoa salaatin kanssa."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/helppo-kinkkukiusaus/recipe-1696"
+    },
+    {
+      "id": "pasta-carbonara",
+      "name": "Pasta carbonara",
+      "protein": "gris",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "300 g spagettia",
+        "150 g pekonia",
+        "2 valkosipulinkynttä",
+        "2 dl ruokakermaa",
+        "2 kananmunaa",
+        "1½ dl parmesaaniraastetta",
+        "½ tl mustapippuria",
+        "¼ tl suolaa"
+      ],
+      "steps": [
+        "Keitä spagetti suolalla maustetussa vedessä.",
+        "Paista pekoni rapeaksi ja lisää hienonnettu valkosipuli lopuksi.",
+        "Sekoita kerma, munat, parmesaani ja pippuri kulhossa.",
+        "Valuta pasta ja kaada se pannulle pekonin joukkoon.",
+        "Nosta pannu liedeltä ja sekoita munaseos nopeasti joukkoon.",
+        "Tarjoa heti."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/pasta-carbonara"
+    },
+    {
+      "id": "kinkkupizza",
+      "name": "Kinkkupizza",
+      "protein": "gris",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "3½ dl vehnäjauhoja",
+        "1 tl leivinjauhetta",
+        "½ tl suolaa",
+        "1½ dl vettä",
+        "3 rkl oliiviöljyä",
+        "1½ dl pizzakastiketta",
+        "150 g pizzajuustoraastetta",
+        "150 g kinkkusuikaleita",
+        "1 paprika",
+        "½ tl pizzamaustetta"
+      ],
+      "steps": [
+        "Kuumenna uuni 250 asteeseen.",
+        "Sekoita jauhot, leivinjauhe ja suola, lisää vesi ja öljy ja vaivaa tasaiseksi taikinaksi.",
+        "Kauli taikinasta kaksi ohutta pohjaa leivinpaperin päälle.",
+        "Levitä pohjille kastike, kinkku, paprikasuikaleet ja juusto ja mausta pizzamausteella.",
+        "Paista 10–12 minuuttia, kunnes reunat ovat kullanruskeita.",
+        "Tarjoa salaatin kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/kinkkupizza"
+    },
+    {
+      "id": "porsaanleikkeet-ja-perunat",
+      "name": "Porsaanleikkeet ja perunat",
+      "protein": "gris",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "600 g porsaan ulkofileetä",
+        "1 tl suolaa",
+        "½ tl mustapippuria",
+        "1 dl vehnäjauhoja",
+        "2 kananmunaa",
+        "2 dl korppujauhoja",
+        "1 dl rypsiöljyä paistamiseen",
+        "1 kg perunoita",
+        "1 sitruuna"
+      ],
+      "steps": [
+        "Keitä perunat.",
+        "Leikkaa fileestä 8 viipaletta, nuiji ne ohuiksi ja mausta suolalla ja pippurilla.",
+        "Kääntele leikkeet ensin jauhoissa, sitten vatkatussa munassa ja lopuksi korppujauhoissa.",
+        "Paista leikkeitä öljyssä keskilämmöllä 2–3 minuuttia kummaltakin puolelta.",
+        "Tarjoa perunoiden, sitruunalohkojen ja salaatin kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/wieninleikkeet"
+    },
+    {
+      "id": "jauhelihakastike-ja-perunat",
+      "name": "Jauhelihakastike ja perunat",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g porsaan jauhelihaa",
+        "1 sipuli",
+        "½ rkl öljyä",
+        "2 rkl tomaattisosetta",
+        "2 rkl vehnäjauhoja",
+        "5 dl vettä",
+        "1 tl suolaa",
+        "mustapippuria",
+        "1 maustekurkku",
+        "2 rkl smetanaa",
+        "1 kg perunoita"
+      ],
+      "steps": [
+        "Keitä perunat.",
+        "Ruskista jauheliha ja hienonnettu sipuli öljyssä.",
+        "Lisää tomaattisose ja ripottele jauhot joukkoon.",
+        "Lisää vesi vähitellen sekoittaen ja hauduta 10 minuuttia.",
+        "Mausta suolalla ja pippurilla ja lisää kuutioitu maustekurkku ja smetana.",
+        "Tarjoa kastike perunoiden kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/jauhelihakastike-stroganoffin-tapaan"
+    },
+    {
+      "id": "kermainen-possukastike-ja-riisi",
+      "name": "Kermainen possukastike ja riisi",
+      "protein": "gris",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "400 g porsaan kinkkusuikaleita",
+        "1 sipuli",
+        "1 valkosipulinkynsi",
+        "1 rkl öljyä",
+        "½ tl suolaa",
+        "2 rkl dijonsinappia",
+        "2 dl vettä",
+        "2 dl ruokakermaa",
+        "ripaus mustapippuria",
+        "3 dl riisiä",
+        "tuoretta basilikaa"
+      ],
+      "steps": [
+        "Keitä riisi pakkauksen ohjeen mukaan.",
+        "Ruskista lihasuikaleet öljyssä ja mausta suolalla.",
+        "Lisää hienonnettu sipuli ja valkosipuli ja kuullota hetki.",
+        "Lisää sinappi, vesi ja kerma ja hauduta 10 minuuttia.",
+        "Mausta pippurilla ja ripottele päälle basilikaa.",
+        "Tarjoa riisin kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/basilika-possukastike"
+    },
+    {
+      "id": "possu-nuudeliwokki",
+      "name": "Possu-nuudeliwokki",
+      "protein": "gris",
+      "sides": [
+        "nudler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "300 g porsaan kinkkusuikaleita",
+        "1 punainen paprika",
+        "100 g purjoa",
+        "1 valkosipulinkynsi",
+        "2 rkl öljyä",
+        "300 g pakastevihreitä papuja",
+        "2 rkl makeaa soijakastiketta",
+        "2 dl kookosmaitoa",
+        "1 rkl limemehua",
+        "250 g vehnänuudeleita"
+      ],
+      "steps": [
+        "Keitä nuudelit pakkauksen ohjeen mukaan ja valuta.",
+        "Paista lihasuikaleet kuumassa öljyssä wokissa tai pannulla.",
+        "Lisää suikaloitu paprika, purjo, valkosipuli ja pavut ja paista muutama minuutti.",
+        "Lisää soijakastike ja kookosmaito ja kuumenna.",
+        "Sekoita nuudelit joukkoon ja mausta limemehulla.",
+        "Tarjoa heti."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/possu-kasvisnuudelit"
+    },
+    {
+      "id": "broileripasta",
+      "name": "Broileripasta",
+      "protein": "kylling",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "300 g broilerin fileesuikaleita",
+        "2 rkl rypsiöljyä",
+        "1 punainen paprika",
+        "1 kesäkurpitsa",
+        "½ purjo",
+        "2 rkl tomaattisosetta",
+        "2 tl paprikajauhetta",
+        "1 tl kuivattua basilikaa",
+        "1 tl suolaa",
+        "1 dl vettä",
+        "400 g pastaa",
+        "150 g emmentalraastetta"
+      ],
+      "steps": [
+        "Keitä pasta.",
+        "Ruskista broilerisuikaleet öljyssä.",
+        "Lisää kuutioidut kasvikset ja paista muutama minuutti.",
+        "Lisää tomaattisose, mausteet ja vesi ja hauduta 5 minuuttia.",
+        "Sekoita pasta kastikkeeseen ja ripottele pinnalle juustoraaste.",
+        "Tarjoa heti."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/broileripasta/recipe-2313"
+    },
+    {
+      "id": "broilerikastike-ja-riisi",
+      "name": "Broilerikastike ja riisi",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g broilerin fileesuikaleita",
+        "1 rkl öljyä",
+        "½ tl suolaa",
+        "ripaus mustapippuria",
+        "2 rkl täysjyväsinappia",
+        "1½ dl vettä",
+        "2 dl ruokakermaa",
+        "2 tomaattia",
+        "½ dl ruohosipulia",
+        "3 dl riisiä"
+      ],
+      "steps": [
+        "Keitä riisi.",
+        "Ruskista broilerisuikaleet öljyssä ja mausta suolalla ja pippurilla.",
+        "Lisää sinappi, vesi ja kerma ja anna kiehahtaa.",
+        "Lisää kuutioidut tomaatit ja hauduta 5 minuuttia.",
+        "Ripottele pinnalle ruohosipulia ja tarjoa riisin kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/broilerikastike"
+    },
+    {
+      "id": "kanakeitto",
+      "name": "Kanakeitto",
+      "protein": "kylling",
+      "sides": [
+        "kartofler",
+        "brod"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "400 g broilerin fileesuikaleita",
+        "6 perunaa",
+        "2 porkkanaa",
+        "1 sipuli",
+        "1 rkl rypsiöljyä",
+        "1 tl mietoa curryjauhetta",
+        "10 dl vettä",
+        "1 kanaliemikuutio",
+        "2 dl ruokakermaa",
+        "suolaa",
+        "persiljaa"
+      ],
+      "steps": [
+        "Kuullota hienonnettu sipuli ja curry öljyssä kattilassa.",
+        "Lisää broilerisuikaleet ja ruskista kevyesti.",
+        "Lisää vesi, liemikuutio sekä kuutioidut perunat ja porkkanat.",
+        "Keitä noin 20 minuuttia, kunnes perunat ovat kypsiä.",
+        "Lisää kerma, mausta suolalla ja kuumenna.",
+        "Ripottele pinnalle persiljaa ja tarjoa leivän kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/kanakeitto"
+    },
+    {
+      "id": "broilericurry-ja-riisi",
+      "name": "Broilericurry ja riisi",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g broilerin fileesuikaleita",
+        "1 rkl öljyä",
+        "2 tl mietoa curryjauhetta",
+        "100 g purjoa",
+        "1 dl vettä",
+        "½ tl suolaa",
+        "200 g pakasteherneitä",
+        "2 dl ruokakermaa",
+        "3 dl basmatiriisiä",
+        "tuoretta persiljaa"
+      ],
+      "steps": [
+        "Keitä riisi.",
+        "Ruskista broilerisuikaleet öljyssä ja lisää curry.",
+        "Lisää ohuiksi viipaloitu purjo ja kuullota hetki.",
+        "Lisää vesi, suola, herneet ja kerma ja hauduta 5–10 minuuttia.",
+        "Ripottele pinnalle persiljaa ja tarjoa riisin kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/broilericurry"
+    },
+    {
+      "id": "kana-riisivuoka",
+      "name": "Kana-riisivuoka",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "300 g broilerin fileesuikaleita",
+        "3 dl täysjyväriisiä",
+        "1 pieni purjo",
+        "200 g kesäkurpitsaa",
+        "140 g ananaspaloja",
+        "1 rkl rypsiöljyä",
+        "4 dl vettä",
+        "1 kanaliemikuutio",
+        "2 dl ruokakermaa",
+        "250 g juustokastiketta",
+        "1 dl juustoraastetta"
+      ],
+      "steps": [
+        "Kuumenna uuni 200 asteeseen ja voitele vuoka.",
+        "Ruskista broilerisuikaleet öljyssä ja lisää pilkotut purjo ja kesäkurpitsa.",
+        "Levitä riisi vuokaan ja lisää päälle broileri, kasvikset ja ananaspalat.",
+        "Sekoita vesi, liemikuutio, kerma ja juustokastike ja kaada vuokaan.",
+        "Ripottele pinnalle juustoraaste ja paista noin 45 minuuttia, kunnes riisi on kypsää."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/kana-riisivuoka/3DA5sR6K5sYZfnQiXARMpF"
+    },
+    {
+      "id": "kanatortillavuoka",
+      "name": "Kanatortillavuoka",
+      "protein": "kylling",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "400 g broilerin fileesuikaleita",
+        "2 paprikaa",
+        "150 g kesäkurpitsaa",
+        "1 punasipuli",
+        "2 rkl rypsiöljyä",
+        "1 ps (28 g) mietoa fajitamaustetta",
+        "1 lime",
+        "150 g ranskankermaa",
+        "150 g mozzarellaraastetta",
+        "6 isoa tortillaa"
+      ],
+      "steps": [
+        "Kuumenna uuni 225 asteeseen.",
+        "Paista broilerisuikaleet öljyssä ja lisää suikaloidut kasvikset.",
+        "Mausta fajitamausteella ja limemehulla.",
+        "Levitä tortilloille ranskankermaa ja täytettä, kääri rullalle ja nosta vuokaan.",
+        "Ripottele pinnalle juustoraaste ja paista noin 15 minuuttia.",
+        "Tarjoa salaatin kanssa."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/rento-tortillavuoka/5bPNki0Sp7aNCkFbl3Y5Mj"
+    },
+    {
+      "id": "kananugetit-ja-lohkoperunat",
+      "name": "Kananugetit ja lohkoperunat",
+      "protein": "kylling",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "500 g broilerin fileetä",
+        "1 dl vehnäjauhoja",
+        "2 kananmunaa",
+        "2 dl pankojauhoja",
+        "1 tl suolaa",
+        "1 tl paprikajauhetta",
+        "rypsiöljyä paistamiseen",
+        "1 kg perunoita",
+        "2 rkl öljyä perunoille",
+        "kurkkua ja porkkanaa tarjoiluun"
+      ],
+      "steps": [
+        "Kuumenna uuni 225 asteeseen. Lohko perunat, sekoita öljyyn ja suolaan ja paista 30–35 minuuttia.",
+        "Leikkaa broileri suupaloiksi ja mausta suolalla ja paprikalla.",
+        "Kääntele palat jauhoissa, vatkatussa munassa ja pankojauhoissa.",
+        "Paista nugetteja öljyssä pannulla, kunnes ne ovat kauttaaltaan kypsiä.",
+        "Tarjoa lohkoperunoiden ja kasvistikkujen kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/pankojauhoilla-kuorrutetut-kananugetit"
+    },
+    {
+      "id": "kanawokki",
+      "name": "Kanawokki",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g broilerin fileesuikaleita",
+        "1 rkl öljyä",
+        "1 tl jauhettua inkivääriä",
+        "1 tl mietoa curryjauhetta",
+        "450 g wokkivihanneksia (pakaste)",
+        "1 rkl soijakastiketta",
+        "3 dl vettä",
+        "1 rkl perunajauhoja",
+        "3 dl riisiä"
+      ],
+      "steps": [
+        "Keitä riisi.",
+        "Ruskista broilerisuikaleet kuumassa öljyssä ja mausta inkiväärillä ja curryllä.",
+        "Lisää wokkivihannekset ja paista muutama minuutti.",
+        "Sekoita perunajauhot kylmään veteen ja soijaan ja kaada pannulle.",
+        "Kuumenna, kunnes kastike sakenee.",
+        "Tarjoa riisin kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/kanawokki"
+    },
+    {
+      "id": "broileripihvit-ja-perunat",
+      "name": "Broileripihvit ja perunat",
+      "protein": "kylling",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "4 broilerin pihviä (n. 400 g)",
+        "2 rkl öljyä",
+        "1 tl mietoa curryjauhetta",
+        "1 tl paprikajauhetta",
+        "⅓ tl suolaa",
+        "1 kg perunoita",
+        "200 g kermaviiliä",
+        "ruohosipulia",
+        "kurkkua ja tomaattia"
+      ],
+      "steps": [
+        "Keitä perunat.",
+        "Sekoita öljy, curry, paprika ja suola ja sivele seos pihvien pinnalle.",
+        "Paista pihvejä kuumalla pannulla 3–4 minuuttia kummaltakin puolelta, kunnes ne ovat kypsiä.",
+        "Sekoita kermaviili ja hienonnettu ruohosipuli kastikkeeksi.",
+        "Tarjoa pihvit perunoiden, kastikkeen ja salaatin kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/nopeat-broileripihvit"
+    },
+    {
+      "id": "hapanimela-broileri-ja-riisi",
+      "name": "Hapanimelä broileri ja riisi",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g broilerin fileesuikaleita",
+        "1 rkl öljyä",
+        "1 punainen paprika",
+        "1 porkkana",
+        "140 g ananaspaloja",
+        "1 prk (350 g) hapanimeläkastiketta",
+        "1 dl vettä",
+        "3 dl riisiä"
+      ],
+      "steps": [
+        "Keitä riisi.",
+        "Ruskista broilerisuikaleet öljyssä.",
+        "Lisää paprika- ja porkkanasuikaleet ja paista pari minuuttia.",
+        "Lisää kastike, vesi ja ananaspalat ja hauduta 5 minuuttia.",
+        "Tarjoa riisin kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/broileria-sweet-and-sour--kastikkeessa"
+    },
+    {
+      "id": "kermainen-kanapata",
+      "name": "Kermainen kanapata",
+      "protein": "kylling",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "600 g broilerin fileetä",
+        "1 sipuli",
+        "2 porkkanaa",
+        "200 g herkkusieniä",
+        "1 rkl rypsiöljyä",
+        "2 dl vettä",
+        "1 kanaliemikuutio",
+        "2 dl ruokakermaa",
+        "1 rkl dijonsinappia",
+        "1 rkl hunajaa",
+        "½ tl suolaa",
+        "1 kg perunoita"
+      ],
+      "steps": [
+        "Keitä perunat.",
+        "Paloittele broileri ja ruskista palat öljyssä padassa.",
+        "Lisää pilkotut sipuli, porkkanat ja sienet ja kuullota hetki.",
+        "Lisää vesi, liemikuutio, kerma, sinappi ja hunaja.",
+        "Hauduta kannen alla miedolla lämmöllä noin 30 minuuttia.",
+        "Mausta suolalla ja tarjoa perunoiden kanssa."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/kermainen-kanapata/3HMSkvVqPNO015ZDuCCFya"
+    },
+    {
+      "id": "lohikeitto",
+      "name": "Lohikeitto",
+      "protein": "fisk",
+      "sides": [
+        "kartofler",
+        "brod"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "400 g lohifileetä",
+        "10 dl vettä",
+        "2 kalaliemikuutiota",
+        "1 sipuli",
+        "5 maustepippuria",
+        "1 laakerinlehti",
+        "800 g perunoita",
+        "2 dl ruokakermaa",
+        "1 rkl voita",
+        "tilliä"
+      ],
+      "steps": [
+        "Kiehauta vesi, liemikuutiot, maustepippurit ja laakerinlehti.",
+        "Lisää kuutioidut perunat ja hienonnettu sipuli ja keitä noin 15 minuuttia.",
+        "Poista lohesta nahka ja ruodot ja leikkaa se kuutioiksi.",
+        "Lisää kerma ja lohi ja hauduta miedolla lämmöllä 5 minuuttia.",
+        "Lisää voi ja runsaasti tilliä.",
+        "Tarjoa ruisleivän kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/lohikeitto"
+    },
+    {
+      "id": "uunilohi-ja-perunat",
+      "name": "Uunilohi ja perunat",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g lohifileetä",
+        "¾ tl suolaa",
+        "120 g smetanaa",
+        "½ rkl sitruunamehua",
+        "¾ dl tilliä",
+        "1 kg perunoita",
+        "1 sitruuna"
+      ],
+      "steps": [
+        "Kuumenna uuni 200 asteeseen ja keitä perunat.",
+        "Nosta lohi uunivuokaan nahkapuoli alaspäin ja mausta suolalla.",
+        "Paista uunissa noin 20 minuuttia, kunnes kala on kypsää.",
+        "Sekoita smetana, sitruunamehu ja tilli kastikkeeksi.",
+        "Tarjoa lohi perunoiden, kastikkeen ja sitruunalohkojen kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/helppo-smetana-uunilohi"
+    },
+    {
+      "id": "kalapuikot-ja-perunamuusi",
+      "name": "Kalapuikot ja perunamuusi",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g alaskanseitifileetä (pakaste)",
+        "3 dl pankojauhoja",
+        "2 kananmunaa",
+        "1 tl suolaa",
+        "ripaus mustapippuria",
+        "1 dl öljyä paistamiseen",
+        "1 kg perunoita",
+        "2 dl maitoa",
+        "30 g voita",
+        "200 g pakasteherneitä"
+      ],
+      "steps": [
+        "Keitä perunat.",
+        "Sulata kala osittain, leikkaa se puikoiksi ja mausta suolalla ja pippurilla.",
+        "Kastele puikot vatkatussa munassa ja kääntele pankojauhoissa.",
+        "Paista puikot öljyssä kullanruskeiksi.",
+        "Muussaa perunat maidon ja voin kanssa ja keitä herneet.",
+        "Tarjoa puikot muusin ja herneiden kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/kalapuikot"
+    },
+    {
+      "id": "lohikiusaus",
+      "name": "Lohikiusaus",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "1 kg peruna-sipulisekoitusta (pakaste)",
+        "400 g kirjolohifileetä",
+        "1 tl suolaa",
+        "½ tl mustapippuria",
+        "1 ruukku tilliä",
+        "4 dl ruokakermaa"
+      ],
+      "steps": [
+        "Kuumenna uuni 200 asteeseen.",
+        "Poista kalasta nahka ja leikkaa se kuutioiksi.",
+        "Lado vuokaan kerroksittain perunaa, kalaa ja tilliä ja mausta kerrokset suolalla ja pippurilla.",
+        "Kaada kerma päälle.",
+        "Paista noin 50 minuuttia, kunnes perunat ovat kypsiä ja pinta on saanut väriä."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/lohikiusaus/recipe-5152"
+    },
+    {
+      "id": "tonnikalapasta",
+      "name": "Tonnikalapasta",
+      "protein": "fisk",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "300 g spagettia",
+        "2 tlk tonnikalaa öljyssä",
+        "2 valkosipulinkynttä",
+        "250 g kirsikkatomaatteja",
+        "500 g tomaattipassataa",
+        "½ tl suolaa",
+        "½ tl mustapippuria",
+        "1 dl ruokakermaa",
+        "parmesaaniraastetta"
+      ],
+      "steps": [
+        "Keitä spagetti.",
+        "Kuumenna tonnikalan öljy pannulla ja kuullota hienonnettu valkosipuli.",
+        "Lisää puolitetut tomaatit ja passata ja hauduta 10 minuuttia.",
+        "Lisää kerma ja tonnikala ja mausta suolalla ja pippurilla.",
+        "Sekoita spagetti kastikkeeseen ja tarjoa parmesaanin kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/tonnikalapasta"
+    },
+    {
+      "id": "kermainen-lohipasta",
+      "name": "Kermainen lohipasta",
+      "protein": "fisk",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g pastaa",
+        "300 g lohta tai kirjolohta",
+        "1 sipuli",
+        "1 valkosipulinkynsi",
+        "1 rkl öljyä",
+        "2 dl ruokakermaa",
+        "1 tl suolaa",
+        "1 rkl sitruunamehua",
+        "½ tl mustapippuria",
+        "tilliä tai basilikaa"
+      ],
+      "steps": [
+        "Keitä pasta.",
+        "Kuullota hienonnettu sipuli ja valkosipuli öljyssä.",
+        "Lisää kerma ja kuumenna.",
+        "Lisää kuutioitu kala ja hauduta miedolla lämmöllä 5 minuuttia.",
+        "Mausta suolalla, pippurilla ja sitruunamehulla ja lisää yrtit.",
+        "Sekoita pastan kanssa ja tarjoa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/lohipasta"
+    },
+    {
+      "id": "silakkapihvit-ja-perunamuusi",
+      "name": "Silakkapihvit ja perunamuusi",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "600 g silakkafileitä",
+        "1 tl suolaa",
+        "¼ tl mustapippuria",
+        "1 dl tilliä",
+        "1 dl ruiskorppujauhoja",
+        "50 g voita paistamiseen",
+        "1 kg perunoita",
+        "2 dl maitoa",
+        "puolukkasurvosta tarjoiluun"
+      ],
+      "steps": [
+        "Keitä perunat.",
+        "Huuhtele silakat ja kuivaa ne talouspaperilla.",
+        "Mausta fileet suolalla ja pippurilla ja laita kaksi fileetä vastakkain tillisilppu välissä.",
+        "Kääntele pihvit korppujauhoissa ja paista voissa molemmin puolin kullanruskeiksi.",
+        "Muussaa perunat lämpimän maidon kanssa.",
+        "Tarjoa pihvit muusin ja puolukan kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/silakkapihvit"
+    },
+    {
+      "id": "purjoinen-kalavuoka",
+      "name": "Purjoinen kalavuoka",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "400 g alaskanseitiä (pakaste)",
+        "100 g purjoa",
+        "½ rkl öljyä",
+        "3 rkl vehnäjauhoja",
+        "5 dl maitoa",
+        "100 g sulatejuustoa",
+        "¾ tl suolaa",
+        "mustapippuria",
+        "tilliä",
+        "1 kg perunoita"
+      ],
+      "steps": [
+        "Kuumenna uuni 200 asteeseen ja keitä perunat.",
+        "Kuullota purjo öljyssä kattilassa, lisää jauhot ja sitten maito vähitellen sekoittaen.",
+        "Sulata juusto kastikkeeseen ja mausta suolalla ja pippurilla.",
+        "Nosta kalapalat vuokaan ja kaada kastike päälle.",
+        "Paista noin 25 minuuttia, kunnes kala on kypsää.",
+        "Ripottele pinnalle tilliä ja tarjoa perunoiden kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/purjoinen-kalavuoka"
+    },
+    {
+      "id": "kirjolohipihvit",
+      "name": "Kirjolohipihvit ja perunat",
+      "protein": "fisk",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g ruodotonta kirjolohifileetä",
+        "1 kananmuna",
+        "2 rkl vehnäjauhoja",
+        "½ tl suolaa",
+        "ripaus mustapippuria",
+        "½ dl tilliä",
+        "1 sitruuna",
+        "2 rkl öljyä paistamiseen",
+        "1 kg perunoita"
+      ],
+      "steps": [
+        "Keitä perunat.",
+        "Poista kalasta nahka ja hienonna kala veitsellä tai monitoimikoneessa.",
+        "Sekoita joukkoon muna, jauhot, suola, pippuri, tilli ja raastettu sitruunankuori.",
+        "Muotoile seoksesta pihvejä ja paista öljyssä 3–4 minuuttia kummaltakin puolelta.",
+        "Tarjoa perunoiden, sitruunalohkojen ja salaatin kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/sitruunaiset-lohipihvit"
+    },
+    {
+      "id": "pinaattiletut",
+      "name": "Pinaattiletut",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "150 g pakastepinaattia",
+        "5 dl maitoa",
+        "3 dl vehnäjauhoja",
+        "2 kananmunaa",
+        "1 tl suolaa",
+        "1 tl sokeria",
+        "¼ dl öljyä",
+        "puolukkahilloa",
+        "raejuustoa"
+      ],
+      "steps": [
+        "Sulata pinaatti.",
+        "Vatkaa maito, jauhot, munat, suola ja sokeri tasaiseksi taikinaksi ja anna turvota 15 minuuttia.",
+        "Sekoita pinaatti ja öljy taikinaan.",
+        "Paista pieniä lettuja voidellulla pannulla molemmin puolin.",
+        "Tarjoa puolukkahillon ja raejuuston kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/pinaattiletut"
+    },
+    {
+      "id": "pannukakku",
+      "name": "Pannukakku",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "10 dl maitoa",
+        "3 kananmunaa",
+        "5 dl vehnäjauhoja",
+        "1½ tl leivinjauhetta",
+        "1 dl sokeria",
+        "1 tl suolaa",
+        "100 g voita",
+        "hilloa",
+        "kermavaahtoa"
+      ],
+      "steps": [
+        "Kuumenna uuni 225 asteeseen ja sulata voi leivinpaperilla vuoratulla uunipellillä.",
+        "Vatkaa munat ja maito keskenään.",
+        "Sekoita kuivat aineet ja vatkaa ne maitoseokseen.",
+        "Anna taikinan turvota 15 minuuttia ja kaada se pellille.",
+        "Paista noin 30 minuuttia, kunnes pinta on kullanruskea.",
+        "Tarjoa hillon ja kermavaahdon kanssa."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/maailman-paras-pannukakku/4DRAcLkIMEzUBkeHiQX7qE"
+    },
+    {
+      "id": "kasvissosekeitto",
+      "name": "Kasvissosekeitto",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g porkkanoita",
+        "1 palsternakka",
+        "1 sipuli",
+        "300 g kesäkurpitsaa",
+        "10 dl vettä",
+        "1 kasvisliemikuutio",
+        "2 tl kuivattua timjamia",
+        "100 g yrttituorejuustoa",
+        "suolaa"
+      ],
+      "steps": [
+        "Kuori ja pilko porkkanat, palsternakka ja sipuli ja paloittele kesäkurpitsa.",
+        "Keitä kasvikset vedessä liemikuution ja timjamin kanssa pehmeiksi, noin 20 minuuttia.",
+        "Soseuta keitto sauvasekoittimella.",
+        "Sekoita joukkoon tuorejuusto ja mausta suolalla.",
+        "Tarjoa leivän kanssa."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/kasvissosekeitto/recipe-4223"
+    },
+    {
+      "id": "pinaattikeitto-ja-kananmunat",
+      "name": "Pinaattikeitto ja kananmunat",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "50 g voita",
+        "¾ dl vehnäjauhoja",
+        "10 dl maitoa",
+        "150 g pakastepinaattia",
+        "1 tl suolaa",
+        "½ tl sokeria",
+        "ripaus valkopippuria",
+        "4 kananmunaa",
+        "ruisleipää"
+      ],
+      "steps": [
+        "Keitä kananmunat kovaksi 8–10 minuutissa.",
+        "Sulata voi kattilassa ja sekoita jauhot joukkoon.",
+        "Lisää maito vähitellen vatkaten ja keitä 5 minuuttia.",
+        "Lisää pinaatti ja mausteet ja kuumenna.",
+        "Tarjoa keitto puolitettujen kananmunien ja leivän kanssa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/pinaattikeitto"
+    },
+    {
+      "id": "uunifetapasta",
+      "name": "Uunifetapasta",
+      "protein": "vegetar",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g kirsikkatomaatteja",
+        "200 g fetajuustoa",
+        "2 valkosipulinkynttä",
+        "1 dl oliiviöljyä",
+        "½ tl mustapippuria",
+        "¼ tl suolaa",
+        "350 g spagettia",
+        "basilikaa"
+      ],
+      "steps": [
+        "Kuumenna uuni 200 asteeseen.",
+        "Laita tomaatit ja valkosipulit vuokaan, nosta feta keskelle, valuta päälle öljy ja mausta.",
+        "Paista noin 25 minuuttia.",
+        "Keitä spagetti sillä välin.",
+        "Murskaa feta ja tomaatit kastikkeeksi ja sekoita pasta joukkoon.",
+        "Ripottele päälle basilikaa ja tarjoa."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/helppo-uunifetapasta/5XST9z4DeC3QU3LntHGKvo"
+    },
+    {
+      "id": "kasvis-nuudeliwokki",
+      "name": "Kasvis-nuudeliwokki",
+      "protein": "vegetar",
+      "sides": [
+        "nudler"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "3 porkkanaa",
+        "150 g sokeriherneitä",
+        "2 valkosipulinkynttä",
+        "240 g kaurasuikaleita",
+        "2 rkl rypsiöljyä",
+        "200 g valkokaalisuikaleita",
+        "250 g munanuudeleita",
+        "¾ dl hoisinkastiketta",
+        "½ dl soijakastiketta",
+        "kevätsipulia"
+      ],
+      "steps": [
+        "Keitä nuudelit ja valuta.",
+        "Paista kaurasuikaleet öljyssä wokkipannulla.",
+        "Lisää suikaloidut porkkanat, herneet, kaali ja valkosipuli ja paista muutama minuutti.",
+        "Lisää hoisin- ja soijakastike sekä nuudelit ja sekoita.",
+        "Ripottele päälle kevätsipulia ja tarjoa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/kasvis-nuudeliwokki"
+    },
+    {
+      "id": "kasvispitat",
+      "name": "Kasvispitat",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "1 paprika",
+        "1 kesäkurpitsa",
+        "½ munakoiso",
+        "3 rkl öljyä",
+        "½ tl suolaa",
+        "ripaus mustapippuria",
+        "200 g halloumia",
+        "6 pitaleipää",
+        "6 rkl valkosipulimajoneesia",
+        "jäävuorisalaattia",
+        "1 dl basilikaa"
+      ],
+      "steps": [
+        "Kuumenna uuni 225 asteeseen.",
+        "Paloittele kasvikset, sekoita öljyyn ja mausteisiin ja paahda pellillä 15–20 minuuttia.",
+        "Paista viipaloitu halloumi pannulla kullanruskeaksi.",
+        "Lämmitä pitaleivät.",
+        "Täytä pitat salaatilla, kasviksilla, halloumilla ja valkosipulimajoneesilla ja ripottele päälle basilikaa."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/kasvispitat"
+    },
+    {
+      "id": "punainen-linssikeitto",
+      "name": "Punainen linssikeitto",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "1 sipuli",
+        "2 valkosipulinkynttä",
+        "2 porkkanaa",
+        "1 paprika",
+        "2 rkl rypsiöljyä",
+        "2 rkl tomaattisosetta",
+        "2 tl paprikajauhetta",
+        "12 dl vettä",
+        "1 kasvisliemikuutio",
+        "2 dl punaisia linssejä",
+        "½ tl suolaa",
+        "persiljaa"
+      ],
+      "steps": [
+        "Hienonna sipuli ja valkosipuli ja kuutioi porkkanat ja paprika.",
+        "Kuullota kasvikset öljyssä kattilassa.",
+        "Lisää tomaattisose ja paprikajauhe ja paista hetki.",
+        "Lisää vesi, liemikuutio ja huuhdotut linssit ja keitä noin 20 minuuttia.",
+        "Soseuta keitto halutessasi ja mausta suolalla.",
+        "Ripottele pinnalle persiljaa ja tarjoa leivän kanssa."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/punainen-linssikeitto/recipe-2109"
+    }
+  ]
+}

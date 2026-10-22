@@ -1,0 +1,1472 @@
+{
+  "format": "madplan.profile",
+  "version": 1,
+  "name": "Family Favourites (Netherlands)",
+  "summary": "The 50 dishes Dutch families most like to put on the table on weekdays.",
+  "symbol": "fork.knife",
+  "settings": {
+    "noSameProteinInRow": true
+  },
+  "recipes": [
+    {
+      "id": "spaghetti-bolognese",
+      "name": "Spaghetti bolognese",
+      "protein": "okse",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef mince",
+        "400 g spaghetti",
+        "1 onion",
+        "2 carrots",
+        "1 celery stick",
+        "2 tbsp olive oil",
+        "1 tbsp tomato purée",
+        "800 g chopped tomatoes (tinned)",
+        "1 tsp dried Italian herbs",
+        "grated Parmesan",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Chop the onion and dice the carrot and celery finely.",
+        "Brown the mince in the oil until crumbly, add the vegetables and fry for 5 minutes.",
+        "Stir in the tomato purée, add the chopped tomatoes and herbs and simmer gently for 25 minutes.",
+        "Meanwhile cook the spaghetti until al dente.",
+        "Season the sauce and serve with the spaghetti and cheese."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R615118/eenvoudige-spaghetti-bolognese"
+    },
+    {
+      "id": "lasagne",
+      "name": "Lasagne",
+      "protein": "okse",
+      "sides": [
+        "pasta",
+        "salat"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "400 g beef mince",
+        "2 onions",
+        "2 garlic cloves",
+        "2 tbsp olive oil",
+        "680 g pasta sauce (jar)",
+        "250 g lasagne sheets",
+        "40 g butter",
+        "40 g plain flour",
+        "600 ml milk",
+        "150 g grated cheese",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Preheat the oven to 200°C. Chop the onion and garlic.",
+        "Brown the mince in the oil with the onion and garlic and add the pasta sauce.",
+        "Melt the butter, stir in the flour and gradually whisk in the milk to make a smooth white sauce.",
+        "Layer meat sauce, lasagne sheets and white sauce in an ovenproof dish, finishing with white sauce and cheese.",
+        "Bake for 35 minutes until golden."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R380622/makkelijke-lasagne-met-gehakt-tomatensaus"
+    },
+    {
+      "id": "chili-con-carne",
+      "name": "Chilli con carne",
+      "protein": "okse",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef mince",
+        "1 onion",
+        "2 garlic cloves",
+        "2 red peppers",
+        "2 tbsp olive oil",
+        "1 tsp paprika",
+        "1 tsp ground cumin",
+        "800 g chopped tomatoes (tinned)",
+        "400 g brown beans (jar)",
+        "150 g sweetcorn (tinned)",
+        "300 g rice",
+        "grated mature Gouda"
+      ],
+      "steps": [
+        "Chop the onion and garlic and dice the peppers.",
+        "Brown the mince in the oil, add the onion, garlic and spices and fry for 2 minutes.",
+        "Add the peppers and chopped tomatoes and simmer for 15 minutes.",
+        "Meanwhile cook the rice.",
+        "Stir in the drained beans and sweetcorn, heat through for 5 minutes and serve with rice and cheese."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1198941/oma-s-chili-con-carne"
+    },
+    {
+      "id": "wraps-met-gehakt",
+      "name": "Beef mince wraps",
+      "protein": "okse",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g beef mince",
+        "1 onion",
+        "1 tbsp olive oil",
+        "70 g tomato purée",
+        "1 tsp paprika",
+        "1 tsp ground cumin",
+        "8 tortilla wraps",
+        "200 g iceberg lettuce",
+        "2 tomatoes",
+        "150 g grated cheese",
+        "garlic sauce"
+      ],
+      "steps": [
+        "Chop the onion and fry it in the oil until soft.",
+        "Add the mince and brown it; stir in the tomato purée, spices and a splash of water and simmer for 5 minutes.",
+        "Shred the lettuce, slice the tomatoes and warm the wraps briefly in the oven or a pan.",
+        "Put everything on the table and let everyone fill their own wrap with mince, vegetables, cheese and sauce."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R451526/wraps-met-gehakt"
+    },
+    {
+      "id": "biefstuk-met-gebakken-aardappelen",
+      "name": "Steak with fried potatoes and green beans",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "4 beef steaks (125 g each)",
+        "800 g waxy potatoes",
+        "400 g green beans",
+        "50 g butter",
+        "2 tbsp oil",
+        "1 onion",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Boil the potatoes for 15 minutes, drain and slice.",
+        "Fry the potato slices with the chopped onion in the oil until golden and crisp.",
+        "Cook the green beans for 8 minutes until tender.",
+        "Season the steaks and fry them in hot butter for 2–3 minutes per side.",
+        "Rest the steaks briefly and serve with the pan juices, potatoes and beans."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R733256/biefstuk-bakken"
+    },
+    {
+      "id": "hamburgers",
+      "name": "Hamburgers",
+      "protein": "okse",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef mince",
+        "4 burger buns",
+        "4 slices young Gouda",
+        "1 little gem lettuce",
+        "2 tomatoes",
+        "2 tbsp mayonnaise",
+        "2 tbsp ketchup",
+        "4 tbsp gherkin relish",
+        "1 tbsp oil",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Season the mince and shape it into 4 flat burgers.",
+        "Fry the burgers in the oil for 4 minutes per side, adding a slice of cheese for the last minute.",
+        "Slice the tomatoes and toast the buns briefly.",
+        "Fill the buns with lettuce, burger, tomato, relish, mayonnaise and ketchup."
+      ],
+      "source": "https://www.jumbo.com/recepten/klassieke-burger-met-gegrilde-tomaat-en-chips-501687"
+    },
+    {
+      "id": "gehaktballen-met-jus",
+      "name": "Dutch meatballs with gravy, potatoes and green beans",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "500 g mixed beef and pork mince",
+        "1 slice white bread",
+        "50 ml milk",
+        "1 egg",
+        "1 small onion",
+        "4 tbsp breadcrumbs",
+        "pinch of nutmeg",
+        "50 g butter",
+        "1 kg potatoes",
+        "500 g green beans",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Soak the bread in the milk and chop the onion finely.",
+        "Mix the mince with the bread, egg, onion, nutmeg, salt and pepper, shape into 4 balls and roll them in the breadcrumbs.",
+        "Brown the meatballs all over in the butter, add a splash of water and cook gently, covered, for 20 minutes.",
+        "Meanwhile boil the potatoes and green beans until tender.",
+        "Serve the meatballs with the gravy from the pan, potatoes and beans."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R845634/gehaktballen-basisrecept"
+    },
+    {
+      "id": "broccoli-ovenschotel-met-gehakt",
+      "name": "Broccoli and beef mince bake",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 70,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef mince",
+        "1 kg floury potatoes",
+        "600 g broccoli",
+        "2 onions",
+        "2 garlic cloves",
+        "2 tbsp olive oil",
+        "1 tbsp tomato purée",
+        "40 g butter",
+        "100 ml milk",
+        "175 g grated young Gouda",
+        "pinch of nutmeg"
+      ],
+      "steps": [
+        "Boil the potatoes and mash them with the butter, milk, nutmeg and salt.",
+        "Preheat the oven to 200°C and cook the broccoli florets for 4 minutes.",
+        "Fry the onion and garlic in the oil, add the mince and brown it; stir in the tomato purée.",
+        "Spoon the mince and broccoli into an ovenproof dish, spread the mash on top and sprinkle with cheese.",
+        "Bake for 30 minutes until the cheese is golden."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1201600/broccoli-ovenschotel-met-gehakt"
+    },
+    {
+      "id": "groentesoep-met-balletjes",
+      "name": "Vegetable soup with meatballs",
+      "protein": "okse",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "250 g beef mince",
+        "1.5 l water",
+        "2 stock cubes",
+        "400 g potatoes",
+        "2 carrots",
+        "1 leek",
+        "100 g green beans",
+        "2 tsp herbes de Provence",
+        "fresh leaf celery",
+        "8 slices bread",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Bring the water to the boil with the stock cubes.",
+        "Cut the potatoes, carrots, leek and beans into small pieces and simmer them in the stock for 10 minutes.",
+        "Mix the mince with the herbs, salt and pepper and roll into small meatballs.",
+        "Simmer the meatballs in the soup for 8 minutes.",
+        "Season, sprinkle with celery leaves and serve with bread."
+      ],
+      "source": "https://ah.nl/allerhande/recept/R-R1199637/groentesoep-met-balletjes"
+    },
+    {
+      "id": "hachee",
+      "name": "Hachee (Dutch beef and onion stew) with potatoes and red cabbage",
+      "protein": "okse",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 200,
+      "servings": 4,
+      "ingredients": [
+        "700 g braising beef",
+        "5 onions",
+        "50 g butter",
+        "3 tbsp plain flour",
+        "500 ml water",
+        "1 beef stock cube",
+        "2 tbsp vinegar",
+        "2 bay leaves",
+        "4 cloves",
+        "1 kg potatoes",
+        "500 g red cabbage with apple (jar)"
+      ],
+      "steps": [
+        "Cut the beef into large chunks and slice the onions into half-rings.",
+        "Brown the beef in the butter, add the onions and fry until soft.",
+        "Sprinkle over the flour, stir well and add the water, stock cube, vinegar, bay leaves and cloves.",
+        "Simmer very gently, covered, for about 3 hours until the meat falls apart.",
+        "Boil the potatoes, heat the red cabbage and serve with the hachee."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R8302/hachee-basisrecept"
+    },
+    {
+      "id": "boerenkoolstamppot-met-rookworst",
+      "name": "Boerenkool stamppot (kale mash) with smoked sausage",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "1.5 kg floury potatoes",
+        "500 g chopped kale",
+        "1 rookworst (Dutch smoked sausage, 275 g)",
+        "150 ml warm milk",
+        "50 g butter",
+        "pinch of nutmeg",
+        "mustard",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Peel and chop the potatoes and boil them with the kale on top for 20 minutes until tender.",
+        "Heat the sausage in hot water for 15 minutes without boiling.",
+        "Drain the potatoes and kale and mash with the milk and butter until creamy.",
+        "Season with nutmeg, salt and pepper.",
+        "Serve with sliced sausage and mustard."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R7456/klassieke-boerenkoolstamppot"
+    },
+    {
+      "id": "hutspot-met-speklapjes",
+      "name": "Hutspot (carrot and onion mash) with pork belly slices",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "1 kg floury potatoes",
+        "600 g carrots",
+        "3 onions",
+        "8 thin pork belly slices (about 500 g)",
+        "1 tbsp oil",
+        "100 ml milk",
+        "40 g butter",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Peel the potatoes and cut the potatoes, carrots and onions into chunks.",
+        "Boil everything together in salted water for 20 minutes until tender.",
+        "Season the pork belly slices and fry them in the oil until crisp on both sides.",
+        "Drain the vegetables and mash coarsely with the milk and butter.",
+        "Serve the hutspot with the pork slices and pan juices as gravy."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1199963/hutspot-met-speklapjes"
+    },
+    {
+      "id": "zuurkoolstamppot-met-rookworst",
+      "name": "Zuurkool stamppot (sauerkraut mash) with smoked sausage",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "1.2 kg floury potatoes",
+        "500 g sauerkraut",
+        "1 rookworst (Dutch smoked sausage, 275 g)",
+        "125 g bacon lardons",
+        "1 apple",
+        "100 ml milk",
+        "1 tbsp mustard",
+        "pepper"
+      ],
+      "steps": [
+        "Boil the potatoes for 20 minutes, adding the sauerkraut for the last 10 minutes.",
+        "Heat the sausage in hot water.",
+        "Fry the lardons until crisp and briefly fry the diced apple with them.",
+        "Drain the potatoes and sauerkraut and mash with the milk and mustard.",
+        "Fold in the bacon and apple and serve with sliced sausage."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R591684/zuurkool-appelstamp-met-rookworst"
+    },
+    {
+      "id": "andijviestamppot-met-spekjes",
+      "name": "Andijvie stamppot (endive mash) with bacon",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "1.25 kg floury potatoes",
+        "500 g shredded endive",
+        "250 g smoked bacon strips",
+        "150 ml milk",
+        "30 g butter",
+        "pinch of nutmeg",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Boil the potatoes for 20 minutes until tender.",
+        "Meanwhile fry the bacon strips in a dry pan until crisp.",
+        "Drain the potatoes and mash with the milk and butter.",
+        "Stir the raw endive and half the bacon into the mash.",
+        "Season with nutmeg, salt and pepper and scatter the remaining bacon on top."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1192903/andijviestamppot-met-spekjes"
+    },
+    {
+      "id": "slavinken-met-bloemkool-en-kaassaus",
+      "name": "Slavinken (bacon-wrapped mince rolls) with potatoes, cauliflower and cheese sauce",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "4 slavinken (minced pork rolls wrapped in bacon)",
+        "1 kg potatoes",
+        "1 cauliflower (about 600 g)",
+        "1 tbsp oil",
+        "30 g butter",
+        "30 g plain flour",
+        "400 ml milk",
+        "100 g grated mature Gouda",
+        "pinch of nutmeg"
+      ],
+      "steps": [
+        "Boil the potatoes and cauliflower florets separately for 15–20 minutes until tender.",
+        "Fry the slavinken in the oil over a medium heat for about 15 minutes until browned and cooked through.",
+        "Melt the butter, stir in the flour and gradually whisk in the milk until thickened.",
+        "Melt the cheese into the sauce and season with nutmeg.",
+        "Serve the slavinken with the potatoes and cauliflower in cheese sauce."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1199949/slavink-met-aardappelen-bloemkool-en-kaassaus"
+    },
+    {
+      "id": "karbonade-met-aardappeltjes",
+      "name": "Pork chops with fried baby potatoes and red cabbage salad",
+      "protein": "gris",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "4 pork rib chops",
+        "600 g baby potatoes",
+        "3 tbsp herb butter",
+        "300 g shredded red cabbage",
+        "1 apple",
+        "75 g raisins",
+        "3 tbsp mayonnaise",
+        "1 tbsp vinegar",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Parboil the baby potatoes for 10 minutes, then fry them in 1 tbsp herb butter until golden.",
+        "Toss the red cabbage, apple strips and raisins with the mayonnaise and vinegar.",
+        "Season the pork chops with salt and pepper.",
+        "Fry them in the remaining herb butter for 4–5 minutes per side until cooked.",
+        "Serve with the potatoes and red cabbage salad."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1186740/karbonade-aardappeltjes-en-rodekool-rozijnensalade"
+    },
+    {
+      "id": "macaroni-met-ham-en-kaas",
+      "name": "Macaroni with ham and cheese",
+      "protein": "gris",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "300 g macaroni",
+        "200 g diced ham",
+        "1 onion",
+        "1 red pepper",
+        "2 tbsp oil",
+        "500 g chopped tomatoes (tinned)",
+        "1 tbsp tomato purée",
+        "1 tsp Italian herbs",
+        "150 g grated cheese"
+      ],
+      "steps": [
+        "Cook the macaroni until al dente and preheat the oven to 200°C.",
+        "Fry the onion and pepper in the oil, add the ham, tomato purée, chopped tomatoes and herbs and simmer for 5 minutes.",
+        "Mix the sauce with the macaroni and spoon into an ovenproof dish.",
+        "Sprinkle with cheese and bake for 15 minutes until golden."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1038442/macaroni-met-ham-en-kaas"
+    },
+    {
+      "id": "witlof-met-ham-en-kaas",
+      "name": "Baked chicory with ham and cheese",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 55,
+      "servings": 4,
+      "ingredients": [
+        "4 heads of chicory",
+        "8 slices cooked ham",
+        "1 kg potatoes",
+        "30 g butter",
+        "30 g plain flour",
+        "400 ml milk",
+        "100 g grated mature Gouda",
+        "pinch of nutmeg"
+      ],
+      "steps": [
+        "Preheat the oven to 200°C. Halve the chicory lengthways, cook for 5 minutes and drain well.",
+        "Wrap each half in a slice of ham and lay the rolls in an ovenproof dish.",
+        "Make a white sauce with the butter, flour and milk and stir in half the cheese and the nutmeg.",
+        "Pour the sauce over the chicory, sprinkle with the remaining cheese and bake for 25 minutes.",
+        "Meanwhile boil the potatoes and serve alongside."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R940670/witlof-uit-de-oven-met-ham-en-kaas"
+    },
+    {
+      "id": "erwtensoep",
+      "name": "Erwtensoep (Dutch split pea soup)",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 120,
+      "servings": 4,
+      "ingredients": [
+        "400 g dried split peas",
+        "500 g pork ribs",
+        "2 l water",
+        "2 beef stock cubes",
+        "2 bay leaves",
+        "1 carrot",
+        "2 leeks",
+        "300 g celeriac",
+        "1 rookworst (Dutch smoked sausage, 275 g)",
+        "fresh leaf celery",
+        "rye bread"
+      ],
+      "steps": [
+        "Rinse the split peas and bring them to the boil with the water, ribs, stock cubes and bay leaves.",
+        "Simmer gently for 60 minutes, stirring now and then.",
+        "Dice the carrot, leeks and celeriac, add them and simmer for another 30 minutes.",
+        "Take the meat off the ribs and return it to the soup; add the sliced sausage.",
+        "Sprinkle with celery leaves and serve with rye bread."
+      ],
+      "source": "https://www.jumbo.com/recepten/erwtensoep-503768"
+    },
+    {
+      "id": "nasi-goreng",
+      "name": "Nasi goreng with ham",
+      "protein": "gris",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "300 g rice",
+        "250 g diced ham",
+        "900 g nasi stir-fry vegetables (bag)",
+        "95 g nasi goreng spice paste",
+        "2 tbsp sunflower oil",
+        "2 tbsp ketjap manis (sweet soy sauce)",
+        "4 eggs",
+        "prawn crackers"
+      ],
+      "steps": [
+        "Cook the rice and let it cool completely (ideally the day before).",
+        "Fry the spice paste briefly in the oil in a wok.",
+        "Stir-fry the vegetables for 5 minutes and add the ham.",
+        "Add the rice and ketjap and stir-fry until piping hot.",
+        "Fry the eggs and serve the nasi topped with a fried egg and prawn crackers."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1199969/nasi"
+    },
+    {
+      "id": "boerenomelet",
+      "name": "Boerenomelet (Dutch farmer's omelette)",
+      "protein": "gris",
+      "sides": [
+        "kartofler",
+        "brod"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "8 eggs",
+        "150 g smoked bacon lardons",
+        "400 g diced potatoes (frozen)",
+        "300 g stir-fry vegetables (leek, carrot, onion)",
+        "2 tbsp butter",
+        "3 tbsp milk",
+        "fresh chives",
+        "4 slices bread",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Fry the lardons in the butter in a large frying pan.",
+        "Add the potatoes and fry for 10 minutes until golden.",
+        "Add the vegetables and fry for 5 minutes.",
+        "Beat the eggs with the milk, salt and pepper and pour over the vegetables.",
+        "Let the omelette set over a low heat, covered; sprinkle with chives and serve with bread."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R7890/boerenomelet"
+    },
+    {
+      "id": "spaghetti-carbonara",
+      "name": "Spaghetti carbonara",
+      "protein": "gris",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "400 g spaghetti",
+        "200 g bacon lardons",
+        "4 eggs",
+        "80 g grated Parmesan",
+        "1 tbsp olive oil",
+        "freshly ground black pepper"
+      ],
+      "steps": [
+        "Cook the spaghetti until al dente, keeping a cup of the cooking water.",
+        "Fry the lardons in the oil until crisp.",
+        "Beat the eggs with the cheese and plenty of pepper.",
+        "Off the heat, toss the spaghetti with the bacon and egg mixture, adding a little cooking water to make a creamy sauce.",
+        "Serve straight away with extra cheese."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1200422/klassieke-spaghetti-carbonara"
+    },
+    {
+      "id": "kip-met-appelmoes-en-friet",
+      "name": "Chicken drumsticks with apple sauce and chips",
+      "protein": "kylling",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "8 chicken drumsticks",
+        "1 tbsp paprika",
+        "2 tbsp oil",
+        "750 g oven chips",
+        "400 g apple sauce",
+        "450 g peas (frozen)",
+        "25 g butter",
+        "mayonnaise",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Preheat the oven to 200°C.",
+        "Rub the drumsticks with the oil, paprika, salt and pepper and place them in an ovenproof dish.",
+        "Roast the chicken for 45 minutes, adding the chips for the last 25 minutes.",
+        "Cook the peas briefly and stir in the butter.",
+        "Serve the chicken and chips with apple sauce, peas and mayonnaise."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R810388/kip-met-appelmoes"
+    },
+    {
+      "id": "kipsate-met-rijst",
+      "name": "Chicken satay with rice and peanut sauce",
+      "protein": "kylling",
+      "sides": [
+        "ris",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g chicken breast",
+        "2 tbsp ketjap manis (sweet soy sauce)",
+        "1 tsp mild curry powder",
+        "2 tbsp sunflower oil",
+        "300 g rice",
+        "400 g green beans",
+        "250 g ready-made satay (peanut) sauce",
+        "prawn crackers"
+      ],
+      "steps": [
+        "Cube the chicken and marinate for 10 minutes in the ketjap, curry powder and 1 tbsp oil.",
+        "Thread the chicken onto skewers and meanwhile cook the rice.",
+        "Cook the green beans for 8 minutes.",
+        "Cook the skewers in the remaining oil in a griddle pan for 8–10 minutes, turning, until done.",
+        "Warm the satay sauce with a splash of water and serve with rice, beans and prawn crackers."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R365848/kipsate-met-javaanse-pindasaus"
+    },
+    {
+      "id": "bami-goreng-met-kip",
+      "name": "Bami goreng (Indonesian-style fried noodles) with chicken",
+      "protein": "kylling",
+      "sides": [
+        "nudler"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g chicken breast",
+        "400 g egg noodle nests",
+        "1 onion",
+        "1 garlic clove",
+        "500 g leeks",
+        "200 g white cabbage or bean sprouts",
+        "1 sachet bami seasoning mix",
+        "3 tbsp sunflower oil",
+        "3 tbsp ketjap manis (sweet soy sauce)"
+      ],
+      "steps": [
+        "Cook the noodles according to the packet and drain.",
+        "Cut the chicken into strips and the leeks into rings; chop the onion and garlic.",
+        "Stir-fry the chicken in the oil until golden and add the onion, garlic and seasoning mix.",
+        "Add the leeks and cabbage and stir-fry for 4 minutes.",
+        "Add the noodles and ketjap and stir-fry until piping hot."
+      ],
+      "source": "https://www.jumbo.com/recepten/bami-goreng-met-kip-en-prei-1000377"
+    },
+    {
+      "id": "kipkerrie-met-rijst",
+      "name": "Chicken curry with rice",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g chicken thigh fillets",
+        "1 onion",
+        "1 red pepper",
+        "2 tbsp sunflower oil",
+        "1 tbsp mild curry powder",
+        "1 tbsp plain flour",
+        "400 ml chicken stock",
+        "100 ml cooking cream",
+        "300 g jasmine rice",
+        "2 tbsp flaked almonds"
+      ],
+      "steps": [
+        "Cook the rice and toast the almonds in a dry pan.",
+        "Cut the chicken, onion and pepper into pieces.",
+        "Brown the chicken in the oil, add the onion and pepper and fry for 3 minutes.",
+        "Sprinkle over the curry powder and flour, stir, then gradually add the stock and cream and simmer for 10 minutes.",
+        "Serve the curry over the rice, sprinkled with almonds."
+      ],
+      "source": "https://www.jumbo.com/recepten/kipkerrie-met-geurige-amandelrijst-503882"
+    },
+    {
+      "id": "kipschnitzel-met-gebakken-aardappelen",
+      "name": "Chicken schnitzel with fried potatoes and Brussels sprouts",
+      "protein": "kylling",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "4 breaded chicken schnitzels",
+        "900 g pre-cooked potato slices",
+        "500 g Brussels sprouts",
+        "1 red onion",
+        "5 tbsp olive oil",
+        "1 tsp mild curry powder",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Fry the potato slices with the red onion in 3 tbsp oil for 15 minutes until golden.",
+        "Halve the sprouts, boil them for 6 minutes and drain.",
+        "Fry the sprouts briefly in a pan with the curry powder.",
+        "Fry the schnitzels in the remaining oil for 3–4 minutes per side until cooked.",
+        "Serve with the potatoes and sprouts."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1199341/kipschnitzel-met-gebakken-aardappelen-en-spruitjes"
+    },
+    {
+      "id": "kipshoarma-met-pita",
+      "name": "Chicken shawarma in pitta",
+      "protein": "kylling",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "500 g chicken thigh strips",
+        "2 tbsp shawarma seasoning",
+        "1 tbsp oil",
+        "4 large pitta breads",
+        "2 peppers",
+        "1 cucumber",
+        "2 tomatoes",
+        "150 g iceberg lettuce",
+        "200 ml garlic sauce"
+      ],
+      "steps": [
+        "Mix the chicken with the shawarma seasoning.",
+        "Fry the chicken with the sliced peppers in the oil for 8 minutes until cooked.",
+        "Slice the cucumber, tomatoes and lettuce.",
+        "Warm the pittas in the oven for 5 minutes and split them open.",
+        "Fill the pittas with lettuce, vegetables and chicken and top with garlic sauce."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1194510/kipshoarma-met-pita-en-paprika"
+    },
+    {
+      "id": "zoetzure-kip-met-rijst",
+      "name": "Sweet and sour chicken with rice",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "500 g chicken breast",
+        "300 g rice",
+        "2 green peppers",
+        "1 onion",
+        "2 tbsp butter",
+        "1 tin halved apricots in syrup (840 g)",
+        "150 ml curry ketchup",
+        "3 tbsp vinegar"
+      ],
+      "steps": [
+        "Cook the rice.",
+        "Cube the chicken and cut the peppers and onion into pieces; drain the apricots, keeping some syrup.",
+        "Fry the chicken in the butter until golden and add the peppers and onion for 3 minutes.",
+        "Add the curry ketchup, vinegar, 100 ml syrup and the chopped apricots and simmer for 5 minutes.",
+        "Serve the sweet and sour chicken with rice."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R65878/zoetzure-kip-met-rijst"
+    },
+    {
+      "id": "romige-pasta-met-kip-en-champignons",
+      "name": "Creamy pasta with chicken and mushrooms",
+      "protein": "kylling",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g chicken breast",
+        "350 g pasta (penne or spaghetti)",
+        "400 g mushrooms",
+        "1 onion",
+        "2 garlic cloves",
+        "3 tbsp olive oil",
+        "70 g tomato purée",
+        "250 g cherry tomatoes",
+        "200 ml cooking cream",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the pasta until al dente.",
+        "Cube the chicken, slice the mushrooms and chop the onion and garlic.",
+        "Fry the chicken in the oil until golden; add the onion, garlic and mushrooms and fry for 5 minutes.",
+        "Stir in the tomato purée, add the halved tomatoes and the cream and simmer for 5 minutes.",
+        "Toss the sauce with the pasta and season."
+      ],
+      "source": "https://www.jumbo.com/recepten/romige-pasta-met-kip-en-champignons-506386"
+    },
+    {
+      "id": "ovenschotel-kip-broccoli-aardappel",
+      "name": "Chicken, broccoli and potato bake",
+      "protein": "kylling",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 65,
+      "servings": 4,
+      "ingredients": [
+        "400 g chicken breast",
+        "700 g potato slices",
+        "500 g broccoli",
+        "1 onion",
+        "2 tbsp olive oil",
+        "200 ml cooking cream",
+        "1 egg",
+        "175 g grated mature Gouda",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Preheat the oven to 200°C and blanch the broccoli florets for 3 minutes.",
+        "Fry the diced chicken with the onion in the oil until golden.",
+        "Layer the potato slices, chicken and broccoli in a greased ovenproof dish.",
+        "Whisk the cream, egg, salt and pepper, pour over the dish and sprinkle with cheese.",
+        "Bake for 40–45 minutes until the potatoes are tender and the cheese is golden."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R818504/aardappelschotel-met-kip-en-broccoli"
+    },
+    {
+      "id": "kip-teriyaki-met-noodles",
+      "name": "Chicken teriyaki with noodles",
+      "protein": "kylling",
+      "sides": [
+        "nudler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g chicken thigh fillets",
+        "400 g noodles",
+        "6 tbsp teriyaki sauce",
+        "2 tbsp soy sauce",
+        "2 garlic cloves",
+        "1 bunch spring onions",
+        "2 pak choi",
+        "3 tbsp sunflower oil",
+        "1 tsp sesame seeds"
+      ],
+      "steps": [
+        "Cook the noodles according to the packet and drain.",
+        "Cut the chicken into strips, the pak choi into pieces and the spring onions into rings.",
+        "Stir-fry the chicken with the garlic in the oil until golden.",
+        "Add the pak choi and spring onions and stir-fry for 3 minutes.",
+        "Toss in the noodles, teriyaki and soy sauce and sprinkle with sesame seeds."
+      ],
+      "source": "https://www.jumbo.com/recepten/kip-teriyaki-met-noodles-1000954"
+    },
+    {
+      "id": "kip-met-champignonsaus",
+      "name": "Chicken in mushroom sauce with potatoes and vegetables",
+      "protein": "kylling",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g chicken thigh fillets",
+        "1 kg potatoes",
+        "400 g chestnut mushrooms",
+        "400 g broccoli",
+        "400 g cauliflower",
+        "50 g liquid margarine",
+        "300 ml chicken stock",
+        "1.5 tbsp cornflour",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Boil the potatoes, broccoli and cauliflower until tender.",
+        "Cube the chicken and fry it in the margarine until golden.",
+        "Add the sliced mushrooms and fry for 5 minutes.",
+        "Pour in the stock and thicken with the cornflour mixed with a little water.",
+        "Season and serve with the potatoes and vegetables."
+      ],
+      "source": "https://www.jumbo.com/recepten/kip-met-champignonsaus-en-groenten-505793"
+    },
+    {
+      "id": "kibbeling-met-friet",
+      "name": "Kibbeling (battered cod bites) with chips and tartare sauce",
+      "protein": "fisk",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g cod fillet",
+        "200 g plain flour",
+        "1 egg",
+        "300 ml cold sparkling water",
+        "2 tsp fish seasoning",
+        "1 l sunflower oil (for deep-frying)",
+        "750 g oven chips",
+        "150 ml tartare sauce",
+        "1 lemon",
+        "cucumber salad"
+      ],
+      "steps": [
+        "Bake the chips in the oven according to the packet.",
+        "Cut the cod into bite-sized pieces and sprinkle with the fish seasoning.",
+        "Whisk the flour, egg, sparkling water and a pinch of salt into a smooth batter.",
+        "Heat the oil to 180°C, dip the fish in the batter and deep-fry in batches for 3–4 minutes until golden.",
+        "Drain and serve with chips, tartare sauce, lemon and salad."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1197144/kibbeling-basisrecept"
+    },
+    {
+      "id": "vissticks-met-aardappelpartjes",
+      "name": "Fish fingers with potato wedges and broccoli",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "500 g white fish fillet (pangasius or coley)",
+        "2 eggs",
+        "100 g panko breadcrumbs",
+        "3 tbsp plain flour",
+        "800 g waxy potatoes",
+        "5 tbsp olive oil",
+        "600 g broccoli",
+        "150 g Greek yoghurt",
+        "2 tbsp mayonnaise",
+        "4 tbsp gherkins, finely chopped"
+      ],
+      "steps": [
+        "Preheat the oven to 220°C. Cut the potatoes into wedges, toss with 3 tbsp oil and salt and roast for 30 minutes.",
+        "Cut the fish into fingers and coat them in flour, beaten egg and panko.",
+        "Place the fish fingers on a baking tray, drizzle with the remaining oil and bake for the last 15 minutes.",
+        "Cook the broccoli for 5 minutes.",
+        "Mix the yoghurt, mayonnaise and gherkins into a sauce and serve everything together."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1187168/homemade-vissticks-met-aardappelruiten"
+    },
+    {
+      "id": "zalm-uit-de-oven-met-krieltjes",
+      "name": "Oven-baked salmon with baby potatoes and spinach",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "4 salmon fillets (about 500 g)",
+        "800 g baby potatoes",
+        "200 g mangetout",
+        "2 tomatoes",
+        "600 g fresh spinach",
+        "1 garlic clove",
+        "3 tbsp olive oil",
+        "1 lemon",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Preheat the oven to 200°C. Halve the potatoes, toss with 2 tbsp oil and salt and roast for 25 minutes.",
+        "Add the salmon, tomato wedges and mangetout to the tray, drizzle with lemon juice and bake for 15 minutes.",
+        "Fry the garlic briefly in the remaining oil and wilt the spinach in it.",
+        "Season the spinach with salt and pepper.",
+        "Serve the salmon with the potatoes, vegetables and a lemon wedge."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1186687/zalm-uit-de-oven-met-krieltjes-spinazie-en-peultjes"
+    },
+    {
+      "id": "visovenschotel-met-kabeljauw",
+      "name": "Cod and mash fish pie",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "4 cod fillets (about 500 g)",
+        "1.2 kg floury potatoes",
+        "200 ml milk",
+        "25 g butter",
+        "2 onions",
+        "2 red peppers",
+        "1 courgette",
+        "2 tbsp olive oil",
+        "400 g chopped tomatoes (tinned)",
+        "2 tbsp fresh parsley",
+        "50 g grated cheese"
+      ],
+      "steps": [
+        "Boil the potatoes and mash with the milk, butter, parsley and salt.",
+        "Preheat the oven to 200°C. Fry the onion, peppers and courgette in the oil, add the tomatoes and simmer for 5 minutes.",
+        "Spoon the vegetable sauce into an ovenproof dish and lay the cod pieces on top.",
+        "Spread the mash over the fish and sprinkle with cheese.",
+        "Bake for 25 minutes until golden on top."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1189262/ovenschotel-met-kabeljauw-en-kruidenpuree"
+    },
+    {
+      "id": "pasta-met-tonijn-tomatensaus",
+      "name": "Pasta with tuna and tomato sauce",
+      "protein": "fisk",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "350 g fusilli",
+        "2 tins tuna in water (145 g each)",
+        "300 g broccoli",
+        "1 red onion",
+        "1 tbsp olive oil",
+        "400 g chopped tomatoes (tinned)",
+        "1 tsp dried oregano",
+        "grated cheese"
+      ],
+      "steps": [
+        "Cook the pasta until al dente, adding the broccoli florets for the last 4 minutes.",
+        "Chop the onion and fry it gently in the oil.",
+        "Add the chopped tomatoes and oregano and simmer for 8 minutes.",
+        "Stir in the drained tuna and heat briefly.",
+        "Toss with the pasta and broccoli and serve with cheese."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R487650/pasta-met-tomaten-tonijnsaus"
+    },
+    {
+      "id": "tagliatelle-met-zalm-en-spinazie",
+      "name": "Tagliatelle with smoked salmon and spinach",
+      "protein": "fisk",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "500 g fresh tagliatelle",
+        "200 g smoked salmon trimmings",
+        "600 g fresh spinach",
+        "250 g cherry tomatoes",
+        "150 g herb cream cheese",
+        "2 tbsp olive oil",
+        "pepper"
+      ],
+      "steps": [
+        "Cook the tagliatelle according to the packet, keeping a splash of the cooking water.",
+        "Fry the halved tomatoes briefly in the oil.",
+        "Wilt the spinach in the pan.",
+        "Stir in the cream cheese and a little cooking water to make a creamy sauce.",
+        "Toss in the pasta and salmon, season with pepper and serve straight away."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1178290/verse-tagliatelle-met-gerookte-zalm-en-spinazie"
+    },
+    {
+      "id": "gebakken-kabeljauw-met-krieltjes",
+      "name": "Pan-fried cod with baby potatoes and cucumber salad",
+      "protein": "fisk",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "4 cod fillets (about 500 g)",
+        "1 kg baby potatoes",
+        "2 tbsp fish seasoning",
+        "3 tbsp olive oil",
+        "1 cucumber",
+        "150 ml yoghurt",
+        "1 bunch chives",
+        "150 g grated raw beetroot",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Boil the baby potatoes for 15 minutes until tender.",
+        "Slice the cucumber and mix it with the yoghurt, chives, salt and pepper.",
+        "Sprinkle the cod with the fish seasoning.",
+        "Fry the fish in the oil for 3–4 minutes per side until cooked.",
+        "Serve the fish with the potatoes, cucumber salad and beetroot."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1190260/gebakken-kabeljauw-met-aardappel-komkommersalade"
+    },
+    {
+      "id": "pannenkoeken",
+      "name": "Pannenkoeken (Dutch pancakes)",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "400 g plain flour",
+        "1 tsp salt",
+        "3 eggs",
+        "750 ml milk",
+        "40 g butter",
+        "150 g grated cheese",
+        "2 apples",
+        "pancake syrup and icing sugar"
+      ],
+      "steps": [
+        "Mix the flour and salt, add the eggs and half the milk and whisk to a smooth batter.",
+        "Whisk in the rest of the milk and leave the batter to rest for 15 minutes.",
+        "Melt a little butter in a frying pan and cook thin pancakes until golden on both sides.",
+        "If you like, scatter cheese or thin apple slices over the batter before flipping.",
+        "Serve with syrup and icing sugar."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1189426/pannenkoeken-basisrecept"
+    },
+    {
+      "id": "tomatensoep-met-tosti",
+      "name": "Tomato soup with cheese toasties",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "1 onion",
+        "1 garlic clove",
+        "2 tbsp olive oil",
+        "1 kg tomatoes",
+        "500 ml vegetable stock",
+        "1 tbsp tomato purée",
+        "8 slices bread",
+        "8 slices young Gouda",
+        "125 g mozzarella",
+        "40 g butter"
+      ],
+      "steps": [
+        "Chop the onion and garlic and fry them gently in the oil.",
+        "Add the chopped tomatoes, tomato purée and stock and simmer for 15 minutes.",
+        "Blend the soup until smooth and season.",
+        "Top 4 slices of bread with cheese and mozzarella, cover with the remaining slices and butter the outsides.",
+        "Toast the sandwiches in a frying pan or toastie maker until golden and serve with the soup."
+      ],
+      "source": "https://ah.nl/allerhande/recept/R-R1189472/tomatensoep-met-italiaanse-tosti"
+    },
+    {
+      "id": "eieren-in-kerriesaus",
+      "name": "Eggs in curry sauce with rice and green beans",
+      "protein": "vegetar",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "8 eggs",
+        "300 g basmati rice",
+        "400 g green beans",
+        "1 onion",
+        "30 g butter",
+        "1 tbsp mild curry powder",
+        "30 g plain flour",
+        "500 ml vegetable stock",
+        "100 ml coconut milk",
+        "2 tbsp flaked almonds"
+      ],
+      "steps": [
+        "Cook the rice and hard-boil the eggs for 8 minutes; peel them.",
+        "Cook the green beans for 8 minutes.",
+        "Fry the chopped onion in the butter, stir in the curry powder and flour and cook for 1 minute.",
+        "Gradually stir in the stock and coconut milk and simmer for 5 minutes until thickened.",
+        "Add the halved eggs to the sauce and serve with rice, beans and almonds."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1188290/eieren-met-mildpittige-currysaus-en-rijst"
+    },
+    {
+      "id": "preitaart-met-kaas",
+      "name": "Leek and cheese tart",
+      "protein": "vegetar",
+      "sides": [
+        "salat"
+      ],
+      "minutes": 70,
+      "servings": 4,
+      "ingredients": [
+        "6 sheets puff pastry (frozen)",
+        "600 g leeks",
+        "1 tbsp olive oil",
+        "3 eggs",
+        "250 g Greek yoghurt",
+        "150 g grated cheese",
+        "pinch of nutmeg",
+        "1 lettuce",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Preheat the oven to 200°C and let the puff pastry thaw.",
+        "Line a greased tart tin with the pastry.",
+        "Slice the leeks and fry gently in the oil for 5 minutes.",
+        "Beat the eggs with the yoghurt, cheese, nutmeg, salt and pepper and stir in the leeks.",
+        "Pour the filling into the tin and bake for 40 minutes until set and golden.",
+        "Serve with a green salad."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1198468/preitaart-met-kaas"
+    },
+    {
+      "id": "pizza-margherita",
+      "name": "Pizza margherita",
+      "protein": "vegetar",
+      "sides": [
+        "salat"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "2 rolls fresh pizza dough",
+        "400 g peeled tomatoes (tinned)",
+        "1 garlic clove",
+        "2 tbsp olive oil",
+        "1 tsp dried oregano",
+        "250 g mozzarella",
+        "100 g grated pizza cheese",
+        "fresh basil",
+        "cucumber and cherry tomatoes"
+      ],
+      "steps": [
+        "Preheat the oven to 230°C and roll the dough out onto two baking trays.",
+        "Crush the tomatoes with the garlic, oil, oregano and a pinch of salt to make a sauce.",
+        "Spread the sauce over the dough and top with the mozzarella and grated cheese.",
+        "Bake for 12–15 minutes until the base is crisp.",
+        "Scatter with fresh basil and serve with raw vegetables."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R424724/pizza-margherita"
+    },
+    {
+      "id": "tortelloni-met-spinazie-uit-de-oven",
+      "name": "Baked tortelloni with spinach",
+      "protein": "vegetar",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g fresh cheese tortelloni",
+        "600 g fresh spinach",
+        "2 garlic cloves",
+        "2 tbsp olive oil",
+        "125 ml soured cream",
+        "2 slices bread",
+        "50 g pine nuts",
+        "50 g grated Parmesan"
+      ],
+      "steps": [
+        "Preheat the oven to 200°C and cook the tortelloni according to the packet.",
+        "Fry the garlic in the oil and wilt the spinach in it.",
+        "Mix the tortelloni, spinach and soured cream in an ovenproof dish.",
+        "Crumb the bread with the pine nuts and cheese and scatter over the dish.",
+        "Bake for 10–12 minutes until crisp on top."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R444872/tortelloni-met-spinazie-uit-de-oven"
+    },
+    {
+      "id": "tagliatelle-met-pesto",
+      "name": "Tagliatelle with pesto, mozzarella and cherry tomatoes",
+      "protein": "vegetar",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 15,
+      "servings": 4,
+      "ingredients": [
+        "500 g fresh tagliatelle",
+        "100 g green pesto",
+        "400 g cherry tomatoes",
+        "250 g mozzarella",
+        "100 g rocket",
+        "2 tbsp grated Parmesan"
+      ],
+      "steps": [
+        "Cook the tagliatelle according to the packet.",
+        "Halve the tomatoes and tear the mozzarella into pieces.",
+        "Drain the pasta and immediately toss it with the pesto.",
+        "Fold in the tomatoes, mozzarella and rocket and sprinkle with Parmesan."
+      ],
+      "source": "https://www.jumbo.com/recepten/tagliatelle-met-groene-pesto-buffelmozzarella-en-tomaatjes-506818"
+    },
+    {
+      "id": "spinaziestamppot-met-ei",
+      "name": "Spinach stamppot (mash) with eggs",
+      "protein": "vegetar",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "1.2 kg floury potatoes",
+        "450 g leaf spinach (frozen)",
+        "300 g peas (frozen)",
+        "8 eggs",
+        "150 ml milk",
+        "30 g butter",
+        "pinch of nutmeg",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Boil the potatoes for 20 minutes until tender.",
+        "Hard-boil the eggs for 8 minutes and peel them.",
+        "Heat the spinach and peas in a pan until thawed and hot.",
+        "Drain the potatoes and mash with the milk and butter; stir in the spinach and peas.",
+        "Season with nutmeg, salt and pepper and serve with the halved eggs."
+      ],
+      "source": "https://www.ah.nl/allerhande/recept/R-R1200789/tuinerwten-spinaziestamppot-met-ei-van-kindergarden"
+    },
+    {
+      "id": "foe-yong-hai",
+      "name": "Foe yong hai (Dutch-Chinese omelette in sweet tomato sauce) with rice",
+      "protein": "vegetar",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "8 eggs",
+        "200 g peas (frozen)",
+        "1 bunch spring onions",
+        "150 g bean sprouts",
+        "2 tbsp sunflower oil",
+        "330 ml tomato frito (Spanish-style tomato sauce)",
+        "2 tbsp ketchup",
+        "2 tbsp ginger syrup",
+        "300 g rice"
+      ],
+      "steps": [
+        "Cook the rice.",
+        "Heat the tomato frito, ketchup and ginger syrup in a small pan to make a sweet sauce.",
+        "Beat the eggs with a pinch of salt and stir in the peas, spring onions and bean sprouts.",
+        "Cook two thick omelettes in the oil over a low heat until set.",
+        "Cut into wedges and serve with the sauce and rice."
+      ],
+      "source": "https://www.jumbo.com/recepten/foe-yong-hai-504368"
+    },
+    {
+      "id": "gevulde-paprika",
+      "name": "Stuffed peppers with rice",
+      "protein": "vegetar",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "4 large peppers",
+        "350 g vegetarian mince",
+        "1 courgette",
+        "1 onion",
+        "2 garlic cloves",
+        "2 tbsp olive oil",
+        "300 g brown rice",
+        "100 g grated cheese",
+        "150 g Greek yoghurt"
+      ],
+      "steps": [
+        "Cook the rice and preheat the oven to 200°C.",
+        "Fry the onion, garlic and diced courgette in the oil; add the vegetarian mince and fry for 5 minutes.",
+        "Halve the peppers lengthways and remove the seeds.",
+        "Fill the peppers with the mince mixture, sprinkle with cheese and bake for 20 minutes.",
+        "Serve with the rice and a dollop of yoghurt."
+      ],
+      "source": "https://www.jumbo.com/recepten/gevulde-paprika-met-saus-van-yoghurt-506458"
+    }
+  ]
+}

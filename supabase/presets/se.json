@@ -1,0 +1,1387 @@
+{
+  "format": "madplan.profile",
+  "version": 1,
+  "name": "Familjens favoriter",
+  "summary": "Vardagsmiddagar som svenska barnfamiljer lagar vecka efter vecka.",
+  "symbol": "fork.knife",
+  "settings": { "noSameProteinInRow": true },
+  "recipes": [
+    {
+      "id": "kottbullar-med-potatismos-och-lingon",
+      "name": "Köttbullar med potatismos och lingon",
+      "protein": "okse",
+      "sides": ["kartofler"],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "500 g nötfärs eller blandfärs",
+        "1 dl ströbröd",
+        "1 dl mjölk",
+        "1 ägg",
+        "½ gul lök",
+        "1 kg mjölig potatis",
+        "2 dl mjölk till moset",
+        "50 g smör",
+        "lingonsylt",
+        "salt och vitpeppar"
+      ],
+      "steps": [
+        "Blanda ströbröd och mjölk och låt svälla en stund.",
+        "Riv löken och rör ihop med färs, ägg, ströbrödsblandningen, salt och peppar.",
+        "Koka potatisen mjuk.",
+        "Rulla små bullar och stek dem runt om i smör, några i taget.",
+        "Mosa potatisen med varm mjölk, smör och salt.",
+        "Servera köttbullarna med mos och lingonsylt."
+      ],
+      "source": "https://www.ica.se/recept/klassiska-kottbullar-712807/"
+    },
+    {
+      "id": "pannbiff-med-lok",
+      "name": "Pannbiff med lök",
+      "protein": "okse",
+      "sides": ["kartofler"],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "500 g nötfärs",
+        "4 gula lökar",
+        "2 msk smör eller olja",
+        "1 dl vatten",
+        "1 kg potatis",
+        "pressgurka eller lingonsylt",
+        "salt och vitpeppar"
+      ],
+      "steps": [
+        "Koka potatisen.",
+        "Skiva löken och stek den mjuk och gyllene. Lägg åt sidan.",
+        "Krydda färsen med salt och peppar och forma fyra platta biffar.",
+        "Stek biffarna några minuter på varje sida.",
+        "Lägg tillbaka löken, häll i vattnet och låt allt bli varmt.",
+        "Servera med potatis och pressgurka eller lingon."
+      ],
+      "source": "https://www.ica.se/recept/pannbiff-med-lok-562795/"
+    },
+    {
+      "id": "spaghetti-och-kottfarssas",
+      "name": "Spaghetti och köttfärssås",
+      "protein": "okse",
+      "sides": ["pasta"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g nötfärs",
+        "1 gul lök",
+        "1 vitlöksklyfta",
+        "2 morötter",
+        "2 msk tomatpuré",
+        "500 g krossade tomater",
+        "1 dl vatten",
+        "1 buljongtärning",
+        "400 g spaghetti",
+        "riven ost",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Hacka lök och vitlök och riv morötterna.",
+        "Bryn färsen med löken i lite olja.",
+        "Rör ner morötter, tomatpuré, krossade tomater, vatten och buljong.",
+        "Låt såsen puttra 15 minuter och smaka av.",
+        "Koka spaghettin och servera med såsen och riven ost."
+      ],
+      "source": "https://www.ica.se/recept/spaghetti-och-kottfarssas-712805/"
+    },
+    {
+      "id": "lasagne",
+      "name": "Lasagne",
+      "protein": "okse",
+      "sides": ["pasta", "salat"],
+      "minutes": 75,
+      "servings": 4,
+      "ingredients": [
+        "500 g nötfärs",
+        "1 gul lök",
+        "2 vitlöksklyftor",
+        "2 msk tomatpuré",
+        "500 g krossade tomater",
+        "1 tsk timjan",
+        "40 g smör",
+        "4 msk vetemjöl",
+        "8 dl mjölk",
+        "9 lasagneplattor",
+        "2 dl riven ost",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Bryn färsen med hackad lök och vitlök, rör ner tomatpuré, tomater och timjan och låt puttra 15 minuter.",
+        "Smält smöret, vispa i mjölet och späd med mjölken. Koka upp till en slät vit sås och smaka av.",
+        "Varva köttfärssås, lasagneplattor och vit sås i en ugnsform.",
+        "Strö ost över och grädda i 200 grader i ca 35 minuter.",
+        "Låt vila några minuter och servera med sallad."
+      ],
+      "source": "https://www.ica.se/recept/klassisk-lasagne-679675/"
+    },
+    {
+      "id": "tacos",
+      "name": "Tacos",
+      "protein": "okse",
+      "sides": ["brod", "salat"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g nötfärs",
+        "1 påse tacokrydda",
+        "1½ dl vatten",
+        "12 tacoskal eller tortillabröd",
+        "¼ isbergssallad",
+        "2 tomater",
+        "1 gurka",
+        "1 burk majs",
+        "2 dl riven ost",
+        "2 dl gräddfil",
+        "tacosås"
+      ],
+      "steps": [
+        "Bryn färsen i lite olja.",
+        "Rör ner tacokrydda och vatten och låt puttra några minuter.",
+        "Strimla sallad och tärna tomat och gurka. Häll av majsen.",
+        "Värm tacoskalen i ugnen.",
+        "Ställ fram allt på bordet så att var och en fyller sina egna tacos."
+      ],
+      "source": "https://www.ica.se/recept/tacos-722416/"
+    },
+    {
+      "id": "chili-con-carne",
+      "name": "Chili con carne",
+      "protein": "okse",
+      "sides": ["ris"],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "500 g nötfärs",
+        "2 gula lökar",
+        "2 vitlöksklyftor",
+        "1 tsk paprikapulver",
+        "½ tsk mild chilipulver",
+        "1 burk krossade tomater (400 g)",
+        "1 buljongtärning",
+        "1 burk kidneybönor",
+        "3 dl ris",
+        "gräddfil",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Hacka lök och vitlök och fräs dem i olja.",
+        "Lägg i färsen och bryn den tillsammans med kryddorna.",
+        "Tillsätt tomater, buljong och sköljda bönor och låt puttra 20 minuter.",
+        "Koka riset under tiden.",
+        "Smaka av och servera med ris och en klick gräddfil."
+      ],
+      "source": "https://www.ica.se/recept/chili-con-carne-424/"
+    },
+    {
+      "id": "kalops",
+      "name": "Kalops",
+      "protein": "okse",
+      "sides": ["kartofler"],
+      "minutes": 150,
+      "servings": 4,
+      "ingredients": [
+        "1 kg högrev eller bog",
+        "2 gula lökar",
+        "4 morötter",
+        "1 msk smör",
+        "3 lagerblad",
+        "15 hela kryddpepparkorn",
+        "8 dl vatten",
+        "2 msk kalvfond",
+        "1 msk maizena",
+        "1 kg potatis",
+        "inlagda rödbetor",
+        "salt"
+      ],
+      "steps": [
+        "Skär köttet i stora tärningar och bryn det i smör i en gryta.",
+        "Lägg i grovhackad lök, lagerblad, kryddpeppar, vatten och fond.",
+        "Låt sjuda under lock i ca 2 timmar tills köttet är mört.",
+        "Lägg i morötterna i bitar de sista 30 minuterna.",
+        "Red av såsen med maizena utrört i lite vatten och smaka av.",
+        "Servera med kokt potatis och inlagda rödbetor."
+      ],
+      "source": "https://www.ica.se/recept/klassisk-kalops-632631/"
+    },
+    {
+      "id": "kottfarslimpa-med-graddsas",
+      "name": "Köttfärslimpa med gräddsås",
+      "protein": "okse",
+      "sides": ["kartofler"],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "500 g nötfärs eller blandfärs",
+        "½ dl ströbröd",
+        "1 dl mjölk",
+        "1 ägg",
+        "1 msk dijonsenap",
+        "1 kg potatis",
+        "2 dl matlagningsgrädde",
+        "1 buljongtärning",
+        "1 tsk maizena",
+        "lingonsylt",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Sätt ugnen på 200 grader. Låt ströbröd och mjölk svälla.",
+        "Blanda färs, ägg, senap, salt, peppar och ströbrödsblandningen och forma en limpa i en ugnsform.",
+        "Grädda limpan ca 30 minuter.",
+        "Koka potatisen.",
+        "Häll stekskyn i en kastrull med grädde och buljong, red av med maizena och smaka av.",
+        "Skiva limpan och servera med potatis, gräddsås och lingon."
+      ],
+      "source": "https://www.ica.se/recept/kottfarslimpa-med-graddsas-723129/"
+    },
+    {
+      "id": "hamburgare",
+      "name": "Hamburgare",
+      "protein": "okse",
+      "sides": ["brod", "kartofler"],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g nötfärs",
+        "4 hamburgerbröd",
+        "4 skivor ost",
+        "2 tomater",
+        "1 rödlök",
+        "4 salladsblad",
+        "hamburgerdressing eller ketchup",
+        "800 g frysta pommes frites eller klyftpotatis",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Grädda pommes frites eller klyftpotatis i ugnen.",
+        "Forma fyra platta biffar av färsen och krydda med salt och peppar.",
+        "Stek biffarna några minuter per sida och lägg på en ostskiva mot slutet.",
+        "Skiva tomat och lök och rosta bröden lätt.",
+        "Bygg hamburgarna med sallad, biff, tomat, lök och dressing."
+      ],
+      "source": "https://www.ica.se/recept/hamburgare-712808/"
+    },
+    {
+      "id": "kottfarspaj",
+      "name": "Köttfärspaj",
+      "protein": "okse",
+      "sides": ["salat"],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "1 paket färdig pajdeg (250 g)",
+        "500 g nötfärs",
+        "1 gul lök",
+        "2 msk tomatpuré",
+        "1 dl vatten",
+        "1 tsk oregano",
+        "1 burk majs (150 g)",
+        "2 dl riven ost",
+        "1½ dl gräddfil",
+        "salladshuvud",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Sätt ugnen på 200 grader och klä en pajform med degen. Förgrädda 10 minuter.",
+        "Bryn färs och hackad lök, rör ner tomatpuré, vatten och oregano och låt koka ihop.",
+        "Blanda i majsen och fyll pajskalet.",
+        "Strö ost över och grädda ca 15 minuter.",
+        "Servera med sallad och gräddfil."
+      ],
+      "source": "https://www.ica.se/recept/kottfarspaj-724000/"
+    },
+    {
+      "id": "wokad-biff-med-nudlar",
+      "name": "Wokad biff med nudlar",
+      "protein": "okse",
+      "sides": ["nudler"],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g strimlat nötkött",
+        "250 g äggnudlar",
+        "500 g frysta wokgrönsaker",
+        "1 purjolök",
+        "1 vitlöksklyfta",
+        "2 msk olja",
+        "3 msk soja",
+        "2 msk woksås",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Koka nudlarna enligt förpackningen och häll av.",
+        "Stek köttet snabbt i het olja och lägg åt sidan.",
+        "Woka strimlad purjo, vitlök och grönsaker några minuter.",
+        "Lägg tillbaka köttet och rör ner soja och woksås.",
+        "Vänd ner nudlarna och servera direkt."
+      ],
+      "source": "https://www.ica.se/recept/wokad-biff-med-nudlar-5543/"
+    },
+    {
+      "id": "kalpudding",
+      "name": "Kålpudding",
+      "protein": "okse",
+      "sides": ["kartofler"],
+      "minutes": 90,
+      "servings": 4,
+      "ingredients": [
+        "800 g vitkål",
+        "500 g blandfärs",
+        "1 gul lök",
+        "½ dl grötris",
+        "2 dl mjölk",
+        "2 ägg",
+        "3 msk ljus sirap",
+        "3 msk smör",
+        "1 kg potatis",
+        "lingonsylt",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Koka riset mjukt i lite vatten och mjölk och låt svalna.",
+        "Strimla kålen och bryn den i smör med sirapen tills den fått färg.",
+        "Blanda färs, riven lök, ägg, riset, salt och peppar.",
+        "Varva kål och färs i en smord ugnsform och avsluta med kål.",
+        "Grädda i 200 grader ca 50 minuter.",
+        "Servera med kokt potatis, sky och lingon."
+      ],
+      "source": "https://www.ica.se/recept/klassisk-kalpudding-634337/"
+    },
+    {
+      "id": "korv-stroganoff",
+      "name": "Korv stroganoff",
+      "protein": "gris",
+      "sides": ["ris"],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "500 g falukorv",
+        "1 gul lök",
+        "1 msk smör",
+        "3 msk tomatpuré",
+        "500 g krossade tomater",
+        "1 dl matlagningsgrädde",
+        "1 dl mjölk",
+        "3 dl ris",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Koka riset.",
+        "Skär korven i strimlor och hacka löken.",
+        "Fräs korv och lök i smör tills korven fått lite färg.",
+        "Rör ner tomatpuré, krossade tomater, grädde och mjölk.",
+        "Låt puttra några minuter, smaka av och servera med ris."
+      ],
+      "source": "https://www.ica.se/recept/korvstroganoff-716092/"
+    },
+    {
+      "id": "falukorv-i-ugn-med-mos",
+      "name": "Falukorv i ugn med mos",
+      "protein": "gris",
+      "sides": ["kartofler"],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "500 g falukorv",
+        "1 dl senap",
+        "1 dl ketchup",
+        "1 kg mjölig potatis",
+        "2 dl mjölk",
+        "50 g smör",
+        "salt och vitpeppar"
+      ],
+      "steps": [
+        "Sätt ugnen på 225 grader och koka potatisen.",
+        "Skär snitt i korven utan att skära igenom och lägg den i en ugnsform.",
+        "Bred senap och ketchup över korven.",
+        "Grädda ca 20 minuter tills korven fått färg.",
+        "Mosa potatisen med varm mjölk, smör och salt och servera till korven."
+      ],
+      "source": "https://www.ica.se/recept/falukorv-i-ugn-med-senap-och-ketchup-729885/"
+    },
+    {
+      "id": "pytt-i-panna",
+      "name": "Pytt i panna",
+      "protein": "gris",
+      "sides": ["kartofler"],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "1 kg fast potatis",
+        "2 gula lökar",
+        "500 g korv eller köttrester",
+        "2 msk olja",
+        "2 msk smör",
+        "4 ägg",
+        "inlagda rödbetor",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Skala och tärna potatisen i små bitar.",
+        "Stek potatisen gyllene och mjuk i olja och smör.",
+        "Tärna lök och korv och stek i en annan panna.",
+        "Blanda allt och smaka av med salt och peppar.",
+        "Stek äggen och servera pyttipannan med ägg och rödbetor."
+      ],
+      "source": "https://www.ica.se/recept/pytt-i-panna-722178/"
+    },
+    {
+      "id": "raggmunk-med-flask",
+      "name": "Raggmunk med fläsk",
+      "protein": "gris",
+      "sides": ["brod"],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "2½ dl vetemjöl",
+        "5 dl mjölk",
+        "2 ägg",
+        "1 kg fast potatis",
+        "375 g rimmat sidfläsk i skivor",
+        "smör till stekning",
+        "lingonsylt",
+        "salt"
+      ],
+      "steps": [
+        "Vispa en smet av mjöl, mjölk, ägg och salt.",
+        "Skala och riv potatisen grovt och rör ner den i smeten.",
+        "Stek fläsket knaprigt och håll det varmt.",
+        "Stek tunna raggmunkar i smör, några minuter per sida.",
+        "Servera raggmunkarna med fläsk och lingonsylt."
+      ],
+      "source": "https://www.ica.se/recept/raggmunk-med-flask-721803/"
+    },
+    {
+      "id": "artsoppa-med-flask",
+      "name": "Ärtsoppa med fläsk",
+      "protein": "gris",
+      "sides": ["brod"],
+      "minutes": 150,
+      "servings": 4,
+      "ingredients": [
+        "5 dl torkade gula ärtor",
+        "2½ l vatten",
+        "1 gul lök",
+        "800 g rimmad fläsklägg eller rimmat sidfläsk",
+        "1 tsk timjan",
+        "1 tsk mejram",
+        "senap",
+        "knäckebröd",
+        "salt"
+      ],
+      "steps": [
+        "Blötlägg ärtorna i kallt vatten över natten.",
+        "Häll av och koka upp ärtorna i nytt vatten. Skumma av.",
+        "Lägg i hackad lök och fläsket och låt sjuda ca 2 timmar.",
+        "Ta upp fläsket, skär det i bitar och lägg tillbaka.",
+        "Smaka av med timjan, mejram och salt. Servera med senap och knäckebröd."
+      ],
+      "source": "https://www.ica.se/recept/artsoppa-med-flask-729052/"
+    },
+    {
+      "id": "flaskfilegryta-med-champinjoner",
+      "name": "Fläskfilégryta med champinjoner",
+      "protein": "gris",
+      "sides": ["ris"],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g fläskfilé",
+        "1 gul lök",
+        "250 g champinjoner",
+        "1 msk smör",
+        "1 msk tomatpuré",
+        "3 dl matlagningsgrädde",
+        "1 dl mjölk",
+        "1 buljongtärning",
+        "1 msk soja",
+        "3 dl ris",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Koka riset.",
+        "Skär filén i bitar och bryn i smör. Krydda med salt och peppar.",
+        "Lägg i hackad lök och skivade champinjoner och fräs några minuter.",
+        "Rör ner tomatpuré, grädde, mjölk, buljong och soja.",
+        "Låt puttra 10 minuter och servera med ris."
+      ],
+      "source": "https://www.ica.se/recept/flaskfilegryta-med-champinjoner-724256/"
+    },
+    {
+      "id": "pasta-carbonara",
+      "name": "Pasta carbonara",
+      "protein": "gris",
+      "sides": ["pasta"],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g spaghetti",
+        "300 g bacon",
+        "2½ dl matlagningsgrädde",
+        "250 g frysta gröna ärtor",
+        "4 äggulor",
+        "riven parmesan",
+        "salt och svartpeppar"
+      ],
+      "steps": [
+        "Koka spaghettin.",
+        "Strimla baconet och stek det knaprigt.",
+        "Häll grädden över baconet, låt koka upp och lägg i ärtorna.",
+        "Vänd ner pastan i såsen och smaka av.",
+        "Servera med en äggula på varje tallrik och riven ost."
+      ],
+      "source": "https://www.ica.se/recept/pasta-carbonara-722120/"
+    },
+    {
+      "id": "makaronipudding",
+      "name": "Makaronipudding",
+      "protein": "gris",
+      "sides": ["pasta"],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "5 dl makaroner",
+        "300 g rökt skinka",
+        "½ purjolök",
+        "4 ägg",
+        "5 dl mjölk",
+        "1½ dl riven ost",
+        "ketchup",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Sätt ugnen på 200 grader och koka makaronerna nästan klara.",
+        "Strimla skinka och purjo och fräs dem lätt.",
+        "Blanda makaroner, skinka och purjo i en smord ugnsform.",
+        "Vispa ihop ägg, mjölk, salt och peppar och häll över. Strö över osten.",
+        "Grädda ca 30 minuter tills äggstanningen satt sig. Servera med ketchup."
+      ],
+      "source": "https://www.ica.se/recept/klassisk-makaronipudding-715080/"
+    },
+    {
+      "id": "sotsur-flaskfile-med-ris",
+      "name": "Sötsur fläskfilé med ris",
+      "protein": "gris",
+      "sides": ["ris"],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "500 g fläskfilé",
+        "1 gul lök",
+        "1 röd paprika",
+        "1 burk ananasringar",
+        "2 msk tomatpuré",
+        "1 msk socker",
+        "2 msk ättika eller vinäger",
+        "1 msk maizena",
+        "3 dl ris",
+        "2 msk olja",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Koka riset.",
+        "Rör ihop tomatpuré, socker, vinäger, maizena, ananasjuice och 1 dl vatten.",
+        "Skär filén i bitar och bryn i olja. Krydda.",
+        "Lägg i lök, paprika och ananas i bitar och fräs några minuter.",
+        "Häll på såsen och låt koka upp tills den tjocknar. Servera med ris."
+      ],
+      "source": "https://www.ica.se/recept/sotsur-flaskfile-med-ris-715462/"
+    },
+    {
+      "id": "kassler-i-ugn-med-potatismos",
+      "name": "Kassler i ugn med potatismos",
+      "protein": "gris",
+      "sides": ["kartofler"],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "550 g kassler",
+        "1 kg mjölig potatis",
+        "2 dl mjölk",
+        "3 msk smör",
+        "1 rödlök",
+        "2 tomater",
+        "1½ dl riven ost",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Sätt ugnen på 225 grader och koka potatisen.",
+        "Mosa potatisen med mjölk och smör och bred ut i en ugnsform.",
+        "Skiva kasslern och lägg den ovanpå moset.",
+        "Lägg på skivad lök och tomat och strö över osten.",
+        "Gratinera ca 15 minuter tills osten fått färg."
+      ],
+      "source": "https://www.ica.se/recept/kassler-i-ugn-med-potatismos-717056/"
+    },
+    {
+      "id": "kotlett-i-graddsas",
+      "name": "Kotlett i gräddsås",
+      "protein": "gris",
+      "sides": ["kartofler", "salat"],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g tunna fläskkotletter",
+        "1 kg potatis",
+        "1 gul lök",
+        "2 msk smör",
+        "2 dl vispgrädde",
+        "1 dl vatten",
+        "1 buljongtärning",
+        "1 msk soja",
+        "1 tsk maizena",
+        "250 g fryst broccoli",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Koka potatisen.",
+        "Krydda kotletterna och stek dem i smör. Lägg åt sidan.",
+        "Fräs hackad lök i pannan, häll i grädde, vatten, buljong och soja.",
+        "Red av med maizena och lägg tillbaka kotletterna.",
+        "Koka broccolin och servera allt tillsammans."
+      ],
+      "source": "https://www.ica.se/recept/kotlett-i-graddsas-med-broccoli-720021/"
+    },
+    {
+      "id": "kramig-kycklinggryta",
+      "name": "Krämig kycklinggryta",
+      "protein": "kylling",
+      "sides": ["ris"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g kycklingfilé",
+        "1 rödlök",
+        "1 msk olja",
+        "2½ dl matlagningsgrädde",
+        "1 dl mjölk",
+        "½ dl chilisås",
+        "1 buljongtärning",
+        "1 tsk timjan",
+        "250 g körsbärstomater",
+        "3 dl ris",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Koka riset.",
+        "Strimla kycklingen och bryn den i olja med hackad lök.",
+        "Rör ner grädde, mjölk, chilisås, buljong och timjan.",
+        "Låt puttra 10 minuter och lägg i halverade tomater på slutet.",
+        "Smaka av och servera med ris."
+      ],
+      "source": "https://www.ica.se/recept/kramig-kycklinggryta-med-ris-726081/"
+    },
+    {
+      "id": "kramig-kycklingpasta",
+      "name": "Krämig kycklingpasta",
+      "protein": "kylling",
+      "sides": ["pasta"],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g pasta",
+        "600 g kycklinglårfilé",
+        "150 g haricots verts",
+        "1 vitlöksklyfta",
+        "2 dl crème fraiche",
+        "1 dl mjölk",
+        "1 msk olja",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Koka pastan och lägg i bönorna de sista minuterna.",
+        "Strimla kycklingen och stek den genom i olja.",
+        "Tillsätt pressad vitlök, crème fraiche och mjölk och låt sjuda.",
+        "Smaka av med salt och peppar.",
+        "Vänd ner pasta och bönor i såsen och servera."
+      ],
+      "source": "https://www.ica.se/recept/kramig-kycklingpasta-716914/"
+    },
+    {
+      "id": "flygande-jacob",
+      "name": "Flygande Jacob",
+      "protein": "kylling",
+      "sides": ["ris", "salat"],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "4 kycklingfiléer",
+        "140 g bacon",
+        "2 bananer",
+        "3 dl vispgrädde",
+        "1 dl chilisås",
+        "½ dl salta jordnötter",
+        "3 dl ris",
+        "1 msk olja",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Sätt ugnen på 225 grader och koka riset.",
+        "Bryn kycklingen i olja, krydda och lägg den i en ugnsform.",
+        "Stek baconet knaprigt och strö över. Lägg på skivad banan.",
+        "Vispa grädden fast, rör ner chilisåsen och bred över.",
+        "Grädda ca 20 minuter, strö över hackade jordnötter och servera med ris och sallad."
+      ],
+      "source": "https://www.ica.se/recept/flygande-jacob-717569/"
+    },
+    {
+      "id": "kycklingcurry-med-ris",
+      "name": "Kycklingcurry med ris",
+      "protein": "kylling",
+      "sides": ["ris"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g kycklingfilé",
+        "1 gul lök",
+        "2 morötter",
+        "1 röd paprika",
+        "2 tsk mild curry",
+        "400 ml kokosmjölk",
+        "1 buljongtärning",
+        "2 tsk honung",
+        "3 dl ris",
+        "2 dl matyoghurt",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Koka riset.",
+        "Skär kyckling och grönsaker i bitar.",
+        "Bryn kycklingen i olja och fräs grönsakerna med curryn.",
+        "Häll i kokosmjölk, buljong och honung och låt puttra 10 minuter.",
+        "Smaka av och servera med ris och yoghurt."
+      ],
+      "source": "https://www.ica.se/recept/kycklingcurry-med-ris-715779/"
+    },
+    {
+      "id": "kycklingklubbor-med-rostad-potatis",
+      "name": "Kycklingklubbor med rostad potatis",
+      "protein": "kylling",
+      "sides": ["kartofler", "salat"],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "8 kycklingklubbor",
+        "1 kg potatis",
+        "350 g morötter",
+        "1 msk olja",
+        "2 dl BBQ-sås",
+        "1 påse sallad",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Sätt ugnen på 225 grader.",
+        "Skär potatis och morötter i klyftor och vänd med olja, salt och peppar i en långpanna.",
+        "Pensla klubborna med BBQ-sås och lägg dem ovanpå.",
+        "Rosta ca 35 minuter tills kycklingen är genomstekt.",
+        "Servera med sallad."
+      ],
+      "source": "https://www.ica.se/recept/allt-i-en-form-kycklingklubba-med-rostad-potatis-728043/"
+    },
+    {
+      "id": "kycklingfajitas",
+      "name": "Kycklingfajitas",
+      "protein": "kylling",
+      "sides": ["brod", "salat"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "550 g kycklingfilé",
+        "1 gul lök",
+        "1 röd paprika",
+        "1 påse fajitaskrydda",
+        "1 msk olja",
+        "8 tortillabröd",
+        "8 salladsblad",
+        "guacamole",
+        "gräddfil",
+        "1 lime"
+      ],
+      "steps": [
+        "Skär kyckling, lök och paprika i strimlor.",
+        "Stek kycklingen i olja tills den är genomstekt.",
+        "Lägg i lök och paprika och strö över fajitaskryddan. Stek några minuter till.",
+        "Värm tortillabröden.",
+        "Fyll bröden med sallad, kyckling, guacamole och gräddfil och pressa över lime."
+      ],
+      "source": "https://www.ica.se/recept/kycklingfajitas-722693/"
+    },
+    {
+      "id": "kycklingnuggets-med-rostad-potatis",
+      "name": "Kycklingnuggets med rostad potatis",
+      "protein": "kylling",
+      "sides": ["kartofler", "salat"],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "600 g kycklingfilé eller innerfilé",
+        "1 kg potatis",
+        "1 dl vetemjöl",
+        "2 ägg",
+        "2 dl ströbröd eller panko",
+        "olja",
+        "1 dl majonnäs",
+        "1 citron",
+        "romansallad och tomater",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Sätt ugnen på 225 grader. Skär potatisen i klyftor och rosta med olja och salt ca 30 minuter.",
+        "Skär kycklingen i bitar och krydda.",
+        "Vänd bitarna i mjöl, uppvispat ägg och ströbröd.",
+        "Stek nuggetsen gyllene i olja tills de är genomstekta.",
+        "Rör ihop majonnäs med citron och servera med potatis och sallad."
+      ],
+      "source": "https://www.ica.se/recept/kycklingnuggets-med-rostad-potatis-och-citronmajo-726312/"
+    },
+    {
+      "id": "kycklinggratang",
+      "name": "Kycklinggratäng",
+      "protein": "kylling",
+      "sides": ["ris"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g kycklingfilé",
+        "65 g färsk spenat",
+        "1 tsk torkad basilika eller timjan",
+        "2 dl crème fraiche tomat och basilika",
+        "½ dl vatten",
+        "1½ dl riven ost",
+        "3 dl ris",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Sätt ugnen på 225 grader och koka riset.",
+        "Skär kycklingen i bitar, bryn den och krydda.",
+        "Lägg spenat och kyckling i en ugnsform.",
+        "Rör ut crème fraiche med vatten, häll över och strö på osten.",
+        "Gratinera ca 15 minuter och servera med ris."
+      ],
+      "source": "https://www.ica.se/recept/kycklinggratang-729963/"
+    },
+    {
+      "id": "kycklingwok-med-nudlar",
+      "name": "Kycklingwok med nudlar",
+      "protein": "kylling",
+      "sides": ["nudler"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g strimlad kycklingfilé",
+        "250 g äggnudlar",
+        "2 röda paprikor",
+        "½ purjolök",
+        "1 burk minimajs",
+        "1 msk riven ingefära",
+        "½ dl sweet chilisås",
+        "2 msk soja",
+        "1 msk olja",
+        "salt"
+      ],
+      "steps": [
+        "Koka nudlarna och häll av.",
+        "Strimla paprika och purjo.",
+        "Woka kycklingen i het olja tills den är genomstekt.",
+        "Lägg i grönsaker, majs och ingefära och woka några minuter.",
+        "Rör ner chilisås, soja och nudlarna och servera."
+      ],
+      "source": "https://www.ica.se/recept/kycklingwok-med-nudlar-719467/"
+    },
+    {
+      "id": "caesarsallad-med-kyckling",
+      "name": "Caesarsallad med kyckling",
+      "protein": "kylling",
+      "sides": ["salat", "brod"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g kycklingfilé",
+        "140 g bacon",
+        "2 romansallader",
+        "2 dl krutonger",
+        "1 dl majonnäs",
+        "½ dl gräddfil",
+        "1 vitlöksklyfta",
+        "1 msk citronsaft",
+        "1 dl riven parmesan",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Krydda kycklingen och stek den genom. Skär i skivor.",
+        "Stek baconet knaprigt.",
+        "Rör ihop majonnäs, gräddfil, vitlök, citron och hälften av osten till en dressing.",
+        "Riv salladen och vänd med dressingen.",
+        "Toppa med kyckling, bacon, krutonger och resten av osten."
+      ],
+      "source": "https://www.ica.se/recept/caesarsallad-med-kyckling-och-bacon-695632/"
+    },
+    {
+      "id": "kycklingsoppa",
+      "name": "Kycklingsoppa",
+      "protein": "kylling",
+      "sides": ["kartofler", "brod"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "2 kycklingfiléer",
+        "4 potatisar",
+        "2 morötter",
+        "½ purjolök",
+        "1 lagerblad",
+        "12 dl vatten",
+        "3 hönsbuljongtärningar",
+        "färsk persilja",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Skala och tärna potatis och morötter. Skiva purjon.",
+        "Koka upp vatten, buljong och lagerblad.",
+        "Lägg i grönsakerna och koka ca 10 minuter.",
+        "Skär kycklingen i små bitar och låt den sjuda i soppan tills den är genomkokt.",
+        "Smaka av och strö över persilja. Servera med bröd."
+      ],
+      "source": "https://www.ica.se/recept/kycklingsoppa-729691/"
+    },
+    {
+      "id": "fiskgratang-med-dill",
+      "name": "Fiskgratäng med dill",
+      "protein": "fisk",
+      "sides": ["kartofler"],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "600 g sej eller alaska pollock",
+        "1 kg potatis",
+        "1½ dl vispgrädde",
+        "2 dl mjölk",
+        "1 msk maizena",
+        "½ fiskbuljongtärning",
+        "½ citron",
+        "1 knippe dill",
+        "1½ dl riven ost",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Sätt ugnen på 200 grader och koka potatisen.",
+        "Lägg fisken i en smord ugnsform och krydda.",
+        "Koka upp grädde, mjölk, buljong och maizena. Smaka av med citron och hackad dill.",
+        "Häll såsen över fisken och strö på osten.",
+        "Grädda ca 20 minuter och servera med potatis."
+      ],
+      "source": "https://www.ica.se/recept/fiskgratang-med-dill-722240/"
+    },
+    {
+      "id": "laxpudding",
+      "name": "Laxpudding",
+      "protein": "fisk",
+      "sides": ["kartofler"],
+      "minutes": 75,
+      "servings": 4,
+      "ingredients": [
+        "250 g gravad eller rimmad lax",
+        "1 kg kokt potatis",
+        "1 gul lök",
+        "1 knippe dill",
+        "4 ägg",
+        "3 dl mjölk",
+        "1 dl vispgrädde",
+        "50 g smör",
+        "salt och vitpeppar"
+      ],
+      "steps": [
+        "Sätt ugnen på 200 grader och smörj en ugnsform.",
+        "Skiva den kokta potatisen och laxen och hacka lök och dill.",
+        "Varva potatis, lax, lök och dill i formen med potatis överst.",
+        "Vispa ägg, mjölk, grädde, salt och peppar och häll över.",
+        "Grädda ca 45 minuter och servera med smält smör."
+      ],
+      "source": "https://www.ica.se/recept/klassisk-laxpudding-634042/"
+    },
+    {
+      "id": "ugnslax-med-potatismos",
+      "name": "Ugnslax med potatismos",
+      "protein": "fisk",
+      "sides": ["kartofler"],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g laxfilé",
+        "1 kg potatis",
+        "2 dl mjölk",
+        "1 msk smör",
+        "½ purjolök",
+        "2 msk hackad dill",
+        "1 citron",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Sätt ugnen på 200 grader och koka potatisen.",
+        "Lägg laxen i en ugnsform, krydda och lägg på citronskivor.",
+        "Baka laxen ca 20 minuter.",
+        "Fräs strimlad purjo i smör och mosa potatisen med mjölk, purjo och dill.",
+        "Servera laxen med moset."
+      ],
+      "source": "https://www.ica.se/recept/ugnslax-med-potatismos-715257/"
+    },
+    {
+      "id": "fiskpinnar-med-potatis-och-artor",
+      "name": "Fiskpinnar med potatis och ärtor",
+      "protein": "fisk",
+      "sides": ["kartofler"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g torsk- eller sejfilé",
+        "1 ägg",
+        "2 dl ströbröd eller grahamsmjöl",
+        "smör till stekning",
+        "1 kg potatis",
+        "300 g frysta gröna ärtor",
+        "1 msk citronsaft",
+        "remouladsås eller ketchup",
+        "salt"
+      ],
+      "steps": [
+        "Koka potatisen.",
+        "Skär fisken i stavar och salta lätt.",
+        "Vänd stavarna i uppvispat ägg och sedan i ströbröd.",
+        "Stek fiskpinnarna gyllene i smör.",
+        "Koka ärtorna, mosa dem grovt med citron och salt och servera allt tillsammans."
+      ],
+      "source": "https://www.ica.se/recept/fiskpinnar-562749/"
+    },
+    {
+      "id": "stekt-stromming-med-potatismos",
+      "name": "Stekt strömming med potatismos",
+      "protein": "fisk",
+      "sides": ["kartofler", "salat"],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "600 g strömmingsfiléer",
+        "2 msk senap",
+        "1 knippe dill",
+        "2 dl rågmjöl",
+        "3 msk smör",
+        "1 kg mjölig potatis",
+        "3 dl mjölk",
+        "3 morötter",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Koka potatisen.",
+        "Bred senap och hackad dill på strömmingen och lägg ihop filéerna två och två.",
+        "Vänd dem i rågmjöl med salt och peppar.",
+        "Stek strömmingen gyllene i smör, ett par minuter per sida.",
+        "Mosa potatisen med mjölk och smör och servera med strömming och riven morot."
+      ],
+      "source": "https://www.ica.se/recept/dillstekt-stromming-med-potatismos-och-morotssallad-715371/"
+    },
+    {
+      "id": "fisksoppa",
+      "name": "Fisksoppa",
+      "protein": "fisk",
+      "sides": ["brod"],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "600 g fryst sej eller alaska pollock",
+        "1 vitlöksklyfta",
+        "500 g krossade tomater",
+        "1 tsk timjan",
+        "5 dl grönsaksbuljong",
+        "2 dl crème fraiche",
+        "1 msk maizena",
+        "3 msk dill",
+        "bröd",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Fräs pressad vitlök i lite olja.",
+        "Häll i tomater, timjan och buljong och koka upp.",
+        "Rör ner crème fraiche och red av med maizena utrört i vatten.",
+        "Skär fisken i bitar och låt den sjuda i soppan några minuter.",
+        "Smaka av, strö över dill och servera med bröd."
+      ],
+      "source": "https://www.ica.se/recept/fisksoppa-722048/"
+    },
+    {
+      "id": "torsk-med-aggsas",
+      "name": "Torsk med äggsås",
+      "protein": "fisk",
+      "sides": ["kartofler"],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g torskfilé",
+        "1 kg fast potatis",
+        "4 ägg",
+        "2 msk smör",
+        "2 msk vetemjöl",
+        "4 dl mjölk",
+        "1 fiskbuljongtärning",
+        "färsk persilja",
+        "salt och vitpeppar"
+      ],
+      "steps": [
+        "Koka potatis och ägg.",
+        "Lägg fisken i en ugnsform, krydda och baka i 200 grader ca 15 minuter.",
+        "Smält smöret, rör i mjölet och späd med mjölk. Lägg i buljong och låt koka några minuter.",
+        "Hacka äggen och persiljan och rör ner i såsen.",
+        "Servera fisken med potatis och äggsås."
+      ],
+      "source": "https://www.ica.se/recept/torsk-med-aggsas-717330/"
+    },
+    {
+      "id": "kramig-laxpasta",
+      "name": "Krämig laxpasta",
+      "protein": "fisk",
+      "sides": ["pasta"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g pasta",
+        "500 g laxfilé",
+        "1 schalottenlök",
+        "1 vitlöksklyfta",
+        "65 g färsk spenat",
+        "2 dl matlagningsgrädde",
+        "1 dl crème fraiche",
+        "½ fiskbuljongtärning",
+        "dill",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Koka pastan.",
+        "Fräs hackad lök och vitlök i lite olja.",
+        "Häll i grädde, crème fraiche och buljong och låt koka upp.",
+        "Skär laxen i bitar och låt den sjuda i såsen några minuter. Rör ner spenaten.",
+        "Smaka av med dill, salt och peppar och vänd ner pastan."
+      ],
+      "source": "https://www.ica.se/recept/kramig-laxpasta-750466/"
+    },
+    {
+      "id": "pasta-med-tonfisksas",
+      "name": "Pasta med tonfisksås",
+      "protein": "fisk",
+      "sides": ["pasta"],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "400 g pasta",
+        "1 gul lök",
+        "1 vitlöksklyfta",
+        "2 burkar tonfisk (à 185 g)",
+        "1 burk krossade tomater (400 g)",
+        "1 tsk oregano",
+        "riven ost",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Koka pastan.",
+        "Hacka lök och vitlök och fräs dem mjuka i lite olja.",
+        "Häll i krossade tomater och oregano och låt koka några minuter.",
+        "Rör ner avrunnen tonfisk och smaka av.",
+        "Servera såsen över pastan med riven ost."
+      ],
+      "source": "https://www.ica.se/recept/pasta-med-tonfisksas-303029/"
+    },
+    {
+      "id": "pannkakor",
+      "name": "Pannkakor",
+      "protein": "vegetar",
+      "sides": ["brod"],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "2½ dl vetemjöl",
+        "½ tsk salt",
+        "6 dl mjölk",
+        "3 ägg",
+        "smör till stekning",
+        "sylt",
+        "grädde eller bär"
+      ],
+      "steps": [
+        "Vispa mjöl, salt och hälften av mjölken till en slät smet.",
+        "Vispa i resten av mjölken och äggen.",
+        "Låt smeten vila en stund.",
+        "Stek tunna pannkakor i smör.",
+        "Servera med sylt och grädde eller bär."
+      ],
+      "source": "https://www.ica.se/recept/pannkakor-grundsmet-2083/"
+    },
+    {
+      "id": "spenatsoppa-med-agg",
+      "name": "Spenatsoppa med ägg",
+      "protein": "vegetar",
+      "sides": ["brod"],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "450 g fryst bladspenat",
+        "1 gul lök",
+        "2 msk smör",
+        "2½ msk vetemjöl",
+        "10 dl vatten",
+        "2 grönsaksbuljongtärningar",
+        "1 dl matlagningsgrädde",
+        "1 krm muskot",
+        "4 ägg",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Koka äggen och skala dem.",
+        "Fräs hackad lök i smör, rör i mjölet och späd med vatten och buljong.",
+        "Lägg i spenaten och låt koka några minuter.",
+        "Mixa soppan slät, rör ner grädden och smaka av med muskot, salt och peppar.",
+        "Servera med halverade ägg och bröd."
+      ],
+      "source": "https://www.ica.se/recept/spenatsoppa-med-agg-367220/"
+    },
+    {
+      "id": "halloumi-med-rostade-gronsaker",
+      "name": "Halloumi med rostade grönsaker",
+      "protein": "vegetar",
+      "sides": ["kartofler", "salat"],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "800 g potatis",
+        "4 morötter",
+        "2 rödlökar",
+        "3 msk olivolja",
+        "400 g halloumi",
+        "1 tsk timjan",
+        "1 påse ruccola eller blandsallad",
+        "2 dl lätt crème fraiche",
+        "2 msk ajvar relish",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Sätt ugnen på 225 grader.",
+        "Skär potatis, morötter och lök i bitar och vänd med olja, timjan, salt och peppar.",
+        "Rosta grönsakerna ca 30 minuter.",
+        "Skiva halloumin och stek den gyllene.",
+        "Rör ihop crème fraiche och ajvar och servera med grönsaker, halloumi och sallad."
+      ],
+      "source": "https://www.ica.se/recept/halloumi-med-rostade-gronsaker-244089/"
+    },
+    {
+      "id": "linsgryta-med-kokosmjolk",
+      "name": "Linsgryta med kokosmjölk",
+      "protein": "vegetar",
+      "sides": ["ris"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "2 dl röda linser",
+        "1 gul lök",
+        "1 vitlöksklyfta",
+        "1 msk mild curry",
+        "1 msk tomatpuré",
+        "400 ml kokosmjölk",
+        "2½ dl vatten",
+        "1 grönsaksbuljongtärning",
+        "250 g körsbärstomater",
+        "3 dl ris",
+        "2 dl matyoghurt",
+        "salt"
+      ],
+      "steps": [
+        "Koka riset.",
+        "Fräs hackad lök och vitlök med curryn i lite olja.",
+        "Rör ner tomatpuré, kokosmjölk, vatten, buljong och sköljda linser.",
+        "Låt koka ca 15 minuter tills linserna är mjuka. Lägg i halverade tomater.",
+        "Smaka av och servera med ris och yoghurt."
+      ],
+      "source": "https://www.ica.se/recept/linsgryta-med-kokosmjolk-724788/"
+    },
+    {
+      "id": "potatis-och-purjolokssoppa",
+      "name": "Potatis- och purjolökssoppa",
+      "protein": "vegetar",
+      "sides": ["brod"],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g potatis",
+        "1 purjolök",
+        "1 msk olja",
+        "1 tsk timjan",
+        "10 dl grönsaksbuljong",
+        "2 dl vispgrädde",
+        "bröd och ost",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Skala och tärna potatisen och skiva purjon.",
+        "Fräs purjon mjuk i olja.",
+        "Lägg i potatis, timjan och buljong och koka ca 15 minuter.",
+        "Mixa soppan slät och rör ner grädden.",
+        "Smaka av och servera med bröd och ost."
+      ],
+      "source": "https://www.ica.se/recept/kramig-potatis-och-purjolokssoppa-716077/"
+    },
+    {
+      "id": "ostpaj-med-broccoli",
+      "name": "Ostpaj med broccoli",
+      "protein": "vegetar",
+      "sides": ["salat"],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "1 paket färdig pajdeg (250 g)",
+        "250 g broccoli",
+        "1 rödlök",
+        "5 ägg",
+        "3 dl mjölk",
+        "1½ dl riven prästost",
+        "500 g tomater",
+        "1 msk olivolja",
+        "salt och peppar"
+      ],
+      "steps": [
+        "Sätt ugnen på 200 grader och klä en pajform med degen. Förgrädda 10 minuter.",
+        "Dela broccolin i små buketter och fräs med hackad lök några minuter.",
+        "Fördela broccoli och lök i pajskalet.",
+        "Vispa ägg, mjölk, ost, salt och peppar och häll över. Grädda ca 25 minuter.",
+        "Servera med en enkel tomatsallad med olivolja."
+      ],
+      "source": "https://www.ica.se/recept/ostpaj-med-broccoli-727699/"
+    },
+    {
+      "id": "falafel-i-pitabrod",
+      "name": "Falafel i pitabröd",
+      "protein": "vegetar",
+      "sides": ["brod", "salat"],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g färdig falafel",
+        "8 pitabröd",
+        "1 burk hummus",
+        "½ gurka",
+        "250 g körsbärstomater",
+        "200 g rödkål",
+        "150 g fetaost",
+        "1 msk citronsaft",
+        "1 msk olivolja"
+      ],
+      "steps": [
+        "Strimla rödkålen och tärna gurka och tomater.",
+        "Vänd grönsakerna med citronsaft och olivolja.",
+        "Stek eller värm falafeln tills den är varm och krispig.",
+        "Värm pitabröden.",
+        "Fyll bröden med hummus, sallad, falafel och smulad feta."
+      ],
+      "source": "https://www.ica.se/recept/falafel-i-pita-750018/"
+    }
+  ]
+}

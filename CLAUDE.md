@@ -5,8 +5,9 @@ Ejer: peterterpdk. Alle tekster i appen og alle svar til brugeren er på dansk. 
 
 ## Opbygning
 
-- Statisk frontend uden build-trin: `index.html`, `app.js`, `styles.css`, `shopping.js`, `onboarding.js`, `manifest.webmanifest`, `icons/`.
-- `onboarding.js` (indlæses før `app.js`): skærmene før login med sproglag (en, da, nb, sv; engelsk som standard) og de 50 lokale retter pr. region (`DISHES`, kun `DK` indtil videre; andre regioner viser de danske med en note). Giver `window.Onb` med `go`, `t`, `apply`. Valgt sprog og region huskes i `localStorage` (`dw-ob-lang`, `dw-ob-region`).
+- Statisk frontend uden build-trin: `index.html`, `app.js`, `styles.css`, `shopping.js`, `dishes.js`, `onboarding.js`, `manifest.webmanifest`, `icons/`.
+- `dishes.js` (indlæses før `onboarding.js`): `window.DW_DISHES` med 50 retter pr. region (DK, NO, SE, FI, DE, NL, PL, UK) som [id, navn på landets sprog, engelsk navn eller null, protein]. Genereres fra `supabase/presets/*.json` (format `madplan.profile`, landets sprog og `.en`-udgave); DK kommer fra de indbyggede opskrifter.
+- `onboarding.js` (indlæses før `app.js`): skærmene før login med sproglag (en, da, nb, sv; engelsk som standard) og trinnet med retter for den valgte region. Retternes navne vises på landets sprog, eller på engelsk når brugerfladen er engelsk og der findes engelske navne. Giver `window.Onb` med `go`, `t`, `apply`. Valgt sprog og region huskes i `localStorage` (`dw-ob-lang`, `dw-ob-region`).
 - `vendor/supabase.js`: Supabase-klienten (UMD, version 2.117.2). Hent ikke fra CDN.
 - Vercel-funktioner i `api/` (CommonJS, Node 18+, global `fetch`):
   - `config.js`: giver frontend `SUPABASE_URL` (kun origin) og `SUPABASE_ANON_KEY`.
@@ -19,6 +20,7 @@ Ejer: peterterpdk. Alle tekster i appen og alle svar til brugeren er på dansk. 
   - `weeks`: id (fx `2026-W44`), days (jsonb). `days.d0`..`d6` = {recipe, protein, side, locked, skip, quick, people}. `quick` = travl dag (kun retter på højst 30 min), `people` = antal personer den dag (null = opskriftens antal); opskrift og indkøbsliste regnes om med `Shopping.scaleLine` og `factor`. `days.shop_struck` = {varenøgle: bool}, `days.shop_extra` = {id: tekst|null}, `days.shop_days` = {d0..d6: false for dage, der ikke er med på indkøbslisten}.
   - `settings`: id `main`, data {ruleProtein}. Favoritter er rækker med id `fav:<opskrifts-id>` (findes = favorit) og trækkes tre gange så ofte. Reglen "ikke samme protein to dage i træk" bruges stadig ved trækning, men har ingen knap i appen.
   - Skriv til uger med RPC `patch_week(p_id, p_patch)`, som fletter pr. nøgle, så flere telefoner ikke overskriver hinanden.
+  - De fulde opskrifter for de andre lande ligger i `supabase/presets/` og er endnu ikke lagt i Supabase (det kræver et regionsfelt og enheder på flere sprog i `shopping.js`).
   - Skema: `supabase/1-opsaetning.sql`. Nye kolonner eller tabeller kræver et nyt SQL-script, som ejeren kører i Supabase.
 - Miljøvariabler i Vercel: `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `ANTHROPIC_API_KEY`, valgfri `ANTHROPIC_WORKSPACE_ID`, `CLAUDE_MODEL`, `CLAUDE_FALLBACK_MODEL`, `SUPABASE_SERVICE_ROLE_KEY` (hemmelig, kun til invitationer).
 

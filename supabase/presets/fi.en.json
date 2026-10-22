@@ -1,0 +1,1551 @@
+{
+  "format": "madplan.profile",
+  "version": 1,
+  "name": "Family Favourites (Finland)",
+  "summary": "Everyday dinners that Finnish families cook week after week.",
+  "symbol": "fork.knife",
+  "settings": {
+    "noSameProteinInRow": true
+  },
+  "recipes": [
+    {
+      "id": "makaronilaatikko",
+      "name": "Makaronilaatikko (Finnish macaroni and mince bake)",
+      "protein": "okse",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 70,
+      "servings": 4,
+      "ingredients": [
+        "400 g macaroni",
+        "400 g beef mince",
+        "1 onion",
+        "1 tbsp oil",
+        "1 tsp salt",
+        "½ tsp black pepper",
+        "3 eggs",
+        "7 dl milk",
+        "1 dl grated cheese",
+        "ketchup, to serve"
+      ],
+      "steps": [
+        "Heat the oven to 200°C and grease an ovenproof dish.",
+        "Boil the macaroni until almost tender and drain.",
+        "Brown the mince and chopped onion in the oil and season with salt and pepper.",
+        "Mix the macaroni and mince together in the dish.",
+        "Whisk the eggs and milk with a pinch of salt and pour over.",
+        "Sprinkle with the cheese and bake for about an hour until the egg mixture has set.",
+        "Serve with ketchup and a salad."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/liha-makaronilaatikko"
+    },
+    {
+      "id": "spagetti-ja-jauhelihakastike",
+      "name": "Spaghetti bolognese",
+      "protein": "okse",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g beef mince",
+        "1 onion",
+        "2 garlic cloves",
+        "1 tbsp oil",
+        "500 g chopped tomatoes",
+        "1 dl water",
+        "2 tsp oregano",
+        "1 tsp salt",
+        "½ tsp black pepper",
+        "400 g spaghetti",
+        "grated cheese, to serve"
+      ],
+      "steps": [
+        "Finely chop the onion and garlic.",
+        "Brown the mince in the oil, add the onion and garlic and soften for a moment.",
+        "Add the tomatoes, water and seasoning and simmer gently for 15 minutes.",
+        "Meanwhile, cook the spaghetti in salted water.",
+        "Serve the sauce with the spaghetti and sprinkle with grated cheese."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/jauhelihakastike"
+    },
+    {
+      "id": "lihapullat-ja-perunamuusi",
+      "name": "Lihapullat (Finnish meatballs) with mash and cream gravy",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "400 g beef mince",
+        "1 dl dried breadcrumbs",
+        "2 dl soured cream",
+        "1 onion",
+        "1 egg",
+        "1 tsp salt",
+        "1 kg floury potatoes",
+        "2 dl milk",
+        "30 g butter",
+        "2 tbsp plain flour",
+        "3 dl water",
+        "2 dl single cream",
+        "crushed lingonberries, to serve"
+      ],
+      "steps": [
+        "Mix the breadcrumbs and soured cream and leave to swell for a while.",
+        "Add the mince, grated onion, egg and salt and mix until smooth.",
+        "Roll into small balls and bake at 225°C for about 15 minutes.",
+        "Boil the potatoes until tender and mash with warm milk, butter and salt.",
+        "Sprinkle the flour into a pan, add the water and cream and cook into a gravy. Add the meatballs.",
+        "Serve the meatballs with the mash, gravy and lingonberries."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/maukkaat-lihapullat/recipe-2508"
+    },
+    {
+      "id": "lihakeitto",
+      "name": "Lihakeitto (Finnish beef and root vegetable soup)",
+      "protein": "okse",
+      "sides": [
+        "kartofler",
+        "brod"
+      ],
+      "minutes": 100,
+      "servings": 4,
+      "ingredients": [
+        "800 g beef chuck, in pieces",
+        "15 dl water",
+        "2 tsp salt",
+        "10 allspice berries",
+        "2 bay leaves",
+        "1 onion",
+        "8 potatoes",
+        "3 carrots",
+        "200 g swede",
+        "1 parsnip",
+        "parsley"
+      ],
+      "steps": [
+        "Put the meat in cold water, bring to the boil and skim off the foam.",
+        "Add the salt, allspice and bay leaves and simmer gently for about an hour.",
+        "Peel the onion, potatoes and root vegetables and cut into chunks.",
+        "Add the vegetables and cook for another 20–25 minutes until everything is tender.",
+        "Check the salt and sprinkle with chopped parsley.",
+        "Serve with rye bread."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/lihakeitto"
+    },
+    {
+      "id": "karjalanpaisti",
+      "name": "Karjalanpaisti (Karelian beef and pork stew) with mash",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 180,
+      "servings": 4,
+      "ingredients": [
+        "800 g Karelian stew meat (mixed beef and pork)",
+        "2 onions",
+        "2 carrots",
+        "1 tsp salt",
+        "10 allspice berries",
+        "2 bay leaves",
+        "water",
+        "1 kg potatoes",
+        "2 dl milk",
+        "30 g butter",
+        "crushed lingonberries, to serve"
+      ],
+      "steps": [
+        "Heat the oven to 175°C.",
+        "Put the meat, onion wedges and carrot chunks in a casserole and season with salt, allspice and bay leaves.",
+        "Add enough water to just cover the meat.",
+        "Cook covered in the oven for 2½–3 hours until the meat is tender.",
+        "Boil the potatoes and mash with the milk and butter.",
+        "Serve the stew with the mash and lingonberries."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/karjalanpaisti"
+    },
+    {
+      "id": "kaalipata",
+      "name": "Kaalipata (cabbage and mince stew)",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 55,
+      "servings": 4,
+      "ingredients": [
+        "400 g beef mince",
+        "1 kg white cabbage",
+        "4 carrots",
+        "1 onion",
+        "½ dl pudding rice",
+        "3 dl water",
+        "2 tbsp golden syrup",
+        "2 tsp marjoram",
+        "1½ tsp salt",
+        "black pepper",
+        "800 g potatoes",
+        "crushed lingonberries, to serve"
+      ],
+      "steps": [
+        "Brown the mince in a large pan.",
+        "Add the shredded cabbage, sliced carrots and chopped onion and soften for a moment.",
+        "Add the water, rice, syrup and seasoning.",
+        "Simmer covered over a low heat for about 40 minutes, stirring now and then.",
+        "Boil the potatoes at the same time.",
+        "Serve with the potatoes and lingonberries."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/kaalipata"
+    },
+    {
+      "id": "lasagne",
+      "name": "Lasagne",
+      "protein": "okse",
+      "sides": [
+        "salat"
+      ],
+      "minutes": 75,
+      "servings": 4,
+      "ingredients": [
+        "400 g beef mince",
+        "1 onion",
+        "500 g chopped tomatoes",
+        "1 tsp salt",
+        "2 tsp oregano",
+        "40 g butter",
+        "1 dl plain flour",
+        "10 dl milk",
+        "150 g grated cheese",
+        "180 g lasagne sheets"
+      ],
+      "steps": [
+        "Brown the mince and onion, add the tomatoes and seasoning and simmer for 10 minutes.",
+        "Melt the butter, stir in the flour and gradually whisk in the milk. Cook until thick and season with salt.",
+        "Heat the oven to 200°C.",
+        "Layer white sauce, sheets and meat sauce in a dish, finishing with white sauce.",
+        "Sprinkle with the cheese and bake for about 45 minutes.",
+        "Leave to rest for a few minutes and serve with a salad."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/lasagne"
+    },
+    {
+      "id": "jauhelihakeitto",
+      "name": "Mince and vegetable soup",
+      "protein": "okse",
+      "sides": [
+        "kartofler",
+        "brod"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "400 g beef mince",
+        "600 g potatoes",
+        "2 carrots",
+        "1 onion",
+        "10 dl water",
+        "1 beef stock cube",
+        "8 allspice berries",
+        "2 bay leaves",
+        "200 g frozen soup vegetables",
+        "½ tsp salt",
+        "1 dl parsley"
+      ],
+      "steps": [
+        "Brown the mince in a pan and add the chopped onion.",
+        "Add the water, stock cube, allspice and bay leaves and bring to the boil.",
+        "Add the diced potatoes and carrots and cook for 15 minutes.",
+        "Add the soup vegetables and cook for another 5–10 minutes.",
+        "Season with salt, sprinkle with parsley and serve with bread."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/jauhelihakeitto"
+    },
+    {
+      "id": "hampurilaiset",
+      "name": "Hamburgers with oven chips",
+      "protein": "okse",
+      "sides": [
+        "brod",
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "600 g beef mince",
+        "1 tsp salt",
+        "black pepper",
+        "1 tbsp oil",
+        "4 burger buns",
+        "4 cheese slices",
+        "iceberg lettuce",
+        "1 tomato",
+        "cucumber",
+        "ketchup and mayonnaise",
+        "600 g oven chips"
+      ],
+      "steps": [
+        "Bake the chips in the oven according to the packet.",
+        "Season the mince with salt and pepper and shape into four patties.",
+        "Fry the patties in the oil for 3–4 minutes on each side.",
+        "Put a slice of cheese on each patty towards the end and warm the buns.",
+        "Build the burgers with lettuce, tomato, cucumber and the sauces.",
+        "Serve with the chips."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/hampurilaispihvit"
+    },
+    {
+      "id": "jauhelihaburritot",
+      "name": "Beef burritos",
+      "protein": "okse",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g beef mince",
+        "1 onion",
+        "1 tin (380 g) kidney beans",
+        "1 jar (315 g) mild salsa",
+        "½ dl water",
+        "½ tsp salt",
+        "8 tortillas",
+        "150 g grated cheese",
+        "200 g Greek-style yoghurt",
+        "iceberg lettuce"
+      ],
+      "steps": [
+        "Brown the mince and chopped onion in a frying pan.",
+        "Add the rinsed beans, salsa, water and salt and simmer for 5 minutes.",
+        "Warm the tortillas.",
+        "Spread the filling on the tortillas, add cheese, yoghurt and lettuce and roll up.",
+        "Serve straight away."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/helpot-jauhelihaburritot"
+    },
+    {
+      "id": "nakkikastike-ja-perunamuusi",
+      "name": "Nakkikastike (Finnish frankfurter sauce) with mash",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "300 g frankfurters",
+        "1 onion",
+        "1 tbsp butter",
+        "2 tbsp plain flour",
+        "4 dl water",
+        "1 beef stock cube",
+        "2 tbsp ketchup",
+        "1 tbsp mild mustard",
+        "1 dl single cream",
+        "1 kg potatoes",
+        "2 dl milk",
+        "30 g butter for the mash"
+      ],
+      "steps": [
+        "Boil the potatoes until tender.",
+        "Slice the frankfurters and chop the onion.",
+        "Soften the onion in the butter, add the frankfurters and brown lightly.",
+        "Sprinkle in the flour, add the water and stock cube and cook until thickened.",
+        "Season with the ketchup and mustard, add the cream and simmer for a couple of minutes.",
+        "Mash the potatoes with warm milk and butter and serve with the sauce."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/nakkikastike"
+    },
+    {
+      "id": "makkarakeitto",
+      "name": "Makkarakeitto (sausage and cabbage soup)",
+      "protein": "gris",
+      "sides": [
+        "kartofler",
+        "brod"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "300 g Finnish ring sausage (lenkkimakkara)",
+        "300 g white cabbage",
+        "10 dl water",
+        "2 vegetable stock cubes",
+        "2 bay leaves",
+        "8 black peppercorns",
+        "750 g frozen potato and soup vegetable mix",
+        "1 dl parsley",
+        "4 tbsp soured cream"
+      ],
+      "steps": [
+        "Bring the water, stock cubes and spices to the boil.",
+        "Add the potato and vegetable mix and cook for 10 minutes.",
+        "Add the diced sausage and shredded cabbage and cook for another 5–8 minutes.",
+        "Check the seasoning and sprinkle with parsley.",
+        "Serve with soured cream and bread."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/kaali-makkarakeitto"
+    },
+    {
+      "id": "uunimakkara-ja-perunamuusi",
+      "name": "Uunimakkara (oven-baked ring sausage) with mash",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "540 g Finnish ring sausage (lenkkimakkara)",
+        "100 g cheese slices",
+        "1 tomato",
+        "1 onion",
+        "2 tbsp mild mustard",
+        "1 kg potatoes",
+        "2 dl milk",
+        "30 g butter",
+        "salt"
+      ],
+      "steps": [
+        "Heat the oven to 225°C.",
+        "Cut pockets along the sausage and brush with mustard.",
+        "Fill the pockets with cheese, tomato slices and onion.",
+        "Bake for about 20 minutes.",
+        "Boil the potatoes and mash with the milk, butter and salt.",
+        "Serve the sausage with the mash."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/uunimakkara"
+    },
+    {
+      "id": "pyttipannu",
+      "name": "Pyttipannu (Finnish potato and sausage hash) with fried eggs",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "1 kg boiled potatoes",
+        "2 onions",
+        "400 g Finnish ring sausage (lenkkimakkara)",
+        "2 tbsp rapeseed oil",
+        "1 tsp salt",
+        "½ tsp black pepper",
+        "4 eggs",
+        "pickled beetroot",
+        "chives"
+      ],
+      "steps": [
+        "Dice the potatoes, sausage and onions.",
+        "Fry the potatoes in the oil until golden.",
+        "Add the onion and sausage and fry for about 10 more minutes, stirring now and then.",
+        "Season with salt and pepper.",
+        "Fry the eggs separately.",
+        "Serve the hash with the eggs, beetroot and chives."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/pyttipannu"
+    },
+    {
+      "id": "hernekeitto",
+      "name": "Hernekeitto (Finnish pea soup with pork)",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 150,
+      "servings": 4,
+      "ingredients": [
+        "500 g dried yellow peas",
+        "25 dl water",
+        "500 g smoked pork hock",
+        "300 g pork shoulder",
+        "1 onion",
+        "3 carrots",
+        "1 tsp salt",
+        "2 tsp marjoram",
+        "mild mustard, to serve",
+        "rye bread, to serve"
+      ],
+      "steps": [
+        "Soak the peas overnight in plenty of water and rinse.",
+        "Put the peas, water, hock and shoulder in a pan, bring to the boil and skim.",
+        "Add the chopped onion and simmer gently for 1½–2 hours.",
+        "Add the carrot chunks for the last half hour.",
+        "Lift out the meat, remove the bones and chop the meat back into the soup.",
+        "Season with salt and marjoram and serve with mustard and bread."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/hernekeitto"
+    },
+    {
+      "id": "kinkkukiusaus",
+      "name": "Kinkkukiusaus (creamy ham and potato bake)",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "1 kg frozen potato and onion mix",
+        "300 g ham strips",
+        "1 tsp salt",
+        "½ tsp black pepper",
+        "2 dl single cream",
+        "2 dl milk",
+        "1 dl grated cheese",
+        "parsley"
+      ],
+      "steps": [
+        "Heat the oven to 200°C and grease a dish.",
+        "Layer the potato and onion mix and the ham in the dish.",
+        "Mix the cream, milk, salt and pepper and pour over.",
+        "Sprinkle with the cheese.",
+        "Bake for about 50 minutes until the potatoes are tender.",
+        "Sprinkle with parsley and serve with a salad."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/helppo-kinkkukiusaus/recipe-1696"
+    },
+    {
+      "id": "pasta-carbonara",
+      "name": "Pasta carbonara",
+      "protein": "gris",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "300 g spaghetti",
+        "150 g bacon",
+        "2 garlic cloves",
+        "2 dl single cream",
+        "2 eggs",
+        "1½ dl grated Parmesan",
+        "½ tsp black pepper",
+        "¼ tsp salt"
+      ],
+      "steps": [
+        "Cook the spaghetti in salted water.",
+        "Fry the bacon until crisp and add the chopped garlic at the end.",
+        "Mix the cream, eggs, Parmesan and pepper in a bowl.",
+        "Drain the pasta and tip it into the pan with the bacon.",
+        "Take the pan off the heat and quickly stir in the egg mixture.",
+        "Serve straight away."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/pasta-carbonara"
+    },
+    {
+      "id": "kinkkupizza",
+      "name": "Ham pizza",
+      "protein": "gris",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "3½ dl plain flour",
+        "1 tsp baking powder",
+        "½ tsp salt",
+        "1½ dl water",
+        "3 tbsp olive oil",
+        "1½ dl pizza sauce",
+        "150 g grated pizza cheese",
+        "150 g ham strips",
+        "1 pepper",
+        "½ tsp pizza seasoning"
+      ],
+      "steps": [
+        "Heat the oven to 250°C.",
+        "Mix the flour, baking powder and salt, add the water and oil and knead into a smooth dough.",
+        "Roll the dough into two thin bases on baking paper.",
+        "Spread with the sauce, ham, pepper strips and cheese and sprinkle with pizza seasoning.",
+        "Bake for 10–12 minutes until the edges are golden.",
+        "Serve with a salad."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/kinkkupizza"
+    },
+    {
+      "id": "porsaanleikkeet-ja-perunat",
+      "name": "Breaded pork escalopes with potatoes",
+      "protein": "gris",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "600 g pork loin",
+        "1 tsp salt",
+        "½ tsp black pepper",
+        "1 dl plain flour",
+        "2 eggs",
+        "2 dl dried breadcrumbs",
+        "1 dl rapeseed oil for frying",
+        "1 kg potatoes",
+        "1 lemon"
+      ],
+      "steps": [
+        "Boil the potatoes.",
+        "Cut the loin into 8 slices, beat them thin and season with salt and pepper.",
+        "Dip the escalopes in flour, then beaten egg and finally breadcrumbs.",
+        "Fry in the oil over a medium heat for 2–3 minutes on each side.",
+        "Serve with the potatoes, lemon wedges and a salad."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/wieninleikkeet"
+    },
+    {
+      "id": "jauhelihakastike-ja-perunat",
+      "name": "Jauhelihakastike (Finnish mince gravy) with potatoes",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g pork mince",
+        "1 onion",
+        "½ tbsp oil",
+        "2 tbsp tomato purée",
+        "2 tbsp plain flour",
+        "5 dl water",
+        "1 tsp salt",
+        "black pepper",
+        "1 pickled gherkin",
+        "2 tbsp soured cream",
+        "1 kg potatoes"
+      ],
+      "steps": [
+        "Boil the potatoes.",
+        "Brown the mince and chopped onion in the oil.",
+        "Stir in the tomato purée and sprinkle over the flour.",
+        "Gradually stir in the water and simmer for 10 minutes.",
+        "Season with salt and pepper and add the diced gherkin and soured cream.",
+        "Serve the gravy with the potatoes."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/jauhelihakastike-stroganoffin-tapaan"
+    },
+    {
+      "id": "kermainen-possukastike-ja-riisi",
+      "name": "Creamy pork in mustard sauce with rice",
+      "protein": "gris",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "400 g pork strips",
+        "1 onion",
+        "1 garlic clove",
+        "1 tbsp oil",
+        "½ tsp salt",
+        "2 tbsp Dijon mustard",
+        "2 dl water",
+        "2 dl single cream",
+        "a pinch of black pepper",
+        "3 dl rice",
+        "fresh basil"
+      ],
+      "steps": [
+        "Cook the rice according to the packet.",
+        "Brown the pork strips in the oil and season with salt.",
+        "Add the chopped onion and garlic and soften for a moment.",
+        "Add the mustard, water and cream and simmer for 10 minutes.",
+        "Season with pepper and scatter over the basil.",
+        "Serve with the rice."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/basilika-possukastike"
+    },
+    {
+      "id": "possu-nuudeliwokki",
+      "name": "Pork and vegetable noodle stir-fry",
+      "protein": "gris",
+      "sides": [
+        "nudler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "300 g pork strips",
+        "1 red pepper",
+        "100 g leek",
+        "1 garlic clove",
+        "2 tbsp oil",
+        "300 g frozen green beans",
+        "2 tbsp sweet soy sauce",
+        "2 dl coconut milk",
+        "1 tbsp lime juice",
+        "250 g wheat noodles"
+      ],
+      "steps": [
+        "Cook the noodles according to the packet and drain.",
+        "Stir-fry the pork strips in hot oil in a wok or frying pan.",
+        "Add the sliced pepper, leek, garlic and beans and stir-fry for a few minutes.",
+        "Add the soy sauce and coconut milk and heat through.",
+        "Toss in the noodles and season with the lime juice.",
+        "Serve straight away."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/possu-kasvisnuudelit"
+    },
+    {
+      "id": "broileripasta",
+      "name": "Chicken pasta",
+      "protein": "kylling",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "300 g chicken breast strips",
+        "2 tbsp rapeseed oil",
+        "1 red pepper",
+        "1 courgette",
+        "½ leek",
+        "2 tbsp tomato purée",
+        "2 tsp paprika",
+        "1 tsp dried basil",
+        "1 tsp salt",
+        "1 dl water",
+        "400 g pasta",
+        "150 g grated Emmental"
+      ],
+      "steps": [
+        "Cook the pasta.",
+        "Brown the chicken strips in the oil.",
+        "Add the diced vegetables and fry for a few minutes.",
+        "Add the tomato purée, seasoning and water and simmer for 5 minutes.",
+        "Stir the pasta into the sauce and sprinkle with the cheese.",
+        "Serve straight away."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/broileripasta/recipe-2313"
+    },
+    {
+      "id": "broilerikastike-ja-riisi",
+      "name": "Chicken in creamy mustard and tomato sauce with rice",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g chicken breast strips",
+        "1 tbsp oil",
+        "½ tsp salt",
+        "a pinch of black pepper",
+        "2 tbsp wholegrain mustard",
+        "1½ dl water",
+        "2 dl single cream",
+        "2 tomatoes",
+        "½ dl chives",
+        "3 dl rice"
+      ],
+      "steps": [
+        "Cook the rice.",
+        "Brown the chicken strips in the oil and season with salt and pepper.",
+        "Add the mustard, water and cream and bring to the boil.",
+        "Add the diced tomatoes and simmer for 5 minutes.",
+        "Sprinkle with chives and serve with the rice."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/broilerikastike"
+    },
+    {
+      "id": "kanakeitto",
+      "name": "Creamy chicken soup",
+      "protein": "kylling",
+      "sides": [
+        "kartofler",
+        "brod"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "400 g chicken breast strips",
+        "6 potatoes",
+        "2 carrots",
+        "1 onion",
+        "1 tbsp rapeseed oil",
+        "1 tsp mild curry powder",
+        "10 dl water",
+        "1 chicken stock cube",
+        "2 dl single cream",
+        "salt",
+        "parsley"
+      ],
+      "steps": [
+        "Soften the chopped onion with the curry powder in the oil in a large pan.",
+        "Add the chicken strips and brown lightly.",
+        "Add the water, stock cube and diced potatoes and carrots.",
+        "Cook for about 20 minutes until the potatoes are tender.",
+        "Add the cream, season with salt and heat through.",
+        "Sprinkle with parsley and serve with bread."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/kanakeitto"
+    },
+    {
+      "id": "broilericurry-ja-riisi",
+      "name": "Mild chicken curry with rice",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g chicken breast strips",
+        "1 tbsp oil",
+        "2 tsp mild curry powder",
+        "100 g leek",
+        "1 dl water",
+        "½ tsp salt",
+        "200 g frozen peas",
+        "2 dl single cream",
+        "3 dl basmati rice",
+        "fresh parsley"
+      ],
+      "steps": [
+        "Cook the rice.",
+        "Brown the chicken strips in the oil and add the curry powder.",
+        "Add the thinly sliced leek and soften for a moment.",
+        "Add the water, salt, peas and cream and simmer for 5–10 minutes.",
+        "Sprinkle with parsley and serve with the rice."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/broilericurry"
+    },
+    {
+      "id": "kana-riisivuoka",
+      "name": "Chicken and rice bake",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "300 g chicken breast strips",
+        "3 dl brown rice",
+        "1 small leek",
+        "200 g courgette",
+        "140 g pineapple chunks",
+        "1 tbsp rapeseed oil",
+        "4 dl water",
+        "1 chicken stock cube",
+        "2 dl single cream",
+        "250 g ready-made cheese sauce",
+        "1 dl grated cheese"
+      ],
+      "steps": [
+        "Heat the oven to 200°C and grease a dish.",
+        "Brown the chicken strips in the oil and add the chopped leek and courgette.",
+        "Spread the rice in the dish and top with the chicken, vegetables and pineapple.",
+        "Mix the water, stock cube, cream and cheese sauce and pour over.",
+        "Sprinkle with the cheese and bake for about 45 minutes until the rice is cooked."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/kana-riisivuoka/3DA5sR6K5sYZfnQiXARMpF"
+    },
+    {
+      "id": "kanatortillavuoka",
+      "name": "Chicken tortilla bake",
+      "protein": "kylling",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "400 g chicken breast strips",
+        "2 peppers",
+        "150 g courgette",
+        "1 red onion",
+        "2 tbsp rapeseed oil",
+        "1 sachet (28 g) mild fajita seasoning",
+        "1 lime",
+        "150 g crème fraîche",
+        "150 g grated mozzarella",
+        "6 large tortillas"
+      ],
+      "steps": [
+        "Heat the oven to 225°C.",
+        "Fry the chicken strips in the oil and add the sliced vegetables.",
+        "Season with the fajita seasoning and lime juice.",
+        "Spread the tortillas with crème fraîche, add the filling, roll up and place in a dish.",
+        "Sprinkle with the cheese and bake for about 15 minutes.",
+        "Serve with a salad."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/rento-tortillavuoka/5bPNki0Sp7aNCkFbl3Y5Mj"
+    },
+    {
+      "id": "kananugetit-ja-lohkoperunat",
+      "name": "Chicken nuggets with potato wedges",
+      "protein": "kylling",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "500 g chicken breast",
+        "1 dl plain flour",
+        "2 eggs",
+        "2 dl panko breadcrumbs",
+        "1 tsp salt",
+        "1 tsp paprika",
+        "rapeseed oil for frying",
+        "1 kg potatoes",
+        "2 tbsp oil for the potatoes",
+        "cucumber and carrot sticks, to serve"
+      ],
+      "steps": [
+        "Heat the oven to 225°C. Cut the potatoes into wedges, toss with oil and salt and roast for 30–35 minutes.",
+        "Cut the chicken into bite-sized pieces and season with salt and paprika.",
+        "Coat the pieces in flour, beaten egg and panko.",
+        "Fry the nuggets in oil until cooked through.",
+        "Serve with the wedges and vegetable sticks."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/pankojauhoilla-kuorrutetut-kananugetit"
+    },
+    {
+      "id": "kanawokki",
+      "name": "Chicken stir-fry with rice",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g chicken breast strips",
+        "1 tbsp oil",
+        "1 tsp ground ginger",
+        "1 tsp mild curry powder",
+        "450 g frozen stir-fry vegetables",
+        "1 tbsp soy sauce",
+        "3 dl water",
+        "1 tbsp potato starch",
+        "3 dl rice"
+      ],
+      "steps": [
+        "Cook the rice.",
+        "Brown the chicken strips in hot oil and season with the ginger and curry powder.",
+        "Add the vegetables and stir-fry for a few minutes.",
+        "Mix the potato starch with the cold water and soy sauce and pour into the pan.",
+        "Heat until the sauce thickens.",
+        "Serve with the rice."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/kanawokki"
+    },
+    {
+      "id": "broileripihvit-ja-perunat",
+      "name": "Pan-fried chicken breasts with potatoes",
+      "protein": "kylling",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "4 flattened chicken breasts (about 400 g)",
+        "2 tbsp oil",
+        "1 tsp mild curry powder",
+        "1 tsp paprika",
+        "⅓ tsp salt",
+        "1 kg potatoes",
+        "200 g soured cream",
+        "chives",
+        "cucumber and tomato"
+      ],
+      "steps": [
+        "Boil the potatoes.",
+        "Mix the oil, curry powder, paprika and salt and brush over the chicken.",
+        "Fry in a hot pan for 3–4 minutes on each side until cooked through.",
+        "Mix the soured cream with chopped chives for a dip.",
+        "Serve the chicken with the potatoes, dip and a salad."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/nopeat-broileripihvit"
+    },
+    {
+      "id": "hapanimela-broileri-ja-riisi",
+      "name": "Sweet and sour chicken with rice",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g chicken breast strips",
+        "1 tbsp oil",
+        "1 red pepper",
+        "1 carrot",
+        "140 g pineapple chunks",
+        "1 jar (350 g) sweet and sour sauce",
+        "1 dl water",
+        "3 dl rice"
+      ],
+      "steps": [
+        "Cook the rice.",
+        "Brown the chicken strips in the oil.",
+        "Add the pepper and carrot strips and fry for a couple of minutes.",
+        "Add the sauce, water and pineapple and simmer for 5 minutes.",
+        "Serve with the rice."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/broileria-sweet-and-sour--kastikkeessa"
+    },
+    {
+      "id": "kermainen-kanapata",
+      "name": "Creamy chicken and mushroom stew with potatoes",
+      "protein": "kylling",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "600 g chicken breast",
+        "1 onion",
+        "2 carrots",
+        "200 g button mushrooms",
+        "1 tbsp rapeseed oil",
+        "2 dl water",
+        "1 chicken stock cube",
+        "2 dl single cream",
+        "1 tbsp Dijon mustard",
+        "1 tbsp honey",
+        "½ tsp salt",
+        "1 kg potatoes"
+      ],
+      "steps": [
+        "Boil the potatoes.",
+        "Cut the chicken into pieces and brown in the oil in a casserole.",
+        "Add the chopped onion, carrots and mushrooms and soften for a moment.",
+        "Add the water, stock cube, cream, mustard and honey.",
+        "Simmer covered over a low heat for about 30 minutes.",
+        "Season with salt and serve with the potatoes."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/kermainen-kanapata/3HMSkvVqPNO015ZDuCCFya"
+    },
+    {
+      "id": "lohikeitto",
+      "name": "Lohikeitto (Finnish creamy salmon soup)",
+      "protein": "fisk",
+      "sides": [
+        "kartofler",
+        "brod"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "400 g salmon fillet",
+        "10 dl water",
+        "2 fish stock cubes",
+        "1 onion",
+        "5 allspice berries",
+        "1 bay leaf",
+        "800 g potatoes",
+        "2 dl single cream",
+        "1 tbsp butter",
+        "dill"
+      ],
+      "steps": [
+        "Bring the water, stock cubes, allspice and bay leaf to the boil.",
+        "Add the diced potatoes and chopped onion and cook for about 15 minutes.",
+        "Remove the skin and bones from the salmon and cut into cubes.",
+        "Add the cream and salmon and simmer gently for 5 minutes.",
+        "Stir in the butter and plenty of dill.",
+        "Serve with rye bread."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/lohikeitto"
+    },
+    {
+      "id": "uunilohi-ja-perunat",
+      "name": "Oven-baked salmon with dill sauce and potatoes",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g salmon fillet",
+        "¾ tsp salt",
+        "120 g soured cream",
+        "½ tbsp lemon juice",
+        "¾ dl dill",
+        "1 kg potatoes",
+        "1 lemon"
+      ],
+      "steps": [
+        "Heat the oven to 200°C and boil the potatoes.",
+        "Place the salmon skin side down in an ovenproof dish and season with salt.",
+        "Bake for about 20 minutes until the fish is cooked.",
+        "Mix the soured cream, lemon juice and dill into a sauce.",
+        "Serve the salmon with the potatoes, sauce and lemon wedges."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/helppo-smetana-uunilohi"
+    },
+    {
+      "id": "kalapuikot-ja-perunamuusi",
+      "name": "Fish fingers with mash and peas",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "400 g frozen Alaska pollock fillet",
+        "3 dl panko breadcrumbs",
+        "2 eggs",
+        "1 tsp salt",
+        "a pinch of black pepper",
+        "1 dl oil for frying",
+        "1 kg potatoes",
+        "2 dl milk",
+        "30 g butter",
+        "200 g frozen peas"
+      ],
+      "steps": [
+        "Boil the potatoes.",
+        "Partly thaw the fish, cut into fingers and season with salt and pepper.",
+        "Dip the fingers in beaten egg and coat in panko.",
+        "Fry the fish fingers in the oil until golden.",
+        "Mash the potatoes with the milk and butter and cook the peas.",
+        "Serve the fish fingers with the mash and peas."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/kalapuikot"
+    },
+    {
+      "id": "lohikiusaus",
+      "name": "Lohikiusaus (creamy salmon and potato bake)",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "1 kg frozen potato and onion mix",
+        "400 g rainbow trout fillet",
+        "1 tsp salt",
+        "½ tsp black pepper",
+        "1 pot of dill",
+        "4 dl single cream"
+      ],
+      "steps": [
+        "Heat the oven to 200°C.",
+        "Remove the skin from the fish and cut into cubes.",
+        "Layer potato, fish and dill in a dish, seasoning each layer with salt and pepper.",
+        "Pour over the cream.",
+        "Bake for about 50 minutes until the potatoes are tender and the top is golden."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/lohikiusaus/recipe-5152"
+    },
+    {
+      "id": "tonnikalapasta",
+      "name": "Tuna pasta in tomato sauce",
+      "protein": "fisk",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "300 g spaghetti",
+        "2 tins tuna in oil",
+        "2 garlic cloves",
+        "250 g cherry tomatoes",
+        "500 g passata",
+        "½ tsp salt",
+        "½ tsp black pepper",
+        "1 dl single cream",
+        "grated Parmesan"
+      ],
+      "steps": [
+        "Cook the spaghetti.",
+        "Heat the oil from the tuna in a pan and soften the chopped garlic.",
+        "Add the halved tomatoes and passata and simmer for 10 minutes.",
+        "Add the cream and tuna and season with salt and pepper.",
+        "Toss the spaghetti in the sauce and serve with Parmesan."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/tonnikalapasta"
+    },
+    {
+      "id": "kermainen-lohipasta",
+      "name": "Creamy salmon pasta",
+      "protein": "fisk",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g pasta",
+        "300 g salmon or rainbow trout",
+        "1 onion",
+        "1 garlic clove",
+        "1 tbsp oil",
+        "2 dl single cream",
+        "1 tsp salt",
+        "1 tbsp lemon juice",
+        "½ tsp black pepper",
+        "dill or basil"
+      ],
+      "steps": [
+        "Cook the pasta.",
+        "Soften the chopped onion and garlic in the oil.",
+        "Add the cream and heat through.",
+        "Add the diced fish and simmer gently for 5 minutes.",
+        "Season with salt, pepper and lemon juice and add the herbs.",
+        "Toss with the pasta and serve."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/lohipasta"
+    },
+    {
+      "id": "silakkapihvit-ja-perunamuusi",
+      "name": "Silakkapihvit (fried Baltic herring fillets) with mash",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "600 g Baltic herring fillets",
+        "1 tsp salt",
+        "¼ tsp black pepper",
+        "1 dl dill",
+        "1 dl rye breadcrumbs",
+        "50 g butter for frying",
+        "1 kg potatoes",
+        "2 dl milk",
+        "crushed lingonberries, to serve"
+      ],
+      "steps": [
+        "Boil the potatoes.",
+        "Rinse the herring and pat dry with kitchen paper.",
+        "Season the fillets with salt and pepper and sandwich them in pairs with chopped dill in between.",
+        "Coat the pairs in breadcrumbs and fry in the butter until golden on both sides.",
+        "Mash the potatoes with warm milk.",
+        "Serve the herring with the mash and lingonberries."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/silakkapihvit"
+    },
+    {
+      "id": "purjoinen-kalavuoka",
+      "name": "Pollock and leek bake with potatoes",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "400 g frozen Alaska pollock",
+        "100 g leek",
+        "½ tbsp oil",
+        "3 tbsp plain flour",
+        "5 dl milk",
+        "100 g processed cheese",
+        "¾ tsp salt",
+        "black pepper",
+        "dill",
+        "1 kg potatoes"
+      ],
+      "steps": [
+        "Heat the oven to 200°C and boil the potatoes.",
+        "Soften the leek in the oil in a pan, stir in the flour and then gradually add the milk.",
+        "Melt the cheese into the sauce and season with salt and pepper.",
+        "Place the fish in a dish and pour over the sauce.",
+        "Bake for about 25 minutes until the fish is cooked.",
+        "Sprinkle with dill and serve with the potatoes."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/purjoinen-kalavuoka"
+    },
+    {
+      "id": "kirjolohipihvit",
+      "name": "Rainbow trout patties with potatoes",
+      "protein": "fisk",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g boneless rainbow trout fillet",
+        "1 egg",
+        "2 tbsp plain flour",
+        "½ tsp salt",
+        "a pinch of black pepper",
+        "½ dl dill",
+        "1 lemon",
+        "2 tbsp oil for frying",
+        "1 kg potatoes"
+      ],
+      "steps": [
+        "Boil the potatoes.",
+        "Skin the fish and chop it finely with a knife or food processor.",
+        "Mix in the egg, flour, salt, pepper, dill and grated lemon zest.",
+        "Shape into patties and fry in the oil for 3–4 minutes on each side.",
+        "Serve with the potatoes, lemon wedges and a salad."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/sitruunaiset-lohipihvit"
+    },
+    {
+      "id": "pinaattiletut",
+      "name": "Pinaattiletut (Finnish spinach pancakes) with lingonberries",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "150 g frozen spinach",
+        "5 dl milk",
+        "3 dl plain flour",
+        "2 eggs",
+        "1 tsp salt",
+        "1 tsp sugar",
+        "¼ dl oil",
+        "lingonberry jam",
+        "cottage cheese"
+      ],
+      "steps": [
+        "Thaw the spinach.",
+        "Whisk the milk, flour, eggs, salt and sugar into a smooth batter and leave to rest for 15 minutes.",
+        "Stir the spinach and oil into the batter.",
+        "Fry small pancakes on both sides in a greased pan.",
+        "Serve with lingonberry jam and cottage cheese."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/pinaattiletut"
+    },
+    {
+      "id": "pannukakku",
+      "name": "Pannukakku (Finnish oven pancake) with jam",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "10 dl milk",
+        "3 eggs",
+        "5 dl plain flour",
+        "1½ tsp baking powder",
+        "1 dl sugar",
+        "1 tsp salt",
+        "100 g butter",
+        "jam",
+        "whipped cream"
+      ],
+      "steps": [
+        "Heat the oven to 225°C and melt the butter on a baking tray lined with baking paper.",
+        "Whisk the eggs and milk together.",
+        "Mix the dry ingredients and whisk them into the milk mixture.",
+        "Leave the batter to rest for 15 minutes and pour it onto the tray.",
+        "Bake for about 30 minutes until golden.",
+        "Serve with jam and whipped cream."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/maailman-paras-pannukakku/4DRAcLkIMEzUBkeHiQX7qE"
+    },
+    {
+      "id": "kasvissosekeitto",
+      "name": "Creamy vegetable soup",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g carrots",
+        "1 parsnip",
+        "1 onion",
+        "300 g courgette",
+        "10 dl water",
+        "1 vegetable stock cube",
+        "2 tsp dried thyme",
+        "100 g herb cream cheese",
+        "salt"
+      ],
+      "steps": [
+        "Peel and chop the carrots, parsnip and onion and cut the courgette into chunks.",
+        "Simmer the vegetables in the water with the stock cube and thyme until soft, about 20 minutes.",
+        "Blend the soup with a stick blender.",
+        "Stir in the cream cheese and season with salt.",
+        "Serve with bread."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/kasvissosekeitto/recipe-4223"
+    },
+    {
+      "id": "pinaattikeitto-ja-kananmunat",
+      "name": "Finnish spinach soup with boiled eggs",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "50 g butter",
+        "¾ dl plain flour",
+        "10 dl milk",
+        "150 g frozen spinach",
+        "1 tsp salt",
+        "½ tsp sugar",
+        "a pinch of white pepper",
+        "4 eggs",
+        "rye bread"
+      ],
+      "steps": [
+        "Hard-boil the eggs for 8–10 minutes.",
+        "Melt the butter in a pan and stir in the flour.",
+        "Gradually whisk in the milk and simmer for 5 minutes.",
+        "Add the spinach and seasoning and heat through.",
+        "Serve the soup with the halved eggs and bread."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/pinaattikeitto"
+    },
+    {
+      "id": "uunifetapasta",
+      "name": "Baked feta pasta",
+      "protein": "vegetar",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g cherry tomatoes",
+        "200 g feta",
+        "2 garlic cloves",
+        "1 dl olive oil",
+        "½ tsp black pepper",
+        "¼ tsp salt",
+        "350 g spaghetti",
+        "basil"
+      ],
+      "steps": [
+        "Heat the oven to 200°C.",
+        "Put the tomatoes and garlic in a dish, place the feta in the middle, drizzle with the oil and season.",
+        "Bake for about 25 minutes.",
+        "Meanwhile, cook the spaghetti.",
+        "Crush the feta and tomatoes into a sauce and stir in the pasta.",
+        "Scatter over the basil and serve."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/helppo-uunifetapasta/5XST9z4DeC3QU3LntHGKvo"
+    },
+    {
+      "id": "kasvis-nuudeliwokki",
+      "name": "Vegetable noodle stir-fry with oat strips",
+      "protein": "vegetar",
+      "sides": [
+        "nudler"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "3 carrots",
+        "150 g sugar snap peas",
+        "2 garlic cloves",
+        "240 g oat-based meat-free strips",
+        "2 tbsp rapeseed oil",
+        "200 g shredded white cabbage",
+        "250 g egg noodles",
+        "¾ dl hoisin sauce",
+        "½ dl soy sauce",
+        "spring onions"
+      ],
+      "steps": [
+        "Cook the noodles and drain.",
+        "Fry the oat strips in the oil in a wok.",
+        "Add the sliced carrots, peas, cabbage and garlic and stir-fry for a few minutes.",
+        "Add the hoisin and soy sauces and the noodles and toss together.",
+        "Sprinkle with spring onions and serve."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/kasvis-nuudeliwokki"
+    },
+    {
+      "id": "kasvispitat",
+      "name": "Roasted vegetable and halloumi pittas",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "1 pepper",
+        "1 courgette",
+        "½ aubergine",
+        "3 tbsp oil",
+        "½ tsp salt",
+        "a pinch of black pepper",
+        "200 g halloumi",
+        "6 pitta breads",
+        "6 tbsp garlic mayonnaise",
+        "iceberg lettuce",
+        "1 dl basil"
+      ],
+      "steps": [
+        "Heat the oven to 225°C.",
+        "Chop the vegetables, toss with the oil and seasoning and roast on a tray for 15–20 minutes.",
+        "Fry the sliced halloumi in a pan until golden.",
+        "Warm the pittas.",
+        "Fill the pittas with lettuce, vegetables, halloumi and garlic mayonnaise and scatter over the basil."
+      ],
+      "source": "https://www.k-ruoka.fi/reseptit/kasvispitat"
+    },
+    {
+      "id": "punainen-linssikeitto",
+      "name": "Red lentil soup",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "1 onion",
+        "2 garlic cloves",
+        "2 carrots",
+        "1 pepper",
+        "2 tbsp rapeseed oil",
+        "2 tbsp tomato purée",
+        "2 tsp paprika",
+        "12 dl water",
+        "1 vegetable stock cube",
+        "2 dl red lentils",
+        "½ tsp salt",
+        "parsley"
+      ],
+      "steps": [
+        "Chop the onion and garlic and dice the carrots and pepper.",
+        "Soften the vegetables in the oil in a pan.",
+        "Add the tomato purée and paprika and fry for a moment.",
+        "Add the water, stock cube and rinsed lentils and simmer for about 20 minutes.",
+        "Blend the soup if you like and season with salt.",
+        "Sprinkle with parsley and serve with bread."
+      ],
+      "source": "https://yhteishyva.fi/reseptit/punainen-linssikeitto/recipe-2109"
+    }
+  ]
+}

@@ -185,6 +185,8 @@ label.f > :is(input,select,textarea){color:var(--fg);font-weight:400}
 .obnote{text-align:center}
 .obpick{border:0;margin:0;padding:14px;box-sizing:border-box;width:100%;min-width:0;text-align:left;background:var(--sunk);border-radius:14px;display:flex;flex-direction:column;gap:10px}
 .obpicktitle{margin:0;font-weight:700;font-size:15px}
+.obpick .obrow{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
+.obpick select{padding-inline:10px 6px}
 .obpick .hint{margin:0}
 .obdishbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
 .obdishbar .ghost{min-height:40px}

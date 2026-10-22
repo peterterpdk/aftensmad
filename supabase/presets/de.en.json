@@ -1,0 +1,1543 @@
+{
+  "format": "madplan.profile",
+  "version": 1,
+  "name": "Family Favourites (Germany)",
+  "summary": "The 50 dishes German families most like to cook on weekdays.",
+  "symbol": "fork.knife",
+  "settings": {
+    "noSameProteinInRow": true
+  },
+  "recipes": [
+    {
+      "id": "spaghetti-bolognese",
+      "name": "Spaghetti bolognese",
+      "protein": "okse",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef mince",
+        "400 g spaghetti",
+        "1 onion",
+        "1 garlic clove",
+        "1 carrot",
+        "2 tbsp tomato purée",
+        "2 tins chopped tomatoes (400 g each)",
+        "1 tsp dried oregano",
+        "2 tbsp olive oil",
+        "grated Parmesan",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Finely dice the onion, garlic and carrot.",
+        "Brown the mince in the oil until crumbly, add the vegetables and fry briefly.",
+        "Stir in the tomato purée, add the tomatoes and oregano and simmer gently for 20 minutes.",
+        "Cook the spaghetti in salted water until al dente.",
+        "Season the sauce with salt and pepper and serve with the spaghetti and Parmesan."
+      ],
+      "source": "https://www.rewe.de/rezepte/schnelle-spaghetti-bolognese/"
+    },
+    {
+      "id": "rindergulasch",
+      "name": "Rindergulasch (German beef goulash)",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 120,
+      "servings": 4,
+      "ingredients": [
+        "800 g diced beef for goulash",
+        "3 onions",
+        "1 red pepper",
+        "2 tbsp clarified butter",
+        "2 tbsp tomato purée",
+        "2 tbsp sweet paprika",
+        "500 ml beef stock",
+        "1 bay leaf",
+        "1 tsp dried marjoram",
+        "1 kg potatoes",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Roughly dice the onions and cut the pepper into pieces.",
+        "Brown the meat well in the clarified butter in batches.",
+        "Add the onions and fry, then briefly toast the tomato purée and paprika.",
+        "Deglaze with the stock, add the bay leaf and marjoram and braise, covered, for about 90 minutes.",
+        "Add the pepper for the last 20 minutes and boil the potatoes.",
+        "Season the goulash and serve with boiled potatoes."
+      ],
+      "source": "https://www.rewe.de/rezepte/schnelles-rindergulasch/"
+    },
+    {
+      "id": "rinderrouladen",
+      "name": "Rinderrouladen (rolled braised beef)",
+      "protein": "okse",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 110,
+      "servings": 4,
+      "ingredients": [
+        "4 beef roulade slices (approx. 180 g each)",
+        "4 tsp medium-hot mustard",
+        "4 rashers streaky bacon",
+        "2 gherkins",
+        "2 onions",
+        "2 tbsp clarified butter",
+        "1 tbsp tomato purée",
+        "600 ml beef stock",
+        "1 tbsp cornflour",
+        "1 kg potatoes",
+        "jarred red cabbage",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Lay the beef slices out flat, season with salt and pepper and spread with mustard.",
+        "Top with bacon, gherkin strips and onion strips, roll up and secure with cocktail sticks.",
+        "Brown the rolls all over in the clarified butter and briefly toast the tomato purée with them.",
+        "Deglaze with the stock and braise, covered, for about 90 minutes.",
+        "Boil the potatoes and warm the red cabbage.",
+        "Thicken the sauce with the cornflour mixed with a little water and serve everything together."
+      ],
+      "source": "https://www.rewe.de/rezepte/rinderrouladen-hausfrauenart/"
+    },
+    {
+      "id": "chili-con-carne",
+      "name": "Chilli con carne",
+      "protein": "okse",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef mince",
+        "1 onion",
+        "1 garlic clove",
+        "1 tin kidney beans (400 g)",
+        "1 tin sweetcorn (285 g)",
+        "1 tin chopped tomatoes (400 g)",
+        "2 tbsp tomato purée",
+        "200 ml vegetable stock",
+        "1 tsp ground cumin",
+        "1 tsp sweet paprika",
+        "250 g rice",
+        "soured cream to serve",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Finely dice the onion and garlic.",
+        "Brown the mince until crumbly, then add the onion and garlic.",
+        "Stir in the tomato purée and spices, then add the tomatoes and stock.",
+        "Add the rinsed beans and the sweetcorn and simmer for 15 minutes.",
+        "Cook the rice according to the packet instructions and serve the chilli with a dollop of soured cream."
+      ],
+      "source": "https://www.rewe.de/rezepte/schnelles-chili-con-carne/"
+    },
+    {
+      "id": "lasagne",
+      "name": "Lasagne",
+      "protein": "okse",
+      "sides": [
+        "salat"
+      ],
+      "minutes": 90,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef mince",
+        "1 onion",
+        "1 garlic clove",
+        "2 tins peeled tomatoes (400 g each)",
+        "1 tsp dried oregano",
+        "50 g butter",
+        "50 g plain flour",
+        "600 ml milk",
+        "12 lasagne sheets",
+        "125 g mozzarella",
+        "50 g grated Parmesan",
+        "nutmeg, salt and pepper"
+      ],
+      "steps": [
+        "Brown the mince with the onion and garlic, add the tomatoes and oregano and simmer for 15 minutes.",
+        "For the béchamel, melt the butter, stir in the flour, pour in the milk and bring to the boil. Season with nutmeg, salt and pepper.",
+        "Layer the sauces and lasagne sheets alternately in an ovenproof dish, finishing with béchamel.",
+        "Sprinkle with mozzarella and Parmesan.",
+        "Bake at 180°C fan for about 40 minutes and leave to rest briefly."
+      ],
+      "source": "https://www.rewe.de/rezepte/klassische-lasagne/"
+    },
+    {
+      "id": "tacos-mit-hackfleisch",
+      "name": "Beef mince tacos",
+      "protein": "okse",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef mince",
+        "1 onion",
+        "1 garlic clove",
+        "1 tin kidney beans (400 g)",
+        "1 small tin sweetcorn (140 g)",
+        "200 ml passata",
+        "1 tsp sweet paprika",
+        "1/2 tsp ground cumin",
+        "12 taco shells",
+        "1/2 iceberg lettuce",
+        "2 tomatoes",
+        "150 g crème fraîche",
+        "100 g grated cheese"
+      ],
+      "steps": [
+        "Dice the onion and garlic and fry the mince in them until crumbly.",
+        "Add the spices, passata, beans and sweetcorn and let reduce for 10 minutes.",
+        "Shred the lettuce and dice the tomatoes.",
+        "Warm the taco shells briefly in the oven.",
+        "Put everything on the table – everyone fills their own tacos."
+      ],
+      "source": "https://www.rewe.de/rezepte/tacos-mexikanische-spezialitaet-hackfleisch/"
+    },
+    {
+      "id": "hamburger",
+      "name": "Hamburgers",
+      "protein": "okse",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef mince",
+        "1 egg",
+        "2 tbsp breadcrumbs",
+        "1 tsp mustard",
+        "4 burger buns",
+        "2 tomatoes",
+        "1 onion",
+        "4 gherkins",
+        "4 butterhead lettuce leaves",
+        "ketchup and mayonnaise",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Knead the mince with the egg, breadcrumbs, mustard, salt and pepper and shape into 4 flat patties.",
+        "Slice the tomatoes, onion and gherkins.",
+        "Fry the patties in a frying pan for about 4 minutes on each side.",
+        "Halve the buns and toast them briefly.",
+        "Fill the buns with sauces, lettuce, a patty and the vegetables."
+      ],
+      "source": "https://www.rewe.de/rezepte/klassischer-hamburger/"
+    },
+    {
+      "id": "gefuellte-paprika",
+      "name": "Stuffed peppers",
+      "protein": "okse",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "4 red peppers",
+        "400 g beef mince",
+        "100 g rice",
+        "1 onion",
+        "1 egg",
+        "2 tbsp tomato purée",
+        "400 ml passata",
+        "200 ml vegetable stock",
+        "100 g soured cream",
+        "1 tsp sweet paprika",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Part-cook the rice. Halve and deseed the peppers.",
+        "Mix the mince with the rice, diced onion, egg, paprika, salt and pepper.",
+        "Fill the pepper halves with the mixture and place them in an ovenproof dish.",
+        "Stir the passata together with the stock and tomato purée and pour it around the peppers.",
+        "Cook at 180°C for about 40 minutes. Finish the sauce with soured cream."
+      ],
+      "source": "https://www.rewe.de/rezepte/halbe-paprika-mit-hack-fuellung/"
+    },
+    {
+      "id": "hackbraten",
+      "name": "Hackbraten (German meatloaf)",
+      "protein": "okse",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 70,
+      "servings": 4,
+      "ingredients": [
+        "800 g beef mince",
+        "1 stale bread roll",
+        "2 onions",
+        "2 eggs",
+        "1 tbsp mustard",
+        "1 bunch parsley",
+        "1 tsp sweet paprika",
+        "300 ml beef stock",
+        "100 ml cream",
+        "1 kg potatoes",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Soak the bread roll and squeeze it out, finely dice the onions and chop the parsley.",
+        "Knead the mince with the bread roll, onions, eggs, mustard, parsley and spices.",
+        "Shape into a loaf and place in an ovenproof dish.",
+        "Bake at 180°C for about 50 minutes, adding the stock after 20 minutes.",
+        "Boil the potatoes. Stir the pan juices with the cream to make a sauce and serve everything together."
+      ],
+      "source": "https://www.rewe.de/rezepte/omas-hackbraten/"
+    },
+    {
+      "id": "kaese-lauch-suppe-mit-hackfleisch",
+      "name": "Cheese and leek soup with mince",
+      "protein": "okse",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g beef mince",
+        "3 leeks",
+        "1 onion",
+        "1 tbsp oil",
+        "1 l vegetable stock",
+        "200 g processed cream cheese",
+        "200 g processed herb cheese",
+        "1 baguette",
+        "salt, pepper and nutmeg"
+      ],
+      "steps": [
+        "Slice the leeks into rings and wash thoroughly, dice the onion.",
+        "Brown the mince in the oil until crumbly and add the onion.",
+        "Sweat the leeks briefly, add the stock and simmer for 15 minutes.",
+        "Stir in the processed cheese until melted.",
+        "Season with salt, pepper and nutmeg and serve with baguette."
+      ],
+      "source": "https://www.rewe.de/rezepte/kaesesuppe-hack/"
+    },
+    {
+      "id": "cevapcici-mit-reis-und-salat",
+      "name": "Cevapcici (Balkan grilled mince rolls) with rice and salad",
+      "protein": "okse",
+      "sides": [
+        "ris",
+        "salat"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "600 g beef mince",
+        "1 onion",
+        "2 garlic cloves",
+        "2 tbsp ajvar (mild red pepper relish)",
+        "2 tbsp breadcrumbs",
+        "1 tsp sweet paprika",
+        "250 g rice",
+        "1 tin peas and carrots (280 g)",
+        "1 cucumber",
+        "3 tomatoes",
+        "tzatziki to serve",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Chop the onion and garlic very finely.",
+        "Knead the mince with the onion, garlic, ajvar, breadcrumbs and spices.",
+        "Shape into finger-length rolls and fry in a frying pan for about 10 minutes, turning all over.",
+        "Cook the rice and stir in a little ajvar and the vegetables.",
+        "Chop the cucumber and tomatoes into a salad and serve everything with tzatziki."
+      ],
+      "source": "https://www.rewe.de/rezepte/cevapcici-salat-kroatien/"
+    },
+    {
+      "id": "schnitzel-mit-bratkartoffeln",
+      "name": "Schnitzel with fried potatoes",
+      "protein": "gris",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "4 pork escalopes (approx. 150 g each)",
+        "2 eggs",
+        "4 tbsp plain flour",
+        "100 g breadcrumbs",
+        "800 g waxy potatoes",
+        "1 onion",
+        "1 cucumber",
+        "150 g soured cream",
+        "1 bunch dill",
+        "clarified butter for frying",
+        "1 lemon",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Boil the potatoes in their skins, leave to cool, peel and slice.",
+        "Thinly slice the cucumber and mix with the soured cream, dill, salt and pepper to make cucumber salad.",
+        "Fry the potatoes with diced onion in clarified butter until golden brown.",
+        "Pound the escalopes thin, season and coat in flour, then egg, then breadcrumbs.",
+        "Fry the schnitzels in plenty of clarified butter for 3 minutes on each side until golden brown.",
+        "Serve with the fried potatoes, cucumber salad and lemon wedges."
+      ],
+      "source": "https://www.rewe.de/rezepte/schnitzel-gurkensalat-bratkartoffeln/"
+    },
+    {
+      "id": "currywurst-mit-pommes",
+      "name": "Currywurst (sausage in curry ketchup sauce) with chips",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "8 bratwursts",
+        "800 g frozen chips",
+        "1 onion",
+        "1 tbsp oil",
+        "2 tbsp curry powder",
+        "1 tbsp brown sugar",
+        "2 tbsp tomato purée",
+        "100 ml orange juice",
+        "400 ml passata",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Bake the chips in the oven according to the packet instructions.",
+        "Finely dice the onion and sweat in the oil until translucent, then briefly toast the curry powder and sugar.",
+        "Add the tomato purée, orange juice and passata and simmer for 10 minutes, then blend and season.",
+        "Fry the bratwursts in a frying pan until browned all over and cut into pieces.",
+        "Pour the sauce over the sausage, dust with curry powder and serve with the chips."
+      ],
+      "source": "https://www.rewe.de/rezepte/currywurst/"
+    },
+    {
+      "id": "bratwurst-mit-sauerkraut-und-kartoffelpueree",
+      "name": "Bratwurst with sauerkraut and mashed potato",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "8 Rostbratwürste (small German grilling sausages)",
+        "1 kg floury potatoes",
+        "200 ml milk",
+        "40 g butter",
+        "500 g sauerkraut",
+        "1 onion",
+        "100 ml apple juice",
+        "nutmeg",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Peel the potatoes and boil in salted water for about 20 minutes until tender.",
+        "Dice the onion, sweat in a little butter, add the sauerkraut and apple juice and simmer for 15 minutes.",
+        "Drain the potatoes, mash with warm milk and butter and season with nutmeg.",
+        "Fry the bratwursts in a frying pan until golden brown all over.",
+        "Arrange everything together on plates."
+      ],
+      "source": "https://www.rewe.de/rezepte/thueringer-rostbratwurst-kartoffelpueree-sauerkraut/"
+    },
+    {
+      "id": "linsen-mit-spaetzle-und-wuerstchen",
+      "name": "Linsen mit Spätzle (Swabian lentils with egg noodles and sausages)",
+      "protein": "gris",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "250 g brown lentils",
+        "100 g diced bacon",
+        "1 onion",
+        "1 carrot",
+        "1 piece celeriac (approx. 100 g)",
+        "1 l vegetable stock",
+        "4 Frankfurter sausages",
+        "500 g fresh egg spätzle (chiller cabinet)",
+        "2 tbsp vinegar",
+        "1 tsp sugar",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Finely dice the onion, carrot and celeriac.",
+        "Render the bacon in a saucepan and briefly sweat the vegetables with it.",
+        "Add the lentils and stock and simmer for about 30 minutes until tender.",
+        "Season with vinegar, sugar, salt and pepper to a sweet-and-sour taste.",
+        "Heat the sausages in the lentils, prepare the spätzle according to the packet instructions and serve alongside."
+      ],
+      "source": "https://www.rewe.de/rezepte/linsen-mit-spaetzle/"
+    },
+    {
+      "id": "erbseneintopf-mit-kasseler",
+      "name": "Erbseneintopf (split pea stew) with Kassler",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 55,
+      "servings": 4,
+      "ingredients": [
+        "400 g dried split peas",
+        "400 g Kassler (smoked pork loin)",
+        "400 g potatoes",
+        "1 bunch soup vegetables (carrot, celeriac, leek, parsley)",
+        "1 onion",
+        "1.5 l vegetable stock",
+        "1 tsp dried marjoram",
+        "1 tbsp oil",
+        "salt and pepper",
+        "bread to serve"
+      ],
+      "steps": [
+        "Dice the onion and chop the soup vegetables and potatoes into small pieces.",
+        "Sweat the onion in the oil, add the peas and stock and simmer for 20 minutes.",
+        "Add the potatoes, soup vegetables and marjoram and cook for a further 20 minutes.",
+        "Dice the Kassler and heat it in the stew for the last 10 minutes.",
+        "Season with salt and pepper and serve with bread."
+      ],
+      "source": "https://www.rewe.de/rezepte/erbseneintopf-kasseler/"
+    },
+    {
+      "id": "kartoffelsuppe-mit-wuerstchen",
+      "name": "Potato soup with sausages",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "1.2 kg floury potatoes",
+        "2 carrots",
+        "1 onion",
+        "1 tbsp oil",
+        "1.2 l vegetable stock",
+        "1 tsp dried marjoram",
+        "4 Frankfurter sausages or 2 Bockwurst (large Frankfurter-style sausages)",
+        "1/2 bunch parsley",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Peel and dice the potatoes and carrots, chop the onion.",
+        "Sweat the onion in the oil, add the vegetables and pour in the stock.",
+        "Cook with the marjoram for about 20 minutes until tender, then roughly mash or partly blend.",
+        "Slice the sausages and heat them in the soup.",
+        "Season, sprinkle with parsley and serve with bread."
+      ],
+      "source": "https://www.rewe.de/rezepte/kartoffelsuppe-wuerstchen/"
+    },
+    {
+      "id": "kartoffelauflauf-mit-schinken",
+      "name": "Potato bake with ham",
+      "protein": "gris",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "800 g waxy potatoes",
+        "300 g cooked ham",
+        "1 onion",
+        "300 ml cream",
+        "150 ml milk",
+        "3 eggs",
+        "150 g grated cheese",
+        "1 tbsp butter",
+        "nutmeg, salt and pepper"
+      ],
+      "steps": [
+        "Peel the potatoes, slice them thinly and dice the ham.",
+        "Butter an ovenproof dish and layer in the potatoes, ham and diced onion.",
+        "Whisk the cream, milk and eggs, season with nutmeg, salt and pepper and pour over.",
+        "Sprinkle with cheese and bake at 180°C for about 45 minutes until golden brown.",
+        "Serve with a green salad."
+      ],
+      "source": "https://www.rewe.de/rezepte/schinken-kartoffelauflauf/"
+    },
+    {
+      "id": "schinkennudeln",
+      "name": "Schinkennudeln (pasta with ham and egg)",
+      "protein": "gris",
+      "sides": [
+        "pasta",
+        "salat"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g fusilli or penne",
+        "200 g cooked ham",
+        "1 onion",
+        "2 tbsp butter",
+        "4 eggs",
+        "100 ml milk",
+        "80 g grated cheese",
+        "1 bunch chives",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the pasta in salted water until al dente and drain.",
+        "Dice the ham and onion and fry in butter.",
+        "Add the pasta and fry briefly.",
+        "Whisk the eggs with the milk, cheese, salt and pepper, pour over and stir until set.",
+        "Sprinkle with chives and serve with salad."
+      ],
+      "source": "https://www.rewe.de/rezepte/schinkennudeln/"
+    },
+    {
+      "id": "tortellini-auflauf",
+      "name": "Tortellini bake",
+      "protein": "gris",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "800 g fresh tortellini (chiller cabinet)",
+        "200 g cooked ham",
+        "150 g frozen peas",
+        "1 small tin sweetcorn (140 g)",
+        "1 red pepper",
+        "1 onion",
+        "200 ml milk",
+        "200 ml cream",
+        "150 g grated cheese for gratinating",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Preheat the oven to 200°C. Dice the pepper, onion and ham.",
+        "Put the tortellini in an ovenproof dish with the vegetables, ham, peas and sweetcorn.",
+        "Stir the milk and cream together with salt and pepper and pour over.",
+        "Sprinkle with cheese and bake for about 20 minutes until golden."
+      ],
+      "source": "https://www.rewe.de/rezepte/schneller-tortelliniauflauf/"
+    },
+    {
+      "id": "geschnetzeltes-mit-reis",
+      "name": "Geschnetzeltes (creamy sliced pork with mushrooms) with rice",
+      "protein": "gris",
+      "sides": [
+        "ris",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g pork tenderloin",
+        "2 shallots",
+        "1 garlic clove",
+        "200 g button mushrooms",
+        "1 tbsp oil",
+        "1 tbsp butter",
+        "1 tbsp plain flour",
+        "200 ml stock",
+        "200 ml cream",
+        "1 tsp sweet paprika",
+        "250 g rice",
+        "parsley",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the rice according to the packet instructions.",
+        "Cut the meat into thin strips, dice the shallots and garlic and slice the mushrooms.",
+        "Sear the meat in batches in hot oil and remove from the pan.",
+        "Sweat the shallots, garlic and mushrooms in butter, dust with flour and pour in the stock and cream.",
+        "Return the meat to the sauce, let it heat through briefly, season and serve with parsley and rice."
+      ],
+      "source": "https://www.rewe.de/rezepte/geschnetzeltes/"
+    },
+    {
+      "id": "gyros-mit-tzatziki",
+      "name": "Gyros with tzatziki",
+      "protein": "gris",
+      "sides": [
+        "ris",
+        "salat"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "800 g pork escalopes",
+        "2 onions",
+        "2 tbsp gyros seasoning",
+        "3 tbsp olive oil",
+        "1 cucumber",
+        "500 g yoghurt",
+        "1 garlic clove",
+        "250 g rice",
+        "3 tomatoes",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cut the meat into thin strips and mix with the gyros seasoning and 2 tbsp oil.",
+        "For the tzatziki, grate half the cucumber, squeeze it out and mix with the yoghurt, garlic and salt.",
+        "Cook the rice. Chop the remaining cucumber and the tomatoes into a salad.",
+        "Fry the meat in batches in a hot frying pan until crisp, frying sliced onion with it.",
+        "Serve the gyros with rice, salad and tzatziki."
+      ],
+      "source": "https://www.rewe.de/rezepte/pfannen-gyros-tzatziki/"
+    },
+    {
+      "id": "spaghetti-carbonara",
+      "name": "Spaghetti carbonara",
+      "protein": "gris",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "500 g spaghetti",
+        "200 g diced bacon or pancetta",
+        "4 eggs",
+        "100 g grated Parmesan",
+        "1 tbsp olive oil",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the spaghetti in plenty of salted water until al dente.",
+        "Fry the bacon in the oil until crisp.",
+        "Whisk the eggs with the Parmesan and pepper.",
+        "Drain the pasta, reserving a little cooking water, and immediately mix with the bacon.",
+        "Take the pan off the heat, stir in the egg mixture and a little cooking water until creamy, and serve straight away."
+      ],
+      "source": "https://www.rewe.de/rezepte/echte-spaghetti-carbonara/"
+    },
+    {
+      "id": "flammkuchen",
+      "name": "Flammkuchen (Alsatian thin-crust tart with bacon and onion)",
+      "protein": "gris",
+      "sides": [
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "2 rolls ready-made Flammkuchen dough (chiller cabinet)",
+        "200 g Schmand (German soured cream, or full-fat soured cream)",
+        "100 g crème fraîche",
+        "150 g diced bacon",
+        "2 onions",
+        "1 pinch nutmeg",
+        "salt and pepper",
+        "green salad to serve"
+      ],
+      "steps": [
+        "Preheat the oven to 220°C (conventional, top and bottom heat).",
+        "Stir the Schmand and crème fraîche together and season with nutmeg, salt and pepper.",
+        "Roll the dough out onto baking trays and spread thinly with the cream mixture.",
+        "Slice the onions into thin rings and scatter over with the bacon.",
+        "Bake for about 12–15 minutes until crisp and serve with salad."
+      ],
+      "source": "https://www.lecker.de/elsaesser-flammkuchen-63032.html"
+    },
+    {
+      "id": "frikadellen-mit-kartoffelsalat",
+      "name": "Frikadellen (German meat patties) with potato salad",
+      "protein": "gris",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "600 g mixed beef and pork mince",
+        "1 stale bread roll",
+        "1 onion",
+        "1 egg",
+        "1 tsp mustard",
+        "1/2 bunch parsley",
+        "2 tbsp clarified butter",
+        "1 kg waxy potatoes",
+        "1 gherkin with 4 tbsp gherkin pickling liquid",
+        "150 g mayonnaise",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Boil the potatoes, peel and slice them, and dress with the diced gherkin, pickling liquid and mayonnaise.",
+        "Soak the bread roll and squeeze it out well, finely dice the onion.",
+        "Knead the mince with the bread roll, onion, egg, mustard, parsley, salt and pepper.",
+        "Shape into 8 flat patties.",
+        "Fry in clarified butter for 5–6 minutes on each side and serve with the potato salad."
+      ],
+      "source": "https://www.rewe.de/rezepte/frikadellen/"
+    },
+    {
+      "id": "koenigsberger-klopse",
+      "name": "Königsberger Klopse (meatballs in caper sauce)",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "600 g mixed beef and pork mince",
+        "1 onion",
+        "1 egg",
+        "3 tbsp breadcrumbs",
+        "1 l stock",
+        "1 bay leaf",
+        "40 g butter",
+        "40 g plain flour",
+        "100 ml cream",
+        "2 tbsp capers",
+        "1 tbsp lemon juice",
+        "1 kg potatoes",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Knead the mince with the finely chopped onion, egg, breadcrumbs, salt and pepper and shape into 12 meatballs.",
+        "Bring the stock to the boil with the bay leaf, poach the meatballs in it for about 15 minutes and remove.",
+        "Boil the potatoes.",
+        "Melt the butter, stir in the flour and add about 600 ml of the stock. Add the cream, capers and lemon juice.",
+        "Warm the meatballs in the sauce and serve with boiled potatoes."
+      ],
+      "source": "https://www.rewe.de/rezepte/klassische-koenigsberger-klopse/"
+    },
+    {
+      "id": "huehnerfrikassee-mit-reis",
+      "name": "Chicken fricassee with rice",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "600 g chicken breast fillets",
+        "1 onion",
+        "1 carrot",
+        "250 g button mushrooms",
+        "150 g frozen peas",
+        "40 g butter",
+        "40 g plain flour",
+        "500 ml chicken stock",
+        "100 ml cream",
+        "1 tbsp lemon juice",
+        "250 g rice",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the rice according to the packet instructions.",
+        "Cut the chicken into pieces, poach in the stock for about 10 minutes and remove.",
+        "Chop the onion, carrot and mushrooms and sweat in butter.",
+        "Stir in the flour, gradually add the stock and bring to the boil.",
+        "Add the cream, peas and chicken, season with lemon juice, salt and pepper and serve with rice."
+      ],
+      "source": "https://www.rewe.de/rezepte/original-huehnerfrikassee/"
+    },
+    {
+      "id": "chicken-nuggets-mit-ofenkartoffeln",
+      "name": "Chicken nuggets with oven-roasted potatoes",
+      "protein": "kylling",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g chicken breast fillets",
+        "150 g cornflakes (unsweetened)",
+        "2 eggs",
+        "3 tbsp plain flour",
+        "1 tsp sweet paprika",
+        "1 kg potatoes",
+        "2 tbsp oil",
+        "ketchup for dipping",
+        "raw vegetable sticks (carrots, cucumber)",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Preheat the oven to 200°C. Cut the potatoes into wedges, toss with oil and salt and bake for about 35 minutes.",
+        "Cut the chicken into bite-sized pieces and season with paprika, salt and pepper.",
+        "Crush the cornflakes in a bag.",
+        "Coat the chicken in flour, then beaten egg, then cornflakes.",
+        "Place the nuggets on a baking tray and bake alongside for the last 15–20 minutes. Serve with ketchup and raw vegetable sticks."
+      ],
+      "source": "https://www.rewe.de/rezepte/kinderkueche-chicken-nuggets/"
+    },
+    {
+      "id": "haehnchen-in-paprikasahne",
+      "name": "Chicken in creamy pepper sauce",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g chicken breast fillets",
+        "1 red pepper",
+        "1 yellow pepper",
+        "1 onion",
+        "1 garlic clove",
+        "1 tbsp oil",
+        "1 tbsp sweet paprika",
+        "250 ml cooking cream",
+        "100 ml vegetable stock",
+        "250 g rice",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the rice according to the packet instructions.",
+        "Cut the chicken into strips and the peppers and onion into pieces.",
+        "Brown the chicken all over in the oil, season with salt and pepper and remove.",
+        "Sweat the peppers, onion and garlic, stir in the paprika and deglaze with the cream and stock.",
+        "Return the chicken, simmer for 5 minutes and serve with rice."
+      ],
+      "source": "https://www.rewe.de/rezepte/haehnchen-paprikasahne/"
+    },
+    {
+      "id": "butter-chicken",
+      "name": "Butter chicken",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g chicken breast fillets",
+        "150 g natural yoghurt",
+        "1 onion",
+        "2 garlic cloves",
+        "1 piece ginger (2 cm)",
+        "40 g butter",
+        "2 tsp garam masala",
+        "1 tsp sweet paprika",
+        "400 ml passata",
+        "150 ml cream",
+        "250 g basmati rice",
+        "salt"
+      ],
+      "steps": [
+        "Dice the chicken and mix with the yoghurt, 1 tsp garam masala and salt.",
+        "Cook the rice. Finely chop the onion, garlic and ginger.",
+        "Sweat the onion, garlic and ginger in butter and briefly toast the remaining spices.",
+        "Add the passata and simmer for 10 minutes, then stir in the cream.",
+        "Add the chicken with its marinade and cook in the sauce for about 10 minutes. Serve with rice."
+      ],
+      "source": "https://www.rewe.de/rezepte/butter-chicken/"
+    },
+    {
+      "id": "gemuesepfanne-mit-haehnchen",
+      "name": "Chicken and vegetable stir-fry",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g chicken breast fillets",
+        "1 courgette",
+        "1 red pepper",
+        "1 yellow pepper",
+        "4 spring onions",
+        "1 tin chickpeas (400 g)",
+        "2 tbsp rapeseed oil",
+        "100 ml vegetable stock",
+        "3 tbsp soy sauce",
+        "250 g rice",
+        "pepper"
+      ],
+      "steps": [
+        "Cook the rice according to the packet instructions.",
+        "Cut the chicken into strips and the vegetables into bite-sized pieces.",
+        "Brown the chicken all over in the oil and remove.",
+        "Fry the vegetables in the pan for 5 minutes, then add the rinsed chickpeas.",
+        "Deglaze with the stock and soy sauce, return the chicken, toss briefly and serve with rice."
+      ],
+      "source": "https://www.rewe.de/rezepte/bunte-gemuesepfanne-haehnchen/"
+    },
+    {
+      "id": "fajitas-mit-haehnchen",
+      "name": "Chicken fajitas",
+      "protein": "kylling",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g chicken breast fillets",
+        "3 peppers (red, yellow, green)",
+        "1 onion",
+        "1 garlic clove",
+        "2 tbsp olive oil",
+        "1 tsp sweet paprika",
+        "1/2 tsp ground cumin",
+        "8 flour tortillas",
+        "1 avocado",
+        "150 g Schmand (German soured cream, or full-fat soured cream)",
+        "100 g grated cheese",
+        "1 lime",
+        "salt"
+      ],
+      "steps": [
+        "Cut the chicken, peppers and onion into strips.",
+        "Mix the chicken with the oil, spices, garlic and a little lime juice.",
+        "Fry the chicken in a hot frying pan, add the peppers and onion and fry for 5–6 minutes more.",
+        "Mash the avocado with lime juice and salt, and warm the tortillas briefly.",
+        "Put everything on the table and let everyone fill their own tortillas."
+      ],
+      "source": "https://www.rewe.de/rezepte/mexikanische-fajitas/"
+    },
+    {
+      "id": "haehnchenschenkel-vom-blech",
+      "name": "Traybake chicken legs",
+      "protein": "kylling",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "4 chicken legs",
+        "800 g small potatoes",
+        "1 courgette",
+        "1 red pepper",
+        "1 yellow pepper",
+        "1 red onion",
+        "4 tbsp olive oil",
+        "2 tsp sweet paprika",
+        "2 sprigs rosemary",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Preheat the oven to 200°C.",
+        "Halve the potatoes, cut the vegetables into large pieces and toss on a baking tray with 2 tbsp oil, the rosemary and salt.",
+        "Rub the chicken legs with the remaining oil, paprika, salt and pepper.",
+        "Lay the chicken legs on top of the vegetables.",
+        "Bake for about 45–50 minutes until the skin is crisp and the meat is cooked through."
+      ],
+      "source": "https://www.rewe.de/rezepte/haehnchenschenkel-ofengemuese-blech/"
+    },
+    {
+      "id": "haehnchen-nudelauflauf",
+      "name": "Chicken pasta bake",
+      "protein": "kylling",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 55,
+      "servings": 4,
+      "ingredients": [
+        "400 g short pasta",
+        "400 g chicken breast fillets",
+        "1 red pepper",
+        "1 onion",
+        "200 g frozen peas",
+        "200 ml cream",
+        "200 ml milk",
+        "2 eggs",
+        "150 g grated cheese for gratinating",
+        "1 tbsp oil",
+        "nutmeg, salt and pepper"
+      ],
+      "steps": [
+        "Preheat the oven to 180°C. Cook the pasta for 2 minutes less than the packet says.",
+        "Dice the chicken and fry in the oil, then briefly fry the diced pepper and onion with it.",
+        "Mix the pasta, chicken, vegetables and peas in an ovenproof dish.",
+        "Whisk the cream, milk and eggs, season and pour over.",
+        "Sprinkle with cheese and bake for about 25 minutes until golden brown."
+      ],
+      "source": "https://www.rewe.de/rezepte/haehnchen-nudel-auflauf/"
+    },
+    {
+      "id": "huehnernudelsuppe",
+      "name": "Chicken noodle soup",
+      "protein": "kylling",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 90,
+      "servings": 4,
+      "ingredients": [
+        "4 chicken legs",
+        "1 bunch soup vegetables (carrot, celeriac, leek, parsley)",
+        "1 onion",
+        "1 bay leaf",
+        "2 l water",
+        "150 g soup noodles",
+        "1/2 bunch parsley",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Put the chicken legs in cold water with the halved onion, the bay leaf and 1 tsp salt.",
+        "Bring to the boil and simmer gently for about 60 minutes, skimming off any scum.",
+        "Remove the chicken, take the meat off the skin and bones and shred it.",
+        "Chop the soup vegetables and cook in the stock for 10 minutes, then add the noodles and cook until done.",
+        "Return the meat to the soup, season and sprinkle with parsley."
+      ],
+      "source": "https://www.rewe.de/rezepte/huehnersuppe/"
+    },
+    {
+      "id": "ueberbackene-haehnchenbrust-mit-champignons",
+      "name": "Baked chicken breast with mushrooms",
+      "protein": "kylling",
+      "sides": [
+        "pasta",
+        "salat"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "4 chicken breast fillets",
+        "400 g button mushrooms",
+        "1 onion",
+        "1 garlic clove",
+        "1 tbsp butter",
+        "1 tbsp plain flour",
+        "300 ml cream",
+        "100 ml milk",
+        "100 g grated cheese",
+        "400 g macaroni",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Preheat the oven to 200°C. Season the chicken with salt and pepper, sear briefly and place in an ovenproof dish.",
+        "Fry the mushrooms, onion and garlic in butter and dust with flour.",
+        "Pour in the cream and milk, bring to the boil and season.",
+        "Pour the mushroom sauce over the chicken, sprinkle with cheese and bake for about 20 minutes until golden.",
+        "Cook the pasta and serve alongside."
+      ],
+      "source": "https://www.rewe.de/rezepte/haehnchenbrustfilet-ueberbacken-champignons/"
+    },
+    {
+      "id": "fischstaebchen-mit-kartoffel-moehren-stampf",
+      "name": "Fish fingers with potato and carrot mash",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "16 fish fingers",
+        "600 g floury potatoes",
+        "400 g carrots",
+        "150 ml milk",
+        "2 tbsp butter",
+        "2 tbsp rapeseed oil",
+        "nutmeg",
+        "1/2 bunch parsley",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Peel and dice the potatoes and carrots and boil in salted water for about 20 minutes until tender.",
+        "Fry the fish fingers in the oil for 3–4 minutes on each side until golden brown.",
+        "Drain the vegetables and roughly mash with warm milk and butter.",
+        "Season with nutmeg, salt and pepper.",
+        "Serve the mash with the fish fingers and sprinkle with parsley."
+      ],
+      "source": "https://www.rewe.de/rezepte/kartoffel-moehren-stampf-fischstaebchen/"
+    },
+    {
+      "id": "lachsnudeln-mit-brokkoli",
+      "name": "Salmon pasta with broccoli",
+      "protein": "fisk",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g tagliatelle or penne",
+        "400 g skinless salmon fillet",
+        "1 head broccoli",
+        "1 shallot",
+        "1 tbsp butter",
+        "200 ml cream",
+        "1 unwaxed lemon",
+        "1/2 bunch chives",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the pasta in salted water, adding the broccoli florets for the last 4 minutes.",
+        "Dice the salmon and finely chop the shallot.",
+        "Sweat the shallot in butter, pour in the cream and bring briefly to the boil.",
+        "Add the salmon to the sauce and poach for 3–4 minutes, then season with lemon zest and juice.",
+        "Drain the pasta and broccoli, mix with the sauce and sprinkle with chives."
+      ],
+      "source": "https://www.rewe.de/rezepte/nudeln-lachs-sahne-sauce-brokkoli/"
+    },
+    {
+      "id": "ofen-lachs-mit-kartoffeln-und-gemuese",
+      "name": "Oven-baked salmon with potatoes and vegetables",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "4 salmon fillets (approx. 150 g each)",
+        "800 g small potatoes",
+        "2 carrots",
+        "1 courgette",
+        "3 tbsp olive oil",
+        "150 g crème fraîche",
+        "1 lemon",
+        "1/2 bunch dill",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Preheat the oven to 200°C. Halve the potatoes, put them on a baking tray with 2 tbsp oil and salt and pre-bake for 15 minutes.",
+        "Slice the carrots and courgette, add to the potatoes with the remaining oil and bake for a further 10 minutes.",
+        "Season the salmon with salt and pepper and lay it on the vegetables.",
+        "Bake for about 15 minutes until the salmon is cooked.",
+        "Stir the crème fraîche with the dill, lemon juice and salt and serve alongside."
+      ],
+      "source": "https://www.rewe.de/rezepte/ofen-lachs-kartoffeln-gemuese/"
+    },
+    {
+      "id": "schollenfilet-mit-erbsen-kartoffelpueree",
+      "name": "Plaice fillets with pea and potato mash",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g plaice fillets",
+        "1 kg floury potatoes",
+        "250 g frozen peas",
+        "200 ml milk",
+        "40 g butter",
+        "3 tbsp plain flour",
+        "2 tbsp rapeseed oil",
+        "1 lemon",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Peel the potatoes and boil in salted water for about 20 minutes, adding the peas for the last 5 minutes.",
+        "Drain, mash with warm milk and butter and season.",
+        "Season the fish fillets with salt and pepper and coat in flour.",
+        "Fry in the oil for 2–3 minutes on each side until golden brown.",
+        "Serve the fish with the mash and lemon wedges."
+      ],
+      "source": "https://www.rewe.de/rezepte/schollenfilets-erbsen-kartoffelpueree/"
+    },
+    {
+      "id": "fischfilet-mit-gemuesereis",
+      "name": "Fish fillet with vegetable rice",
+      "protein": "fisk",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "600 g redfish or coley fillet",
+        "250 g rice",
+        "300 g frozen mixed vegetables",
+        "1 small head broccoli",
+        "3 tbsp plain flour",
+        "2 tbsp butter",
+        "1 tbsp oil",
+        "1 lemon",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the rice according to the packet instructions.",
+        "Cut the broccoli into florets and cook gently with the frozen vegetables in 1 tbsp butter for about 8 minutes.",
+        "Mix the vegetables into the rice and season.",
+        "Season the fish with salt and pepper, coat in flour and fry on both sides in the oil and remaining butter.",
+        "Serve the fish on the vegetable rice with lemon wedges."
+      ],
+      "source": "https://www.rewe.de/rezepte/gebratenes_fischfilet_auf_gemuese-reis/"
+    },
+    {
+      "id": "penne-mit-thunfisch-tomatensosse",
+      "name": "Penne with tuna and tomato sauce",
+      "protein": "fisk",
+      "sides": [
+        "pasta",
+        "salat"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g penne",
+        "2 tins tuna in spring water (150 g each)",
+        "1 onion",
+        "1 garlic clove",
+        "2 tbsp olive oil",
+        "1 tin chopped tomatoes (400 g)",
+        "200 ml passata",
+        "1 tsp dried oregano",
+        "2 spring onions",
+        "grated Parmesan",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Cook the penne in salted water until al dente.",
+        "Dice the onion and garlic and sweat in the oil.",
+        "Add the tomatoes and oregano and simmer for 10 minutes.",
+        "Drain the tuna, flake it and warm it in the sauce, then season.",
+        "Mix with the pasta and sprinkle with spring onions and Parmesan."
+      ],
+      "source": "https://www.rewe.de/rezepte/penne-thunfisch-tomatensosse/"
+    },
+    {
+      "id": "kaesespaetzle",
+      "name": "Käsespätzle (cheese egg noodles with crispy onions)",
+      "protein": "vegetar",
+      "sides": [
+        "salat"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "400 g plain flour",
+        "5 eggs",
+        "150 ml sparkling mineral water",
+        "250 g Bergkäse (Alpine mountain cheese) or Emmental, grated",
+        "3 onions",
+        "3 tbsp butter",
+        "1 bunch chives",
+        "green salad to serve",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Beat the flour, eggs, water and 1 tsp salt to a thick, elastic batter and leave to rest for 10 minutes.",
+        "Slice the onions into rings and fry slowly in 2 tbsp butter until golden brown.",
+        "Press the batter in batches through a spätzle press into boiling salted water and lift out as soon as the spätzle float to the top.",
+        "Layer the spätzle with the cheese in a buttered dish and let it melt briefly in the oven at 180°C.",
+        "Top with the fried onions and chives and serve with salad."
+      ],
+      "source": "https://www.rewe.de/rezepte/allgaeuer-kaesespaetzle/"
+    },
+    {
+      "id": "pfannkuchen",
+      "name": "Pfannkuchen (German pancakes)",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "300 g plain flour",
+        "4 eggs",
+        "500 ml milk",
+        "1 tbsp sugar",
+        "1 pinch salt",
+        "4 tbsp oil for frying",
+        "apple sauce",
+        "cinnamon sugar or jam"
+      ],
+      "steps": [
+        "Mix the flour, eggs, milk, sugar and salt into a smooth batter and leave to stand for 10 minutes.",
+        "Heat a little oil in a frying pan.",
+        "Add a ladleful of batter, swirl the pan and cook the pancake on both sides until golden.",
+        "Keep the finished pancakes warm in the oven at 80°C.",
+        "Serve with apple sauce, cinnamon sugar or jam."
+      ],
+      "source": "https://www.rewe.de/rezepte/pfannkuchen-klassisch/"
+    },
+    {
+      "id": "kartoffelpuffer-mit-apfelmus",
+      "name": "Kartoffelpuffer (potato pancakes) with apple sauce",
+      "protein": "vegetar",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "1.5 kg waxy potatoes",
+        "2 onions",
+        "2 eggs",
+        "2 tbsp plain flour",
+        "nutmeg",
+        "sunflower oil for frying",
+        "500 g apple sauce",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Peel and finely grate the potatoes, then grate the onions in too.",
+        "Squeeze the mixture out firmly in a tea towel.",
+        "Mix with the eggs, flour, nutmeg, salt and pepper.",
+        "Heat plenty of oil, add 1 tbsp of the mixture at a time, flatten it in the pan and fry on both sides until crisp.",
+        "Drain on kitchen paper and serve with apple sauce."
+      ],
+      "source": "https://www.rewe.de/rezepte/klassische-kartoffel-reibekuchen/"
+    },
+    {
+      "id": "nudelauflauf-mit-tomate-und-mozzarella",
+      "name": "Tomato and mozzarella pasta bake",
+      "protein": "vegetar",
+      "sides": [
+        "pasta",
+        "salat"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "400 g penne",
+        "500 g cherry tomatoes",
+        "500 g passata",
+        "2 onions",
+        "1 tbsp olive oil",
+        "200 ml cream",
+        "1 tsp sweet paprika",
+        "1 pinch sugar",
+        "2 balls mozzarella (125 g each)",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Preheat the oven to 200°C. Cook the pasta for 2 minutes less than the packet says.",
+        "Dice the onions and sweat in the oil, add the passata and cream and season.",
+        "Halve the cherry tomatoes and mix with the pasta and sauce in an ovenproof dish.",
+        "Arrange slices of mozzarella on top.",
+        "Bake for about 25 minutes until the cheese is golden brown."
+      ],
+      "source": "https://www.rewe.de/rezepte/nudelauflauf-tomate-mozzarella/"
+    },
+    {
+      "id": "spinat-mit-spiegelei-und-kartoffeln",
+      "name": "Creamed spinach with fried egg and potatoes",
+      "protein": "vegetar",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "800 g potatoes",
+        "800 g fresh leaf spinach or 600 g frozen creamed spinach",
+        "1 onion",
+        "1 garlic clove",
+        "2 tbsp butter",
+        "100 ml cream",
+        "4 eggs",
+        "nutmeg",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Peel the potatoes and boil in salted water for about 20 minutes.",
+        "Dice the onion and garlic and sweat in 1 tbsp butter.",
+        "Add the spinach and let it wilt, stir in the cream and season with nutmeg, salt and pepper.",
+        "Fry the eggs sunny side up in the remaining butter.",
+        "Serve the potatoes with the spinach and fried eggs."
+      ],
+      "source": "https://www.rewe.de/rezepte/spinat-spiegelei-salzkartoffeln/"
+    },
+    {
+      "id": "gnocchi-pfanne-mit-gemuese",
+      "name": "Pan-fried gnocchi with vegetables",
+      "protein": "vegetar",
+      "sides": [
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g fresh gnocchi (chiller cabinet)",
+        "400 g button mushrooms",
+        "250 g cherry tomatoes",
+        "1 courgette",
+        "1 onion",
+        "2 tbsp rapeseed oil",
+        "150 g feta or soft goat's cheese",
+        "1/2 bunch chives",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Slice the mushrooms, cut the courgette into half-moons and the onion into strips.",
+        "Fry the gnocchi in 1 tbsp oil until golden brown and remove.",
+        "Fry the vegetables in the remaining oil for about 5 minutes, then add the cherry tomatoes.",
+        "Return the gnocchi to the pan and season.",
+        "Crumble the cheese over and sprinkle with chives."
+      ],
+      "source": "https://www.rewe.de/rezepte/vegetarische-gnocchi-pfanne-mit-buntem-gemuese/"
+    },
+    {
+      "id": "reispfanne-mit-gemuese",
+      "name": "Vegetable fried rice",
+      "protein": "vegetar",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "250 g parboiled rice",
+        "2 red peppers",
+        "1 onion",
+        "1 small tin sweetcorn (140 g)",
+        "200 g frozen peas",
+        "2 tbsp rapeseed oil",
+        "3 eggs",
+        "2 tbsp soy sauce",
+        "herb salt and pepper"
+      ],
+      "steps": [
+        "Cook the rice according to the packet instructions and let the steam evaporate.",
+        "Dice the peppers and onion and fry in the oil for 5 minutes.",
+        "Add the peas and sweetcorn and fry briefly.",
+        "Add the rice and fry, then whisk the eggs and stir them into the pan until set.",
+        "Season with soy sauce, herb salt and pepper."
+      ],
+      "source": "https://www.rewe.de/rezepte/reispfanne-gemuese/"
+    },
+    {
+      "id": "tomatensuppe-mit-kaesetoast",
+      "name": "Tomato soup with cheese on toast",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "1 onion",
+        "1 tbsp butter",
+        "2 tins chopped tomatoes (400 g each)",
+        "500 ml tomato juice",
+        "300 ml vegetable stock",
+        "1 tsp sugar",
+        "100 ml cream",
+        "1/2 bunch basil",
+        "8 slices sandwich bread",
+        "4 slices Gouda",
+        "salt and pepper"
+      ],
+      "steps": [
+        "Dice the onion and sweat in butter until translucent.",
+        "Add the tomatoes, tomato juice, stock and sugar and simmer for 15 minutes.",
+        "Blend the soup, stir in the cream and season with salt and pepper.",
+        "Top the bread with cheese and toast in the oven or a frying pan until golden.",
+        "Sprinkle the soup with basil and serve with the cheese on toast."
+      ],
+      "source": "https://www.rewe.de/rezepte/tomatensuppe/"
+    }
+  ]
+}

@@ -1,0 +1,1585 @@
+{
+  "format": "madplan.profile",
+  "version": 1,
+  "name": "Rodzinne ulubione",
+  "summary": "Codzienne obiady, które polskie rodziny z dziećmi gotują na co dzień.",
+  "symbol": "fork.knife",
+  "settings": {
+    "noSameProteinInRow": true
+  },
+  "recipes": [
+    {
+      "id": "kotlet-schabowy-z-ziemniakami-i-mizeria",
+      "name": "Kotlet schabowy z ziemniakami i mizerią",
+      "protein": "gris",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "4 plastry schabu bez kości (ok. 600 g)",
+        "2 jajka",
+        "3 łyżki mąki pszennej",
+        "100 g bułki tartej",
+        "smalec lub olej do smażenia",
+        "1 kg ziemniaków",
+        "2 ogórki",
+        "200 g śmietany 18%",
+        "1 pęczek koperku",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Obierz ziemniaki i ugotuj je w osolonej wodzie.",
+        "Rozbij schab tłuczkiem na cienkie kotlety, posól i popieprz.",
+        "Obtocz kotlety w mące, roztrzepanym jajku i bułce tartej.",
+        "Smaż na rozgrzanym tłuszczu po 3–4 minuty z każdej strony, aż będą złote.",
+        "Pokrój ogórki w cienkie plasterki, wymieszaj ze śmietaną, koperkiem i solą.",
+        "Podawaj kotlety z ziemniakami posypanymi koperkiem i mizerią."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/kotlety-schabowe"
+    },
+    {
+      "id": "kotlety-mielone-z-buraczkami",
+      "name": "Kotlety mielone z buraczkami",
+      "protein": "gris",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "500 g mięsa mielonego wieprzowego",
+        "1 czerstwa bułka",
+        "100 ml mleka",
+        "1 cebula",
+        "1 jajko",
+        "80 g bułki tartej",
+        "olej do smażenia",
+        "1 kg ziemniaków",
+        "500 g buraczków gotowanych",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Namocz bułkę w mleku i odciśnij.",
+        "Zetrzyj cebulę i wymieszaj z mięsem, bułką, jajkiem, solą i pieprzem.",
+        "Uformuj owalne kotlety i obtocz je w bułce tartej.",
+        "Smaż na średnim ogniu po 5–6 minut z każdej strony.",
+        "Ugotuj ziemniaki, a buraczki zetrzyj i dopraw solą, odrobiną cukru i octu.",
+        "Podawaj kotlety z ziemniakami i buraczkami."
+      ],
+      "source": "https://www.kwestiasmaku.com/kuchnia_polska/kotlety_mielone/przepis.html"
+    },
+    {
+      "id": "golabki-bez-zawijania",
+      "name": "Gołąbki bez zawijania",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "500 g mięsa mielonego wieprzowego",
+        "500 g białej kapusty",
+        "100 g ryżu",
+        "1 cebula",
+        "1 jajko",
+        "500 ml passaty pomidorowej",
+        "300 ml bulionu",
+        "2 łyżki oleju",
+        "1 łyżeczka słodkiej papryki",
+        "1 kg ziemniaków",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Ugotuj ryż na pół miękko.",
+        "Posiekaj drobno kapustę i cebulę, podsmaż je na oleju do zmięknięcia.",
+        "Wymieszaj mięso z ryżem, kapustą, jajkiem, solą, pieprzem i papryką.",
+        "Uformuj podłużne kotlety i obsmaż je krótko z obu stron.",
+        "Zalej passatą i bulionem, przykryj i duś ok. 30 minut.",
+        "W międzyczasie ugotuj ziemniaki i podawaj z gołąbkami i sosem."
+      ],
+      "source": "https://aniagotuje.pl/przepis/golabki-bez-zawijania"
+    },
+    {
+      "id": "bigos",
+      "name": "Bigos",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 150,
+      "servings": 4,
+      "ingredients": [
+        "1 kg kapusty kiszonej",
+        "500 g białej kapusty",
+        "500 g łopatki wieprzowej",
+        "300 g kiełbasy wędzonej",
+        "150 g boczku wędzonego",
+        "20 g suszonych grzybów",
+        "8 suszonych śliwek",
+        "1 cebula",
+        "2 łyżki koncentratu pomidorowego",
+        "2 liście laurowe i 4 ziela angielskie",
+        "sól i pieprz",
+        "chleb do podania"
+      ],
+      "steps": [
+        "Namocz grzyby w gorącej wodzie, potem pokrój je.",
+        "Kapustę kiszoną odciśnij i posiekaj, białą kapustę poszatkuj; gotuj obie z liśćmi laurowymi i zielem ok. 40 minut.",
+        "Pokrój mięso, boczek i kiełbasę w kostkę i obsmaż z cebulą.",
+        "Dodaj mięso, grzyby z wodą i śliwki do kapusty.",
+        "Duś na małym ogniu ok. 1,5 godziny, mieszając od czasu do czasu.",
+        "Dopraw koncentratem, solą i pieprzem; podawaj z chlebem."
+      ],
+      "source": "https://aniagotuje.pl/przepis/bigos"
+    },
+    {
+      "id": "pulpety-w-sosie-koperkowym",
+      "name": "Pulpety w sosie koperkowym",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "500 g mięsa mielonego wieprzowego",
+        "1 czerstwa bułka",
+        "1 jajko",
+        "1 cebula",
+        "1 l bulionu",
+        "1 marchewka",
+        "200 ml śmietanki 18%",
+        "2 łyżki mąki pszennej",
+        "1 duży pęczek koperku",
+        "1 kg ziemniaków",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Namocz bułkę w wodzie, odciśnij i wymieszaj z mięsem, jajkiem, startą cebulą, solą i pieprzem.",
+        "Zagotuj bulion z pokrojoną marchewką.",
+        "Formuj małe kulki i gotuj je w bulionie ok. 20 minut.",
+        "Ugotuj ziemniaki.",
+        "Wymieszaj śmietankę z mąką, wlej do bulionu i zagotuj, aż sos zgęstnieje.",
+        "Dodaj posiekany koperek, dopraw i podawaj z ziemniakami."
+      ],
+      "source": "https://aniagotuje.pl/przepis/pulpety-w-sosie-koperkowym"
+    },
+    {
+      "id": "gulasz-wieprzowy",
+      "name": "Gulasz wieprzowy",
+      "protein": "gris",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "700 g łopatki wieprzowej",
+        "2 cebule",
+        "2 czerwone papryki",
+        "1 marchewka",
+        "2 ząbki czosnku",
+        "2 łyżki koncentratu pomidorowego",
+        "1 łyżka słodkiej papryki",
+        "500 ml bulionu",
+        "2 łyżki mąki pszennej",
+        "2 łyżki oleju",
+        "1 kg ziemniaków",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Pokrój mięso w kostkę, oprósz mąką i obsmaż na oleju.",
+        "Dodaj pokrojoną cebulę, marchewkę i czosnek, smaż kilka minut.",
+        "Wsyp słodką paprykę, dodaj koncentrat i zalej bulionem.",
+        "Duś pod przykryciem ok. 40 minut.",
+        "Dodaj paprykę w kostce i duś jeszcze 10 minut.",
+        "Dopraw solą i pieprzem; podawaj z ziemniakami i surówką."
+      ],
+      "source": "https://aniagotuje.pl/przepis/gulasz-wieprzowy"
+    },
+    {
+      "id": "zurek-z-kielbasa-i-jajkiem",
+      "name": "Żurek z kiełbasą i jajkiem",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 ml żuru (zakwasu)",
+        "1 l bulionu",
+        "300 g białej lub wiejskiej kiełbasy",
+        "100 g boczku wędzonego",
+        "4 jajka",
+        "4 ziemniaki",
+        "100 ml śmietany 18%",
+        "2 ząbki czosnku",
+        "1 łyżka majeranku",
+        "sól i pieprz",
+        "chleb do podania"
+      ],
+      "steps": [
+        "Ugotuj jajka na twardo i obierz je.",
+        "Pokrój boczek i podsmaż go w garnku.",
+        "Dodaj bulion i ziemniaki w kostce, gotuj 15 minut.",
+        "Dodaj pokrojoną kiełbasę, wlej żur i gotuj 5 minut.",
+        "Dodaj czosnek, majeranek i śmietanę, dopraw solą i pieprzem.",
+        "Podawaj z połówkami jajek i chlebem."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/zurek-blyskawiczny"
+    },
+    {
+      "id": "lazanki-z-kapusta-i-kielbasa",
+      "name": "Łazanki z kapustą i kiełbasą",
+      "protein": "gris",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "300 g makaronu łazanki",
+        "500 g kapusty kiszonej",
+        "250 g kiełbasy wędzonej",
+        "1 cebula",
+        "200 g pieczarek",
+        "2 łyżki oleju",
+        "1 liść laurowy",
+        "1 łyżeczka kminku",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Odciśnij i posiekaj kapustę, gotuj ją z liściem laurowym ok. 20 minut.",
+        "Ugotuj makaron al dente.",
+        "Podsmaż cebulę i kiełbasę w kostce na oleju.",
+        "Dodaj pokrojone pieczarki i smaż, aż odparują.",
+        "Wymieszaj kapustę, makaron i kiełbasę, dopraw kminkiem, solą i pieprzem.",
+        "Podgrzej razem na patelni kilka minut i podawaj."
+      ],
+      "source": "https://aniagotuje.pl/przepis/lazanki"
+    },
+    {
+      "id": "fasolka-po-bretonsku",
+      "name": "Fasolka po bretońsku",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "2 puszki białej fasoli (ok. 800 g)",
+        "300 g kiełbasy",
+        "150 g boczku wędzonego",
+        "1 cebula",
+        "2 ząbki czosnku",
+        "1 puszka pomidorów krojonych",
+        "2 łyżki koncentratu pomidorowego",
+        "1 łyżka majeranku",
+        "1 łyżeczka słodkiej papryki",
+        "2 liście laurowe",
+        "sól i pieprz",
+        "chleb do podania"
+      ],
+      "steps": [
+        "Pokrój boczek i kiełbasę w kostkę, podsmaż w garnku.",
+        "Dodaj posiekaną cebulę i czosnek, smaż do zeszklenia.",
+        "Dodaj pomidory, koncentrat, liście laurowe i paprykę.",
+        "Wsyp odsączoną fasolę i duś ok. 20 minut.",
+        "Dopraw majerankiem, solą i pieprzem.",
+        "Podawaj z pieczywem."
+      ],
+      "source": "https://aniagotuje.pl/przepis/fasolka-po-bretonsku"
+    },
+    {
+      "id": "schab-w-sosie-pieczarkowym",
+      "name": "Schab w sosie pieczarkowym",
+      "protein": "gris",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "600 g schabu bez kości",
+        "400 g pieczarek",
+        "1 cebula",
+        "200 ml śmietanki 18%",
+        "200 ml bulionu",
+        "2 łyżki mąki pszennej",
+        "2 łyżki masła",
+        "1 pęczek koperku",
+        "1 kg ziemniaków",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Ugotuj ziemniaki.",
+        "Pokrój schab w cienkie plastry, lekko rozbij, posól i oprósz mąką.",
+        "Obsmaż mięso na maśle z obu stron i odłóż.",
+        "Na tej samej patelni podsmaż cebulę i pokrojone pieczarki.",
+        "Wlej bulion i śmietankę, włóż mięso i duś ok. 10 minut.",
+        "Posyp koperkiem i podawaj z ziemniakami."
+      ],
+      "source": "https://www.kwestiasmaku.com/kuchnia_polska/wieprzowina/eskalopki_z_pieczarkami/przepis.html"
+    },
+    {
+      "id": "leczo-z-kielbasa",
+      "name": "Leczo z kiełbasą",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "300 g kiełbasy",
+        "2 cebule",
+        "3 papryki",
+        "1 cukinia",
+        "1 puszka pomidorów krojonych",
+        "2 łyżki koncentratu pomidorowego",
+        "2 ząbki czosnku",
+        "1 łyżeczka słodkiej papryki",
+        "2 łyżki oleju",
+        "sól i pieprz",
+        "pieczywo do podania"
+      ],
+      "steps": [
+        "Pokrój kiełbasę w półplasterki i podsmaż na oleju.",
+        "Dodaj pokrojoną cebulę i czosnek, smaż kilka minut.",
+        "Dodaj paprykę i cukinię w kostce, duś 10 minut.",
+        "Wlej pomidory, dodaj koncentrat i słodką paprykę.",
+        "Duś jeszcze 15 minut, dopraw solą i pieprzem; podawaj z pieczywem."
+      ],
+      "source": "https://aniagotuje.pl/przepis/leczo-z-kielbasa-i-cukinia"
+    },
+    {
+      "id": "grochowka-z-kielbasa",
+      "name": "Grochówka z kiełbasą",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "300 g grochu łuskanego połówki",
+        "1,5 l bulionu",
+        "300 g kiełbasy",
+        "4 ziemniaki",
+        "1 marchewka",
+        "1 cebula",
+        "1 łyżka masła",
+        "1 łyżka majeranku",
+        "sól i pieprz",
+        "chleb do podania"
+      ],
+      "steps": [
+        "Opłucz groch i gotuj go w bulionie ok. 30 minut.",
+        "Dodaj ziemniaki i marchewkę w kostce, gotuj 15 minut.",
+        "Podsmaż na maśle cebulę z pokrojoną kiełbasą.",
+        "Dodaj kiełbasę do zupy i gotuj jeszcze 10 minut.",
+        "Dopraw majerankiem, solą i pieprzem; podawaj z chlebem."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/zupa-grochowa-z-ziemniakami-i-kielbasa"
+    },
+    {
+      "id": "zapiekanka-makaronowa-z-szynka",
+      "name": "Zapiekanka makaronowa z szynką",
+      "protein": "gris",
+      "sides": [
+        "pasta",
+        "salat"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "400 g makaronu penne",
+        "250 g szynki",
+        "1 papryka",
+        "1 cukinia",
+        "1 cebula",
+        "1 ząbek czosnku",
+        "300 ml mleka",
+        "200 ml śmietanki 18%",
+        "200 g sera żółtego",
+        "1 łyżka masła",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Nagrzej piekarnik do 200°C i ugotuj makaron al dente.",
+        "Podsmaż na maśle cebulę i czosnek, dodaj paprykę i cukinię w kostce.",
+        "Dodaj pokrojoną szynkę, wlej mleko i śmietankę, dopraw.",
+        "Wymieszaj sos z makaronem i połową startego sera.",
+        "Przełóż do naczynia, posyp resztą sera i zapiekaj 20 minut.",
+        "Podawaj z sałatą."
+      ],
+      "source": "https://aniagotuje.pl/przepis/zapiekanka-makaronowa-z-szynka"
+    },
+    {
+      "id": "spaghetti-carbonara",
+      "name": "Spaghetti carbonara",
+      "protein": "gris",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 25,
+      "servings": 4,
+      "ingredients": [
+        "400 g spaghetti",
+        "200 g boczku lub pancetty",
+        "4 żółtka",
+        "1 jajko",
+        "80 g parmezanu",
+        "1 łyżka oliwy",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Ugotuj makaron w osolonej wodzie, zachowaj szklankę wody z gotowania.",
+        "Pokrój boczek w paski i usmaż go na oliwie na chrupko.",
+        "Wymieszaj żółtka i jajko z tartym parmezanem i pieprzem.",
+        "Wrzuć odcedzony makaron na patelnię z boczkiem i zdejmij z ognia.",
+        "Wlej masę jajeczną, mieszaj szybko, dolewając trochę wody z makaronu, aż powstanie kremowy sos."
+      ],
+      "source": "https://aniagotuje.pl/przepis/carbonara"
+    },
+    {
+      "id": "wieprzowina-po-chinsku",
+      "name": "Wieprzowina po chińsku",
+      "protein": "gris",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g polędwiczki wieprzowej",
+        "1 czerwona papryka",
+        "1 marchewka",
+        "1 por",
+        "1 cebula",
+        "2 ząbki czosnku",
+        "1 łyżeczka startego imbiru",
+        "4 łyżki sosu sojowego",
+        "2 łyżki octu ryżowego",
+        "1 łyżka cukru",
+        "1 łyżka skrobi ziemniaczanej",
+        "2 łyżki oleju",
+        "300 g ryżu"
+      ],
+      "steps": [
+        "Ugotuj ryż.",
+        "Pokrój mięso w paski i obtocz w skrobi z 1 łyżką sosu sojowego.",
+        "Pokrój warzywa w cienkie paski.",
+        "Obsmaż mięso na mocno rozgrzanym oleju i odłóż.",
+        "Smaż warzywa z czosnkiem i imbirem 4–5 minut.",
+        "Dodaj mięso, resztę sosu sojowego, ocet, cukier i odrobinę wody; gotuj, aż sos zgęstnieje, i podawaj z ryżem."
+      ],
+      "source": "https://www.kwestiasmaku.com/kuchnia_polska/wieprzowina/wieprzowina_po_chinsku/przepis.html"
+    },
+    {
+      "id": "papryka-faszerowana",
+      "name": "Papryka faszerowana",
+      "protein": "gris",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "4 duże papryki",
+        "400 g mięsa mielonego wieprzowego",
+        "100 g ryżu",
+        "1 cebula",
+        "1 ząbek czosnku",
+        "1 puszka pomidorów krojonych",
+        "1 łyżka koncentratu pomidorowego",
+        "125 g mozzarelli",
+        "1 łyżeczka suszonego oregano",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Ugotuj ryż i nagrzej piekarnik do 190°C.",
+        "Podsmaż cebulę i czosnek, dodaj mięso i smaż, aż straci różowy kolor.",
+        "Wymieszaj mięso z ryżem, koncentratem, oregano, solą i pieprzem.",
+        "Odetnij wierzch papryk, usuń gniazda nasienne i napełnij farszem.",
+        "Ułóż papryki w naczyniu na pomidorach z puszki, przykryj i piecz 30 minut.",
+        "Posyp mozzarellą i zapiekaj jeszcze 10 minut."
+      ],
+      "source": "https://aniagotuje.pl/przepis/papryka-faszerowana"
+    },
+    {
+      "id": "gulasz-wolowy-z-kasza",
+      "name": "Gulasz wołowy z kaszą",
+      "protein": "okse",
+      "sides": [
+        "bulgur",
+        "salat"
+      ],
+      "minutes": 120,
+      "servings": 4,
+      "ingredients": [
+        "800 g wołowiny gulaszowej",
+        "100 g boczku wędzonego",
+        "2 cebule",
+        "1 por",
+        "2 ząbki czosnku",
+        "1 czerwona papryka",
+        "250 g pieczarek",
+        "1 łyżka słodkiej papryki",
+        "2 łyżki mąki pszennej",
+        "700 ml bulionu wołowego",
+        "2 łyżki oleju",
+        "300 g kaszy jęczmiennej lub gryczanej",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Pokrój wołowinę w kostkę, oprósz mąką i obsmaż partiami na oleju.",
+        "Podsmaż boczek, cebulę, por i czosnek.",
+        "Dodaj mięso, słodką paprykę i bulion; duś pod przykryciem ok. 1,5 godziny.",
+        "Dodaj paprykę i pieczarki, duś jeszcze 15 minut.",
+        "W międzyczasie ugotuj kaszę.",
+        "Dopraw gulasz solą i pieprzem; podawaj z kaszą i ogórkiem kiszonym."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/gulasz-wolowy"
+    },
+    {
+      "id": "spaghetti-bolognese",
+      "name": "Spaghetti bolognese",
+      "protein": "okse",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "500 g mięsa mielonego wołowego",
+        "400 g spaghetti",
+        "1 cebula",
+        "1 marchewka",
+        "1 łodyga selera naciowego",
+        "2 ząbki czosnku",
+        "1 puszka pomidorów krojonych",
+        "2 łyżki koncentratu pomidorowego",
+        "100 ml mleka",
+        "2 łyżki oliwy",
+        "parmezan do posypania",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Posiekaj drobno cebulę, marchewkę, seler i czosnek; podsmaż na oliwie.",
+        "Dodaj mięso i smaż, rozbijając grudki.",
+        "Wlej pomidory, dodaj koncentrat i mleko.",
+        "Duś na małym ogniu ok. 25 minut, dopraw solą i pieprzem.",
+        "Ugotuj spaghetti al dente.",
+        "Podawaj makaron z sosem i parmezanem."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/spaghetti-bolognese"
+    },
+    {
+      "id": "lasagne",
+      "name": "Lasagne",
+      "protein": "okse",
+      "sides": [
+        "pasta",
+        "salat"
+      ],
+      "minutes": 90,
+      "servings": 4,
+      "ingredients": [
+        "12 płatów makaronu lasagne",
+        "500 g mięsa mielonego wołowego",
+        "1 cebula",
+        "1 marchewka",
+        "2 ząbki czosnku",
+        "500 ml passaty",
+        "1 łyżka koncentratu pomidorowego",
+        "50 g masła",
+        "50 g mąki pszennej",
+        "700 ml mleka",
+        "1 szczypta gałki muszkatołowej",
+        "100 g parmezanu lub sera żółtego",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Podsmaż cebulę, marchewkę i czosnek, dodaj mięso i obsmaż.",
+        "Wlej passatę, dodaj koncentrat i duś sos 20 minut.",
+        "Rozpuść masło, dodaj mąkę, wlewaj mleko, mieszając, aż powstanie gęsty beszamel; dopraw gałką.",
+        "Nagrzej piekarnik do 190°C.",
+        "Układaj w naczyniu warstwy: sos mięsny, makaron, beszamel; powtarzaj i zakończ beszamelem z serem.",
+        "Piecz ok. 40 minut i odstaw na 10 minut przed krojeniem."
+      ],
+      "source": "https://www.kwestiasmaku.com/pasta/lasagne_bolognese/przepis.html"
+    },
+    {
+      "id": "chili-con-carne",
+      "name": "Chili con carne",
+      "protein": "okse",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "500 g mięsa mielonego wołowego",
+        "1 cebula",
+        "2 ząbki czosnku",
+        "1 czerwona papryka",
+        "1 puszka czerwonej fasoli",
+        "1 puszka pomidorów krojonych",
+        "1 puszka kukurydzy",
+        "1 łyżeczka kuminu",
+        "1 łyżeczka słodkiej papryki",
+        "1 szczypta chili (opcjonalnie)",
+        "2 łyżki oleju",
+        "300 g ryżu",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Podsmaż cebulę i czosnek na oleju.",
+        "Dodaj mięso i smaż, aż się zrumieni.",
+        "Wsyp przyprawy, dodaj paprykę w kostce i pomidory.",
+        "Duś 15 minut, dodaj odsączoną fasolę i kukurydzę, gotuj jeszcze 10 minut.",
+        "Ugotuj ryż i podawaj z chili, dla dzieci w łagodnej wersji."
+      ],
+      "source": "https://aniagotuje.pl/przepis/chili-con-carne"
+    },
+    {
+      "id": "strogonow",
+      "name": "Strogonow",
+      "protein": "okse",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "500 g wołowiny (rostbef lub polędwica)",
+        "1 cebula",
+        "1 czerwona papryka",
+        "250 g pieczarek",
+        "2 ogórki kiszone",
+        "2 łyżki koncentratu pomidorowego",
+        "1 łyżka musztardy",
+        "1 łyżka mąki pszennej",
+        "300 ml bulionu",
+        "2 łyżki oleju",
+        "300 g ryżu",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Ugotuj ryż.",
+        "Pokrój wołowinę w cienkie paski, oprósz mąką i obsmaż na oleju; odłóż.",
+        "Podsmaż cebulę, paprykę i pieczarki.",
+        "Dodaj koncentrat, musztardę i bulion, zagotuj.",
+        "Włóż mięso i ogórki w paskach, duś 10 minut.",
+        "Dopraw solą i pieprzem, podawaj z ryżem."
+      ],
+      "source": "https://aniagotuje.pl/przepis/strogonow"
+    },
+    {
+      "id": "domowe-burgery",
+      "name": "Domowe burgery",
+      "protein": "okse",
+      "sides": [
+        "brod",
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "600 g mięsa mielonego wołowego",
+        "4 bułki do burgerów",
+        "4 plastry sera cheddar",
+        "2 pomidory",
+        "1 czerwona cebula",
+        "sałata lodowa",
+        "4 ogórki konserwowe",
+        "ketchup i majonez",
+        "800 g frytek do pieczenia",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Upiecz frytki w piekarniku według opisu na opakowaniu.",
+        "Podziel mięso na 4 części, uformuj płaskie kotlety, posól i popieprz.",
+        "Smaż kotlety na mocno rozgrzanej patelni po 3–4 minuty z każdej strony, pod koniec połóż ser.",
+        "Przekrój i podpiecz bułki.",
+        "Złóż burgery z sosem, sałatą, pomidorem, cebulą i ogórkiem; podawaj z frytkami."
+      ],
+      "source": "https://aniagotuje.pl/przepis/burgery-wolowe"
+    },
+    {
+      "id": "tacos-z-miesem-mielonym",
+      "name": "Tacos z mięsem mielonym",
+      "protein": "okse",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g mięsa mielonego wołowego",
+        "8 tortilli lub skorupek taco",
+        "1 cebula",
+        "1 ząbek czosnku",
+        "1 łyżeczka kuminu",
+        "1 łyżeczka słodkiej papryki",
+        "2 pomidory",
+        "sałata",
+        "1 awokado",
+        "150 g startego sera",
+        "200 g gęstej śmietany",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Podsmaż posiekaną cebulę i czosnek.",
+        "Dodaj mięso, smaż, rozbijając grudki.",
+        "Dopraw kuminem, papryką, solą i odrobiną wody; gotuj 5 minut.",
+        "Pokrój pomidory, sałatę i awokado.",
+        "Podgrzej tortille i podawaj, żeby każdy sam nałożył mięso, warzywa, ser i śmietanę."
+      ],
+      "source": "https://aniagotuje.pl/przepis/tacos"
+    },
+    {
+      "id": "stir-fry-z-wolowina-i-brokulami",
+      "name": "Stir-fry z wołowiną i brokułami",
+      "protein": "okse",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "500 g wołowiny (rostbef)",
+        "1 duży brokuł",
+        "2 ząbki czosnku",
+        "1 łyżeczka startego imbiru",
+        "4 łyżki sosu sojowego",
+        "1 łyżka oleju sezamowego",
+        "1 łyżka skrobi kukurydzianej",
+        "1 łyżeczka cukru",
+        "2 łyżki oleju",
+        "300 g ryżu"
+      ],
+      "steps": [
+        "Ugotuj ryż.",
+        "Pokrój wołowinę w cienkie paski i wymieszaj z 1 łyżką sosu sojowego i skrobią.",
+        "Podziel brokuł na różyczki i blanszuj 2 minuty.",
+        "Obsmaż mięso partiami na mocno rozgrzanym oleju i odłóż.",
+        "Podsmaż czosnek i imbir, dodaj brokuły, mięso, resztę sosu sojowego, cukier i olej sezamowy.",
+        "Wymieszaj, aż sos oblepi składniki, i podawaj z ryżem."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/stir-fry-z-wolowina-i-brokulami"
+    },
+    {
+      "id": "zapiekanka-pasterska",
+      "name": "Zapiekanka pasterska",
+      "protein": "okse",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "500 g mięsa mielonego wołowego",
+        "1 kg ziemniaków",
+        "1 cebula",
+        "2 marchewki",
+        "150 g mrożonego groszku",
+        "2 łyżki koncentratu pomidorowego",
+        "300 ml bulionu",
+        "1 łyżka sosu Worcestershire",
+        "100 ml mleka",
+        "30 g masła",
+        "50 g sera żółtego",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Ugotuj ziemniaki i utłucz je z mlekiem i masłem na puree.",
+        "Podsmaż cebulę i startą marchewkę, dodaj mięso i obsmaż.",
+        "Dodaj koncentrat, bulion i sos Worcestershire, duś 15 minut; pod koniec dodaj groszek.",
+        "Nagrzej piekarnik do 200°C.",
+        "Przełóż mięso do naczynia, przykryj puree i posyp serem.",
+        "Zapiekaj 20 minut, aż wierzch się zrumieni."
+      ],
+      "source": "https://aniagotuje.pl/przepis/zapiekanka-pasterska"
+    },
+    {
+      "id": "rosol-z-makaronem",
+      "name": "Rosół z makaronem",
+      "protein": "kylling",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 150,
+      "servings": 4,
+      "ingredients": [
+        "1 kurczak lub 1,5 kg porcji rosołowych",
+        "3 marchewki",
+        "1 pietruszka (korzeń)",
+        "1 kawałek selera",
+        "1 por",
+        "1 cebula",
+        "2 liście laurowe",
+        "4 ziela angielskie",
+        "250 g makaronu nitki",
+        "1 pęczek natki pietruszki",
+        "sól i pieprz w ziarnach"
+      ],
+      "steps": [
+        "Włóż kurczaka do garnka, zalej ok. 3 l zimnej wody i powoli zagotuj, zbierając szumowiny.",
+        "Opal cebulę nad ogniem lub na suchej patelni.",
+        "Dodaj obrane warzywa, cebulę i przyprawy.",
+        "Gotuj na bardzo małym ogniu ok. 2 godzin, posól pod koniec.",
+        "Ugotuj makaron osobno.",
+        "Przecedź rosół i podawaj z makaronem, marchewką i natką."
+      ],
+      "source": "https://aniagotuje.pl/przepis/rosol-z-kury"
+    },
+    {
+      "id": "kotlety-de-volaille",
+      "name": "Kotlety de volaille",
+      "protein": "kylling",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "4 filety z kurczaka",
+        "100 g miękkiego masła",
+        "1 ząbek czosnku",
+        "2 łyżki posiekanego koperku lub natki",
+        "3 łyżki mąki pszennej",
+        "2 jajka",
+        "120 g bułki tartej",
+        "olej do smażenia",
+        "1 kg ziemniaków",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Wymieszaj masło z czosnkiem i ziołami, uformuj wałek i schłodź.",
+        "Rozbij filety na cienkie płaty, posól i popieprz.",
+        "Na każdy płat połóż kawałek masła i zawiń szczelnie.",
+        "Obtocz w mące, jajku i bułce tartej, najlepiej dwa razy.",
+        "Smaż w głębokim oleju ok. 10 minut, aż będą złote.",
+        "Podawaj z ziemniakami i surówką."
+      ],
+      "source": "https://www.kwestiasmaku.com/kuchnia_polska/kurczak/kurczak_maslo_ziolowe/przepis.html"
+    },
+    {
+      "id": "kurczak-w-sosie-smietanowym",
+      "name": "Kurczak w sosie śmietanowym",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g filetów z kurczaka",
+        "1 cebula",
+        "2 ząbki czosnku",
+        "200 ml śmietanki 30%",
+        "200 ml bulionu",
+        "1 łyżka mąki pszennej",
+        "40 g parmezanu",
+        "1 łyżka masła klarowanego",
+        "300 g ryżu",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Ugotuj ryż.",
+        "Pokrój kurczaka w kawałki, posól, oprósz mąką i obsmaż na maśle.",
+        "Dodaj posiekaną cebulę i czosnek, smaż 2–3 minuty.",
+        "Wlej bulion i śmietankę, gotuj 8–10 minut.",
+        "Dodaj starty parmezan, dopraw i podawaj z ryżem."
+      ],
+      "source": "https://aniagotuje.pl/przepis/kurczak-w-sosie-smietanowym"
+    },
+    {
+      "id": "pieczone-udka-z-ziemniakami",
+      "name": "Pieczone udka z ziemniakami",
+      "protein": "kylling",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "8 udek z kurczaka",
+        "1 kg ziemniaków",
+        "3 marchewki",
+        "1 por",
+        "3 ząbki czosnku",
+        "1 cytryna",
+        "2 gałązki rozmarynu",
+        "3 łyżki oleju",
+        "1 łyżeczka słodkiej papryki",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Nagrzej piekarnik do 200°C.",
+        "Natrzyj udka olejem, papryką, solą i pieprzem.",
+        "Pokrój ziemniaki, marchewkę i por w kawałki, wymieszaj z olejem i solą.",
+        "Ułóż warzywa w brytfannie, na nich udka, dodaj czosnek, plastry cytryny i rozmaryn.",
+        "Piecz ok. 50 minut, aż skórka będzie chrupka."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/pieczone-udka-z-ziemniakami-porem-i-marchewka"
+    },
+    {
+      "id": "kurczak-curry-z-ryzem",
+      "name": "Kurczak curry z ryżem",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "600 g filetów z kurczaka",
+        "1 cebula",
+        "2 ząbki czosnku",
+        "2 łyżki łagodnego curry",
+        "200 ml śmietanki do gotowania",
+        "400 g mrożonych warzyw",
+        "2 łyżki oleju",
+        "300 g ryżu",
+        "1 limonka",
+        "natka pietruszki",
+        "sól"
+      ],
+      "steps": [
+        "Ugotuj ryż.",
+        "Pokrój kurczaka w kostkę i obsmaż na oleju.",
+        "Dodaj cebulę i czosnek, wsyp curry i smaż minutę.",
+        "Dodaj warzywa i trochę wody, duś 8 minut.",
+        "Wlej śmietankę, zagotuj, dopraw solą i sokiem z limonki.",
+        "Podawaj z ryżem i natką."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/kurczak-curry"
+    },
+    {
+      "id": "tortilla-z-kurczakiem",
+      "name": "Tortilla z kurczakiem",
+      "protein": "kylling",
+      "sides": [
+        "brod",
+        "salat"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "4 duże tortille",
+        "500 g filetów z kurczaka",
+        "1 jajko",
+        "80 g bułki tartej",
+        "sałata",
+        "2 pomidory",
+        "1 ogórek",
+        "1 papryka",
+        "100 g sera cheddar",
+        "3 łyżki majonezu",
+        "2 łyżki ketchupu",
+        "olej do smażenia",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Pokrój kurczaka w paski, posól, obtocz w jajku i bułce tartej.",
+        "Usmaż paski na oleju na złoto.",
+        "Pokrój warzywa i zetrzyj ser.",
+        "Wymieszaj majonez z ketchupem.",
+        "Podgrzej tortille, posmaruj sosem, ułóż warzywa, ser i kurczaka i zwiń."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/tortilla-z-kurczakiem"
+    },
+    {
+      "id": "kurczak-slodko-kwasny",
+      "name": "Kurczak słodko-kwaśny",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "600 g filetów z kurczaka",
+        "1 puszka ananasa",
+        "1 czerwona papryka",
+        "1 cebula",
+        "1 marchewka",
+        "2 ząbki czosnku",
+        "3 łyżki ketchupu",
+        "2 łyżki octu ryżowego",
+        "2 łyżki sosu sojowego",
+        "1 łyżka miodu",
+        "2 łyżki skrobi ziemniaczanej",
+        "2 łyżki oleju",
+        "300 g ryżu"
+      ],
+      "steps": [
+        "Ugotuj ryż.",
+        "Pokrój kurczaka w kostkę, obtocz w 1 łyżce skrobi i obsmaż na oleju.",
+        "Dodaj pokrojone warzywa i czosnek, smaż 5 minut.",
+        "Wymieszaj ketchup, ocet, sos sojowy, miód, sok z ananasa i resztę skrobi.",
+        "Wlej sos i dodaj ananasa, gotuj, aż zgęstnieje.",
+        "Podawaj z ryżem."
+      ],
+      "source": "https://aniagotuje.pl/przepis/kurczak-slodko-kwasny"
+    },
+    {
+      "id": "domowe-nuggetsy-z-frytkami",
+      "name": "Domowe nuggetsy z frytkami",
+      "protein": "kylling",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g filetów z udek lub piersi kurczaka",
+        "2 jajka",
+        "50 g mąki pszennej",
+        "120 g bułki tartej",
+        "1 łyżeczka słodkiej papryki",
+        "olej do smażenia",
+        "800 g frytek do pieczenia",
+        "1 marchewka i 1 jabłko na surówkę",
+        "ketchup",
+        "sól"
+      ],
+      "steps": [
+        "Upiecz frytki w piekarniku według opisu na opakowaniu.",
+        "Pokrój kurczaka w kawałki wielkości kęsa i dopraw solą i papryką.",
+        "Obtocz kawałki w mące, jajku i bułce tartej.",
+        "Smaż na oleju po 2–3 minuty z każdej strony.",
+        "Zetrzyj marchewkę z jabłkiem na surówkę.",
+        "Podawaj nuggetsy z frytkami, surówką i ketchupem."
+      ],
+      "source": "https://aniagotuje.pl/przepis/prawdziwe-domowe-nuggetsy-z-kurczaka"
+    },
+    {
+      "id": "risotto-z-kurczakiem",
+      "name": "Risotto z kurczakiem",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "300 g ryżu do risotto",
+        "400 g filetów z kurczaka",
+        "1 cebula",
+        "1 czerwona papryka",
+        "1 żółta papryka",
+        "1 l bulionu",
+        "2 łyżki oliwy",
+        "30 g masła",
+        "50 g parmezanu",
+        "1 łyżeczka słodkiej papryki",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Pokrój kurczaka w kostkę, dopraw papryką i obsmaż na oliwie; odłóż.",
+        "Podsmaż cebulę, wsyp ryż i smaż minutę.",
+        "Wlewaj gorący bulion po chochli, mieszając, przez ok. 18 minut.",
+        "W połowie dodaj paprykę w kostce.",
+        "Dodaj kurczaka, masło i parmezan, dopraw i podawaj."
+      ],
+      "source": "https://aniagotuje.pl/przepis/risotto-z-kurczakiem"
+    },
+    {
+      "id": "zupa-ogorkowa-z-kurczakiem",
+      "name": "Zupa ogórkowa z kurczakiem",
+      "protein": "kylling",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "400 g filetów z kurczaka",
+        "1,5 l bulionu",
+        "4 ziemniaki",
+        "1 marchewka",
+        "1 cebula",
+        "4 ogórki kiszone",
+        "100 ml wody z ogórków",
+        "150 ml śmietany 18%",
+        "1 pęczek koperku",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Gotuj kurczaka w bulionie ok. 15 minut, wyjmij i pokrój.",
+        "Dodaj do bulionu ziemniaki i marchewkę w kostce, gotuj 15 minut.",
+        "Podsmaż cebulę, dodaj starte ogórki i duś kilka minut.",
+        "Przełóż ogórki do zupy, dodaj kurczaka i wodę z ogórków.",
+        "Zahartuj śmietanę gorącą zupą i wlej do garnka, dodaj koperek.",
+        "Podawaj z pieczywem."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/zupa-ogorkowa-z-kurczakiem"
+    },
+    {
+      "id": "gulasz-z-kurczaka",
+      "name": "Gulasz z kurczaka",
+      "protein": "kylling",
+      "sides": [
+        "ris"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "600 g filetów z kurczaka",
+        "1 cebula",
+        "1 marchewka",
+        "2 papryki",
+        "2 ząbki czosnku",
+        "1 puszka pomidorów krojonych",
+        "1 łyżka słodkiej papryki",
+        "1 łyżeczka suszonego oregano",
+        "1 łyżka mąki pszennej",
+        "2 łyżki oleju",
+        "300 g ryżu lub kaszy",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Pokrój kurczaka w kostkę, oprósz mąką i obsmaż na oleju.",
+        "Dodaj cebulę, marchewkę i czosnek, smaż kilka minut.",
+        "Dodaj paprykę w kostce, pomidory, słodką paprykę i oregano.",
+        "Duś pod przykryciem ok. 20 minut.",
+        "Ugotuj ryż lub kaszę i podawaj z gulaszem."
+      ],
+      "source": "https://aniagotuje.pl/przepis/gulasz-z-kurczaka"
+    },
+    {
+      "id": "zupa-pomidorowa-z-makaronem",
+      "name": "Zupa pomidorowa z makaronem",
+      "protein": "kylling",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "4 udka z kurczaka lub porcja rosołowa",
+        "2 marchewki",
+        "1 pietruszka (korzeń)",
+        "1 kawałek selera",
+        "1 cebula",
+        "200 g koncentratu pomidorowego",
+        "200 ml śmietany 18%",
+        "250 g makaronu",
+        "natka pietruszki",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Zalej kurczaka 2,5 l wody, zagotuj i zbierz szumowiny.",
+        "Dodaj obrane warzywa i gotuj na małym ogniu ok. 40 minut.",
+        "Wyjmij mięso i warzywa, do wywaru dodaj koncentrat i zagotuj.",
+        "Zahartuj śmietanę gorącą zupą i wlej do garnka; dopraw.",
+        "Ugotuj makaron i podawaj z zupą i natką."
+      ],
+      "source": "https://aniagotuje.pl/przepis/zupa-pomidorowa"
+    },
+    {
+      "id": "ryba-po-grecku",
+      "name": "Ryba po grecku",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 45,
+      "servings": 4,
+      "ingredients": [
+        "600 g filetów z białej ryby (dorsz lub mintaj)",
+        "3 łyżki mąki pszennej",
+        "3 marchewki",
+        "1 pietruszka (korzeń)",
+        "1 cebula",
+        "3 łyżki koncentratu pomidorowego",
+        "200 ml wody lub bulionu",
+        "4 łyżki oleju",
+        "2 liście laurowe",
+        "1 kg ziemniaków",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Zetrzyj marchewkę i pietruszkę, pokrój cebulę.",
+        "Duś warzywa na 2 łyżkach oleju z liśćmi laurowymi ok. 15 minut.",
+        "Dodaj koncentrat i wodę, dopraw solą i pieprzem i gotuj 5 minut.",
+        "Pokrój rybę w kawałki, posól, obtocz w mące i usmaż.",
+        "Ugotuj ziemniaki.",
+        "Ułóż rybę na talerzach, przykryj warzywami i podawaj z ziemniakami."
+      ],
+      "source": "https://aniagotuje.pl/przepis/ryba-po-grecku"
+    },
+    {
+      "id": "ryba-w-panierce-z-ziemniakami",
+      "name": "Ryba w panierce z ziemniakami",
+      "protein": "fisk",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "600 g filetów z dorsza lub mintaja",
+        "2 jajka",
+        "100 ml mleka",
+        "100 g bułki tartej",
+        "olej lub masło klarowane do smażenia",
+        "1 kg ziemniaków",
+        "1 pęczek koperku",
+        "1 cytryna",
+        "300 g kapusty kiszonej na surówkę",
+        "1 marchewka",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Ugotuj ziemniaki.",
+        "Pokrój rybę w porcje, posól i popieprz.",
+        "Zanurz rybę w jajku roztrzepanym z mlekiem i obtocz w bułce tartej.",
+        "Smaż po 3–4 minuty z każdej strony na złoto.",
+        "Wymieszaj posiekaną kapustę kiszoną ze startą marchewką i odrobiną oleju.",
+        "Podawaj rybę z ziemniakami z koperkiem, surówką i cytryną."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/filety-rybne-smazone-w-panierce"
+    },
+    {
+      "id": "pieczony-losos-z-porem-i-pomidorkami",
+      "name": "Pieczony łosoś z porem i pomidorkami",
+      "protein": "fisk",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "700 g fileta z łososia",
+        "1 por",
+        "250 g pomidorków koktajlowych",
+        "1 pęczek koperku",
+        "1 cytryna",
+        "2 łyżki oliwy",
+        "20 g masła",
+        "1 kg młodych lub drobnych ziemniaków",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Nagrzej piekarnik do 200°C i ugotuj ziemniaki.",
+        "Pokrój por w półplasterki i ułóż w naczyniu z oliwą.",
+        "Na porze połóż łososia, posól, popieprz i skrop cytryną.",
+        "Dodaj pomidorki i kawałki masła.",
+        "Piecz ok. 15–18 minut.",
+        "Posyp koperkiem i podawaj z ziemniakami."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/pieczony-losos-z-koperkiem-porem-i-pomidorkami"
+    },
+    {
+      "id": "kotlety-rybne",
+      "name": "Kotlety rybne",
+      "protein": "fisk",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g fileta z dorsza",
+        "1 czerstwa bułka",
+        "100 ml mleka",
+        "1 jajko",
+        "1 mała cebula",
+        "2 łyżki posiekanego koperku",
+        "80 g bułki tartej",
+        "olej do smażenia",
+        "1 kg ziemniaków",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Namocz bułkę w mleku i odciśnij.",
+        "Zmiel lub posiekaj drobno rybę z cebulą.",
+        "Wymieszaj z bułką, jajkiem, koperkiem, solą i pieprzem.",
+        "Uformuj kotlety i obtocz w bułce tartej.",
+        "Smaż po 4 minuty z każdej strony; podawaj z ziemniakami i surówką."
+      ],
+      "source": "https://aniagotuje.pl/przepis/kotlety-rybne"
+    },
+    {
+      "id": "makaron-z-tunczykiem",
+      "name": "Makaron z tuńczykiem",
+      "protein": "fisk",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "400 g makaronu",
+        "2 puszki tuńczyka w sosie własnym",
+        "250 g pomidorków koktajlowych",
+        "2 ząbki czosnku",
+        "3 łyżki oliwy",
+        "1 cytryna",
+        "1 garść czarnych oliwek (opcjonalnie)",
+        "natka pietruszki",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Ugotuj makaron w osolonej wodzie.",
+        "Podsmaż czosnek na oliwie, dodaj przekrojone pomidorki i smaż 3 minuty.",
+        "Dodaj odsączonego tuńczyka i oliwki, podgrzej.",
+        "Wymieszaj z makaronem, odrobiną wody z gotowania i sokiem z cytryny.",
+        "Posyp natką i dopraw solą i pieprzem."
+      ],
+      "source": "https://aniagotuje.pl/przepis/makaron-z-tunczykiem"
+    },
+    {
+      "id": "pierogi-ruskie",
+      "name": "Pierogi ruskie",
+      "protein": "vegetar",
+      "sides": [
+        "salat"
+      ],
+      "minutes": 90,
+      "servings": 4,
+      "ingredients": [
+        "500 g mąki pszennej",
+        "250 ml gorącej wody",
+        "2 łyżki oleju",
+        "700 g ziemniaków",
+        "300 g twarogu półtłustego",
+        "2 cebule",
+        "2 łyżki masła",
+        "śmietana do podania",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Ugotuj ziemniaki i przeciśnij je przez praskę.",
+        "Zeszklij cebulę na maśle; połowę wymieszaj z ziemniakami, twarogiem, solą i pieprzem.",
+        "Zagnieć ciasto z mąki, gorącej wody, oleju i szczypty soli.",
+        "Rozwałkuj cienko, wycinaj krążki, nakładaj farsz i dokładnie zlepiaj.",
+        "Gotuj pierogi partiami w osolonej wodzie 2–3 minuty od wypłynięcia.",
+        "Podawaj z resztą cebulki, śmietaną i surówką."
+      ],
+      "source": "https://aniagotuje.pl/przepis/pierogi-ruskie"
+    },
+    {
+      "id": "nalesniki-z-serem",
+      "name": "Naleśniki z serem",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "250 g mąki pszennej",
+        "300 ml mleka",
+        "200 ml wody",
+        "2 jajka",
+        "2 łyżki oleju",
+        "500 g twarogu",
+        "3 łyżki cukru pudru",
+        "1 cukier waniliowy",
+        "3 łyżki śmietany",
+        "szczypta soli"
+      ],
+      "steps": [
+        "Zmiksuj mąkę, mleko, wodę, jajka, olej i sól na gładkie ciasto.",
+        "Smaż cienkie naleśniki na lekko natłuszczonej patelni.",
+        "Rozgnieć twaróg widelcem ze śmietaną, cukrem pudrem i cukrem waniliowym.",
+        "Posmaruj naleśniki serem i zwiń w rulony lub złóż w trójkąty.",
+        "Podsmaż krótko na maśle i podawaj, np. z owocami lub śmietaną."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/nale%C5%9Bniki-z-serem"
+    },
+    {
+      "id": "placki-ziemniaczane",
+      "name": "Placki ziemniaczane",
+      "protein": "vegetar",
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
+      "minutes": 40,
+      "servings": 4,
+      "ingredients": [
+        "1,5 kg ziemniaków",
+        "1 cebula",
+        "2 jajka",
+        "3 łyżki mąki pszennej",
+        "olej do smażenia",
+        "200 g śmietany 18%",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Obierz ziemniaki i cebulę, zetrzyj na drobnej tarce.",
+        "Odlej nadmiar soku.",
+        "Dodaj jajka, mąkę, sól i pieprz, wymieszaj.",
+        "Nakładaj łyżką porcje na rozgrzany olej i rozpłaszcz.",
+        "Smaż po 3 minuty z każdej strony, aż będą chrupiące.",
+        "Podawaj ze śmietaną lub cukrem i surówką."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/placki-ziemniaczane"
+    },
+    {
+      "id": "kopytka",
+      "name": "Kopytka",
+      "protein": "vegetar",
+      "sides": [
+        "salat"
+      ],
+      "minutes": 50,
+      "servings": 4,
+      "ingredients": [
+        "1 kg ziemniaków",
+        "200 g mąki pszennej",
+        "1 jajko",
+        "1 łyżeczka soli",
+        "50 g masła",
+        "3 łyżki bułki tartej",
+        "1 marchewka i 1 jabłko na surówkę"
+      ],
+      "steps": [
+        "Ugotuj ziemniaki, przeciśnij przez praskę i ostudź.",
+        "Dodaj mąkę, jajko i sól, szybko zagnieć ciasto.",
+        "Uformuj wałki i tnij je ukośnie na kopytka.",
+        "Gotuj partiami w osolonej wodzie ok. 2 minuty od wypłynięcia.",
+        "Zrumień bułkę tartą na maśle i polej nią kopytka.",
+        "Podawaj z surówką z marchewki i jabłka."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/kopytka"
+    },
+    {
+      "id": "leniwe",
+      "name": "Leniwe",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 35,
+      "servings": 4,
+      "ingredients": [
+        "500 g twarogu półtłustego",
+        "2 jajka",
+        "150 g mąki pszennej",
+        "szczypta soli",
+        "50 g masła",
+        "3 łyżki bułki tartej",
+        "cukier i cynamon do posypania"
+      ],
+      "steps": [
+        "Rozgnieć twaróg widelcem.",
+        "Dodaj jajka, sól i mąkę, krótko zagnieć ciasto.",
+        "Uformuj wałki, spłaszcz je lekko i pokrój ukośnie.",
+        "Gotuj w osolonej wodzie ok. 2 minuty od wypłynięcia.",
+        "Polej masłem z zarumienioną bułką tartą i posyp cukrem z cynamonem."
+      ],
+      "source": "https://aniagotuje.pl/przepis/kluski-leniwe"
+    },
+    {
+      "id": "makaron-ze-szpinakiem",
+      "name": "Makaron ze szpinakiem",
+      "protein": "vegetar",
+      "sides": [
+        "pasta"
+      ],
+      "minutes": 20,
+      "servings": 4,
+      "ingredients": [
+        "400 g makaronu penne lub świderki",
+        "300 g świeżego szpinaku",
+        "1 cebula",
+        "2 ząbki czosnku",
+        "200 ml śmietanki 30%",
+        "80 g parmezanu",
+        "1 łyżka oliwy",
+        "1 łyżka masła",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Ugotuj makaron al dente.",
+        "Podsmaż cebulę i czosnek na oliwie z masłem.",
+        "Dodaj szpinak i smaż, aż zwiędnie.",
+        "Wlej śmietankę, zagotuj i dodaj tarty parmezan.",
+        "Wymieszaj z makaronem, dopraw solą i pieprzem."
+      ],
+      "source": "https://www.kwestiasmaku.com/przepis/makaron-ze-szpinakiem"
+    },
+    {
+      "id": "pizza-margherita",
+      "name": "Pizza margherita",
+      "protein": "vegetar",
+      "sides": [
+        "brod"
+      ],
+      "minutes": 60,
+      "servings": 4,
+      "ingredients": [
+        "500 g mąki pszennej",
+        "300 ml ciepłej wody",
+        "7 g suchych drożdży",
+        "2 łyżki oliwy",
+        "1 łyżeczka soli",
+        "400 g pomidorów z puszki",
+        "250 g mozzarelli",
+        "1 łyżeczka suszonego oregano",
+        "świeża bazylia"
+      ],
+      "steps": [
+        "Wymieszaj mąkę, drożdże, sól, wodę i oliwę, wyrób gładkie ciasto.",
+        "Odstaw w ciepłe miejsce na ok. 30 minut.",
+        "Zmiksuj pomidory z oregano i szczyptą soli.",
+        "Nagrzej piekarnik do maksymalnej temperatury, rozwałkuj ciasto na 2 blachy.",
+        "Posmaruj sosem, ułóż mozzarellę i piecz 10–12 minut.",
+        "Posyp bazylią i podawaj."
+      ],
+      "source": "https://aniagotuje.pl/przepis/pizza-margherita"
+    },
+    {
+      "id": "szpinak-z-jajkiem-sadzonym-i-ziemniakami",
+      "name": "Szpinak z jajkiem sadzonym i ziemniakami",
+      "protein": "vegetar",
+      "sides": [
+        "kartofler"
+      ],
+      "minutes": 30,
+      "servings": 4,
+      "ingredients": [
+        "450 g mrożonego szpinaku",
+        "1 cebula",
+        "2 ząbki czosnku",
+        "100 ml śmietany 18%",
+        "2 łyżki masła",
+        "8 jajek",
+        "1 kg ziemniaków",
+        "1 szczypta gałki muszkatołowej",
+        "sól i pieprz"
+      ],
+      "steps": [
+        "Ugotuj ziemniaki.",
+        "Zeszklij cebulę i czosnek na łyżce masła.",
+        "Dodaj szpinak i duś, aż odparuje woda.",
+        "Wlej śmietanę, dopraw solą, pieprzem i gałką.",
+        "Usmaż jajka sadzone na reszcie masła.",
+        "Podawaj szpinak z jajkami i ziemniakami."
+      ],
+      "source": "https://www.przepisy.pl/przepis/szpinak-z-jajkiem"
+    }
+  ]
+}

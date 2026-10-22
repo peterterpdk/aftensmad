@@ -107,7 +107,82 @@
 </main>
 
 <main class="wrap login" id="loginView" hidden>
-  <form class="loginbox" id="loginForm" novalidate>
+  <!-- 1. Velkomst -->
+  <section class="ob obwelcome" id="obWelcome" aria-labelledby="obWelcomeTitle">
+    <img src="/icons/icon-192.png" alt="" width="96" height="96">
+    <div><h1 id="obWelcomeTitle">Dinnerweek</h1><p class="obsub">What’s for dinner?</p></div>
+    <p class="oblead">Ugens aftensmad, klar på få minutter. Træk ugen, lås det, I er enige om, og få indkøbslisten samlet pr. afdeling.</p>
+    <div class="obactions">
+      <button class="primary" type="button" id="obToSignup">Opret konto</button>
+      <button type="button" id="obToLogin">Log ind</button>
+    </div>
+    <p class="hint">Privatlivspolitik og vilkår følger, før appen kommer i App Store.</p>
+  </section>
+
+  <!-- 2. Opret konto: sprog, region og metode -->
+  <section class="ob" id="obSignup" aria-labelledby="obSignupTitle" hidden>
+    <div class="obhead"><button class="ghost obback" type="button" data-ob="welcome" aria-label="Tilbage">‹ Tilbage</button><span class="obstep">Trin 1 af 2</span></div>
+    <h1 id="obSignupTitle">Opret konto</h1>
+    <div class="obrow">
+      <label class="f">Sprog<select id="obLang"><option value="da">Dansk</option><option value="nb">Norsk</option><option value="sv">Svensk</option><option value="en">English</option></select></label>
+      <label class="f">Region<select id="obRegion"><option value="DK">Danmark</option><option value="NO">Norge</option><option value="SE">Sverige</option></select></label>
+    </div>
+    <p class="hint">Regionen bestemmer de lokale favoritretter og butikkens afdelinger på indkøbslisten.</p>
+    <div class="f"><span id="obMethodLabel">Hvordan vil du oprette dig?</span>
+      <div class="obmethods" role="group" aria-labelledby="obMethodLabel">
+        <button type="button" class="obm" data-m="mail" aria-pressed="false">Mail og adgangskode</button>
+        <button type="button" class="obm" data-m="apple" aria-pressed="false">Fortsæt med Apple</button>
+        <button type="button" class="obm" data-m="google" aria-pressed="false">Fortsæt med Google</button>
+        <button type="button" class="obm" data-m="facebook" aria-pressed="false">Fortsæt med Facebook</button>
+        <button type="button" class="obm" data-m="instagram" aria-pressed="false">Fortsæt med Instagram</button>
+        <button type="button" class="obm" data-m="other" aria-pressed="false">Andre muligheder</button>
+      </div>
+    </div>
+    <p class="hint" id="obMethodNote">Testversion: valget bliver kun markeret.</p>
+    <div class="status" id="obSignupStatus" role="status"></div>
+    <button class="primary" type="button" id="obToPlan">Næste</button>
+  </section>
+
+  <!-- 3. Vælg udgave -->
+  <section class="ob obwide" id="obPlan" aria-labelledby="obPlanTitle" hidden>
+    <div class="obhead"><button class="ghost obback" type="button" data-ob="signup" aria-label="Tilbage">‹ Tilbage</button><span class="obstep">Trin 2 af 2</span></div>
+    <h1 id="obPlanTitle">Vælg udgave</h1>
+    <div class="obtiers" role="group" aria-label="Udgaver">
+      <button type="button" class="tier" data-tier="gratis" aria-pressed="false">
+        <span class="tname">Gratis</span>
+        <span class="tprice"><b>0 kr.</b> altid</span>
+        <span class="twho">Til den, der vil prøve</span>
+        <ul><li>1 bruger</li><li>Ugeplan med trækning, lås og filtre</li><li>50 lokale favoritretter</li><li>Op til 30 egne opskrifter: 10 med AI og 5 fra link</li><li>Indkøbsliste for ugen</li></ul>
+      </button>
+      <button type="button" class="tier main" data-tier="fuld" aria-pressed="false">
+        <span class="tbadge">Anbefalet</span>
+        <span class="tname">Fuld version</span>
+        <span class="tprice"><b>49 kr.</b> én gang</span>
+        <span class="twho">Til familien, der planlægger sammen</span>
+        <ul><li>Alt i Gratis</li><li>Husstand med op til 5 brugere</li><li>Ubegrænset egne opskrifter</li><li>20 AI-opskrifter fra navn, link, billede eller tekst</li><li>»Jeg er i køkkenet« og planer flere uger frem</li></ul>
+      </button>
+      <button type="button" class="tier" data-tier="premium" aria-pressed="false">
+        <span class="tname">Premium version med AI</span>
+        <span class="tprice"><b>15 kr.</b> pr. måned</span>
+        <span class="twho">Til den, der samler mange nye opskrifter</span>
+        <ul><li>Alt i Fuld version</li><li>AI-opskrifter og import løbende, op til 30 pr. måned</li><li>Nye funktioner først</li><li>Kan opsiges når som helst</li></ul>
+      </button>
+    </div>
+    <p class="hint">Priser inkl. moms. Premium koster ca. 180 kr. om året og forudsætter ikke køb af Fuld version.</p>
+    <div class="status" id="obPlanStatus" role="status"></div>
+    <button class="primary" type="button" id="obFinish">Fortsæt</button>
+  </section>
+
+  <!-- Slut på prototypen -->
+  <section class="ob" id="obDone" aria-labelledby="obDoneTitle" hidden>
+    <h1 id="obDoneTitle">Tak, dine valg er noteret</h1>
+    <p class="oblead" id="obSummary"></p>
+    <p class="hint">Testversion: oprettelse er ikke åben endnu. Log ind med den mail og kode, du har fået, eller bed om en invitation fra en i familien.</p>
+    <div class="obactions"><button class="primary" type="button" id="obDoneLogin">Gå til Log ind</button><button type="button" data-ob="welcome">Til start</button></div>
+  </section>
+
+  <form class="loginbox" id="loginForm" novalidate hidden>
+    <div class="obhead"><button class="ghost obback" type="button" data-ob="welcome" aria-label="Tilbage">‹ Tilbage</button></div>
     <img src="/icons/icon-192.png" alt="" width="72" height="72">
     <h1>Log ind</h1>
     <p class="hint">Brug den mail og adgangskode, du har fået. Du forbliver logget ind på denne telefon.</p>

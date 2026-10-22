@@ -518,7 +518,7 @@ function openEdit(id,r,via){
 }
 
 /* ---------- login & boot ---------- */
-function show(view){ $("#bootView").hidden=view!=="boot"; $("#loginView").hidden=view!=="login"; $("#appView").hidden=view!=="app"; $("#tabs").hidden=view!=="app"; }
+function show(view){ $("#bootView").hidden=view!=="boot"; $("#loginView").hidden=view!=="login"; $("#appView").hidden=view!=="app"; $("#tabs").hidden=view!=="app"; if(view==="login") obGo("welcome"); }
 
 /* ---------- faner: Ugen, Opskrifter, Profil ---------- */
 const TABS=["week","recipes","profile"];
@@ -545,6 +545,44 @@ async function startApp(){
   subscribe();
   await refreshAll();
 }
+/* ---------- velkomst og oprettelse (prototype, gemmer intet) ---------- */
+const OB_STEPS={welcome:"#obWelcome",signup:"#obSignup",plan:"#obPlan",done:"#obDone",login:"#loginForm"};
+const ob={method:null,tier:null};
+function obGo(step){
+  for(const [k,sel] of Object.entries(OB_STEPS)) $(sel).hidden=k!==step;
+  window.scrollTo(0,0);
+  const first=$(OB_STEPS[step]).querySelector("h1"); if(first){first.tabIndex=-1;first.focus({preventScroll:true})}
+  if(step==="login") setTimeout(()=>$("#loginEmail").focus(),0);
+}
+$("#loginView").addEventListener("click",e=>{const b=e.target.closest("[data-ob]"); if(b) obGo(b.dataset.ob)});
+$("#obToSignup").onclick=()=>obGo("signup");
+$("#obToLogin").onclick=()=>obGo("login");
+const METHOD_NOTE={mail:"Du opretter dig med mail og en adgangskode på mindst 8 tegn.",apple:"Apple kan skjule din mail for os.",google:"Du bruger din Google-konto.",facebook:"Du bruger din Facebook-konto.",instagram:"Bemærk: Instagram tilbyder ikke længere login til almindelige personlige konti.",other:"Fx Microsoft. Fortæl os, hvad du savner."};
+document.querySelectorAll(".obm").forEach(b=>b.onclick=()=>{
+  ob.method=b.dataset.m;
+  document.querySelectorAll(".obm").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
+  $("#obMethodNote").textContent="Testversion: valget bliver kun markeret. "+METHOD_NOTE[ob.method];
+  $("#obSignupStatus").textContent="";
+});
+$("#obToPlan").onclick=()=>{
+  if(!ob.method){const st=$("#obSignupStatus");st.className="status err";st.textContent="Vælg, hvordan du vil oprette dig.";return}
+  obGo("plan");
+};
+document.querySelectorAll(".tier").forEach(b=>b.onclick=()=>{
+  ob.tier=b.dataset.tier;
+  document.querySelectorAll(".tier").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
+  $("#obPlanStatus").textContent="";
+});
+$("#obFinish").onclick=()=>{
+  if(!ob.tier){const st=$("#obPlanStatus");st.className="status err";st.textContent="Vælg en udgave.";return}
+  const lang=$("#obLang").selectedOptions[0].textContent, region=$("#obRegion").selectedOptions[0].textContent;
+  const m=document.querySelector(`.obm[data-m="${ob.method}"]`).textContent;
+  const t={gratis:"Gratis",fuld:"Fuld version til 49 kr. én gang",premium:"Premium version med AI til 15 kr. pr. måned"}[ob.tier];
+  $("#obSummary").textContent=`Sprog: ${lang}. Region: ${region}. Oprettelse: ${m}. Udgave: ${t}.`;
+  obGo("done");
+};
+$("#obDoneLogin").onclick=()=>obGo("login");
+
 $("#loginForm").addEventListener("submit",async e=>{
   e.preventDefault();
   const email=$("#loginEmail").value.trim(), password=$("#loginPass").value, st=$("#loginStatus"), btn=$("#loginBtn");

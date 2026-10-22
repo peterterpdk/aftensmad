@@ -23,7 +23,7 @@ Ejer: peterterpdk. Alle tekster i appen og alle svar til brugeren er på dansk. 
 
 ## Design
 
-Tre faner i det grønne topbånd: Ugen (ugeplan og indkøbsliste), Opskrifter (kartotek) og Profil (konto, inviter familiemedlem, skift adgangskode, log ud). Valgt fane huskes i `localStorage` (`aftensmad-tab`). Farver følger logoet (mørkegrøn #22412F, creme #F6F0DA, guld #F3C14E). Alle farver er tokens i `:root` med mørk tilstand. Mobil først: ingen vandret scroll ved 390 px. Topbåndet reserverer 1,7 gange statuslinjens højde, fordi iOS lægger en lys toning over toppen.
+Tre faner i det grønne topbånd: Ugen (ugeplan og indkøbsliste), Opskrifter (kartotek) og Profil (konto, inviter familiemedlem, skift adgangskode, log ud). Valgt fane huskes i `localStorage` (`aftensmad-tab`). Uden login vises en prototype på oprettelse: Velkomst (Opret konto / Log ind), Opret konto (sprog, region, metode) og Vælg udgave (Gratis, Fuld version, Premium). Valgene markeres kun og gemmes ikke; Log ind med mail og adgangskode virker. Farver følger logoet (mørkegrøn #22412F, creme #F6F0DA, guld #F3C14E). Alle farver er tokens i `:root` med mørk tilstand. Mobil først: ingen vandret scroll ved 390 px. Topbåndet reserverer 1,7 gange statuslinjens højde, fordi iOS lægger en lys toning over toppen.
 
 ## Arbejdsgang
 

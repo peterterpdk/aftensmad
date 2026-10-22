@@ -5,7 +5,8 @@ Ejer: peterterpdk. Alle tekster i appen og alle svar til brugeren er på dansk. 
 
 ## Opbygning
 
-- Statisk frontend uden build-trin: `index.html`, `app.js`, `styles.css`, `shopping.js`, `manifest.webmanifest`, `icons/`.
+- Statisk frontend uden build-trin: `index.html`, `app.js`, `styles.css`, `shopping.js`, `onboarding.js`, `manifest.webmanifest`, `icons/`.
+- `onboarding.js` (indlæses før `app.js`): skærmene før login med sproglag (en, da, nb, sv; engelsk som standard) og de 50 lokale retter pr. region (`DISHES`, kun `DK` indtil videre; andre regioner viser de danske med en note). Giver `window.Onb` med `go`, `t`, `apply`. Valgt sprog og region huskes i `localStorage` (`dw-ob-lang`, `dw-ob-region`).
 - `vendor/supabase.js`: Supabase-klienten (UMD, version 2.117.2). Hent ikke fra CDN.
 - Vercel-funktioner i `api/` (CommonJS, Node 18+, global `fetch`):
   - `config.js`: giver frontend `SUPABASE_URL` (kun origin) og `SUPABASE_ANON_KEY`.
@@ -23,7 +24,7 @@ Ejer: peterterpdk. Alle tekster i appen og alle svar til brugeren er på dansk. 
 
 ## Design
 
-Tre faner i det grønne topbånd: Ugen (ugeplan og indkøbsliste), Opskrifter (kartotek) og Profil (konto, inviter familiemedlem, skift adgangskode, log ud). Valgt fane huskes i `localStorage` (`aftensmad-tab`). Uden login vises en prototype på oprettelse: Velkomst (Opret konto / Log ind), Opret konto (sprog, region, metode) og Vælg udgave (Gratis, Fuld version, Premium). Valgene markeres kun og gemmes ikke; Log ind med mail og adgangskode virker. Farver følger logoet (mørkegrøn #22412F, creme #F6F0DA, guld #F3C14E). Alle farver er tokens i `:root` med mørk tilstand. Mobil først: ingen vandret scroll ved 390 px. Topbåndet reserverer 1,7 gange statuslinjens højde, fordi iOS lægger en lys toning over toppen.
+Tre faner i det grønne topbånd: Ugen (ugeplan og indkøbsliste), Opskrifter (kartotek) og Profil (konto, inviter familiemedlem, skift adgangskode, log ud). Valgt fane huskes i `localStorage` (`aftensmad-tab`). Uden login vises en prototype på oprettelse: Velkomst på engelsk, hvor sprog og region vælges først (region er påkrævet) og derefter Opret konto / Log ind; trin 1 Opret konto (metode), trin 2 Retter (de 50 retter for regionen, tryk stryger en ret ud som på indkøbslisten) og trin 3 Vælg udgave (Gratis, Fuld version, Premium). Valgene markeres kun og gemmes ikke i Supabase; Log ind med mail og adgangskode virker. Appen efter login er på dansk. Farver følger logoet (mørkegrøn #22412F, creme #F6F0DA, guld #F3C14E). Alle farver er tokens i `:root` med mørk tilstand. Mobil først: ingen vandret scroll ved 390 px. Topbåndet reserverer 1,7 gange statuslinjens højde, fordi iOS lægger en lys toning over toppen.
 
 ## Arbejdsgang
 

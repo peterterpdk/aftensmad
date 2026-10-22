@@ -107,90 +107,107 @@
 </main>
 
 <main class="wrap login" id="loginView" hidden>
-  <!-- 1. Velkomst -->
+  <!-- Velkomst: sprog og region først, derefter Opret konto / Log ind. Teksterne skifter sprog via onboarding.js. -->
   <section class="ob obwelcome" id="obWelcome" aria-labelledby="obWelcomeTitle">
     <img src="/icons/icon-192.png" alt="" width="96" height="96">
     <div><h1 id="obWelcomeTitle">Dinnerweek</h1><p class="obsub">What’s for dinner?</p></div>
-    <p class="oblead">Ugens aftensmad, klar på få minutter. Træk ugen, lås det, I er enige om, og få indkøbslisten samlet pr. afdeling.</p>
+    <p class="oblead" data-i18n="w.lead"></p>
+    <fieldset class="obpick">
+      <legend data-i18n="w.choose"></legend>
+      <div class="obrow">
+        <label class="f"><span data-i18n="f.lang"></span><select id="obLang"><option value="en">English</option><option value="da">Dansk</option><option value="nb">Norsk</option><option value="sv">Svenska</option></select></label>
+        <label class="f"><span data-i18n="f.region"></span><select id="obRegion" required><option value="" data-i18n="region.ph"></option><option value="DK" data-i18n="region.DK"></option><option value="NO" data-i18n="region.NO"></option><option value="SE" data-i18n="region.SE"></option></select></label>
+      </div>
+      <p class="hint" data-i18n="w.regionHint"></p>
+    </fieldset>
     <div class="obactions">
-      <button class="primary" type="button" id="obToSignup">Opret konto</button>
-      <button type="button" id="obToLogin">Log ind</button>
+      <button class="primary" type="button" id="obToSignup" data-i18n="w.create"></button>
+      <button type="button" id="obToLogin" data-i18n="w.login"></button>
     </div>
-    <p class="hint">Privatlivspolitik og vilkår følger, før appen kommer i App Store.</p>
+    <div class="status" id="obWelcomeStatus" role="status"></div>
+    <p class="hint" data-i18n="w.legal"></p>
   </section>
 
-  <!-- 2. Opret konto: sprog, region og metode -->
+  <!-- 1. Opret konto: metode -->
   <section class="ob obsign" id="obSignup" aria-labelledby="obSignupTitle" hidden>
-    <div class="obhead"><button class="ghost obback" type="button" data-ob="welcome" aria-label="Tilbage">‹ Tilbage</button><span class="obstep">Trin 1 af 2</span></div>
-    <h1 id="obSignupTitle">Opret konto</h1>
-    <div class="obrow">
-      <label class="f">Sprog<select id="obLang"><option value="da">Dansk</option><option value="nb">Norsk</option><option value="sv">Svensk</option><option value="en">English</option></select></label>
-      <label class="f">Region<select id="obRegion"><option value="DK">Danmark</option><option value="NO">Norge</option><option value="SE">Sverige</option></select></label>
-    </div>
+    <div class="obhead"><button class="ghost obback" type="button" data-ob="welcome">‹ <span data-i18n="back">Back</span></button><span class="obstep" data-step="1"></span></div>
+    <h1 id="obSignupTitle" data-i18n="s.title"></h1>
     <div class="obmail" data-m="mail" aria-pressed="false" id="obMailBox">
-      <input type="email" id="obEmail" placeholder="Mail" autocomplete="email" inputmode="email" aria-label="Mail">
-      <div class="obpw"><input type="password" id="obPass" placeholder="Adgangskode, mindst 8 tegn" autocomplete="new-password" aria-label="Adgangskode"><button type="button" class="obeye" id="obEye" aria-label="Vis adgangskode" aria-pressed="false"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button></div>
+      <input type="email" id="obEmail" data-i18n-ph="s.mail" data-i18n-aria="s.mail" autocomplete="email" inputmode="email">
+      <div class="obpw"><input type="password" id="obPass" data-i18n-ph="s.pw" data-i18n-aria="login.pw" autocomplete="new-password"><button type="button" class="obeye" id="obEye" aria-pressed="false"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button></div>
     </div>
-    <button class="obgo" type="button" id="obToPlan">Kom i gang</button>
-    <div class="obor"><span>eller</span></div>
-    <div class="obmethods" role="group" aria-label="Opret dig med en anden konto">
-      <button type="button" class="obm obm-google" data-m="google" aria-pressed="false">Fortsæt med Google</button>
-      <button type="button" class="obm obm-apple" data-m="apple" aria-pressed="false">Fortsæt med Apple</button>
-      <button type="button" class="obm obm-facebook" data-m="facebook" aria-pressed="false">Fortsæt med Facebook</button>
-      <button type="button" class="obm obm-instagram" data-m="instagram" aria-pressed="false">Fortsæt med Instagram</button>
-      <button type="button" class="oblink" data-m="other" aria-pressed="false">Andre muligheder</button>
+    <button class="obgo" type="button" id="obToPlan"></button>
+    <div class="obor"><span data-i18n="s.or"></span></div>
+    <div class="obmethods" role="group" data-i18n-aria="s.methods">
+      <button type="button" class="obm obm-google" data-m="google" aria-pressed="false" data-i18n="s.google"></button>
+      <button type="button" class="obm obm-apple" data-m="apple" aria-pressed="false" data-i18n="s.apple"></button>
+      <button type="button" class="obm obm-facebook" data-m="facebook" aria-pressed="false" data-i18n="s.facebook"></button>
+      <button type="button" class="obm obm-instagram" data-m="instagram" aria-pressed="false" data-i18n="s.instagram"></button>
+      <button type="button" class="oblink" data-m="other" aria-pressed="false" data-i18n="s.other"></button>
     </div>
-    <p class="hint obnote" id="obMethodNote">Testversion: valget bliver kun markeret.</p>
+    <p class="hint obnote" id="obMethodNote"></p>
     <div class="status" id="obSignupStatus" role="status"></div>
+  </section>
+
+  <!-- 2. Retter: de 50 lokale retter for regionen; tryk for at stryge en ret -->
+  <section class="ob obwide" id="obDishes" aria-labelledby="obDishesTitle" hidden>
+    <div class="obhead"><button class="ghost obback" type="button" data-ob="signup">‹ <span data-i18n="back">Back</span></button><span class="obstep" data-step="2"></span></div>
+    <h1 id="obDishesTitle" data-i18n="d.title"></h1>
+    <p class="oblead" data-i18n="d.intro"></p>
+    <p class="hint" id="obDishFallback" hidden></p>
+    <div class="obdishbar"><b id="obDishCount" role="status"></b><button type="button" class="ghost" id="obDishReset" data-i18n="d.reset"></button></div>
+    <p class="hint" id="obDishNames"></p>
+    <div class="obdishes" id="obDishList"></div>
+    <button class="primary" type="button" id="obToTiers" data-i18n="s.next"></button>
   </section>
 
   <!-- 3. Vælg udgave -->
   <section class="ob obwide" id="obPlan" aria-labelledby="obPlanTitle" hidden>
-    <div class="obhead"><button class="ghost obback" type="button" data-ob="signup" aria-label="Tilbage">‹ Tilbage</button><span class="obstep">Trin 2 af 2</span></div>
-    <h1 id="obPlanTitle">Vælg udgave</h1>
-    <div class="obtiers" role="group" aria-label="Udgaver">
+    <div class="obhead"><button class="ghost obback" type="button" data-ob="dishes">‹ <span data-i18n="back">Back</span></button><span class="obstep" data-step="3"></span></div>
+    <h1 id="obPlanTitle" data-i18n="p.title"></h1>
+    <div class="obtiers" role="group" data-i18n-aria="p.title">
       <button type="button" class="tier" data-tier="gratis" aria-pressed="false">
-        <span class="tname">Gratis</span>
-        <span class="tprice"><b>0 kr.</b> altid</span>
-        <span class="twho">Til den, der vil prøve</span>
-        <ul><li>1 bruger</li><li>Ugeplan med trækning, lås og filtre</li><li>50 lokale favoritretter</li><li>Op til 30 egne opskrifter: 10 med AI og 5 fra link</li><li>Indkøbsliste for ugen</li></ul>
+        <span class="tname" data-i18n="t.free"></span>
+        <span class="tprice"><b>0 kr.</b> <span data-i18n="t.always"></span></span>
+        <span class="twho" data-i18n="t.whoFree"></span>
+        <ul><li data-i18n="f1"></li><li data-i18n="f2"></li><li data-i18n="f3"></li><li data-i18n="f4"></li><li data-i18n="f5"></li></ul>
       </button>
       <button type="button" class="tier main" data-tier="fuld" aria-pressed="false">
-        <span class="tbadge">Anbefalet</span>
-        <span class="tname">Fuld version</span>
-        <span class="tprice"><b>49 kr.</b> én gang</span>
-        <span class="twho">Til familien, der planlægger sammen</span>
-        <ul><li>Alt i Gratis</li><li>Husstand med op til 5 brugere</li><li>Ubegrænset egne opskrifter</li><li>20 AI-opskrifter fra navn, link, billede eller tekst</li><li>»Jeg er i køkkenet« og planer flere uger frem</li></ul>
+        <span class="tbadge" data-i18n="badge"></span>
+        <span class="tname" data-i18n="t.full"></span>
+        <span class="tprice"><b>49 kr.</b> <span data-i18n="t.once"></span></span>
+        <span class="twho" data-i18n="t.whoFull"></span>
+        <ul><li data-i18n="u1"></li><li data-i18n="u2"></li><li data-i18n="u3"></li><li data-i18n="u4"></li><li data-i18n="u5"></li></ul>
       </button>
       <button type="button" class="tier" data-tier="premium" aria-pressed="false">
-        <span class="tname">Premium version med AI</span>
-        <span class="tprice"><b>15 kr.</b> pr. måned</span>
-        <span class="twho">Til den, der samler mange nye opskrifter</span>
-        <ul><li>Alt i Fuld version</li><li>AI-opskrifter og import løbende, op til 30 pr. måned</li><li>Nye funktioner først</li><li>Kan opsiges når som helst</li></ul>
+        <span class="tname" data-i18n="t.premium"></span>
+        <span class="tprice"><b>15 kr.</b> <span data-i18n="t.month"></span></span>
+        <span class="twho" data-i18n="t.whoPrem"></span>
+        <ul><li data-i18n="q1"></li><li data-i18n="q2"></li><li data-i18n="q3"></li><li data-i18n="q4"></li></ul>
       </button>
     </div>
-    <p class="hint">Priser inkl. moms. Premium koster ca. 180 kr. om året og forudsætter ikke køb af Fuld version.</p>
+    <p class="hint" data-i18n="p.footer"></p>
     <div class="status" id="obPlanStatus" role="status"></div>
-    <button class="primary" type="button" id="obFinish">Fortsæt</button>
+    <button class="primary" type="button" id="obFinish" data-i18n="p.continue"></button>
   </section>
 
   <!-- Slut på prototypen -->
   <section class="ob" id="obDone" aria-labelledby="obDoneTitle" hidden>
-    <h1 id="obDoneTitle">Tak, dine valg er noteret</h1>
+    <h1 id="obDoneTitle" data-i18n="done.title"></h1>
     <p class="oblead" id="obSummary"></p>
-    <p class="hint">Testversion: oprettelse er ikke åben endnu. Log ind med den mail og kode, du har fået, eller bed om en invitation fra en i familien.</p>
-    <div class="obactions"><button class="primary" type="button" id="obDoneLogin">Gå til Log ind</button><button type="button" data-ob="welcome">Til start</button></div>
+    <p class="hint" data-i18n="done.note"></p>
+    <div class="obactions"><button class="primary" type="button" id="obDoneLogin" data-i18n="done.toLogin"></button><button type="button" data-ob="welcome" data-i18n="done.toStart"></button></div>
   </section>
 
   <form class="loginbox" id="loginForm" novalidate hidden>
-    <div class="obhead"><button class="ghost obback" type="button" data-ob="welcome" aria-label="Tilbage">‹ Tilbage</button></div>
+    <div class="obhead"><button class="ghost obback" type="button" data-ob="welcome">‹ <span data-i18n="back">Back</span></button></div>
     <img src="/icons/icon-192.png" alt="" width="72" height="72">
-    <h1>Log ind</h1>
-    <p class="hint">Brug den mail og adgangskode, du har fået. Du forbliver logget ind på denne telefon.</p>
-    <label class="f">Mail<input type="email" id="loginEmail" autocomplete="username" inputmode="email" required></label>
-    <label class="f">Adgangskode<input type="password" id="loginPass" autocomplete="current-password" required></label>
+    <h1 data-i18n="login.title"></h1>
+    <p class="hint" data-i18n="login.hint"></p>
+    <label class="f"><span data-i18n="login.mail"></span><input type="email" id="loginEmail" autocomplete="username" inputmode="email" required></label>
+    <label class="f"><span data-i18n="login.pw"></span><input type="password" id="loginPass" autocomplete="current-password" required></label>
     <div class="status" id="loginStatus" role="status"></div>
-    <button class="primary" type="submit" id="loginBtn">Log ind</button>
+    <button class="primary" type="submit" id="loginBtn" data-i18n="login.btn"></button>
   </form>
 </main>
 
@@ -204,6 +221,7 @@
 
 <script src="/vendor/supabase.js"></script>
 <script src="/shopping.js"></script>
+<script src="/onboarding.js"></script>
 <script src="/app.js"></script>
 </body>
 </html>

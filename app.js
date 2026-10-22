@@ -518,7 +518,7 @@ function openEdit(id,r,via){
 }
 
 /* ---------- login & boot ---------- */
-function show(view){ $("#bootView").hidden=view!=="boot"; $("#loginView").hidden=view!=="login"; $("#appView").hidden=view!=="app"; $("#tabs").hidden=view!=="app"; if(view==="login") obGo("welcome"); }
+function show(view){ $("#bootView").hidden=view!=="boot"; $("#loginView").hidden=view!=="login"; $("#appView").hidden=view!=="app"; $("#tabs").hidden=view!=="app"; if(view==="login"){ Onb.apply(); Onb.go("welcome"); } else document.documentElement.lang="da"; }
 
 /* ---------- faner: Ugen, Opskrifter, Profil ---------- */
 const TABS=["week","recipes","profile"];
@@ -545,68 +545,22 @@ async function startApp(){
   subscribe();
   await refreshAll();
 }
-/* ---------- velkomst og oprettelse (prototype, gemmer intet) ---------- */
-const OB_STEPS={welcome:"#obWelcome",signup:"#obSignup",plan:"#obPlan",done:"#obDone",login:"#loginForm"};
-const ob={method:null,tier:null};
-function obGo(step){
-  for(const [k,sel] of Object.entries(OB_STEPS)) $(sel).hidden=k!==step;
-  window.scrollTo(0,0);
-  const first=$(OB_STEPS[step]).querySelector("h1"); if(first){first.tabIndex=-1;first.focus({preventScroll:true})}
-  if(step==="login") setTimeout(()=>$("#loginEmail").focus(),0);
-}
-$("#loginView").addEventListener("click",e=>{const b=e.target.closest("[data-ob]"); if(b) obGo(b.dataset.ob)});
-$("#obToSignup").onclick=()=>obGo("signup");
-$("#obToLogin").onclick=()=>obGo("login");
-const METHOD_NOTE={mail:"Du opretter dig med mail og en adgangskode.",apple:"Apple kan skjule din mail for os.",google:"Du bruger din Google-konto.",facebook:"Du bruger din Facebook-konto.",instagram:"Bemærk: Instagram tilbyder ikke længere login til almindelige personlige konti.",other:"Fx Microsoft. Fortæl os, hvad du savner."};
-const OB_LABEL={mail:"Mail og adgangskode",apple:"Fortsæt med Apple",google:"Fortsæt med Google",facebook:"Fortsæt med Facebook",instagram:"Fortsæt med Instagram",other:"Andre muligheder"};
-function obPick(m){
-  ob.method=m;
-  document.querySelectorAll("#obSignup [data-m]").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.m===m)));
-  $("#obMethodNote").textContent="Testversion: valget bliver kun markeret. "+METHOD_NOTE[m];
-  $("#obSignupStatus").textContent="";
-  $("#obToPlan").textContent=m==="mail"?"Kom i gang":"Næste";
-}
-document.querySelectorAll("#obSignup .obm, #obSignup .oblink").forEach(b=>b.onclick=()=>obPick(b.dataset.m));
-["#obEmail","#obPass"].forEach(sel=>$(sel).addEventListener("input",()=>{ if(ob.method!=="mail") obPick("mail"); }));
-$("#obEye").onclick=()=>{const p=$("#obPass"),on=p.type==="password";p.type=on?"text":"password";$("#obEye").setAttribute("aria-pressed",String(on));$("#obEye").setAttribute("aria-label",on?"Skjul adgangskode":"Vis adgangskode")};
-$("#obToPlan").onclick=()=>{
-  const st=$("#obSignupStatus"); st.className="status err";
-  if(!ob.method){st.textContent="Skriv mail og adgangskode, eller vælg en anden måde at oprette dig på.";return}
-  if(ob.method==="mail"){
-    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($("#obEmail").value.trim())){st.textContent="Skriv en gyldig mail.";return}
-    if($("#obPass").value.length<8){st.textContent="Adgangskoden skal være mindst 8 tegn.";return}
-  }
-  st.textContent=""; obGo("plan");
-};
-document.querySelectorAll(".tier").forEach(b=>b.onclick=()=>{
-  ob.tier=b.dataset.tier;
-  document.querySelectorAll(".tier").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
-  $("#obPlanStatus").textContent="";
-});
-$("#obFinish").onclick=()=>{
-  if(!ob.tier){const st=$("#obPlanStatus");st.className="status err";st.textContent="Vælg en udgave.";return}
-  const lang=$("#obLang").selectedOptions[0].textContent, region=$("#obRegion").selectedOptions[0].textContent;
-  const m=OB_LABEL[ob.method];
-  const t={gratis:"Gratis",fuld:"Fuld version til 49 kr. én gang",premium:"Premium version med AI til 15 kr. pr. måned"}[ob.tier];
-  $("#obSummary").textContent=`Sprog: ${lang}. Region: ${region}. Oprettelse: ${m}. Udgave: ${t}.`;
-  obGo("done");
-};
-$("#obDoneLogin").onclick=()=>obGo("login");
+/* Velkomst, oprettelse og sprog før login ligger i onboarding.js (window.Onb). */
 
 $("#loginForm").addEventListener("submit",async e=>{
   e.preventDefault();
   const email=$("#loginEmail").value.trim(), password=$("#loginPass").value, st=$("#loginStatus"), btn=$("#loginBtn");
-  if(!email||!password){st.className="status err";st.textContent="Skriv både mail og adgangskode.";return}
-  btn.disabled=true; st.className="status"; st.textContent="Logger ind …";
+  if(!email||!password){st.className="status err";st.textContent=Onb.t("login.empty");return}
+  btn.disabled=true; st.className="status"; st.textContent=Onb.t("login.busy");
   const {error}=await sb.auth.signInWithPassword({email,password});
   btn.disabled=false;
   if(error){
     const m=String(error.message||"");
     st.className="status err";
-    st.textContent=/invalid login credentials/i.test(m)?"Forkert mail eller adgangskode."
+    st.textContent=/invalid login credentials/i.test(m)?Onb.t("login.wrong")
       :/email not confirmed/i.test(m)?"Brugeren er ikke bekræftet. Sæt flueben i Auto Confirm User, når brugeren oprettes i Supabase."
       :/api key|apikey|jwt|unauthori[sz]ed|no api key/i.test(m)?"Appens nøgle til Supabase virker ikke ("+m+"). Tjek SUPABASE_ANON_KEY i Vercel."
-      :"Login mislykkedes: "+(m||"ukendt fejl")+".";
+      :Onb.t("login.fail",{m:m||"?"});
     return;
   }
   st.textContent=""; startApp();

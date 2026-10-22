@@ -1,4 +1,4 @@
-/* Planlæg ugens aftensmad: web-app på Supabase. Tre faner: Ugen, Opskrifter og Profil.
+/* Dinnerweek (What’s for dinner?): web-app på Supabase til at planlægge ugens aftensmad. Tre faner: Ugen, Opskrifter og Profil.
    Alle funktioner fra den tidligere side: ugeplan med trækning, filtre, lås, spring over,
    regler, kopiér plan, kartotek med søgning, vis/ret/slet, tilføj med AI, via link, tekst, billede eller selv.
    Travle dage (kun hurtige retter), antal personer pr. dag og favoritter. */
@@ -575,7 +575,7 @@ $("#inviteForm").addEventListener("submit",async e=>{
     const r=await fetch("/api/invite",{method:"POST",headers:{"content-type":"application/json",Authorization:"Bearer "+session.access_token},body:JSON.stringify({email})});
     const j=await r.json().catch(()=>({}));
     if(!r.ok||!j.password) throw new Error(j.error||"Invitationen mislykkedes. Prøv igen.");
-    $("#inviteMsg").value=`Hej! Du er inviteret til vores fælles aftensmadsplan.\n\n1. Åbn ${location.origin} i Safari.\n2. Log ind med ${j.email} og adgangskoden ${j.password}\n3. Tryk Del og Føj til hjemmeskærm, så har du appen.\n4. Skift adgangskoden under Profil.`;
+    $("#inviteMsg").value=`Hej! Du er inviteret til Dinnerweek, vores fælles plan for aftensmad.\n\n1. Åbn ${location.origin} i Safari.\n2. Log ind med ${j.email} og adgangskoden ${j.password}\n3. Tryk Del og Føj til hjemmeskærm, så har du appen.\n4. Skift adgangskoden under Profil.`;
     $("#inviteShare").hidden=!navigator.share; $("#inviteResult").hidden=false;
     $("#inviteEmail").value=""; st.className="status"; st.textContent=`${j.email} er oprettet.`;
   }catch(err){ st.className="status err"; st.textContent=err.message; }

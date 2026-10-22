@@ -27,7 +27,7 @@ img{max-width:100%}
 .topinner{max-width:980px;margin:0 auto;padding-block:14px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;align-items:center;justify-content:space-between;gap:12px}
 .brand{display:flex;align-items:center;gap:12px}
 .brand img{border-radius:10px;display:block}
-.brand span{display:block;font-size:13px;opacity:.85;line-height:1.1}
+.brand span{display:block;font-size:13px;opacity:.85;line-height:1.2;margin-top:2px}
 .brand b{display:block;font-size:24px;font-weight:700;letter-spacing:-.01em;line-height:1.1}
 .onband{color:var(--on-brand);border-color:color-mix(in srgb,var(--on-brand) 35%,transparent)}
 /* faner i det grønne bånd */

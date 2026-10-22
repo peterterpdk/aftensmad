@@ -1,6 +1,6 @@
-# Planlæg ugens aftensmad
+# Dinnerweek (What’s for dinner?)
 
-Familiens fælles ugeplan for aftensmad, opskriftskartotek og indkøbsliste. Web-app til iPhonens hjemmeskærm.
+Appen hedder Dinnerweek med undertitlen What’s for dinner?. Familiens fælles ugeplan for aftensmad, opskriftskartotek og indkøbsliste. Web-app til iPhonens hjemmeskærm.
 Ejer: peterterpdk. Alle tekster i appen og alle svar til brugeren er på dansk. Brug aldrig tankestreg (em dash) i tekster.
 
 ## Opbygning

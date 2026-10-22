@@ -2,7 +2,7 @@
 // Med {dish} skriver Claude selv en opskrift ud fra rettens navn, uden at søge på nettet (meget billigt).
 // Kræver at brugeren er logget ind, så API-nøglen ikke kan misbruges udefra.
 
-const PROTEINS = ["kylling", "okse", "gris", "fisk", "vegetar"];
+const PROTEINS = ["kylling", "okse", "lam", "gris", "fisk", "vegetar"];
 const SIDES = ["kartofler", "ris", "pasta", "nudler", "bulgur", "couscous", "salat", "brod"];
 const MODEL = process.env.CLAUDE_MODEL || "claude-haiku-5-5";
 const FALLBACK_MODEL = process.env.CLAUDE_FALLBACK_MODEL || "claude-sonnet-5-5";
@@ -10,7 +10,7 @@ const FALLBACK_MODEL = process.env.CLAUDE_FALLBACK_MODEL || "claude-sonnet-5-5";
 const SYSTEM = `Du formaterer opskrifter til et dansk opskriftskartotek for aftensmad.
 Svar KUN med ét JSON-objekt, uden forklaring og uden kodeblok:
 {"name": kort dansk navn på retten,
- "protein": én af "kylling","okse","gris","fisk","vegetar" (lam, kalv og vildt = "okse"; svin, bacon, skinke og pølser = "gris"; skaldyr = "fisk"; uden kød og fisk = "vegetar"),
+ "protein": én af "kylling","okse","lam","gris","fisk","vegetar" (lam = "lam"; kalv og vildt = "okse"; svin, bacon, skinke og pølser = "gris"; skaldyr = "fisk"; uden kød og fisk = "vegetar"),
  "sides": array med et eller flere af "kartofler","ris","pasta","nudler","bulgur","couscous","salat","brod" (det retten serveres med eller er bygget på),
  "minutes": heltal, samlet tid,
  "servings": heltal, antal personer,

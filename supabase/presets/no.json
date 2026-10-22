@@ -4,13 +4,17 @@
   "name": "Familiens favoritter",
   "summary": "Hverdagsmiddager som norske barnefamilier lager uke etter uke.",
   "symbol": "fork.knife",
-  "settings": { "noSameProteinInRow": true },
+  "settings": {
+    "noSameProteinInRow": true
+  },
   "recipes": [
     {
       "id": "kjottkaker-i-brun-saus",
       "name": "Kjøttkaker i brun saus",
       "protein": "okse",
-      "sides": ["kartofler"],
+      "sides": [
+        "kartofler"
+      ],
       "minutes": 45,
       "servings": 4,
       "ingredients": [
@@ -41,7 +45,9 @@
       "id": "karbonader-med-lok",
       "name": "Karbonader med løk",
       "protein": "okse",
-      "sides": ["kartofler"],
+      "sides": [
+        "kartofler"
+      ],
       "minutes": 30,
       "servings": 4,
       "ingredients": [
@@ -68,7 +74,9 @@
       "id": "taco",
       "name": "Taco",
       "protein": "okse",
-      "sides": ["brod"],
+      "sides": [
+        "brod"
+      ],
       "minutes": 30,
       "servings": 4,
       "ingredients": [
@@ -97,7 +105,9 @@
       "id": "spaghetti-bolognese",
       "name": "Spaghetti bolognese",
       "protein": "okse",
-      "sides": ["pasta"],
+      "sides": [
+        "pasta"
+      ],
       "minutes": 40,
       "servings": 4,
       "ingredients": [
@@ -126,7 +136,9 @@
       "id": "lasagne",
       "name": "Lasagne",
       "protein": "okse",
-      "sides": ["salat"],
+      "sides": [
+        "salat"
+      ],
       "minutes": 75,
       "servings": 4,
       "ingredients": [
@@ -156,7 +168,9 @@
       "id": "brun-lapskaus",
       "name": "Brun lapskaus",
       "protein": "okse",
-      "sides": ["brod"],
+      "sides": [
+        "brod"
+      ],
       "minutes": 120,
       "servings": 4,
       "ingredients": [
@@ -186,8 +200,10 @@
     {
       "id": "farikal",
       "name": "Fårikål",
-      "protein": "okse",
-      "sides": ["kartofler"],
+      "protein": "lam",
+      "sides": [
+        "kartofler"
+      ],
       "minutes": 150,
       "servings": 4,
       "ingredients": [
@@ -212,7 +228,9 @@
       "id": "chili-con-carne",
       "name": "Chili con carne",
       "protein": "okse",
-      "sides": ["ris"],
+      "sides": [
+        "ris"
+      ],
       "minutes": 35,
       "servings": 4,
       "ingredients": [
@@ -242,7 +260,9 @@
       "id": "hjemmelagde-hamburgere",
       "name": "Hjemmelagde hamburgere",
       "protein": "okse",
-      "sides": ["kartofler"],
+      "sides": [
+        "kartofler"
+      ],
       "minutes": 40,
       "servings": 4,
       "ingredients": [
@@ -270,7 +290,9 @@
       "id": "langpannepizza-med-kjottdeig",
       "name": "Langpannepizza med kjøttdeig",
       "protein": "okse",
-      "sides": ["salat"],
+      "sides": [
+        "salat"
+      ],
       "minutes": 75,
       "servings": 4,
       "ingredients": [
@@ -298,7 +320,9 @@
       "id": "polsegryte",
       "name": "Pølsegryte",
       "protein": "gris",
-      "sides": ["ris"],
+      "sides": [
+        "ris"
+      ],
       "minutes": 25,
       "servings": 4,
       "ingredients": [
@@ -325,7 +349,10 @@
       "id": "makaronigrateng-med-polse",
       "name": "Makaronigrateng med pølse",
       "protein": "gris",
-      "sides": ["pasta", "salat"],
+      "sides": [
+        "pasta",
+        "salat"
+      ],
       "minutes": 40,
       "servings": 4,
       "ingredients": [
@@ -351,7 +378,9 @@
       "id": "brennende-kjaerlighet",
       "name": "Brennende kjærlighet",
       "protein": "gris",
-      "sides": ["kartofler"],
+      "sides": [
+        "kartofler"
+      ],
       "minutes": 35,
       "servings": 4,
       "ingredients": [
@@ -376,7 +405,9 @@
       "id": "fleskepannekake",
       "name": "Fleskepannekake",
       "protein": "gris",
-      "sides": ["brod"],
+      "sides": [
+        "brod"
+      ],
       "minutes": 50,
       "servings": 4,
       "ingredients": [
@@ -401,7 +432,9 @@
       "id": "ertesuppe-med-svineknoke",
       "name": "Ertesuppe med svineknoke",
       "protein": "gris",
-      "sides": ["brod"],
+      "sides": [
+        "brod"
+      ],
       "minutes": 150,
       "servings": 4,
       "ingredients": [
@@ -430,7 +463,9 @@
       "id": "svinekoteletter-med-surkal",
       "name": "Svinekoteletter med surkål og poteter",
       "protein": "gris",
-      "sides": ["kartofler"],
+      "sides": [
+        "kartofler"
+      ],
       "minutes": 35,
       "servings": 4,
       "ingredients": [
@@ -455,7 +490,9 @@
       "id": "pasta-carbonara",
       "name": "Pasta carbonara",
       "protein": "gris",
-      "sides": ["pasta"],
+      "sides": [
+        "pasta"
+      ],
       "minutes": 20,
       "servings": 4,
       "ingredients": [
@@ -480,7 +517,9 @@
       "id": "wok-med-svinekjott",
       "name": "Wok med svinekjøtt",
       "protein": "gris",
-      "sides": ["ris"],
+      "sides": [
+        "ris"
+      ],
       "minutes": 20,
       "servings": 4,
       "ingredients": [
@@ -508,7 +547,9 @@
       "id": "kjottboller-i-tomatsaus",
       "name": "Kjøttboller i tomatsaus",
       "protein": "gris",
-      "sides": ["pasta"],
+      "sides": [
+        "pasta"
+      ],
       "minutes": 35,
       "servings": 4,
       "ingredients": [
@@ -536,7 +577,9 @@
       "id": "medisterkaker-med-potetstappe",
       "name": "Medisterkaker med potetstappe og erter",
       "protein": "gris",
-      "sides": ["kartofler"],
+      "sides": [
+        "kartofler"
+      ],
       "minutes": 35,
       "servings": 4,
       "ingredients": [
@@ -562,7 +605,9 @@
       "id": "polsepytt-i-panne",
       "name": "Pytt i panne med pølser",
       "protein": "gris",
-      "sides": ["kartofler"],
+      "sides": [
+        "kartofler"
+      ],
       "minutes": 25,
       "servings": 4,
       "ingredients": [
@@ -588,7 +633,9 @@
       "id": "kyllinggryte-med-kokosmelk",
       "name": "Kyllinggryte med kokosmelk",
       "protein": "kylling",
-      "sides": ["ris"],
+      "sides": [
+        "ris"
+      ],
       "minutes": 30,
       "servings": 4,
       "ingredients": [
@@ -618,7 +665,9 @@
       "id": "kyllingwok-med-gronnsaker",
       "name": "Kyllingwok med grønnsaker",
       "protein": "kylling",
-      "sides": ["nudler"],
+      "sides": [
+        "nudler"
+      ],
       "minutes": 25,
       "servings": 4,
       "ingredients": [
@@ -646,7 +695,9 @@
       "id": "kylling-alfredo",
       "name": "Kylling Alfredo",
       "protein": "kylling",
-      "sides": ["pasta"],
+      "sides": [
+        "pasta"
+      ],
       "minutes": 30,
       "servings": 4,
       "ingredients": [
@@ -672,7 +723,10 @@
       "id": "kyllingfilet-i-form",
       "name": "Kyllingfilet i form",
       "protein": "kylling",
-      "sides": ["ris", "salat"],
+      "sides": [
+        "ris",
+        "salat"
+      ],
       "minutes": 35,
       "servings": 4,
       "ingredients": [
@@ -699,7 +753,9 @@
       "id": "ovnsbakt-kylling-med-sotpotet",
       "name": "Ovnsbakt kylling med søtpotet",
       "protein": "kylling",
-      "sides": ["kartofler"],
+      "sides": [
+        "kartofler"
+      ],
       "minutes": 50,
       "servings": 4,
       "ingredients": [
@@ -728,7 +784,10 @@
       "id": "hjemmelagde-kyllingnuggets",
       "name": "Hjemmelagde kyllingnuggets",
       "protein": "kylling",
-      "sides": ["kartofler", "salat"],
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
       "minutes": 35,
       "servings": 4,
       "ingredients": [
@@ -756,7 +815,9 @@
       "id": "butter-chicken",
       "name": "Butter chicken",
       "protein": "kylling",
-      "sides": ["ris"],
+      "sides": [
+        "ris"
+      ],
       "minutes": 30,
       "servings": 4,
       "ingredients": [
@@ -787,7 +848,9 @@
       "id": "kyllingsuppe-med-pasta",
       "name": "Kyllingsuppe med pasta og brokkoli",
       "protein": "kylling",
-      "sides": ["brod"],
+      "sides": [
+        "brod"
+      ],
       "minutes": 25,
       "servings": 4,
       "ingredients": [
@@ -814,7 +877,9 @@
       "id": "kylling-i-pita",
       "name": "Kylling i pita",
       "protein": "kylling",
-      "sides": ["brod"],
+      "sides": [
+        "brod"
+      ],
       "minutes": 20,
       "servings": 4,
       "ingredients": [
@@ -841,7 +906,9 @@
       "id": "kylling-i-form-med-sopp",
       "name": "Kylling i form med sopp",
       "protein": "kylling",
-      "sides": ["kartofler"],
+      "sides": [
+        "kartofler"
+      ],
       "minutes": 45,
       "servings": 4,
       "ingredients": [
@@ -868,7 +935,10 @@
       "id": "kyllinggryte-med-gronnsaker",
       "name": "Kyllinggryte med grønnsaker",
       "protein": "kylling",
-      "sides": ["kartofler", "brod"],
+      "sides": [
+        "kartofler",
+        "brod"
+      ],
       "minutes": 35,
       "servings": 4,
       "ingredients": [
@@ -897,7 +967,9 @@
       "id": "fiskekaker-med-gressloksaus",
       "name": "Fiskekaker med gressløksaus",
       "protein": "fisk",
-      "sides": ["kartofler"],
+      "sides": [
+        "kartofler"
+      ],
       "minutes": 35,
       "servings": 4,
       "ingredients": [
@@ -926,7 +998,10 @@
       "id": "fiskepinner-med-potetmos",
       "name": "Fiskepinner med potetmos og råkost",
       "protein": "fisk",
-      "sides": ["kartofler", "salat"],
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
       "minutes": 40,
       "servings": 4,
       "ingredients": [
@@ -955,7 +1030,9 @@
       "id": "ovnsbakt-laks",
       "name": "Ovnsbakt laks med blomkål og spinat",
       "protein": "fisk",
-      "sides": ["kartofler"],
+      "sides": [
+        "kartofler"
+      ],
       "minutes": 35,
       "servings": 4,
       "ingredients": [
@@ -982,7 +1059,10 @@
       "id": "fiskegrateng",
       "name": "Fiskegrateng",
       "protein": "fisk",
-      "sides": ["pasta", "salat"],
+      "sides": [
+        "pasta",
+        "salat"
+      ],
       "minutes": 55,
       "servings": 4,
       "ingredients": [
@@ -1010,7 +1090,9 @@
       "id": "plukkfisk",
       "name": "Plukkfisk",
       "protein": "fisk",
-      "sides": ["kartofler"],
+      "sides": [
+        "kartofler"
+      ],
       "minutes": 35,
       "servings": 4,
       "ingredients": [
@@ -1037,7 +1119,10 @@
       "id": "kokt-torsk",
       "name": "Kokt torsk med smør og poteter",
       "protein": "fisk",
-      "sides": ["kartofler", "salat"],
+      "sides": [
+        "kartofler",
+        "salat"
+      ],
       "minutes": 30,
       "servings": 4,
       "ingredients": [
@@ -1066,7 +1151,9 @@
       "id": "fiskesuppe",
       "name": "Fiskesuppe",
       "protein": "fisk",
-      "sides": ["brod"],
+      "sides": [
+        "brod"
+      ],
       "minutes": 30,
       "servings": 4,
       "ingredients": [
@@ -1096,7 +1183,9 @@
       "id": "fisketaco",
       "name": "Fisketaco",
       "protein": "fisk",
-      "sides": ["brod"],
+      "sides": [
+        "brod"
+      ],
       "minutes": 30,
       "servings": 4,
       "ingredients": [
@@ -1124,7 +1213,9 @@
       "id": "seibiff-med-lok",
       "name": "Seibiff med løk",
       "protein": "fisk",
-      "sides": ["kartofler"],
+      "sides": [
+        "kartofler"
+      ],
       "minutes": 30,
       "servings": 4,
       "ingredients": [
@@ -1151,7 +1242,9 @@
       "id": "pasta-med-varmrokt-laks",
       "name": "Pasta med varmrøkt laks",
       "protein": "fisk",
-      "sides": ["pasta"],
+      "sides": [
+        "pasta"
+      ],
       "minutes": 20,
       "servings": 4,
       "ingredients": [
@@ -1177,7 +1270,9 @@
       "id": "lettsaltet-torsk-med-bacon",
       "name": "Lettsaltet torsk med bacon",
       "protein": "fisk",
-      "sides": ["kartofler"],
+      "sides": [
+        "kartofler"
+      ],
       "minutes": 35,
       "servings": 4,
       "ingredients": [
@@ -1202,7 +1297,9 @@
       "id": "pannekaker-med-blabaersyltetoy",
       "name": "Pannekaker med blåbærsyltetøy",
       "protein": "vegetar",
-      "sides": ["brod"],
+      "sides": [
+        "brod"
+      ],
       "minutes": 40,
       "servings": 4,
       "ingredients": [
@@ -1228,7 +1325,9 @@
       "id": "pasta-med-kremet-sopp",
       "name": "Pasta med kremet sopp",
       "protein": "vegetar",
-      "sides": ["pasta"],
+      "sides": [
+        "pasta"
+      ],
       "minutes": 25,
       "servings": 4,
       "ingredients": [
@@ -1256,7 +1355,9 @@
       "id": "mac-n-cheese-med-blomkal",
       "name": "Mac 'n' cheese med blomkål",
       "protein": "vegetar",
-      "sides": ["pasta"],
+      "sides": [
+        "pasta"
+      ],
       "minutes": 45,
       "servings": 4,
       "ingredients": [
@@ -1284,7 +1385,9 @@
       "id": "tomatsuppe-med-egg",
       "name": "Tomatsuppe med egg og makaroni",
       "protein": "vegetar",
-      "sides": ["brod"],
+      "sides": [
+        "brod"
+      ],
       "minutes": 25,
       "servings": 4,
       "ingredients": [
@@ -1312,7 +1415,10 @@
       "id": "omelett-med-ost",
       "name": "Omelett med ost",
       "protein": "vegetar",
-      "sides": ["brod", "salat"],
+      "sides": [
+        "brod",
+        "salat"
+      ],
       "minutes": 15,
       "servings": 4,
       "ingredients": [
@@ -1338,7 +1444,9 @@
       "id": "vegetartaco-med-bonner",
       "name": "Vegetartaco med bønner",
       "protein": "vegetar",
-      "sides": ["brod"],
+      "sides": [
+        "brod"
+      ],
       "minutes": 30,
       "servings": 4,
       "ingredients": [
@@ -1367,7 +1475,9 @@
       "id": "potet-og-purreloksuppe",
       "name": "Potet- og purreløksuppe",
       "protein": "vegetar",
-      "sides": ["brod"],
+      "sides": [
+        "brod"
+      ],
       "minutes": 30,
       "servings": 4,
       "ingredients": [

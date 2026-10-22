@@ -16,7 +16,7 @@ Ejer: peterterpdk. Alle tekster i appen og alle svar til brugeren er på dansk. 
   - `keepalive.js`: daglig cron (se `vercel.json`), så Supabase-gratisprojektet ikke går i dvale.
   - API-funktionerne kræver et gyldigt Supabase-login (`Authorization: Bearer <access_token>`).
 - Supabase (Postgres, RLS: alle loggede ind brugere må læse og skrive alt):
-  - `recipes`: id, name, protein (kylling|okse|gris|fisk|vegetar), sides (jsonb array), minutes, servings, ingredients (jsonb), steps (jsonb), source, builtin.
+  - `recipes`: id, name, protein (kylling|okse|lam|gris|fisk|vegetar; lam kræver `supabase/3-lam.sql`), sides (jsonb array), minutes, servings, ingredients (jsonb), steps (jsonb), source, builtin.
   - `weeks`: id (fx `2026-W44`), days (jsonb). `days.d0`..`d6` = {recipe, protein, side, locked, skip, quick, people}. `quick` = travl dag (kun retter på højst 30 min), `people` = antal personer den dag (null = opskriftens antal); opskrift og indkøbsliste regnes om med `Shopping.scaleLine` og `factor`. `days.shop_struck` = {varenøgle: bool}, `days.shop_extra` = {id: tekst|null}, `days.shop_days` = {d0..d6: false for dage, der ikke er med på indkøbslisten}.
   - `settings`: id `main`, data {ruleProtein}. Favoritter er rækker med id `fav:<opskrifts-id>` (findes = favorit) og trækkes tre gange så ofte. Reglen "ikke samme protein to dage i træk" bruges stadig ved trækning, men har ingen knap i appen.
   - Skriv til uger med RPC `patch_week(p_id, p_patch)`, som fletter pr. nøgle, så flere telefoner ikke overskriver hinanden.

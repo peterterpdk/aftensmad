@@ -4,7 +4,7 @@
    Travle dage (kun hurtige retter), antal personer pr. dag og favoritter. */
 "use strict";
 
-const PROTEINS=[["kylling","Kylling"],["okse","Okse"],["gris","Gris"],["fisk","Fisk"],["vegetar","Vegetarisk"]];
+const PROTEINS=[["kylling","Kylling"],["okse","Okse"],["lam","Lam"],["gris","Gris"],["fisk","Fisk"],["vegetar","Vegetarisk"]];
 const SIDES=[["kartofler","Kartofler"],["ris","Ris"],["pasta","Pasta"],["nudler","Nudler"],["bulgur","Bulgur"],["couscous","Couscous"],["salat","Salat"],["brod","Brød"]];
 const PL=Object.fromEntries(PROTEINS), SL=Object.fromEntries(SIDES);
 const DAYN=["Mandag","Tirsdag","Onsdag","Torsdag","Fredag","Lørdag","Søndag"];

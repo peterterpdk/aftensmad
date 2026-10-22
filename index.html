@@ -149,21 +149,9 @@
     <div class="status" id="obSignupStatus" role="status"></div>
   </section>
 
-  <!-- 2. Retter: de 50 lokale retter for regionen; tryk for at stryge en ret -->
-  <section class="ob obwide" id="obDishes" aria-labelledby="obDishesTitle" hidden>
-    <div class="obhead"><button class="ghost obback" type="button" data-ob="signup">‹ <span data-i18n="back">Back</span></button><span class="obstep" data-step="2"></span></div>
-    <h1 id="obDishesTitle" data-i18n="d.title"></h1>
-    <p class="oblead" data-i18n="d.intro"></p>
-    <p class="hint" id="obDishFallback" hidden></p>
-    <div class="obdishbar"><b id="obDishCount" role="status"></b><button type="button" class="ghost" id="obDishReset" data-i18n="d.reset"></button></div>
-    <p class="hint" id="obDishNames"></p>
-    <div class="obdishes" id="obDishList"></div>
-    <button class="primary" type="button" id="obToTiers" data-i18n="s.next"></button>
-  </section>
-
-  <!-- 3. Vælg udgave -->
+  <!-- 2. Vælg udgave -->
   <section class="ob obwide" id="obPlan" aria-labelledby="obPlanTitle" hidden>
-    <div class="obhead"><button class="ghost obback" type="button" data-ob="dishes">‹ <span data-i18n="back">Back</span></button><span class="obstep" data-step="3"></span></div>
+    <div class="obhead"><button class="ghost obback" type="button" data-ob="signup">‹ <span data-i18n="back">Back</span></button><span class="obstep" data-step="2"></span></div>
     <h1 id="obPlanTitle" data-i18n="p.title"></h1>
     <div class="obtiers" role="group" data-i18n-aria="p.title">
       <button type="button" class="tier" data-tier="gratis" aria-pressed="false">
@@ -188,7 +176,19 @@
     </div>
     <p class="hint" data-i18n="p.footer"></p>
     <div class="status" id="obPlanStatus" role="status"></div>
-    <button class="primary" type="button" id="obFinish" data-i18n="p.continue"></button>
+    <button class="primary" type="button" id="obToDishes" data-i18n="s.next"></button>
+  </section>
+
+  <!-- 3. Retter: de 50 lokale retter for regionen; tryk for at stryge en ret -->
+  <section class="ob obwide" id="obDishes" aria-labelledby="obDishesTitle" hidden>
+    <div class="obhead"><button class="ghost obback" type="button" data-ob="plan">‹ <span data-i18n="back">Back</span></button><span class="obstep" data-step="3"></span></div>
+    <h1 id="obDishesTitle" data-i18n="d.title"></h1>
+    <p class="oblead" data-i18n="d.intro"></p>
+    <p class="hint" id="obDishFallback" hidden></p>
+    <div class="obdishbar"><b id="obDishCount" role="status"></b><button type="button" class="ghost" id="obDishReset" data-i18n="d.reset"></button></div>
+    <p class="hint" id="obDishNames"></p>
+    <div class="obdishes" id="obDishList"></div>
+    <button class="primary" type="button" id="obDishDone" data-i18n="p.continue"></button>
   </section>
 
   <!-- Slut på prototypen -->

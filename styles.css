@@ -195,8 +195,8 @@ label.f > :is(input,select,textarea){color:var(--fg);font-weight:400}
 .obdishes .sitem.struck .box{background:transparent;border-color:var(--line)}
 .obdishes .sitem.struck .box::after{content:none}
 .obdishes .ssec h3{display:flex;align-items:center;gap:8px;margin-top:8px}
-#obToTiers{position:sticky;align-self:center;width:min(100%,380px);bottom:calc(12px + env(safe-area-inset-bottom));min-height:50px;font-size:16px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
-#obFinish{min-height:48px;font-size:16px}
+#obDishDone{position:sticky;align-self:center;width:min(100%,380px);bottom:calc(12px + env(safe-area-inset-bottom));min-height:50px;font-size:16px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+#obToDishes{min-height:48px;font-size:16px}
 .obtiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:stretch}
 .tier{display:flex;flex-direction:column;align-items:flex-start;gap:6px;text-align:left;white-space:normal;padding:18px;border-radius:14px;background:var(--sunk);border:2px solid var(--line);font-weight:400;color:var(--fg);position:relative}
 .tier .tname{font-size:18px;font-weight:700;color:var(--accent)}

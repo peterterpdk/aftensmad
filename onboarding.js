@@ -90,20 +90,22 @@ $("#obToPlan").onclick=()=>{
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($("#obEmail").value.trim())) return err("#obSignupStatus","s.err.mail");
     if($("#obPass").value.length<8) return err("#obSignupStatus","s.err.pw");
   }
-  err("#obSignupStatus",""); go("dishes");
+  err("#obSignupStatus",""); go("plan");
 };
 $("#obDishList").addEventListener("click",e=>{const b=e.target.closest("[data-dish]"); if(!b) return; const id=b.dataset.dish; if(st.excluded.has(id)) st.excluded.delete(id); else st.excluded.add(id); renderDishes(); const nb=$(`#obDishList [data-dish="${CSS.escape(id)}"]`); if(nb) nb.focus();});
 $("#obDishReset").onclick=()=>{st.excluded.clear();renderDishes()};
-$("#obToTiers").onclick=()=>go("plan");
 document.querySelectorAll(".tier").forEach(b=>b.onclick=()=>{
   st.tier=b.dataset.tier;
   document.querySelectorAll(".tier").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
   err("#obPlanStatus","");
 });
-$("#obFinish").onclick=()=>{
+$("#obToDishes").onclick=()=>{
   if(!st.tier) return err("#obPlanStatus","p.err");
+  err("#obPlanStatus",""); go("dishes");
+};
+$("#obDishDone").onclick=()=>{
   const list=dishes();
-  $("#obSummary").textContent=t("done.sum",{l:$("#obLang").selectedOptions[0].textContent,r:t("region."+st.region),m:t(st.method==="mail"?"login.mail":"s."+st.method),n:list.filter(d=>!st.excluded.has(d[0])).length,t:list.length,e:t("e."+st.tier)});
+  $("#obSummary").textContent=t("done.sum",{l:$("#obLang").selectedOptions[0].textContent,r:t("region."+st.region),m:t(st.method==="mail"?"login.mail":"s."+st.method),n:list.filter(d=>!st.excluded.has(d[0])).length,t:list.length,e:t("e."+({gratis:"free",fuld:"full",premium:"premium"}[st.tier]))});
   go("done");
 };
 $("#obDoneLogin").onclick=()=>go("login");

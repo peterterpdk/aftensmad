@@ -38,3 +38,4 @@ Tre faner i det grønne topbånd: Ugen (ugeplan og indkøbsliste), Opskrifter (k
 - Test i browser (Playwright/Chromium) med en mock af `window.supabase` og `/api/*`, ved 390 px og i mørk tilstand, før ændringen lægges op.
 - Udgivelse sker automatisk, når `main` på GitHub ændres. Commit og push direkte til `main`, når ændringen er testet. Repoet er offentligt, så Vercels gratis plan udgiver også commits fra andre end ejeren.
 - Repoet er offentligt: læg aldrig nøgler, adgangskoder, tokens, mailadresser eller andre personoplysninger i koden eller i commit-beskeder. Brugere og data ligger kun i Supabase.
+- Dette repo er familiens web-app og testmiljø. Kode og planer til den kommercielle app (iOS, husstande, ny database, forretningsplan og priser) hører hjemme i organisationens private repo og må ikke lægges her.
